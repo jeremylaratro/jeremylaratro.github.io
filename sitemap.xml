@@ -1,21 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://jeremylaratro.link/</loc>
-    <lastmod>2018-06-04</lastmod>
-  </url>
-</urlset>
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.flickr.com/photos/jeremylaratro/</loc>
-    <lastmod>2018-06-04</lastmod>
-  </url>
-</urlset>
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://jeremylaratro.link/Contact.html</loc>
-    <lastmod>2018-06-04</lastmod>
-  </url>
-</urlset>
+<url>
+   <loc>https://jeremylaratro.link//</loc>
+   <lastmod>2017-09-26T18:03:59+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>1.0000</priority>
+</url>
+<url>
+   <loc>https://jeremylaratro.link/About.html</loc>
+   <lastmod>2017-09-26T18:03:59+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://www.flickr.com/photos/jeremylaratro/</loc>
+   <lastmod>2017-09-26T18:03:59+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>1.0000</priority>
+</url>
+<url>
+   <loc>https://jeremylaratro.link/Contact.html</loc>
+   <lastmod>2017-09-26T18:03:59+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://jeremylaratro.link/Photolio.html</loc>
+   <lastmod>2017-09-26T18:03:59+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+
