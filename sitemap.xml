@@ -1,33 +1,11 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <?xml version="1.0" encoding="UTF-8"?>
-<url>
-   <loc>https://jeremylaratro.link//</loc>
-   <lastmod>2022-01-25T18:03:59+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>1.0000</priority>
-</url>
-<url>
-   <loc>https://jeremylaratro.link/About.html</loc>
-   <lastmod>2022-01-25T18:03:59+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://www.flickr.com/photos/jeremylaratro/</loc>
-   <lastmod>2022-01-25T18:03:59+00:00</lastmod>
-   <changefreq>daily</changefreq>
-   <priority>1.0000</priority>
-</url>
-<url>
-   <loc>https://jeremylaratro.link/Contact.html</loc>
-   <lastmod>2022-01-25T18:03:59+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
-</url>
-<url>
-   <loc>https://jeremylaratro.link/Photolio.html</loc>
-   <lastmod>2022-01-25T18:03:59+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
-</url>
-</urlset> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://jeremylaratro.link/</loc>
+		<lastmod>2022-01-24T16:12:20+03:00</lastmod>
+	</url>
+	<url>
+		<loc>https://jeremylaratro.link/About.html</loc>
+		<lastmod>2022-01-24T07:56:12+03:00</lastmod>
+	</url>
+</urlset>
