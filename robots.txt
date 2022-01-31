@@ -1,7 +1,60 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
+User-agent: Googlebot-Image
 User-agent: *
 Allow: /
+Sitemap: http://www.jeremylaratro.link/sitemap.xml
 
+User-agent: Googlebot
+User-agent: msnbot
+User-agent: Baiduspider 
+User-agent: Googlebot-News Baiduspider
+User-agent: Baidu Web Search	
+User-agent: Baidu Image Search
+User-agent: Baiduspider-image
+User-agent: Baidu Mobile Search
+User-agent: Baiduspider-mobile
+User-agent: Baidu Video Search
+User-agent: Baiduspider-video
+User-agent: Baidu News Search
+User-agent: Baiduspider-news
+User-agent: Baidu Bookmark Search
+User-agent: Baiduspider-favo
+User-agent: Baidu Union Search
+User-agent: Baiduspider-cpro
+User-agent: Baidu Business Search
+User-agent: Baiduspider-ads
+User-agent: Googlebot/2.1 (+http://www.googlebot.com/bot.html)
+User-agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+User-agent: Googlebot/2.1 (+http://www.google.com/bot.html)
+User-agent: Googlebot-News
+User-agent: Googlebot-Video/1.0
+User-agent: SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)
+User-agent: DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)
+User-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F70 Safari/600.1.4 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+User-agent: [various mobile device types] (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)
+User-agent: DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)
+User-agent: Mozilla/5.0 (compatible; bingbot/2.0 +http://www.bing.com/bingbot.htm)
+User-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+User-agent: Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 530) like Gecko (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+User-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+User-agent: msnbot/2.0b (+http://search.msn.com/msnbot.htm)
+User-agent: msnbot-media/1.1 (+http://search.msn.com/msnbot.htm)
+User-agent: Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+User-agent: Mozilla/2.0 (compatible; Ask Jeeves/Teoma; +http://sp.ask.com/docs/about/tech_crawling.html)
+User-agent:Mozilla/2.0 (compatible; Ask Jeeves/Teoma; +http://about.ask.com/en/docs/about/webmasters.shtml)
+User-agent:Mozilla/2.0 (compatible; Ask Jeeves/Teoma)
+User-agent:Mozilla/5.0 (compatible; Ask Jeeves/Teoma; +http://about.ask.com/en/docs/about/webmasters.shtml)
+User-agent:Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+User-agent:Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B411 Safari/600.1.4 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+User-agent:Mozilla/5.0 (compatible; YandexAccessibilityBot/3.0; +http://yandex.com/bots)
+User-agent:Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B411 Safari/600.1.4 (compatible; YandexMobileBot/3.0; +http://yandex.com/bots)
+User-agent:Mozilla/5.0 (compatible; YandexDirectDyn/1.0; +http://yandex.com/bots
+User-agent:Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)
+User-agent:Mozilla/5.0 (compatible; YandexVideo/3.0; +http://yandex.com/bots)
+User-agent:Mozilla/5.0 (compatible; YandexMedia/3.0; +http://yandex.com/bots)
+User-agent:Mozilla/5.0 (compatible; YandexBlogs/0.99; robot; +http://yandex.com/bots)
+User-agent:Mozilla/5.0 (compatible; YandexFavicons/1.0; +http://yandex.com/bots)
+User-agent:Mozilla/5.0 (compatible; YandexWebmaster/2.0; +http://yandex.com/bots)
+User-agent:Mozilla/5.0 (compatible; YandexPagechecker/1.0; +http://yandex.com/bots)
+
+Allow: /
 Sitemap: http://www.jeremylaratro.link/sitemap.xml
