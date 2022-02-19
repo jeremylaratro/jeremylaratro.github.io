@@ -1,255 +1,232 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
-<title>rayd.html</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<style type="text/css">
-.s0 { color: #e8bf6a;}
-.s1 { color: #a9b7c6;}
-.s2 { color: #bababa;}
-.s3 { color: #a5c261;}
-.s4 { color: #6897bb;}
-.s5 { color: #cc7832;}
-.s6 { color: #cc7832; font-weight: bold;}
-.s7 { color: #6a8759;}
-.s8 { color: #808080;}
-</style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeremy Laratro: Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .columns {
+            -webkit-column-count: 2;
+            -mox-column-count: 2;
+            column-count: 2;
+            -webkit-column-gap: 53px;
+            -moz-column-gap: 53px;
+            column-gap: 53px;
+            -webkit-column-rule: 6px dashed #DEDEDE;
+            -moz-column-rule: 6px dashed #DEDEDE;
+            column-rule: 6px dashed #DEDEDE;
+        }
+        .testbutton {
+            font-family: arial;
+            color: #14396A !important;
+            font-size: 14px;
+            text-shadow: 1px 1px 0px #7CACDE;
+            box-shadow: 1px 1px 1px #BEE2F9;
+            padding: 10px 25px;
+            border-radius: 15px;
+            border: 2px solid #FFFFFF;
+            background: #45C7EE;
+            background: linear-gradient(to top, #45C7EE, #468CCF);
+        }
+        .testbutton:hover {
+            color: #14396A !important;
+            background: #468CCF;
+            background: linear-gradient(to top, #468CCF, #63B8EE);
+        }
+        .cssDisplay {
+            background-color: #1A2947;
+            color: #E8FEFF;
+            border: 2px dashed #6D6D6D;
+            padding: 1px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: none;
+            left: 12px;
+            cursor: default;
+            visibility: visible;
+            overflow: hidden;
+            float: none;
+            border-radius: 11px;
+        }
+        #cssDisplay:hover {
+            background-color: #1A2947;
+            color: #E8FEFF;
+            border: 2px dashed #6D6D6D;
+            padding: 1px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: none;
+            left: 12px;
+            cursor: default;
+            visibility: visible;
+            overflow: hidden;
+            float: none;
+            border-radius: 11px;
+        }
+        .blob.page {
+            position: relative;
+            padding-bottom: 2%;
+        }
+        .spacesome {
+            margin-top: 30px;
+        }
+        .card.rf {
+            position: center;
+            height: 40%px;
+            width: 60%;
+            min-width: 250px;
+
+
+        }
+        .container {
+            width: 75%px;
+            margin: 2px auto;
+            padding: 1.5rem;
+
+            border-radius: 5px;
+            background: #17141d;
+            box-shadow: 1rem 0 2rem #000;
+            display: flow;
+        }
+        h5 {
+            font-size: 14px;
+            word-spacing: 10px ;
+            display: inline;
+            flex-grow: inherit;
+            color: #7a7a8c;
+            text-decoration: transparent;
+            text-shadow: 1px 1px 0px #28242f;
+            grid-row: auto;
+        }
+
+        .container.collapsible {
+            color: white;
+            position: running(center);
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            width: 85%px;
+            margin: 20px auto;
+            padding: 1.5rem;
+
+            border-radius: 5px;
+            background: #17141d;
+            box-shadow: 1rem 0 2rem #000;
+            display: center;
+        }
+
+        .active, .container.collapsible:hover {
+            background-color: #555;
+        }
+
+        .container.collapsible.content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            width: 75%px;
+            margin: 20px auto;
+            padding: 1.5rem;
+            border-radius: 5px;
+            background: #17141d;
+            box-shadow: 1rem 0 2rem #000;
+            display: center;
+        {
+        .container.article {
+            width: 65%;
+            margin: 5px auto;
+            padding: 1.5rem;
+            border-radius: 5px;
+            background: #17141d;
+            box-shadow: 1rem 0 2rem #000;
+            display: flow;
+        }
+        .p4 {
+            font-size: 24px;
+            word-spacing: 10px ;
+            display: inline;
+            position: relative / center;
+            flex-grow: inherit;
+            color: #ffffff;
+
+        }
+        }
+
+    </style>
 </head>
-<body bgcolor="#2b2b2b">
-<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
-<tr><td><center>
-<font face="Arial, Helvetica" color="#000000">
-rayd.html</font>
-</center></td></tr></table>
-<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
-<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot; </span><span class="s2">xmlns</span><span class="s3">=&quot;http://www.w3.org/1999/html&quot; </span><span class="s2">xmlns</span><span class="s3">=&quot;http://www.w3.org/1999/html&quot;</span>
-      <span class="s2">xmlns</span><span class="s3">=&quot;http://www.w3.org/1999/html&quot;</span><span class="s0">&gt;</span>
-<span class="s0">&lt;head&gt;</span>
-    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot; </span><span class="s0">/&gt;</span>
-    <span class="s0">&lt;meta </span><span class="s2">http-equiv</span><span class="s3">=&quot;X-UA-Compatible&quot; </span><span class="s2">content</span><span class="s3">=&quot;IE=edge&quot; </span><span class="s0">/&gt;</span>
-    <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;viewport&quot; </span><span class="s2">content</span><span class="s3">=&quot;width=device-width, initial-scale=1.0&quot; </span><span class="s0">/&gt;</span>
-    <span class="s0">&lt;title&gt;</span><span class="s1">Jeremy Laratro: Portfolio</span><span class="s0">&lt;/title&gt;</span>
 
-    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;preconnect&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com&quot; </span><span class="s0">/&gt;</span>
-    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;preconnect&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.gstatic.com&quot; </span><span class="s2">crossorigin </span><span class="s0">/&gt;</span>
-    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&amp;display=swap&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s0">/&gt;</span>
-
-    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;styles.css&quot;</span><span class="s0">&gt;</span>
-    <span class="s0">&lt;style&gt;</span>
-        <span class="s1">.</span><span class="s0">columns </span><span class="s1">{</span>
-            <span class="s2">-webkit-column-count</span><span class="s1">: </span><span class="s4">2</span><span class="s5">;</span>
-            <span class="s2">-mox-column-count</span><span class="s1">: </span><span class="s4">2</span><span class="s5">;</span>
-            <span class="s2">column-count</span><span class="s1">: </span><span class="s4">2</span><span class="s5">;</span>
-            <span class="s2">-webkit-column-gap</span><span class="s1">: </span><span class="s4">53</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">-moz-column-gap</span><span class="s1">: </span><span class="s4">53</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">column-gap</span><span class="s1">: </span><span class="s4">53</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">-webkit-column-rule</span><span class="s1">: </span><span class="s4">6</span><span class="s3">px dashed </span><span class="s4">#DEDEDE</span><span class="s5">;</span>
-            <span class="s2">-moz-column-rule</span><span class="s1">: </span><span class="s4">6</span><span class="s3">px dashed </span><span class="s4">#DEDEDE</span><span class="s5">;</span>
-            <span class="s2">column-rule</span><span class="s1">: </span><span class="s4">6</span><span class="s3">px dashed </span><span class="s4">#DEDEDE</span><span class="s5">;</span>
-        <span class="s1">}</span>
-        <span class="s1">.</span><span class="s0">testbutton </span><span class="s1">{</span>
-            <span class="s2">font-family</span><span class="s1">: </span><span class="s0">arial</span><span class="s5">;</span>
-            <span class="s2">color</span><span class="s1">: </span><span class="s4">#14396A </span><span class="s6">!important</span><span class="s5">;</span>
-            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">text-shadow</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px </span><span class="s4">1</span><span class="s3">px </span><span class="s4">0</span><span class="s3">px </span><span class="s4">#7CACDE</span><span class="s5">;</span>
-            <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px </span><span class="s4">1</span><span class="s3">px </span><span class="s4">1</span><span class="s3">px </span><span class="s4">#BEE2F9</span><span class="s5">;</span>
-            <span class="s2">padding</span><span class="s1">: </span><span class="s4">10</span><span class="s3">px </span><span class="s4">25</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">border</span><span class="s1">: </span><span class="s4">2</span><span class="s3">px solid </span><span class="s4">#FFFFFF</span><span class="s5">;</span>
-            <span class="s2">background</span><span class="s1">: </span><span class="s4">#45C7EE</span><span class="s5">;</span>
-            <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s3">to top</span><span class="s5">, </span><span class="s4">#45C7EE</span><span class="s5">, </span><span class="s4">#468CCF</span><span class="s1">)</span><span class="s5">;</span>
-        <span class="s1">}</span>
-        <span class="s1">.</span><span class="s0">testbutton</span><span class="s1">:</span><span class="s0">hover </span><span class="s1">{</span>
-            <span class="s2">color</span><span class="s1">: </span><span class="s4">#14396A </span><span class="s6">!important</span><span class="s5">;</span>
-            <span class="s2">background</span><span class="s1">: </span><span class="s4">#468CCF</span><span class="s5">;</span>
-            <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s3">to top</span><span class="s5">, </span><span class="s4">#468CCF</span><span class="s5">, </span><span class="s4">#63B8EE</span><span class="s1">)</span><span class="s5">;</span>
-        <span class="s1">}</span>
-        <span class="s1">.</span><span class="s0">cssDisplay </span><span class="s1">{</span>
-            <span class="s2">background-color</span><span class="s1">: </span><span class="s4">#1A2947</span><span class="s5">;</span>
-            <span class="s2">color</span><span class="s1">: </span><span class="s4">#E8FEFF</span><span class="s5">;</span>
-            <span class="s2">border</span><span class="s1">: </span><span class="s4">2</span><span class="s3">px dashed </span><span class="s4">#6D6D6D</span><span class="s5">;</span>
-            <span class="s2">padding</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s5">;</span>
-            <span class="s2">text-decoration</span><span class="s1">: </span><span class="s3">none</span><span class="s5">;</span>
-            <span class="s2">letter-spacing</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">text-transform</span><span class="s1">: </span><span class="s3">none</span><span class="s5">;</span>
-            <span class="s2">left</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">cursor</span><span class="s1">: </span><span class="s3">default</span><span class="s5">;</span>
-            <span class="s2">visibility</span><span class="s1">: </span><span class="s3">visible</span><span class="s5">;</span>
-            <span class="s2">overflow</span><span class="s1">: </span><span class="s3">hidden</span><span class="s5">;</span>
-            <span class="s2">float</span><span class="s1">: </span><span class="s3">none</span><span class="s5">;</span>
-            <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">11</span><span class="s3">px</span><span class="s5">;</span>
-        <span class="s1">}</span>
-        <span class="s0">#cssDisplay</span><span class="s1">:</span><span class="s0">hover </span><span class="s1">{</span>
-            <span class="s2">background-color</span><span class="s1">: </span><span class="s4">#1A2947</span><span class="s5">;</span>
-            <span class="s2">color</span><span class="s1">: </span><span class="s4">#E8FEFF</span><span class="s5">;</span>
-            <span class="s2">border</span><span class="s1">: </span><span class="s4">2</span><span class="s3">px dashed </span><span class="s4">#6D6D6D</span><span class="s5">;</span>
-            <span class="s2">padding</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s5">;</span>
-            <span class="s2">text-decoration</span><span class="s1">: </span><span class="s3">none</span><span class="s5">;</span>
-            <span class="s2">letter-spacing</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">text-transform</span><span class="s1">: </span><span class="s3">none</span><span class="s5">;</span>
-            <span class="s2">left</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">cursor</span><span class="s1">: </span><span class="s3">default</span><span class="s5">;</span>
-            <span class="s2">visibility</span><span class="s1">: </span><span class="s3">visible</span><span class="s5">;</span>
-            <span class="s2">overflow</span><span class="s1">: </span><span class="s3">hidden</span><span class="s5">;</span>
-            <span class="s2">float</span><span class="s1">: </span><span class="s3">none</span><span class="s5">;</span>
-            <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">11</span><span class="s3">px</span><span class="s5">;</span>
-        <span class="s1">}</span>
-        <span class="s1">.</span><span class="s0">blob</span><span class="s1">.</span><span class="s0">page </span><span class="s1">{</span>
-            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s5">;</span>
-            <span class="s2">padding-bottom</span><span class="s1">: </span><span class="s4">2</span><span class="s1">%</span><span class="s5">;</span>
-        <span class="s1">}</span>
-        <span class="s1">.</span><span class="s0">spacesome </span><span class="s1">{</span>
-            <span class="s2">margin-top</span><span class="s1">: </span><span class="s4">30</span><span class="s3">px</span><span class="s5">;</span>
-        <span class="s1">}</span>
-        <span class="s1">.</span><span class="s0">card</span><span class="s1">.</span><span class="s0">rf </span><span class="s1">{</span>
-            <span class="s2">position</span><span class="s1">: </span><span class="s3">center</span><span class="s5">;</span>
-            <span class="s2">height</span><span class="s1">: </span><span class="s4">40</span><span class="s1">%</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">width</span><span class="s1">: </span><span class="s4">60</span><span class="s1">%</span><span class="s5">;</span>
-            <span class="s2">min-width</span><span class="s1">: </span><span class="s4">250</span><span class="s3">px</span><span class="s5">;</span>
+<body>
+<section class="blob page"
+         style="background-image: url('blobs/circleblob.svg'); background-size: cover; background-position: center;">
+    <!--    <article class="blob page">-->
 
 
-        <span class="s1">}</span>
-        <span class="s1">.</span><span class="s0">container </span><span class="s1">{</span>
-            <span class="s2">width</span><span class="s1">: </span><span class="s4">75</span><span class="s1">%</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">margin</span><span class="s1">: </span><span class="s4">2</span><span class="s3">px auto</span><span class="s5">;</span>
-            <span class="s2">padding</span><span class="s1">: </span><span class="s4">1.5</span><span class="s3">rem</span><span class="s5">;</span>
+<section>
+<div class="container article">
 
-            <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">5</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">background</span><span class="s1">: </span><span class="s4">#17141d</span><span class="s5">;</span>
-            <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">1</span><span class="s3">rem </span><span class="s4">0 2</span><span class="s3">rem </span><span class="s4">#000</span><span class="s5">;</span>
-            <span class="s2">display</span><span class="s1">: </span><span class="s3">flow</span><span class="s5">;</span>
-        <span class="s1">}</span>
-        <span class="s0">h5 </span><span class="s1">{</span>
-            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">word-spacing</span><span class="s1">: </span><span class="s4">10</span><span class="s3">px </span><span class="s5">;</span>
-            <span class="s2">display</span><span class="s1">: </span><span class="s3">inline</span><span class="s5">;</span>
-            <span class="s2">flex-grow</span><span class="s1">: </span><span class="s3">inherit</span><span class="s5">;</span>
-            <span class="s2">color</span><span class="s1">: </span><span class="s4">#7a7a8c</span><span class="s5">;</span>
-            <span class="s2">text-decoration</span><span class="s1">: </span><span class="s3">transparent</span><span class="s5">;</span>
-            <span class="s2">text-shadow</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px </span><span class="s4">1</span><span class="s3">px </span><span class="s4">0</span><span class="s3">px </span><span class="s4">#28242f</span><span class="s5">;</span>
-            <span class="s2">grid-row</span><span class="s1">: </span><span class="s3">auto</span><span class="s5">;</span>
-        <span class="s1">}</span>
+    <h6>RF</h6>
+    <h3> Page is under construction, please come back later </h3>
+    <div class="spacesome">
 
-        <span class="s1">.</span><span class="s0">container</span><span class="s1">.</span><span class="s0">collapsible </span><span class="s1">{</span>
-            <span class="s2">color</span><span class="s1">: </span><span class="s3">white</span><span class="s5">;</span>
-            <span class="s2">position</span><span class="s1">: </span><span class="s0">running</span><span class="s1">(</span><span class="s3">center</span><span class="s1">)</span><span class="s5">;</span>
-            <span class="s2">cursor</span><span class="s1">: </span><span class="s3">pointer</span><span class="s5">;</span>
-            <span class="s2">border</span><span class="s1">: </span><span class="s3">none</span><span class="s5">;</span>
-            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">left</span><span class="s5">;</span>
-            <span class="s2">outline</span><span class="s1">: </span><span class="s3">none</span><span class="s5">;</span>
-            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">width</span><span class="s1">: </span><span class="s4">85</span><span class="s1">%</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">margin</span><span class="s1">: </span><span class="s4">20</span><span class="s3">px auto</span><span class="s5">;</span>
-            <span class="s2">padding</span><span class="s1">: </span><span class="s4">1.5</span><span class="s3">rem</span><span class="s5">;</span>
+        <h1>Jeremy Laratro</h1>
+        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+        <p>Welcome! See below to read more about my personal projects and research in RF</p>
+        <p> Topics include antenna construction and design, voice and digital communications, as well as RF hardware builds</p>
+        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+        <div class="p4">Click a window to expand and read the whole article!  </div>
 
-            <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">5</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">background</span><span class="s1">: </span><span class="s4">#17141d</span><span class="s5">;</span>
-            <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">1</span><span class="s3">rem </span><span class="s4">0 2</span><span class="s3">rem </span><span class="s4">#000</span><span class="s5">;</span>
-            <span class="s2">display</span><span class="s1">: </span><span class="s3">center</span><span class="s5">;</span>
-        <span class="s1">}</span>
+</div>
+<div class="spacesome"></div>
+    <button class="container collapsible">
+        </h2>Radio</h2>
+        <h1>Jeremy Laratro</h1>
+        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+        <p>Welcome! See below to read more about my personal projects and research in RF</p>
+        <p> Topics include antenna construction and design, voice and digital communications, as well as RF hardware builds</p>
+        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
 
-        <span class="s1">.</span><span class="s0">active</span><span class="s5">, </span><span class="s1">.</span><span class="s0">container</span><span class="s1">.</span><span class="s0">collapsible</span><span class="s1">:</span><span class="s0">hover </span><span class="s1">{</span>
-            <span class="s2">background-color</span><span class="s1">: </span><span class="s4">#555</span><span class="s5">;</span>
-        <span class="s1">}</span>
+    </button>
+        <div class="container collapsible content">
+    <h2>Radio</h2>
+            <h1>Jeremy Laratro</h1>
+            <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+            <p>Welcome! See below to read more about my personal projects and research in RF</p>
+            <p> Topics include antenna construction and design, voice and digital communications, as well as RF hardware builds</p>
+            <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
 
-        <span class="s1">.</span><span class="s0">container</span><span class="s1">.</span><span class="s0">collapsible</span><span class="s1">.</span><span class="s0">content </span><span class="s1">{</span>
-            <span class="s2">max-height</span><span class="s1">: </span><span class="s4">0</span><span class="s5">;</span>
-            <span class="s2">overflow</span><span class="s1">: </span><span class="s3">hidden</span><span class="s5">;</span>
-            <span class="s2">transition</span><span class="s1">: </span><span class="s3">max-height </span><span class="s4">0.2</span><span class="s3">s ease-out</span><span class="s5">;</span>
-            <span class="s2">width</span><span class="s1">: </span><span class="s4">75</span><span class="s1">%</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">margin</span><span class="s1">: </span><span class="s4">20</span><span class="s3">px auto</span><span class="s5">;</span>
-            <span class="s2">padding</span><span class="s1">: </span><span class="s4">1.5</span><span class="s3">rem</span><span class="s5">;</span>
-            <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">5</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">background</span><span class="s1">: </span><span class="s4">#17141d</span><span class="s5">;</span>
-            <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">1</span><span class="s3">rem </span><span class="s4">0 2</span><span class="s3">rem </span><span class="s4">#000</span><span class="s5">;</span>
-            <span class="s2">display</span><span class="s1">: </span><span class="s3">center</span><span class="s5">;</span>
-        <span class="s1">{</span>
-        <span class="s1">.</span><span class="s0">container</span><span class="s1">.</span><span class="s0">article </span><span class="s1">{</span>
-            <span class="s2">width</span><span class="s1">: </span><span class="s4">65</span><span class="s1">%</span><span class="s5">;</span>
-            <span class="s2">margin</span><span class="s1">: </span><span class="s4">5</span><span class="s3">px auto</span><span class="s5">;</span>
-            <span class="s2">padding</span><span class="s1">: </span><span class="s4">1.5</span><span class="s3">rem</span><span class="s5">;</span>
-            <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">5</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">background</span><span class="s1">: </span><span class="s4">#17141d</span><span class="s5">;</span>
-            <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">1</span><span class="s3">rem </span><span class="s4">0 2</span><span class="s3">rem </span><span class="s4">#000</span><span class="s5">;</span>
-            <span class="s2">display</span><span class="s1">: </span><span class="s3">flow</span><span class="s5">;</span>
-        <span class="s1">}</span>
-        <span class="s1">.</span><span class="s0">p4 </span><span class="s1">{</span>
-            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">24</span><span class="s3">px</span><span class="s5">;</span>
-            <span class="s2">word-spacing</span><span class="s1">: </span><span class="s4">10</span><span class="s3">px </span><span class="s5">;</span>
-            <span class="s2">display</span><span class="s1">: </span><span class="s3">inline</span><span class="s5">;</span>
-            <span class="s2">position</span><span class="s1">: </span><span class="s3">relative </span><span class="s1">/ </span><span class="s3">center</span><span class="s5">;</span>
-            <span class="s2">flex-grow</span><span class="s1">: </span><span class="s3">inherit</span><span class="s5">;</span>
-            <span class="s2">color</span><span class="s1">: </span><span class="s4">#ffffff</span><span class="s5">;</span>
+        </div>
+        </div>
+    </div>
 
-        <span class="s1">}</span>
-        <span class="s1">}</span>
-
-    <span class="s0">&lt;/style&gt;</span>
-<span class="s0">&lt;/head&gt;</span>
-
-<span class="s0">&lt;body&gt;</span>
-<span class="s0">&lt;section </span><span class="s2">class</span><span class="s3">=&quot;blob page&quot;</span>
-         <span class="s2">style</span><span class="s3">=&quot;</span><span class="s2">background-image</span><span class="s1">: </span><span class="s0">url</span><span class="s1">(</span><span class="s7">'blobs/circleblob.svg'</span><span class="s1">)</span><span class="s5">; </span><span class="s2">background-size</span><span class="s1">: </span><span class="s3">cover</span><span class="s5">; </span><span class="s2">background-position</span><span class="s1">: </span><span class="s3">center</span><span class="s5">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
-    <span class="s8">&lt;!--    &lt;article class=&quot;blob page&quot;&gt;--&gt;</span>
+</section>
 
 
-<span class="s0">&lt;section&gt;</span>
-<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container article&quot;</span><span class="s0">&gt;</span>
-
-    <span class="s0">&lt;h6&gt;</span><span class="s1">RF</span><span class="s0">&lt;/h6&gt;</span>
-    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;spacesome&quot;</span><span class="s0">&gt;</span>
-
-        <span class="s0">&lt;h1&gt;</span><span class="s1">Jeremy Laratro</span><span class="s0">&lt;/h1&gt;</span>
-        <span class="s0">&lt;h5&gt;</span><span class="s1">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><span class="s0">&lt;/h5&gt;</span>
-        <span class="s0">&lt;p&gt;</span><span class="s1">Welcome! See below to read more about my personal projects and research in RF</span><span class="s0">&lt;/p&gt;</span>
-        <span class="s0">&lt;p&gt; </span><span class="s1">Topics include antenna construction and design, voice and digital communications, as well as RF hardware builds</span><span class="s0">&lt;/p&gt;</span>
-        <span class="s0">&lt;h5&gt;</span><span class="s1">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><span class="s0">&lt;/h5&gt;</span>
-        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;p4&quot;</span><span class="s0">&gt;</span><span class="s1">Click a window to expand and read the whole article!  </span><span class="s0">&lt;/div&gt;</span>
-
-<span class="s0">&lt;/div&gt;</span>
-<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;spacesome&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
-    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;container collapsible&quot;</span><span class="s0">&gt;</span>
-        <span class="s0">&lt;/h2&gt;</span><span class="s1">Radio</span><span class="s0">&lt;/h2&gt;</span>
-        <span class="s0">&lt;h1&gt;</span><span class="s1">Jeremy Laratro</span><span class="s0">&lt;/h1&gt;</span>
-        <span class="s0">&lt;h5&gt;</span><span class="s1">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><span class="s0">&lt;/h5&gt;</span>
-        <span class="s0">&lt;p&gt;</span><span class="s1">Welcome! See below to read more about my personal projects and research in RF</span><span class="s0">&lt;/p&gt;</span>
-        <span class="s0">&lt;p&gt; </span><span class="s1">Topics include antenna construction and design, voice and digital communications, as well as RF hardware builds</span><span class="s0">&lt;/p&gt;</span>
-        <span class="s0">&lt;h5&gt;</span><span class="s1">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><span class="s0">&lt;/h5&gt;</span>
-
-    <span class="s0">&lt;/button&gt;</span>
-        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container collapsible content&quot;</span><span class="s0">&gt;</span>
-    <span class="s0">&lt;h2&gt;</span><span class="s1">Radio</span><span class="s0">&lt;/h2&gt;</span>
-            <span class="s0">&lt;h1&gt;</span><span class="s1">Jeremy Laratro</span><span class="s0">&lt;/h1&gt;</span>
-            <span class="s0">&lt;h5&gt;</span><span class="s1">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><span class="s0">&lt;/h5&gt;</span>
-            <span class="s0">&lt;p&gt;</span><span class="s1">Welcome! See below to read more about my personal projects and research in RF</span><span class="s0">&lt;/p&gt;</span>
-            <span class="s0">&lt;p&gt; </span><span class="s1">Topics include antenna construction and design, voice and digital communications, as well as RF hardware builds</span><span class="s0">&lt;/p&gt;</span>
-            <span class="s0">&lt;h5&gt;</span><span class="s1">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><span class="s0">&lt;/h5&gt;</span>
-
-        <span class="s0">&lt;/div&gt;</span>
-        <span class="s0">&lt;/div&gt;</span>
-    <span class="s0">&lt;/div&gt;</span>
-
-<span class="s0">&lt;/section&gt;</span>
-
-
-<span class="s0">&lt;/body&gt;</span>
-<span class="s0">&lt;script&gt;</span>
-    <span class="s5">var </span><span class="s1">coll = document.getElementsByClassName(</span><span class="s7">&quot;container collapsible&quot;</span><span class="s1">)</span><span class="s5">;</span>
-    <span class="s5">var </span><span class="s1">i</span><span class="s5">;</span>
-
-    <span class="s5">for </span><span class="s1">(i = </span><span class="s4">0</span><span class="s5">; </span><span class="s1">i &lt; coll.length</span><span class="s5">; </span><span class="s1">i++) {</span>
-        <span class="s1">coll[i].addEventListener(</span><span class="s7">&quot;click&quot;</span><span class="s5">, function</span><span class="s1">() {</span>
-            <span class="s5">this</span><span class="s1">.classList.toggle(</span><span class="s7">&quot;active&quot;</span><span class="s1">)</span><span class="s5">;</span>
-            <span class="s5">var </span><span class="s1">content = </span><span class="s5">this</span><span class="s1">.nextElementSibling</span><span class="s5">;</span>
-            <span class="s5">if </span><span class="s1">(content.style.maxHeight){</span>
-                <span class="s1">content.style.maxHeight = </span><span class="s5">null;</span>
-            <span class="s1">} </span><span class="s5">else </span><span class="s1">{</span>
-                <span class="s1">content.style.maxHeight = content.scrollHeight + </span><span class="s7">&quot;px&quot;</span><span class="s5">;</span>
-            <span class="s1">}</span>
-        <span class="s1">})</span><span class="s5">;</span>
-    <span class="s1">}</span>
-<span class="s0">&lt;/script&gt;</span>
-<span class="s0">&lt;/html&gt;</span></pre>
 </body>
+<script>
+    var coll = document.getElementsByClassName("container collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 </html>
