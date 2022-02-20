@@ -22,21 +22,6 @@
             height: auto;
             margin: auto;
         }
-         
-
-        .blue {
-            background: #3c31dd;
-        }
-
-        .red {
-            background: #dd3f31;
-        }
-
-        .dark {
-            background: #0f0f10;
-        }
-
-        
         h1 {
             font-size: 4rem;
         }
@@ -59,6 +44,19 @@
             min-height: 400px;
             padding-top: 70px;
         }
+
+        .blue {
+            background: #3c31dd;
+        }
+
+        .red {
+            background: #dd3f31;
+        }
+
+        .dark {
+            background: #0f0f10;
+        }
+
 
 
         .spacer {
@@ -85,18 +83,17 @@
         }
 
         .card {
-            height: 80%;
-            width: 100%;
-            min-width: 380px;
+            height: 550px;
+            width: 650px;
+            min-width: 350px;
             min-height: 250px;
-            padding-top: 0%;
+            padding-top: 0;
             padding-bottom: 0;
             border-radius: 16px;
             background: #17141d;
             box-shadow: -1rem 0 3rem #000;
             display: flex;
-            /*flex-direction: column;*/
-            margin: 15%;
+            margin: 5%;
             scroll-snap-align: start;
             clear: both;
             position: relative;
@@ -156,14 +153,14 @@
             background-clip: text;
         }
 
-         .logo {
+        .logo {
             grid-area: auto;
             align-self: start;
             position: bottom;
             box-sizing: border-box;
             padding-top: 0%;
             padding-bottom: 30%;
-            margin: 15 5 3 3;
+            margin: 15 5;
         }
 
         .logo-icon img {
@@ -172,8 +169,8 @@
             border-radius: 100%;
             position: bottom;
             filter: grayscale(75%);
-            display: flex;
-            overflow: hidden;
+            display: -webkit-flex;
+            overflow: fill;
             /*margin: 30px 5px 2px;*/
             margin: 30px 2px 2px;
 
@@ -222,11 +219,12 @@
         }
         .parent {
             display: grid;
-            grid-template-columns: repeat(5, 0.5fr);
-            grid-template-rows: repeat(3, 0.1fr) 0.5fr 0fr;
-            grid-column-gap: 5%;
-            grid-row-gap: 2%;
-            padding-bottom: 2%;
+            grid-template-columns: repeat(5, 5fr);
+            grid-template-rows: repeat(2, .1fr) repeat(2, 0.1fr) 0fr;
+            grid-column-gap: 2.5%;
+            grid-row-gap: 0;
+            padding-bottom: 0;
+            padding-top: 0;
         }
 
 
@@ -413,6 +411,9 @@
                              <div class="card-header">
 
                                  <p> Python, algorithms, CAD, and more </p>
+<p>
+
+</p><div class="space some">
 
                                  <a href="/Programming.html">
 
@@ -424,7 +425,7 @@
 
                                      </span>
                                  </a>
-
+                             </div>
                              </div>
              </div>
 
@@ -514,9 +515,13 @@
              </article>
 
          </div>
+
   </section>
       </div>
-      <h2>Jeremy Laratro 2022&copy</h2>
+    <div class="grid-item">
+                <h2>Jeremy Laratro 2022&copy</h2>
+            </div>
+
   </section>
 </div>
 </div>
