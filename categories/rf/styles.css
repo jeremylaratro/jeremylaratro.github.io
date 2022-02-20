@@ -63,6 +63,15 @@ section {
 
     background: url('/blobs/blobs.svg') no-repeat bottom / cover;
 }
+.rfbackground {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 16px;
+
+
+    background: url('/layered-waves-haikei(1).svg') no-repeat bottom / cover;
+}
 
 .card {
     height: 350px;
