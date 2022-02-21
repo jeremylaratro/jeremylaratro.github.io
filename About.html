@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;">
+<html style="font-size: 16px;" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -13,54 +13,435 @@
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.3.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
- 
+ <link rel="stylesheet" href="styles.css"
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="About">
     <meta property="og:type" content="website">
-  </head>
-  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-b8a3"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="https://jeremylaratro.link" 
-        </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
-            </a>
-          </div>
-          <div class="u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="../WebstormProjects/Index.html" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Contact</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="https://www.flickr.com/photos/jeremylaratro/" style="padding: 10px 20px;">Flickr</a>		   
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Photolio.html" style="padding: 10px 20px;">Photos</a>	
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="../WebstormProjects/Radio.html" style="padding: 10px 20px;">Radio</a>
-	</li></ul>
-          </div>
-          <div class="u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-     <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../WebstormProjects/Index.html">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
-</li></ul>
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-      </div></header> 
-    
-    
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-0ec5"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">Thanks for checking out my site. This site was created to host my portfolio as well as to document my research, projects, and ideas.</p>
-      </div></footer>
-	   <img src="photo.jpg" alt="jeremy laratro" width="500" height="600"> 
-    <section class="u-backlink u-clearfix u-grey-80">
+    <style>
+        .card.about {
+        position: relative;
+        display: flex;
+        }
+        /*.parent {*/
+        /*display: grid;*/
+        /*grid-template-columns: repeat(5, 1fr);*/
+        /*grid-template-rows: repeat(5, 1fr);*/
+        /*grid-column-gap: 0px;*/
+        /*grid-row-gap: 0px;*/
+        /*}*/
+        .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 0.25fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 100px;
+        }
 
-    </section>
-  </body>
+        .div1 { grid-area: 1 / 1 / 6 / 6; }
+        .div2 { grid-area: 1 / 2 / 2 / 5; }
+        .div3 { grid-area: 2 / 3 / 4 / 5; }
+        .div4 { grid-area: 2 / 2 / 4 / 3; }
+        .div5 { grid-area: 4 / 2 / 5 / 5; }
+        .div6 { grid-area: 2 / 2 / 3 / 3; }
+        .cssDisplay {
+            background-color: #1A2947;
+            color: #E8FEFF;
+            border: 2px dashed #6D6D6D;
+            padding: 1px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: none;
+            left: 12px;
+            cursor: default;
+            visibility: visible;
+            overflow: hidden;
+            float: none;
+            border-radius: 11px;
+        }
+        #cssDisplay:hover {
+            background-color: #1A2947;
+            color: #E8FEFF;
+            border: 2px dashed #6D6D6D;
+            padding: 1px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: none;
+            left: 12px;
+            cursor: default;
+            visibility: visible;
+            overflow: hidden;
+            float: none;
+            border-radius: 11px;
+        }
+        .blob.page {
+            position: relative;
+            padding-bottom: 2%;
+        }
+        .spacesome {
+            margin-top: 30px;
+        }
+        .card.rf {
+            position: center;
+            height: 500px;
+            width: 2000px;
+            min-width: 250px;
+
+
+        }
+        .container {
+            width: 1000px;
+            margin: 20px auto;
+            padding: 1.5rem;
+            position: relative;
+            overflow: none;
+            border-radius: 5px;
+            background: #17141d;
+            box-shadow: 1rem 0 2rem #000;
+            display: flex;
+        }
+        h5 {
+            font-size: 14px;
+            word-spacing: 10px ;
+            display: inline;
+            flex-grow: inherit;
+            color: #7a7a8c;
+            text-decoration: transparent;
+            text-shadow: 1px 1px 0px #28242f;
+            grid-row: auto;
+        }
+        .card.collapsible {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            position: center;
+
+
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, card.collapsible:hover {
+            background-color: #474a57;
+        }
+
+        /* Style the collapsible content. Note: hidden by default */
+        card.content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        .container.collapsible {
+
+            cursor: pointer;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 15px;
+            width: 75%px;
+            margin: auto;
+            padding: 1.5rem;
+
+            border-radius: 15px;
+            background: #17141d;
+            box-shadow: 1rem 0 2rem #000;
+            display: center;
+        }
+
+        .active, .container.collapsible:hover {
+            background-color: #555;
+        }
+
+        .container.content {
+            /*padding: 0 18px;*/
+            color:#eee;
+            background: #17141d;
+            display: none;
+            /*overflow: scroll;*/
+            justify-self: center;
+            border-radius: 3%;
+            margin: auto;
+            padding: 0.75%;
+            background-position: center;
+            position: center;
+
+        }
+        /*.container {*/
+        /*    height: auto;*/
+        /*    width: 85%;*/
+        /*    padding: 1rem;*/
+        /*    border-radius: 20px;*/
+        /*    background: #17141d;*/
+        /*    box-shadow: -1rem 0 3rem #000;*/
+        /*    flex-direction: row;*/
+        /*    margin: 20px auto;*/
+        /*    scroll-snap-align: flex-start;*/
+        /*    clear: none;*/
+
+            /*position:center;*/
+            /*justify-self: center;*/
+            /*display: flow-root;*/
+
+        .parent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+
+        .div1 { grid-area: 2 / 1 / 5 / 3; }
+        .div2 { grid-area: 2 / 3 / 5 / 5; }
+        .div3 { grid-area: 1 / 2 / 2 / 4; }
+
+
+        .header h2 {
+            font-size: 60px;
+            margin: .25rem 0 auto;
+            text-decoration: none;
+            color: #d4d4d4;
+            border: 0;
+            display: flow-root;
+            cursor: pointer;
+            position: center;
+        }
+        .header h3 {
+                    font-size: 45px;
+                    margin: .25rem 0 auto;
+                    text-decoration: none;
+                    color: #d4d4d4;
+                    border: 0;
+                    display: flow-root;
+                    cursor: pointer;
+                }
+        .grid-item {
+                 position: relative;
+                 text-align: center;
+               }
+        .grey {
+        background: #221F32;
+        }
+        .card.paragraph {
+        justify-self: center;
+        position: center;
+       height: fit-content;
+       width: fit-content;
+       padding: 1rem;
+        }
+        .container.header.chem {
+        position: center;
+        justify-items: center;
+        justify-self: center;
+        margin: auto;
+        }
+        .header h6 {
+        font-size: 60px;
+        margin: .25rem 0 auto;
+        text-decoration: none;
+        color: #d4d4d4;
+        border: 0;
+        display: flow-root;
+        cursor: pointer;
+        position: center;
+        justify-self: center;
+
+
+    .container.header.about {
+    position: center;
+    justify-items: center;
+    justify-self: center;
+    margin: auto;
+    padding: 20%;
+
+    left: 50%;
+    right: 50%;
+    }
+    $button {
+    text-align: center;}
+        }
+.spacetop {
+    margin-top: 10%;
+}
+
+.parent2 {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-template-rows: repeat(4, 1fr);
+       grid-column-gap: 0px;
+       grid-row-gap: 0px;
+       }
+
+       .div1 { grid-area: 2 / 1 / 5 / 3; }
+       .div2 { grid-area: 2 / 3 / 5 / 5; }
+       .div3 { grid-area: 1 / 2 / 2 / 4; }
+       .div4 { grid-area: 2 / 3 / 5 / 4; }
+       .div5 { grid-area: 2 / 2 / 5 / 3; }
+
+.u-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20%;
+    margin: auto;
+    position: center;
+    justify-self: center;
+    justify-items: center;
+    }
+.logo-icon-ab img {
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    filter: grayscale(75%);
+.container.collapsible.contact {
+    position: center;
+    justify-items: center;
+    justify-self: center;
+    margin: auto;
+    padding: 20%;
+    left: 50%;
+    right: 50%;
+    }
+        }
+</style>
+
+  </head>
+
+
+<!--  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-b8a3"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">-->
+<!--        <a href="https://jeremylaratro.link" -->
+<!--        </a>-->
+<!--        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">-->
+<!--          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">-->
+<!--            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">-->
+<!--              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>-->
+<!--              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>-->
+<!--</g></svg>-->
+<!--            </a>-->
+<!--          </div>-->
+<body>
+
+  <section class="background5">
+
+
+ <div class="div2">
+<div class="rfbackground" style="overflow: hidden">
+
+     <div class="u-nav-container">
+             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.html" style="padding: 10px 20px;">Home</a>
+ </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
+ </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="https://www.flickr.com/photos/jeremylaratro/" style="padding: 10px 20px;">Flickr</a>
+ </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Photolio.html" style="padding: 10px 20px;">Photos</a>
+             </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="chem.html" style="padding: 10px 20px;">Chemistry</a>
+             </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="categories/radio.html" style="padding: 10px 20px;">Radio</a> </li>
+                 </li></ul>
+
+               </div>
+
+             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+           </div>
+         </div>
+ </div>
+
+  </section>
+  <div class="div6"
+<div class="u-separator-grey"></div>
+<div class="spacesome"></div>
+<div class="spacetop"></div>
+
+<button class="container collapsible" >
+      <div class="card header" style="margin: 5%">
+        <h1>About Me:</h1>
+        <h6>Jeremy Laratro</h6>
+      </div>
+
+      <div class="u-logo">
+        <img src="JSL_7031(1).jpg"  alt="Jeremy Laratro" style="width:100%">
+      </div>
+      </div>
+    </button>
+  <div class="container content">
+  <h3>About Me:</h3>
+  <h3>
+      I'm currently a student at the University of South Florida. My Major is Integrative Animal Biology, and while
+      I love this field, I discovered my passion for technology during the beginning of the pandemic, when spare time was plentiful.
+       I was first introduced to radio and soon after, branched out into various
+      aspects of electronics. In the time since then, I've built up a sizeable amateur radio station, designed
+      my own antennas for it using antenna modeling software, and learned to use a VNA, oscilloscope, signal analyzer, TDR, and various other tools.
+      After being intrigued by RF circuits and RF in general,
+      I became interested in learning about circuit design, and did many projects using Arduino (which was also my first introduction to programming)
+       as well as other microcontrollers, such as STM, ARM, and Raspberry Pi. This then led me to designing my own circuits and
+      learning to create PCB layouts in KiCAD, many of which I've sent off for professional manufacturing. After one of my prototypes failed,
+      due to a simple error in the layout, I sought to find a way to implement and debug my prototypes before sending out the GRBR files for production,
+      and with more accuracy and reliability than a breadboard.
+      So, I decided I wanted to try two methods of creating PCBs at home, the first being mechanical etching, and the second chemical etching. I built a mini-CNC machine for mechanical
+      etching, and also learned about chemical etching using photosensitive stencils and ferric chloride.
+      Since then, I've finished many projects, seriously
+      started learning python, contributed to various open-source projects, and also completed a few personal organic chemistry projects.
+  </h3>
+  <h3>I have also started a small business in that time, in which I program radios, scanners, and also do computer/electronic device repair.</h3>
+  <h3> I truly enjoy learning about new things, and make an effort to learn something new every day. To me, expanding my knowledge is one of the most important
+  things I can do, and I am always looking for ways to improve myself and my skills. There are few things more exciting to me than creating a working
+  circuit or program or finding the issue in a broken circuit and restoring it back to full functionality. For more information on my projects,
+  return to the <a href="index.html">home page and select a category</a> </h3>
+</div>
+<div class="spacesome"></div>
+<button class="container collapsible" >
+    <h1>About This Site</h1>
+</button>
+<div class="container content" style="justify-self: center">
+<h3>I created this site using mostly HTML and CSS. The site is hosted by Github pages and the domain is via AWS (Route55). Originally, this site was
+created using a web design website, but I wasn't happy with it and wanted to dive in and learn more about web design and web development.
+I have many future plans for this site, and would like to self-host via a raspberry pi some time in the future (if raspberry pi's become available
+any time soon).</h3>
+    <p> Sources:</p>
+      <p>https://cssgrid-generator.netlify.app/</p>
+      <p>https://app.haikei.app/</p>
+      <p>https://freesvg.org/</p>
+      <p>https://www.svgrepo.com</p>
+      <p>https://www.w3schools.com/</p>
+
+  <h6></h6>
+</div>
+<div class="spacesome"></div>
+
+
+<button class="container collapsible">
+    <h1>Contact Me</h1>
+
+  </button>
+  <div class="container content">
+      <a href="mailto:jeremylaratro@gmail.com">
+    <h3>If you have any questions or comments, click here to contact me.
+    </h3>
+    </a>
+    <h3>
+
+  </div>
+</div>
+</body>
+
+
+
+<script>
+var coll = document.getElementsByClassName("container collapsible");
+var i;
+
+for (i = 0; i < 3; i++) {
+coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+});
+}
+</script>
+
 </html>
