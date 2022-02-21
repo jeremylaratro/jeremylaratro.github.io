@@ -25,21 +25,21 @@
             column-rule: 6px dashed #DEDEDE;
         }
         .testbutton {
-            font-family: arial;
+
             color: #14396A !important;
             font-size: 14px;
             text-shadow: 1px 1px 0px #7CACDE;
             box-shadow: 1px 1px 1px #BEE2F9;
             padding: 10px 25px;
             border-radius: 15px;
-            border: 2px solid #FFFFFF;
-            background: #45C7EE;
-            background: linear-gradient(to top, #45C7EE, #468CCF);
+
+            /*background: #45C7EE;*/
+            /*background: linear-gradient(to top, #202731, #590026);*/
         }
         .testbutton:hover {
             color: #14396A !important;
             background: #468CCF;
-            background: linear-gradient(to top, #468CCF, #63B8EE);
+            background: linear-gradient(to top, #031C2F, #590026);
         }
         .cssDisplay {
             background-color: #1A2947;
@@ -152,7 +152,7 @@
         }
 
         .active, .container.collapsible:hover {
-            background-color: #555;
+            background: linear-gradient(to top, #031C2F, #590026);
         }
 
         .container.content {
@@ -336,7 +336,20 @@
         /*.div7 { grid-area: 3 / 2 / 5 / 3; }*/
         /*.div8 { grid-area: 3 / 3 / 5 / 4; }*/
         /*.div9 { grid-area: 4 / 1 / 5 / 2; }*/
+        .parent.hard.top {
+            display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           grid-template-rows: repeat(4, 0.5fr) 0.45fr;
+           grid-column-gap: 0px;
+           grid-row-gap: 0px;
+           }
 
+        .div1.hard.top { grid-area: 1 / 1 / 5 / 2; }
+        .div2.hard.top { grid-area: 5 / 1 / 6 / 3; }
+        .div3.hard.top { grid-area: 1 / 2 / 2 / 3; }
+        .div4.hard.top { grid-area: 2 / 2 / 3 / 3; }
+        .div5.hard.top { grid-area: 3 / 2 / 4 / 3; }
+        .div6.hard.top { grid-area: 4 / 2 / 5 / 3; }
 a {
     text-decoration: none;
 }
@@ -352,25 +365,72 @@ display: table;
 <body style="overflow: scroll">
 
 <section class="background6" style="position: absolute">
-    <div class="parent">
+    <div class="parent" style="width: 65%;">
     <div class="div2">
 <!--    <div class="grid-item">-->
     <div class="container">
+    <div class="parent hard top">
+    <div class="div1 hard top">
         <div class="card-header">
     <div class="header">
-        <h2>Jeremy Laratro: </h2>
-        <h2>Radio</h2>
+        <h2>Jeremy Laratro:
+        Hardware: Electronics, Test Equipment, and More</h2>
+    </div>
+        </div>
+    </div>
+    <div class="div2 hard top">
+        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+        <h2>Welcome! See below to read more about my work with various forms of electronic hardware</h2>
 
         <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
-        <h3>Welcome! See below to read more about my work with various forms of electronic hardware</h3>
+        </div>
+        <div class="div3 hard top">
 
-        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
-</div>
+        <div class="container" style="text-align: center">
+
+        <div class="rfbackground" style="margin: 0; display:fit-content" >
+        <div class="card-header">
+            <div class="testbutton">
+        <a href="/index.html"  target="_blank">Home</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="div4 hard top">
+               <div class="container" style="text-align: center">
+               <div class="rfbackground" style="margin: 0; display:fit-content" >
+               <div class="card-header">
+                   <div class="testbutton">
+               <a href="/About.html"  target="_blank">About | Contact </a>
+                   </div> </div> </div>
+               </div>
+               </div>
+        <div class="div5 hard top">
+                       <div class="container" style="text-align: center">
+                       <div class="rfbackground" style="margin: 0; display:fit-content" >
+                       <div class="card-header">
+                           <div class="testbutton">
+                       <a href="/categories/chem.html"  target="_blank">Chemistry</a>
+                       </div> </div>
+                       </div>
+                       </div>
+                       </div>
+        <div class="div6 hard top">
+                               <div class="container" style="text-align: center">
+                               <div class="rfbackground" style="margin: 0; display:fit-content" >
+                               <div class="card-header">
+                                   <div class="testbutton">
+                               <a href="/categories/rf.html"  target="_blank">Radio</a>
+                               </div> </div>
+                               </div>
+                               </div>
+                               </div>
     </div>
+        </div>
+        </div>
     </div>
 
-    </div>
-    </div>
 
 
             <button  class="container collapsible">
