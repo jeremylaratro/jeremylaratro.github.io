@@ -89,7 +89,7 @@
 
         }
         .container {
-         
+
             margin: 20px auto;
             padding: 1.5rem;
 
@@ -97,6 +97,7 @@
             background: #17141d;
             box-shadow: 1rem 0 2rem #000;
             display: flow;
+
         }
         h5 {
             font-size: 14px;
@@ -167,24 +168,25 @@
         }
         .container {
             height: auto;
-            width: 65%;
+            width: 75%;
             padding: 1rem;
             border-radius: 20px;
             background: #17141d;
-            box-shadow: -1rem 0 3rem #000;
-            display: flow;
-            flex-direction: column;
-            margin: 0;
-            scroll-snap-align: flex-start;
-            clear: both;
-            position:relative;
-            justify-self: center;
+        /*    box-shadow: -1rem 0 3rem #000;*/
+        /*    display: flow;*/
+        /*    flex-direction: column;*/
+        /*    margin: 0;*/
+        /*    scroll-snap-align: flex-start;*/
+        /*    clear: both;*/
+        /*    position:relative;*/
+        /*    justify-self: center;*/
         .parent {
         display: grid;
         grid-template-columns: 1fr 0.5fr 1fr 0.25fr 1fr;
         grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+            overflow: scroll;
         }
 
         .div1 { grid-area: 1 / 2 / 2 / 3; }
@@ -223,6 +225,7 @@
                     cursor: pointer;
                 }
         .grid-item {
+            overflow: scroll;
                  position: relative;
                  text-align: center;
                }
@@ -243,10 +246,12 @@
 
 <body>
 
-<section class="rfbackground"
+<section class="rfbackground">
     <div class="parent">
     <div class="div2">
     <div class="grid-item">
+    <div class="container">
+        <div class="card-header">
     <div class="header">
         <h2>Jeremy Laratro: </h2>
         <h2>Radio</h2>
@@ -259,7 +264,8 @@
     </div>
     </div>
 
-
+    </div>
+    </div>
 
 
             <button  class="container collapsible">
@@ -329,8 +335,7 @@
             <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
         </div>
         </div>
-    </div>
-    </div>
+
 
     </section>
 </body>
