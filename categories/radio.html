@@ -99,6 +99,10 @@
             display: flow;
 
         }
+        div {
+          padding: initial;
+          padding-bottom: 20px;
+        }
         h5 {
             font-size: 14px;
             word-spacing: 10px ;
@@ -148,7 +152,7 @@
             border-radius: 15px;
             background: #17141d;
             box-shadow: 1rem 0 2rem #000;
-            display: center;
+            display: grid;
         }
 
         .active, .container.collapsible:hover {
@@ -160,7 +164,7 @@
             color:#eee;
             background: #17141d;
             display: none;
-            overflow: scroll;
+            overflow: auto;
             justify-self: center;
             background-position: center;
             position: center;
@@ -186,7 +190,7 @@
         grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-            overflow: scroll;
+            overflow: auto;
         }
 
         .div1 { grid-area: 1 / 2 / 2 / 3; }
@@ -225,7 +229,7 @@
                     cursor: pointer;
                 }
         .grid-item {
-            overflow: scroll;
+            overflow: auto;
                  position: relative;
                  text-align: center;
                }
