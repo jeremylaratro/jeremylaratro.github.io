@@ -131,13 +131,7 @@
             display: flow-root;
             cursor: pointer;
         }
-        .grid-item {
-            position: relative;
-            text-align: center;
-        }
-        .grey {
-            background: #221F32;
-        }
+
         .card.paragraph {
             justify-self: center;
             position: center;
@@ -296,9 +290,9 @@
 
                 </div>
 
-
-
             </div>
+</div>
+
             <button class="container collapsible">
 
                 <span class="card-header">
@@ -335,8 +329,7 @@
 
 
         </div>
-    </div>
-    </div>
+
     <!--        Main content, end -->
 </section>
 
@@ -349,7 +342,7 @@
 
     let i;
 
-    for (i = 0; i < 4; i++) {
+    for (i = 0; i < 10; i++) {
         coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             const content = this.nextElementSibling;
