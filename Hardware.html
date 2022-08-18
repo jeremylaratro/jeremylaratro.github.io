@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="styles.css">
+    <script>
+               if (screen.width<800) {window.location="/hardwaremobile.html";}
+           </script>
     <style>
         .columns {
             -webkit-column-count: 2;
@@ -83,7 +87,7 @@
             border: none;
             text-align: left;
             outline: none;
-            font-size: 15px;
+            font-size: 4vw;
             width: 75%px;
             margin: 20px auto;
             padding: 1.5rem;
@@ -106,11 +110,14 @@
             background-position: center;
             position: center;
 
+
         }
         .container {
             height: auto;
-            width: 85%;
-            padding: 1rem;
+            width: auto;
+            margin: 2%;
+
+            padding: 2%;
             border-radius: 20px;
             background: #17141d;
 
@@ -136,7 +143,7 @@
 
         }
         .header h2 {
-            font-size: 60px;
+            font-size:2.5vw;
             margin: .25rem 0 auto;
             text-decoration: none;
             color: #d4d4d4;
@@ -146,7 +153,7 @@
             position: center;
         }
         .header h3 {
-                    font-size: 45px;
+            font-size:2vw;
                     margin: .25rem 0 auto;
                     text-decoration: none;
                     color: #d4d4d4;
@@ -232,7 +239,6 @@
         .parent.hard.top {
             display: grid;
            grid-template-columns: repeat(2, 1fr);
-           grid-template-rows: repeat(4, 0.5fr) 0.45fr;
            grid-column-gap: 0;
            grid-row-gap: 0;
            }
@@ -246,10 +252,27 @@
 a {
     text-decoration: none;
 }
-
+h2 {
+    font: 2vw;
+}
+h3 {
+    font-size: 2vw;
+}
+p {
+    font-size: 1vw;
+}
+.inner {
+    display: none;
+}
         img {
     text-align: center;
 }
+        @media screen and (max-width: 800px) {
+          .card.header, .div3.hard.top {
+            width: 100%;
+            padding: 0;
+          }
+        }
     </style>
 </head>
 
@@ -262,12 +285,12 @@ a {
     <div class="container" style="text-align: center">
     <div class="parent hard top">
     <div class="div1 hard top">
-        <div class="card-header">
+
     <div class="header">
         <h2>Jeremy Laratro:
-        Programming and Software </h2>
+        Hardware Projects and Builds</h2>
     </div>
-        </div>
+
     </div>
     <div class="div2 hard top">
         <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
@@ -287,7 +310,7 @@ a {
         </div>
         </div>
         </div>
-        </div>
+
         <div class="div4 hard top">
                <div class="container" style="text-align: center">
                <div class="rfbackground" style="margin: 0; display:fit-content" >
@@ -339,6 +362,7 @@ a {
         </div>
         </div>
     </div>
+    </div>
 
 
 
@@ -348,21 +372,22 @@ a {
             <h2>Click here to see recent hardware builds and designs </h2>
             </span>
             </button>
-
-        <div class="container content">
-<div class="parent hardware inner">
-<div class="div1 h">
+    <div class="inner">
 
 
-</div>
-      <div class="div2 h">     <div class="container hardware" style="justify-self: auto">
-      <div class="container header" style="position: center;display: grid;">
+
+
+<div class="container">
+
+      <div class="div2 h">
+
+      <div class="container header" style="margin: auto">
       <h3> uSDX: Open Source HF Radio</h3>
       </div>
             <img src="img/20210216_155038.jpg" alt="radio" style="width:30%">
           <img src="img/ne.jpg" alt="radio" style="width:30%">
           <img src="img/20210216_144157.jpg" alt="radio" style="width:30%">
-          <div class="container hardware" style="">
+<!--          <div class="container hardware" style="">-->
 <p>Pictured: The uSDX, a credit card-sized fully operational HF radio capable of modulating SSB (USB and LSB), as well as CW.
 There are multiple versions of this project. This one was created by Manuel, DL2MAN, and the software originally by Guide, PE1NNZ.
 I also built one of the other original versions by Barb, WB2CBA. This is one of my favorite open source projects to date, as
@@ -381,13 +406,13 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
 
 
 </p>
-</div>
+<!--</div>-->
             </div>
       </div>
-        </div><div class="div2 h">
-<!--        <div class="container header" style="justify-self: auto">-->
-<div class="u-logo">
-<div class="container hardware"style="display: list-item;">
+
+
+
+<div class="container hardware"style="text-align: center">
     <div class="container header" style="display: flow-root;margin: auto;">
         <h3 > Hardware Repair: DJI Phantom Drone</h3>
         </div>
@@ -395,15 +420,15 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
 
     <img src="img/20210502_192448.jpg" alt="u-logo" style="width:18%">
     <img src="img/drone.jpg" alt="u-logo" style="width:23%;margin: 2%">
-    <div class="container hardware" style="">
+<!--    <div class="container hardware" style="">-->
         <p>Pictured above is the inside of a DJI Phantom drone which I was working on. This unit had lost its live video feed.
         I was able to fix this unit by removing the rf board, soldering leads to the jtag connectors,
          and then re-flashing the firmware. </p>
-    </div>
+<!--    </div>-->
+
 </div>
-<!--            <img src="img/20210128_121846.jpg" style=width:13%">-->
-</div>
-</div>
+
+
     <div class="container hardware" style="display: grid">
     <div class="parent hard cnc">
     <div class="div1 hc">
@@ -426,13 +451,13 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
     </div>
 
         <div class="div5 hc">
-        <div class="container hardware" style="">
+<!--        <div class="container hardware" style="">-->
             <p>Pictured above is the mini-CNC I built using aluminum extrusion, stepper motors, a 10k rpm spindle motor, and an open-source GRBL control board. 
               I was able to build the CNC for less than $200 total. My software workflow for milling PCBs was KiCAD (design the PCB, plot the GRBR files) --> FlatCAM (turn the
               GRBRs into a CAM file with the traces inverted --> bCNC (an open source CNC control software written in python. I tried various different software but this was my 
               favorite as it had various options including an autolevel function (create heightmaps for even milling), simple GCode editing, and extensive customizability overall 
                   for various purposes. </p>
-        </div>
+<!--        </div>-->
         </div>
     </div>
     </div>
@@ -452,7 +477,7 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
        </div>
 
            <div class="div4 gps">
-           <div class="container hardware" style="">
+<!--           <div class="container hardware" style="">-->
                <p>Pictured above are the first prototypes of a GPS speedometer I built. On the left, the upper side of a freshly-milled copper-clad PCB board, and to the
                right, a first-gen iteration using a breadboard. As usual, this project started with a problem I was facing -- I wanted a way to measure the speed
                of my small boat that I had recently purchased, but also wanted a portability aspect that I could potentially use for other modes of transportation,
@@ -463,7 +488,7 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
                <p style="display: flow-root list-item;">A 3.3v LiON battery: Portable and cheap.</p>
                <p></p>
 
-           </div>
+<!--           </div>-->
            </div>
        </div>
        </div>
@@ -483,7 +508,7 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
           </div>
 
               <div class="div4 gps">
-              <div class="container hardware" style="">
+<!--              <div class="container hardware" style="">-->
                   <p>Pictured on the left is an early prototype created using a chemically etched copper-clad PCB board and SMT components which I soldered on.
                   Pictured on the right is a prototype KiCAD PCB, which I can use to export GRBR files for professional fabrication from places like PCBWay or JLPCB,
                   the two main services I use for fabrication.
@@ -505,7 +530,7 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
                   into my Note 9. This module is quite simple, as it is only for power, so none of the data lines need to be connected. </p>
                   <p></p>
 
-              </div>
+<!--              </div>-->
               </div>
           </div>
           </div>
@@ -562,13 +587,7 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
                      <p>uSDX: Testing the Si5351 </p>
                  </div>
                  </div>
-                 <div class="div6 misc">
-                     <div class="container hardware" style="">
-                 <div class="container hardware" style="">
-                     <p> Pictures of various other projects and hardware items I use. </p>
-                 </div>
-                 </div>
-                 </div>
+
              </div>
              </div>
 </section>
