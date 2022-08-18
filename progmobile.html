@@ -12,9 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="styles.css">
-    <script>
-            if (screen.width<800) {window.location="/progmobile.html";}
-        </script>
     <style>
         .columns {
             -webkit-column-count: 2;
@@ -129,11 +126,10 @@
         }
         .container {
             height: auto;
-            width: 80%;
-            padding: 3%;
+            width: 82%;
+            padding: 1rem;
             border-radius: 20px;
             background: #17141d;
-        }
         /*    box-shadow: -1rem 0 3rem #000;*/
         /*    display: flow;*/
         /*    flex-direction: column;*/
@@ -143,15 +139,16 @@
         /*    position:relative;*/
         /*    justify-self: center;*/
         .parent {
-
+        display: grid;
         grid-template-columns: 1fr 0.5fr 1fr 0.25fr 1fr;
         grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0fr;
         grid-column-gap: 0;
         grid-row-gap: 0;
+            overflow: scroll;
         }
 
         .div1 { grid-area: 1 / 2 / 2 / 3; }
-        .div2 { grid-area: 1 / 2 / 3 / 5; }
+        .div2 { grid-area: 1 / 3 / 2 / 4; }
         .div3 { grid-area: 1 / 4 / 2 / 5; }
         .div4 { grid-area: 2 / 2 / 3 / 3; }
         .div5 { grid-area: 2 / 3 / 3 / 4; }
@@ -219,8 +216,6 @@
         .div4.hard.top { grid-area: 2 / 2 / 3 / 3; }
         .div5.hard.top { grid-area: 3 / 2 / 4 / 3; }
         .div6.hard.top { grid-area: 4 / 2 / 5 / 3; }
-        .div7.hard.top { grid-area: 3 / 1 / 3 / 1; }
-        .div8.hard.top { grid-area: 4 / 1 / 4 / 1; }
 a {
     text-decoration: none;
 }
@@ -228,6 +223,10 @@ h3 {
     font-size: 150%;
     color: #eee;
 
+}
+.innercon {
+display: none
+;
 }
     </style>
 </head>
@@ -238,7 +237,7 @@ h3 {
     <div class="parent" style="width: 65%;">
     <div class="div2">
 <!--    <div class="grid-item">-->
-    <div class="container" style="text-align: center">
+    <div class="container">
     <div class="parent hard top">
     <div class="div1 hard top">
         <div class="card-header">
@@ -296,24 +295,6 @@ h3 {
                                </div>
                                </div>
                                </div>
-        <div class="div7 hard top">
-                       <div class="container" style="text-align: center">
-                       <div class="rfbackground" style="margin: 0; display:fit-content" >
-                       <div class="card-header">
-                           <div class="testbutton">
-                       <a href="/Hardware.html"  target="_blank">Hardware </a>
-                           </div> </div> </div>
-                       </div>
-                       </div>
-        <div class="div8 hard top">
-                               <div class="container" style="text-align: center">
-                               <div class="rfbackground" style="margin: 0; display:fit-content" >
-                               <div class="card-header">
-                                   <div class="testbutton">
-                               <a href="/Photolio.html"  target="_blank">Photography </a>
-                                   </div> </div> </div>
-                               </div>
-                               </div>
     </div>
         </div>
         </div>
@@ -321,14 +302,14 @@ h3 {
 
 
 
-            <button  class="container collapsible" >
+            <button  class="container collapsible">
             <span class="card-header">
-            <h2 style="text-align: center">Hardware: </h2>
-            <h2 style="text-align: center">Click here to see recent programming and software projects </h2>
+            <h2>Hardware: </h2>
+            <h2>Click here to see recent programming and software projects </h2>
             </span>
             </button>
 
-        <div class="container content">
+        <div class="innercon">
 <!--<div class="parent hardware inner">-->
 
 
@@ -342,7 +323,7 @@ h3 {
 
             <a href="https://github.com/jeremylaratro/Smiles-TO-iUpac-Translator-with-CLI/Simple_CLI.py" target="_blank">
 
-            <button class="container collapsible" style="text-align: center">
+            <button class="container collapsible">
                                                 <h3 > Interactive CLI for STOUT, an organic chemistry SMILES/IUPAC name translator</h3>
             </button>
             </a>
@@ -350,7 +331,7 @@ h3 {
 
 <a href="https://github.com/jeremylaratro/Degrees_of_Unsaturation_Calculator" target="_blank">
 
-<button class="container collapsible" style="text-align: center">
+<button class="container collapsible">
                                     <h3 > Degrees of Unsaturation calculator for organic chemistry </h3>
 </button>
 </a>
@@ -364,10 +345,10 @@ h3 {
 
                                     <p>This website uses almost exclusively HTML and CSS, at this point. The website is hosted
                                     by GitHub Pages and the domain is routed via AWS (route55). I do plan on implementing javascript in the future, but
-                                    wanted to take a quick dive into web design, while also being able to quickly create a site where I can host my 
-                                    portfolio and my personal projects, without overwhelming myself while learning Python. The first implementation of 
+                                    wanted to take a quick dive into web design, while also being able to quickly create a site where I can host my
+                                    portfolio and my personal projects, without overwhelming myself while learning Python. The first implementation of
                                     this site was using a web design platform,
-                                    but I felt that it was not fulfilling in that I was not truly learning the ins and outs of web design. I decided to 
+                                    but I felt that it was not fulfilling in that I was not truly learning the ins and outs of web design. I decided to
                                     completely scrap the website and essentially start from scratch. Keeping the site as just CSS and HTML allowed
                                     me to get the website up and running in about 3 (long) days, while also learning a massive amount of information.
                                       There is minimal javascript
@@ -393,7 +374,7 @@ h3 {
                </p>
                    <p><a href="https://github.com/jeremylaratro/QR-Code-Generator-And-Reader">QR Code Generator/Reader:</a> </p><p>I added file input functionality to an open source QR code
                                        reader/generator. A friend of mine needed to encode text files, and it seemed none of the open source QR Code generators had file input functionality,
-                                       only allowing plain text inputs. </a></p>
+                                       only allowing plain text inputs. </p>
                </div>
 
             <a href="https://github.com/jeremylaratro/gps_speedo_arduino/blob/main/gps_speedo.cpp" target="_blank">
@@ -414,27 +395,26 @@ h3 {
 
                 <div class="container hardware" style="">
                 <h2>Software / Systems Experience</h2>
-
-                <p>Throughout my projects I have come across and become familiar with a number of different types of software, ranging a variety of purposes. Some of these
-                include:</p>
-                <p>Linux: I use Linux, specifically Ubuntu, as my daily OS, with Windows dual-boot.</p>
-                <p>Python </p>
-                <p>ChemDraw: Chemical structure representation, theoretical H/C-NMR projection, etc.</p>
-                <p>Adobe Lightroom, Photoshop</p>
-                <p>Digital radio modulation software (JTDX, FreeDV, PSK31, etc)</p>
-                <p>Microchip Studio: For JTag interface and ARM microcontrollers</p>
-                <p>MManaGAL: Antenna modeling </p>
-                <p>KiCAD: For creating printed circuit boards</p>
-                <p>bCNC / FlatCAM: For milling PCBs on my CNC. bCNC uses g-code, which is interpreted by the CNC controller to perform precision milling</p>
-                <p>Arduino</p>
-                <p>JetBrains Suite: PyCharm, WebStorm (which I use for this site), RubyMine, CLion, and IntelliJ IDEA</p>
-                <p>GitHub & Git: For publishing my projects, collaboration, and being a part of the open source community</p>
-                <p>Jupyter Notebook / Seaborn / Matplotlib: Data visualization </p>
-                <p>Raspberry Pi</p>
-                <p>Microsoft & Libre Office Suite</p>
-                <p>Virtual box & QEMU: For creating virtual machines</p>
-                    <p> Cyber Security: Parrot OS & Kali Linux as well as many of the tools included (Burp Suite, metasploit framework, hashcat, aircrack-ng, gobuster, wpscan, whatweb, netcat,
-                    binwalk, etc.)</p>
+                    <p>Throughout my projects I have come across and become familiar with a number of different types of software, ranging a variety of purposes. Some of these
+                                    include:</p>
+                                    <p>Linux: I use Linux, specifically Ubuntu, as my daily OS, with Windows dual-boot.</p>
+                                    <p>Python </p>
+                                    <p>ChemDraw: Chemical structure representation, theoretical H/C-NMR projection, etc.</p>
+                                    <p>Adobe Lightroom, Photoshop</p>
+                                    <p>Digital radio modulation software (JTDX, FreeDV, PSK31, etc)</p>
+                                    <p>Microchip Studio: For JTag interface and ARM microcontrollers</p>
+                                    <p>MManaGAL: Antenna modeling </p>
+                                    <p>KiCAD: For creating printed circuit boards</p>
+                                    <p>bCNC / FlatCAM: For milling PCBs on my CNC. bCNC uses g-code, which is interpreted by the CNC controller to perform precision milling</p>
+                                    <p>Arduino</p>
+                                    <p>JetBrains Suite: PyCharm, WebStorm (which I use for this site), RubyMine, CLion, and IntelliJ IDEA</p>
+                                    <p>GitHub & Git: For publishing my projects, collaboration, and being a part of the open source community</p>
+                                    <p>Jupyter Notebook / Seaborn / Matplotlib: Data visualization </p>
+                                    <p>Raspberry Pi</p>
+                                    <p>Microsoft & Libre Office Suite</p>
+                                    <p>Virtual box & QEMU: For creating virtual machines</p>
+                                        <p> Cyber Security: Parrot OS & Kali Linux as well as many of the tools included (Burp Suite, metasploit framework, hashcat, aircrack-ng, gobuster, wpscan, whatweb, netcat,
+                                        binwalk, etc.)</p>
                 <p>
 
 
@@ -443,6 +423,7 @@ h3 {
                            </div>
 
     </section>
+
 </body>
 <script>
     const coll = document.getElementsByClassName("container collapsible");
