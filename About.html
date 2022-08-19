@@ -33,7 +33,7 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 0.25fr);
-        grid-column-gap: 0px;
+        grid-column-gap: 0;
         grid-row-gap: 100px;
         }
 
@@ -43,38 +43,7 @@
         .div4 { grid-area: 2 / 2 / 4 / 3; }
         .div5 { grid-area: 4 / 2 / 5 / 5; }
         .div6 { grid-area: 2 / 2 / 3 / 3; }
-        .cssDisplay {
-            background-color: #1A2947;
-            color: #E8FEFF;
-            border: 2px dashed #6D6D6D;
-            padding: 1px;
-            text-align: center;
-            text-decoration: none;
-            letter-spacing: 1px;
-            text-transform: none;
-            left: 12px;
-            cursor: default;
-            visibility: visible;
-            overflow: hidden;
-            float: none;
-            border-radius: 11px;
-        }
-        #cssDisplay:hover {
-            background-color: #1A2947;
-            color: #E8FEFF;
-            border: 2px dashed #6D6D6D;
-            padding: 1px;
-            text-align: center;
-            text-decoration: none;
-            letter-spacing: 1px;
-            text-transform: none;
-            left: 12px;
-            cursor: default;
-            visibility: visible;
-            overflow: hidden;
-            float: none;
-            border-radius: 11px;
-        }
+
         .blob.page {
             position: relative;
             padding-bottom: 2%;
@@ -108,7 +77,7 @@
             flex-grow: inherit;
             color: #7a7a8c;
             text-decoration: transparent;
-            text-shadow: 1px 1px 0px #28242f;
+            text-shadow: 1px 1px 0 #28242f;
             grid-row: auto;
         }
         .card.collapsible {
@@ -160,14 +129,13 @@
         .container.content {
             /*padding: 0 18px;*/
             color:#eee;
-            background: #17141d;
             display: none;
             /*overflow: scroll;*/
             justify-self: center;
             border-radius: 3%;
             margin: auto;
             padding: 0.75%;
-            background-position: center;
+            background: #17141d center;
             position: center;
 
         }
@@ -191,8 +159,8 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
         }
 
         .div1 { grid-area: 2 / 1 / 5 / 3; }
@@ -211,7 +179,7 @@
             position: center;
         }
         .header h3 {
-                    font-size: 45px;
+                    font-size: 1.1vw;
                     margin: .25rem 0 auto;
                     text-decoration: none;
                     color: #d4d4d4;
@@ -219,26 +187,8 @@
                     display: flow-root;
                     cursor: pointer;
                 }
-        .grid-item {
-                 position: relative;
-                 text-align: center;
-               }
-        .grey {
-        background: #221F32;
-        }
-        .card.paragraph {
-        justify-self: center;
-        position: center;
-       height: fit-content;
-       width: fit-content;
-       padding: 1rem;
-        }
-        .container.header.chem {
-        position: center;
-        justify-items: center;
-        justify-self: center;
-        margin: auto;
-        }
+
+
         .header h6 {
             font-size: 60px;
             margin: .25rem 0 auto;
@@ -251,14 +201,7 @@
             justify-self: center;
         }
 
-    .container.header.about {
-    position: center;
-    justify-items: center;
-    justify-self: center;
-    margin: auto;
-    left: 50%;
-    right: 50%;
-    }
+
     $button {
     text-align: center;
         }
@@ -266,15 +209,7 @@
     margin-top: 10%;
 }
 
-.parent2 {
-       display: grid;
-       grid-template-columns: repeat(4, 1fr);
-       grid-template-rows: repeat(4, 1fr);
-       grid-column-gap: 0px;
-       grid-row-gap: 0px;
-       }
-
-       .div1 { grid-area: 2 / 1 / 5 / 3; }
+        .div1 { grid-area: 2 / 1 / 5 / 3; }
        .div2 { grid-area: 2 / 3 / 5 / 5; }
        .div3 { grid-area: 1 / 2 / 2 / 4; }
        .div4 { grid-area: 2 / 3 / 5 / 4; }
@@ -296,15 +231,10 @@
     border-radius: 100%;
     filter: grayscale(75%);
 }
-.container.collapsible.contact {
-    position: center;
-    justify-items: center;
-    justify-self: center;
-    margin: auto;
-    padding: 20%;
-    left: 50%;
-    right: 50%;
-    }
+p {
+    font-size: 1.3vw;
+}
+
 
 </style>
 
@@ -344,7 +274,7 @@
              <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
            </div>
          </div>
- </div>
+
 
   </section>
   <div class="div6"
@@ -361,7 +291,7 @@
       <div class="u-logo">
         <img src="JSL_7031(1).jpg"  alt="Jeremy Laratro" style="width:100%">
       </div>
-      </div>
+
     </button>
   <div class="container content">
   <h3>About Me:</h3>
@@ -390,13 +320,36 @@
 </div>
 <div class="spacesome"></div>
 <button class="container collapsible" >
-    <h1>About This Site</h1>
+    <h1>About Me</h1>
 </button>
 <div class="container content" style="justify-self: center">
-<h3>I created this site using mostly HTML and CSS. The site is hosted by Github pages and the domain is via AWS (Route55). Originally, this site was
-created using a web design website, but I wasn't happy with it and wanted to dive in and learn more about web design and web development.
-I have many future plans for this site, and would like to self-host via a raspberry pi some time in the future (if raspberry pi's become available
-any time soon).</h3>
+<p> I graduated in August 2022 with a B.Sc. in Integrative Animal Biology from the University of South Florida. During my time in undergrad,
+    I took a variety of essential classes, including pre-calculus and trigonometry, calculus I, physics I & II, general chemistry I & II, biology I & II, cell biology, genetics, organic chemistry I & II,
+    and many more. My favorite classes were physics II and organic chemistry. <br>
+    <br>
+    Upon the start of the pandemic, I found many passions and interests which I simply had never
+    been exposed to prior, such as electrical engineering and programming. The pandemic served as a bridge into these new interests via the extra free time and isolation. <br>
+    Specifically, I happened to come upon amateur radio and Arduino, and from there I continued to grow and vigorously expand my interest and knowledge of circuits,
+    software and programming, radio and antenna theory, and general electronics. <br>
+    <br>In the time since, I've built up a repertoire of projects, put together a versatile and functional
+    electronics bench with an oscilloscope, VNA, spectrum analyzer, TDR meter, SMT soldering station, as well as a fully functional radio station in which I have contacted
+    people from every continent and nearly 100 unique countries. <br>
+    <br>
+    My current goal is to continue learning and break into either the cybersecurity or electrical engineering field. I'm working towards a cyberecurity certificate at the moment,
+    and following a diversified learning pathway which includes both fundamental theory and background along with practical application. Using ethical hacking channels such as tryhackme,
+    I've become familiar with a wide variety of tools and techniques, including metasploit framework, burp suite, hashcat, nmap, netcat, ffuf, gobuster, wpscan, sqlmap, maltego, whatweb, binwalk, along
+    with concepts such as SSRF, XSS, privilege escalation, reverse shells, network enumeration, and many, many more. I'm currently ranked within the top 10% of users on tryhackme.com.
+<br> <br>
+    <a href=https://tryhackme.com/p/jeremylaratro">My TryHackMe Profile</a> <br>
+    <br>
+    <a href=https://github.com/jeremylaratro">My GitHub Profile</a>
+    <br>
+    <br>
+    <h2> About This Site</h2>
+    <br> <p>
+    I created this site using mostly HTML and CSS. The site is hosted by Github pages and the domain is routed via AWS (Route55).
+I plan to post more projects as I have time, and update the site as my understanding and skills improve.
+</p>
     <p> Sources:</p>
       <p>https://cssgrid-generator.netlify.app/</p>
       <p>https://app.haikei.app/</p>
@@ -420,20 +373,19 @@ any time soon).</h3>
     <h3>
 
   </div>
-</div>
 <div class="spacesome"></div>
 </body>
 
 
 
 <script>
-var coll = document.getElementsByClassName("container collapsible");
-var i;
+    const coll = document.getElementsByClassName("container collapsible");
+    let i;
 
 for (i = 0; i < 3; i++) {
 coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
+    const content = this.nextElementSibling;
     if (content.style.display === "block") {
         content.style.display = "none";
     } else {
