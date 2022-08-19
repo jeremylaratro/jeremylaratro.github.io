@@ -67,13 +67,10 @@ section {
     background: url('/wave-haikei(7).svg') no-repeat bottom / cover;
 }
 .background4 {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    border-radius: 16px;
-    overflow: scroll;
 
-    background: url('blob-haikei(4).svg') no-repeat bottom / cover;
+    border-radius: 16px;
+
+    background: url('blob-haikei(4).svg');
 }
 .background5 {
     width: 100%;
@@ -82,7 +79,7 @@ section {
     border-radius: 16px;
     overflow: scroll;
 
-    background: url('blob-haikei(5).svg') no-repeat bottom / cover;
+    background: url('categories/blob-haikei(5).svg') no-repeat bottom / cover;
 }
 .card {
     height: 350px;
@@ -119,7 +116,7 @@ section {
 }
 
 .card-header h2 {
-    font-size: 40px;
+    font-size: 2vw;
     margin: .25rem 0 auto;
     text-decoration: none;
     color: #d4d4d4;
@@ -369,7 +366,7 @@ $blueColor:rgba(33,150,243,1);
 .testbutton {
     font-family: arial;
     color: #14396A !important;
-    font-size: 14px;
+    font-size: 1vw;
     text-shadow: 1px 1px 0px #7CACDE;
     box-shadow: 1px 1px 1px #BEE2F9;
     padding: 10px 25px;
@@ -538,7 +535,7 @@ grid-row-gap: 0px;
 .div6 { grid-area: 5 / 2 / 8 / 6; }
 
 .header h2 {
-    font-size: 60px;
+    font-size: 2vw;
     margin: .25rem 0 auto;
     text-decoration: none;
     color: #d4d4d4;
@@ -548,7 +545,7 @@ grid-row-gap: 0px;
     position: center;
 }
 .header h3 {
-            font-size: 45px;
+
             margin: .25rem 0 auto;
             text-decoration: none;
             color: #d4d4d4;

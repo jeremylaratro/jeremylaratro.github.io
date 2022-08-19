@@ -12,19 +12,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="styles.css">
+    <script>
+            if (screen.width<800) {window.location="/progmobile.html";}
+        </script>
     <style>
+        .columns {
+            -webkit-column-count: 2;
+            column-count: 2;
+            -webkit-column-gap: 53px;
+            -moz-column-gap: 53px;
+            column-gap: 53px;
+            -webkit-column-rule: 6px dashed #DEDEDE;
+            -moz-column-rule: 6px dashed #DEDEDE;
+            column-rule: 6px dashed #DEDEDE;
+        }
+          .background6 {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                border-radius: 16px;
+                overflow: scroll;
+
+                background: url('blob-scene-haikei(3).svg') no-repeat bottom / cover;
+            }
+        .testbutton {
+
+            color: #14396A !important;
+            font-size: 14px;
+            text-shadow: 1px 1px 0 #7CACDE;
+            box-shadow: 1px 1px 1px #BEE2F9;
+            padding: 10px 25px;
+            border-radius: 15px;
+
+            /*background: #45C7EE;*/
+            /*background: linear-gradient(to top, #202731, #590026);*/
+        }
+        .testbutton:hover {
+            color: #14396A !important;
+            background: #468CCF;
+            background: linear-gradient(to top, #031C2F, #590026);
+        }
 
         .container {
 
             margin: 20px auto;
+            /*padding: 1.5rem;*/
+
+            border-radius: 5px;
             background: #17141d;
             box-shadow: 1rem 0 2rem #000;
             display: flow;
-            height: auto;
-            width: 75%;
-            padding: 1rem;
-            border-radius: 20px;
-
 
         }
         h5 {
@@ -37,7 +74,18 @@
             text-shadow: 1px 1px 0 #28242f;
             grid-row: auto;
         }
+        .card.collapsible {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            position: center;
 
+
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
 
         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
         .active, card.collapsible:hover {
@@ -73,36 +121,42 @@
         .container.content {
             padding: 0 18px;
             color:#eee;
-            background: #17141d;
             display: none;
             justify-self: center;
-            background-position: center;
+            background: #17141d center;
             position: center;
 
         }
         .container {
             height: auto;
-            width: auto;
-            padding: 1%;
+            width: 80%;
+            padding: 3%;
             border-radius: 20px;
             background: #17141d;
-
+        }
+        /*    box-shadow: -1rem 0 3rem #000;*/
+        /*    display: flow;*/
+        /*    flex-direction: column;*/
+        /*    margin: 0;*/
+        /*    scroll-snap-align: flex-start;*/
+        /*    clear: both;*/
+        /*    position:relative;*/
+        /*    justify-self: center;*/
         .parent {
-        display: grid;
+
         grid-template-columns: 1fr 0.5fr 1fr 0.25fr 1fr;
-        grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0fr;
-            overflow: scroll;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
         }
 
         .div1 { grid-area: 1 / 2 / 2 / 3; }
-        .div2 { grid-area: 1 / 3 / 2 / 4; }
+        .div2 { grid-area: 1 / 2 / 3 / 5; }
         .div3 { grid-area: 1 / 4 / 2 / 5; }
         .div4 { grid-area: 2 / 2 / 3 / 3; }
         .div5 { grid-area: 2 / 3 / 3 / 4; }
         .div6 { grid-area: 2 / 4 / 3 / 5; }
-        .div7 { grid-area: 3 / 2 / 4 / 3; }
-        .div8 { grid-area: 3 / 3 / 4 / 4; }
-        .div9 { grid-area: 3 / 4 / 4 / 5; }
+
+
 
 
         }
@@ -117,7 +171,7 @@
             position: center;
         }
         .header h3 {
-                    font-size: 45px;
+                    font-size: 150%;
                     margin: .25rem 0 auto;
                     text-decoration: none;
                     color: #d4d4d4;
@@ -127,8 +181,10 @@
                 }
 
         .container.hardware {
-            height: fit-content;
-            width: fit-content;}
+            word-wrap: break-word;
+            text-align: center;
+        }
+
 .background6 {
         .parent.hardware.inner {
         display: grid;
@@ -144,65 +200,11 @@
         .div4.h{ grid-area: 2 / 4 / 3 / 5; }
         .div5.h{ grid-area: 3 / 2 / 4 / 3; }
         .div6.h{ grid-area: 3 / 3 / 4 / 4; }
-        .div7.h{ grid-area: 3 / 4 / 4 / 5; }
-        .div8.h{ grid-area: 4 / 4 / 5 / 5; }
-        .div9.h{ grid-area: 4 / 3 / 5 / 4; }
 
 
         }
 
-        .parent.hard.cnc {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(3, 1fr) 0.25fr;
-        grid-column-gap: 0;
-        grid-row-gap: 0;
-        }
 
-        .div1.hc { grid-area: 1 / 3 / 2 / 5; }
-        .div2.hc { grid-area: 2 / 1 / 4 / 3; }
-        .div3.hc { grid-area: 2 / 3 / 3 / 5; }
-        .div4.hc { grid-area: 2 / 5 / 4 / 7; }
-        .div5.hc { grid-area: 4 / 1 / 5 / 7; }
-        .div6.hc { grid-area: 3 / 3 / 4 / 5; }
-        .div7.hc { grid-area: 2 / 3 / 3 / 5; }
-        .div8.hc { grid-area: 3 / 1 / 4 / 3; }
-        .parent.gps {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 0.25fr 1fr 0.25fr;
-        grid-column-gap: 0;
-        grid-row-gap: 0;
-        }
-
-        .div1.gps { grid-area: 1 / 1 / 2 / 3; }
-        .div2.gps { grid-area: 2 / 1 / 3 / 2; }
-        .div3.gps { grid-area: 2 / 2 / 3 / 3; }
-        .div4.gps { grid-area: 3 / 1 / 4 / 3; }
-
-        .parent.misc {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 0.25fr 0.55fr repeat(2, 0.5fr) 0.25fr;
-            grid-column-gap: 20px;
-            grid-row-gap: 0;
-            }
-
-        .div1.misc { grid-area: 2 / 1 / 3 / 2; }
-        .div2.misc { grid-area: 2 / 2 / 3 / 3; }
-        .div3.misc { grid-area: 2 / 3 / 3 / 4; }
-        .div4.misc { grid-area: 3 / 1 / 4 / 2; }
-        .div5.misc { grid-area: 1 / 2 / 2 / 3; }
-        .div6.misc { grid-area: 5 / 1 / 6 / 4; }
-        .div7.misc { grid-area: 3 / 2 / 5 / 3; }
-        .div8.misc { grid-area: 3 / 3 / 5 / 4; }
-        .div9.misc { grid-area: 4 / 1 / 5 / 2; }
-        /*.div4 { grid-area: 3 / 1 / 4 / 2; }*/
-        /*.div5 { grid-area: 1 / 2 / 2 / 3; }*/
-        /*.div6 { grid-area: 5 / 1 / 6 / 4; }*/
-        /*.div7 { grid-area: 3 / 2 / 5 / 3; }*/
-        /*.div8 { grid-area: 3 / 3 / 5 / 4; }*/
-        /*.div9 { grid-area: 4 / 1 / 5 / 2; }*/
         .parent.hard.top {
             display: grid;
            grid-template-columns: repeat(2, 1fr);
@@ -217,83 +219,121 @@
         .div4.hard.top { grid-area: 2 / 2 / 3 / 3; }
         .div5.hard.top { grid-area: 3 / 2 / 4 / 3; }
         .div6.hard.top { grid-area: 4 / 2 / 5 / 3; }
+        .div7.hard.top { grid-area: 3 / 1 / 3 / 1; }
+        .div8.hard.top { grid-area: 4 / 1 / 4 / 1; }
 a {
     text-decoration: none;
 }
+h3 {
+    font-size: 150%;
+    color: #eee;
+
+}
+        .parent.box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+        }
+
+        .div1.box { grid-area: 1 / 1 / 2 / 3; }
+        .div2.box { grid-area: 2 / 1 / 3 / 2; }
+        .div3.box { grid-area: 2 / 2 / 3 / 3; }
+        .div4.box { grid-area: 3 / 1 / 4 / 2; }
+        .div5.box { grid-area: 3 / 2 / 4 / 3; }
+        .div6.box { grid-area: 4 / 1 / 5 / 3; }
     </style>
 </head>
 
 <body style="overflow: scroll">
-<section class="backgroundhard">
-<!--<section class="background6">-->
-    <div class="parent" style="width:auto; padding: 5%;">
 
+<section class="background6" style="position: absolute">
+<!--    <div class="parent" style="width: 65%;">-->
     <div class="div2">
 <!--    <div class="grid-item">-->
-    <div class="container">
+    <div class="container" style="text-align: center">
     <div class="parent hard top">
     <div class="div1 hard top">
         <div class="card-header">
     <div class="header">
         <h2>Jeremy Laratro:
-        Hardware: Electronics, Test Equipment, and More</h2>
+        Programming and Software </h2>
     </div>
         </div>
     </div>
     <div class="div2 hard top">
         <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
-        <h2>Welcome! See below to read more about my work with various forms of electronic hardware</h2>
+        <h2>Welcome! See below to read more about my hardware projects and builds! </h2>
 
         <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
         </div>
-<!--        <div class="div3 hard top">-->
+        <div class="div3 hard top">
 
-<!--        <div class="container" style="text-align: center">-->
+        <div class="container" style="text-align: center">
 
-<!--        <div class="rfbackground" style="margin: 0; display:fit-content" >-->
-<!--        <div class="card-header">-->
-<!--            <div class="testbutton">-->
-<!--        <a href="/index.html"  target="_blank">Home</a>-->
-<!--        </div>-->
-<!--        </div>-->
-<!--        </div>-->
-<!--        </div>-->
-<!--        </div>-->
-<!--        <div class="div4 hard top">-->
-<!--               <div class="container" style="text-align: center">-->
-<!--               <div class="rfbackground" style="margin: 0; display:fit-content" >-->
-<!--               <div class="card-header">-->
-<!--                   <div class="testbutton">-->
-<!--               <a href="/About.html"  target="_blank">About | Contact </a>-->
-<!--                   </div> </div> </div>-->
-<!--               </div>-->
-<!--               </div>-->
-<!--        <div class="div5 hard top">-->
-<!--                       <div class="container" style="text-align: center">-->
-<!--                       <div class="rfbackground" style="margin: 0; display:fit-content" >-->
-<!--                       <div class="card-header">-->
-<!--                           <div class="testbutton">-->
-<!--                       <a href="/categories/chem.html"  target="_blank">Chemistry</a>-->
-<!--                       </div> </div>-->
-<!--                       </div>-->
-<!--                       </div>-->
-<!--                       </div>-->
-<!--        <div class="div6 hard top">-->
-<!--                               <div class="container" style="text-align: center">-->
-<!--                               <div class="rfbackground" style="margin: 0; display:fit-content" >-->
-<!--                               <div class="card-header">-->
-<!--                                   <div class="testbutton">-->
-<!--                               <a href="/categories/rf.html"  target="_blank">Radio</a>-->
-<!--                               </div> </div>-->
-<!--                               </div>-->
-<!--                               </div>-->
-<!--                               </div>-->
-<!--    </div>-->
-<!--        </div>-->
-<!--        </div>-->
-<!--    </div>-->
+        <div class="rfbackground" style="margin: 0; display:fit-content" >
+        <div class="card-header">
+            <div class="testbutton">
+        <a href="/index.html"  target="_blank">Home</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="div4 hard top">
+               <div class="container" style="text-align: center">
+               <div class="rfbackground" style="margin: 0; display:fit-content" >
+               <div class="card-header">
+                   <div class="testbutton">
+               <a href="/About.html"  target="_blank">About | Contact </a>
+                   </div> </div> </div>
+               </div>
+               </div>
+        <div class="div5 hard top">
+                       <div class="container" style="text-align: center">
+                       <div class="rfbackground" style="margin: 0; display:fit-content" >
+                       <div class="card-header">
+                           <div class="testbutton">
+                       <a href="/categories/chem.html"  target="_blank">Chemistry</a>
+                       </div> </div>
+                       </div>
+                       </div>
+                       </div>
+        <div class="div6 hard top">
+                               <div class="container" style="text-align: center">
+                               <div class="rfbackground" style="margin: 0; display:fit-content" >
+                               <div class="card-header">
+                                   <div class="testbutton">
+                               <a href="/categories/radio.html"  target="_blank">Radio</a>
+                               </div> </div>
+                               </div>
+                               </div>
+                               </div>
+        <div class="div7 hard top">
+                       <div class="container" style="text-align: center">
+                       <div class="rfbackground" style="margin: 0; display:fit-content" >
+                       <div class="card-header">
+                           <div class="testbutton">
+                       <a href="/Hardware.html"  target="_blank">Hardware </a>
+                           </div> </div> </div>
+                       </div>
+                       </div>
+        <div class="div8 hard top">
+                               <div class="container" style="text-align: center">
+                               <div class="rfbackground" style="margin: 0; display:fit-content" >
+                               <div class="card-header">
+                                   <div class="testbutton">
+                               <a href="/Photolio.html"  target="_blank">Photography </a>
+                                   </div> </div> </div>
+                               </div>
+                               </div>
     </div>
+        </div>
+        </div>
     </div>
+
+
+
+
 
 
             <button  class="container collapsible">
@@ -303,19 +343,29 @@ a {
             </span>
             </button>
 
+
         <div class="container content">
-<div class="parent hardware inner">
-<div class="div1 h"
+<!--<div class="parent hardware inner">-->
+<!--<div class="div1 h"-->
 
 
-</div>
-      <div class="div2 h">     <div class="container hardware" style="justify-self: auto">
-      <div class="container header" style="position: center;display: grid;">
-      <h3> uSDX: Open Source HF Radio</h3>
-      </div>
-            <img src="img/20210216_155038.jpg" alt="radio" style="width:30%">
-          <img src="img/ne.jpg" alt="radio" >
-          <img src="img/20210216_144157.jpg" alt="radio" style="width:30%">
+<!--</div>-->
+<!--      <div class="div2 h">-->
+<!--          <div class="container hardware" style="justify-self: auto">-->
+             <div class="container ">
+              <div class="parent box">
+                <div class="div1 box">
+
+                            <h2>uSDX: Mini HF Radio </h2>
+                        </div>
+
+              <div class="div2 box">  <img src="img/20210216_155038.jpg" alt="radio" style="width:80%"> </div>
+              <div class="div3 box"> <img src="img/20210216_144157.jpg" alt="radio"style="width:80%" ></div>
+              <div class="div4 box"> <img src="img/ne.jpg" alt="radio" style="width:80%"></div>
+              <div class="div6 box">
+
+
+
           <div class="container hardware" style="">
 <p>Pictured: The uSDX, a credit card-sized fully operational HF radio capable of modulating SSB (USB and LSB), as well as CW.
 There are multiple versions of this project. This one was created by Manuel, DL2MAN, and the software originally by Guide, PE1NNZ.
@@ -336,9 +386,10 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
 
 </p>
 </div>
-            </div>
-      </div>
-        </div><div class="div2 h">
+              </div>
+              </div>
+             </div>
+     <div class="div2 h">
 <!--        <div class="container header" style="justify-self: auto">-->
 <div class="u-logo">
 <div class="container hardware"style="display: list-item;">
@@ -366,44 +417,43 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
                 <h3> Builds: Mini-CNC Machine with GRBL Open Source Controller</h3>
                 </div>
                 </div>
-
-    <div class="div2 hc"style="margin-right:3%">
-        <img src="img/20210807_213240.jpg" alt="u-logo" style="width:100%;border-radius: 2%">
-    </div>
-    <div class="div3 hc">
-        <img src="img/20210807_232255.jpg" alt="u-logo" style="width:100%;border-radius: 2%">
-    </div>
-        <div class="div4 hc" style="margin-left:3%">
-        <img src="img/20210814_115028.jpg" alt="u-logo" style="width:65%;border-radius: 2%">
-    </div>
-    <div class="div6 hc">
-        <img src="img/20210809_132539.jpg" alt="u-logo" style="width:100%;border-radius: 2%">
-    </div>
-
-        <div class="div5 hc">
-        <div class="container hardware" style="">
-            <p>Pictured above is the inside of a DJI Phantom drone which I was working on. This unit had lost its live video feed.
-            I was able to fix this unit by removing the rf board, soldering leads to the jtag connectos,
-             and then re-flashing the firmware. </p>
+        <div class="parent box">
+<!--              <div class="div3 box">  <img src="img/20210807_213240.jpg" alt="radio" style="width:50%"> </div>-->
+                         <div class="div3 box"> <img src="img/20210807_232255.jpg" alt="radio"style="width:80%;" ></div>
+                         <div class="div2 box"> <img src="img/20210814_115028.jpg" alt="radio" style="width:50%"></div>
+                         <div class="div5 box"> <img src="img/20210809_132539.jpg" style="width: 80%"></div>
         </div>
-        </div>
+<!--    <div class="div2 hc"style="margin-right:3%">-->
+<!--        <img src="img/20210807_213240.jpg" alt="u-logo" style="width:100%;border-radius: 2%">-->
+<!--    </div>-->
+<!--    <div class="div3 hc">-->
+<!--        <img src="img/20210807_232255.jpg" alt="u-logo" style="width:100%;border-radius: 2%">-->
+<!--    </div>-->
+<!--        <div class="div4 hc" style="margin-left:3%">-->
+<!--        <img src="img/20210814_115028.jpg" alt="u-logo" style="width:65%;border-radius: 2%">-->
+<!--    </div>-->
+<!--    <div class="div6 hc">-->
+<!--        <img src="img/20210809_132539.jpg" alt="u-logo" style="width:100%;border-radius: 2%">-->
+<!--    </div>-->
+
+
     </div>
     </div>
-    <div class="container hardware">
-       <div class="parent gps">
+
+       <div class="parent gps" style="text-align: center">
        <div class="div1 gps" style="display: flow-root;margin: auto;">
            <div class="container header" style="position: center;display: grid;">
                    <h3> GPS Speedometer for Boat/Bike </h3>
                    </div>
                    </div>
-
-       <div class="div2 gps"style="margin-right:3%">
-           <img src="img/20210816_165305.jpg" alt="u-logo" style="width:100%;border-radius: 2%">
+<div class="container">
+       <div class="div3 gps"style="margin-right:3%">
+           <img src="img/20210816_165305.jpg" alt="u-logo" style="width:80%;border-radius: 2%">
        </div>
-       <div class="div3 gps">
-           <img src="img/20210812_161854(1).jpg" alt="u-logo" style="width:75%;border-radius: 2%">
+       <div class="div2 gps">
+           <img src="img/20210812_161854(1).jpg" alt="u-logo" style="width:60%;border-radius: 2%">
        </div>
-
+</div>
            <div class="div4 gps">
            <div class="container hardware" style="">
                <p>Pictured above are the first prototypes of a GPS speedometer I built. On the left, the upper side of a freshly-milled copper-clad PCB board, and to the
@@ -418,23 +468,23 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
 
            </div>
            </div>
-       </div>
-       </div>
-    <div class="container hardware">
-          <div class="parent gps">
+
+
+<!--    <div class="container hardware">-->
+          <div class="parent gps" style="text-align: center">
           <div class="div1 gps" style="display: flow-root;margin: auto;">
               <div class="container header" style="position: center;display: grid;">
                       <h3> Class A Amp for Cell Phone </h3>
                       </div>
                       </div>
 
-          <div class="div2 gps">
+          <div class="container">
               <img src="img/20210914_005810.jpg" alt="u-logo" style="width:75%;border-radius: 2%; margin-left: 10%">
-          </div>
+
           <div class="div3 gps">
               <img src="img/phone_amp.png" alt="u-logo" style="width:75%;border-radius: 2%">
           </div>
-
+          </div>
               <div class="div4 gps">
               <div class="container hardware">
                   <p>Pictured on the left is an early prototype created using a chemically etched copper-clad PCB board and SMT components which I soldered on.
@@ -461,9 +511,9 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
               </div>
               </div>
           </div>
-          </div>
 
-    <div class="container hardware">
+
+
              <div class="parent misc" style="text-align: center;">
              <div class="div5 misc" style="display: flow-root;margin: auto;">
                  <div class="container header" style="position: center;display: grid;">
@@ -515,15 +565,9 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
                      <p>uSDX: Testing the Si5351 </p>
                  </div>
                  </div>
-                 <div class="div6 misc">
-                     <div class="container hardware" style="">
-                 <div class="container hardware" style="">
-                     <p> Pictures of future post topics, my bench, and more. </p>
+
                  </div>
-                 </div>
-                 </div>
-             </div>
-             </div>
+
 
 <div class="div4 h">
 <!--        <div class="content hardware">-->
@@ -531,7 +575,9 @@ magnet wire was wrapped around the toroid, as well as the capacitor values.
 <!--        </div>-->
             <p></p>
 
-        </div>
+</div>
+</div>      </div>
+</div>
 </section>
 
 </body>
