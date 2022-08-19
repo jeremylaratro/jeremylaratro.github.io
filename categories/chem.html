@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <style>
 
@@ -156,9 +156,45 @@
         p.b {
             font-weight: bold;
         }
-body {
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
 
-}
+
+        @media only screen and (min-width: 640px) {
+          .container.inside{
+              grid-template-columns: repeat(1, 1fr);
+            /*grid-template-columns: 47.5% 47.5%;*/
+            grid-column-gap: 5%;
+            grid-row-gap: 40px;
+          }
+            img{
+                width: 30vw;
+            }
+            p{
+                   grid-template-columns: repeat(1, 1fr);
+                 /*grid-template-columns: 47.5% 47.5%;*/
+                 grid-column-gap: 5%;
+                 grid-row-gap: 40px;
+               }
+          .grid_items > div {
+            padding: 20px;
+          }
+        }
+        }
+        a:link, a:visited {
+            color: #eeeeff;
+        }
+        a {
+            color: #FFFFFF;
+            font-size: 0.85vw;
+        }
+        a:hover {
+            color: #FFFFFF;
+            font-weight: bold;
+        }
 
     </style>
 </head>
@@ -360,26 +396,49 @@ body {
                     <h2>Organic Chemistry</h2>
                 </span>
             </button>
-            <div class="container content" style="display: block">
+            <div class="container content" style="display: none">
 
 
 
-                    <div class="container inside">
-                        <img src="ir_camphor.jpg" alt="ir spectra, jeremy laratro" style="/*! justify-content: center; *//*! justify-self: auto; */" width="75%" height="75%">
+                    <div class="container inside" style="display: grid";>
+                        <img src="ir_camphor.jpg-mh.png" alt="ir spectra, jeremy laratro" style="" >
                         <br>
-                        <p>IR spectra: <br>
-                            Oxidation product of borneol. <br> The oxidation was completed using Oxone, a greener alternative to classic oxidation reagents such as PCC or chromic acid derivatives.<br>
-                            Target molecule: camphor</p>
+                        <p style="grid-column: 2; grid-row: 1;">
+                            IR spectra:
+                            Oxidation of Borneol. <br>
+                            Target molecule: camphor
+<br>
+                            <br> The oxidation was completed using Oxone, a greener alternative to classic oxidation reagents such as PCC or chromic acid derivatives.<br>
+                            <br>
+                        As seen in the spectra (left), the product was produced, however the peak at ~2250 cm-1 was not expected. This peak would normally be indicative
+                            of a triple bond, however no triple bond was expected. The most likely side-product, an alcohol derivative resulting from hydrolysis, would
+                            be characterized by a broad peak above 3000cm-1 (as would Borneol).
+                            Thus, it is hypothesized that the NaCl plates used introduced contaminants. Unfortunately, we only had access to
+                            plates that were in fairly poor condition, both physically (chipped) and also stained. They were cleaned thoroughly with DCM, but this may have
+                            not been enough.
+
+                        </p>
+                        <img src="borneolcamphor.png" alt="ir spectra, jeremy laratro" style="grid-column: 1;grid-row: 2; margin: auto" >
+                        <p style="grid-column: 2; grid-row: 2;">
+                            Reaction overview</p>
                     </div>
                     <div class="container inside">
                         <img src="fluoro.jpg" alt="fluorescence, jeremy laratro" style="/*! justify-content: center; *//*! justify-self: auto; */" width="50%" height="50%">
-                        <p>Fluorescence assay:<br> A qualitative assessment of Pechmann Condensation product under acidic and basic conditions. <br> Target molecule: 4-methylumbelliferone.                       </p>
+                        <p>Fluorescence assay:<br> A qualitative assessment of Pechmann Condensation product under acidic and basic conditions. <br> Target molecule: 4-methylumbelliferone. </p>
+                            <img src="/img/pech.JPG" alt="fluorescence, jeremy laratro" style="/*! justify-content: center; *//*! justify-self: auto; */" width="50%" height="50%">
+                        <p>Experimental design</p>
                     </div>
                     <div class="container inside">
-                        <img src="diels_aldernmr.jpg" alt="NMR, jeremy laratro" style="/*! justify-content: center; *//*! justify-self: auto; */" width="90%" height=auto>
+                        <img src="nmranndielsalderadduct.png" alt="NMR, jeremy laratro" style="height: 85%; padding-top: 8%">
                         <p>The Diels-Alder reaction: <br>
                             NMR results from [4+2] cycloaddition product via reflux of anthracene and maleic anhydride. <br>
-                            Target product: 9,10-dihydroanthraceno,9,10-a,b-succinic anhydride.
+                            Target product: 9,10-dihydroanthraceno,9,10-a,b-succinic anhydride. <br>
+                            The 1H-NMR was used to determine that the product was produced; deshielding can be seen, most notably with with "D". Despite the fact that
+                            it is a sp3 hybridized C-H group, the aromatic rings next to it result in a higher shift.
+                             The small peaks seen below 2.5ppm may be due to the C-H hydrogens,
+                            from left over reactants, or potentially from the presence of side products. It also possible that the peaks are simply noise, as the NMR machine
+                            used for this sample was a simple desktop one.
+
 
                         </p>
                     </div>
