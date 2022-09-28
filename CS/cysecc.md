@@ -38,7 +38,7 @@ My Reading List & Resources
 <details>
 
 <summary>
->### General Enumeration | Scanning | Reconnaissance
+General Enumeration | Scanning | Reconnaissance
 </summary>
 
 
@@ -80,7 +80,7 @@ My Reading List & Resources
 <details>
  
 <summary>
->#### Exploitation and Investigation Tools
+Exploitation and Investigation Tools
 </summary>
 
 
@@ -150,7 +150,7 @@ My Reading List & Resources
 <details>
 
 <summary>
-#### Areas I'd Like to Improve
+Areas I'd Like to Improve
 </summary>
 
 
@@ -184,7 +184,7 @@ My Reading List & Resources
 <details>
 
 <summary>
-># LFI: Local File Inclusion and Remote File Inclusion Overview
+LFI: Local File Inclusion and Remote File Inclusion Overview
 </summary>
 
 
