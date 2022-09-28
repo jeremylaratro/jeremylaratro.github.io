@@ -16,16 +16,7 @@
             if (screen.width<800) {window.location="/progmobile.html";}
         </script>
     <style>
-        .columns {
-            -webkit-column-count: 2;
-            column-count: 2;
-            -webkit-column-gap: 53px;
-            -moz-column-gap: 53px;
-            column-gap: 53px;
-            -webkit-column-rule: 6px dashed #DEDEDE;
-            -moz-column-rule: 6px dashed #DEDEDE;
-            column-rule: 6px dashed #DEDEDE;
-        }
+
           .background6 {
                 width: 100%;
                 height: 100%;
@@ -74,18 +65,7 @@
             text-shadow: 1px 1px 0 #28242f;
             grid-row: auto;
         }
-        .card.collapsible {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            position: center;
 
-
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-        }
 
         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
         .active, card.collapsible:hover {
@@ -114,9 +94,6 @@
             box-shadow: 1rem 0 2rem #000;
         }
 
-        .active, .container.collapsible:hover {
-            background: linear-gradient(to top, #031C2F, #590026);
-        }
 
         .container.content {
             padding: 0 18px;
@@ -134,14 +111,7 @@
             border-radius: 20px;
             background: #17141d;
         }
-        /*    box-shadow: -1rem 0 3rem #000;*/
-        /*    display: flow;*/
-        /*    flex-direction: column;*/
-        /*    margin: 0;*/
-        /*    scroll-snap-align: flex-start;*/
-        /*    clear: both;*/
-        /*    position:relative;*/
-        /*    justify-self: center;*/
+
         .parent {
 
         grid-template-columns: 1fr 0.5fr 1fr 0.25fr 1fr;
@@ -323,7 +293,7 @@ h3 {
 
             <button  class="container collapsible" >
             <span class="card-header">
-            <h2 style="text-align: center">Hardware: </h2>
+            <h2 style="text-align: center">Computer Science: </h2>
             <h2 style="text-align: center">Click here to see recent programming and software projects </h2>
             </span>
             </button>
@@ -340,7 +310,7 @@ h3 {
                   <h3 > Recent Projects </h3>
                   </div>
 
-            <a href="https://github.com/jeremylaratro/Smiles-TO-iUpac-Translator-with-CLI/Simple_CLI.py" target="_blank">
+            <a href="https://github.com/jeremylaratro/Smiles-TO-iUpac-Translator-with-CLI" target="_blank">
 
             <button class="container collapsible" style="text-align: center">
                                                 <h3 > Interactive CLI for STOUT, an organic chemistry SMILES/IUPAC name translator</h3>
@@ -354,11 +324,14 @@ h3 {
                                     <h3 > Degrees of Unsaturation calculator for organic chemistry </h3>
 </button>
 </a>
-
+            <div class="container collapsible" style="text-align: center">
+                    Click here to read more about my cybersecurity studies.
+                </div>
 
 <div class="container ">
 
-                  <div class="container collapsible" style="display: flow-root;margin: auto; text-align:center; font-size: 124%;">
+
+                  <div class="container collapsible" style="display: flow-root;margin: 2%; text-align:center; font-size: 124%;">
                                     <h3 > This website </h3>
                                     </div>
 
