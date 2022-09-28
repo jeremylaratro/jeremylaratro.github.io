@@ -30,7 +30,7 @@ My Reading List & Resources
 ----------
 
 
->### Overview, Tools, and Pathways
+### Overview, Tools, and Pathways
 
 >These are some of the go-to tools I use when starting a machine, CTF, challenge, etc. These tools generally fall into the 
 > reconnaissance and vulnerability assessment steps. 
@@ -38,7 +38,7 @@ My Reading List & Resources
 <details>
 
 <summary>
-General Enumeration | Scanning | Reconnaissance
+### General Enumeration | Scanning | Reconnaissance
 </summary>
 
 
@@ -80,11 +80,11 @@ General Enumeration | Scanning | Reconnaissance
 <details>
  
 <summary>
-|Exploitation and Investigation Tools|
+#### Exploitation and Investigation Tools
 </summary>
 
 
->There are thousands and thousands of different tools, scripts, and applications out there for all the various different attack types and vulnerabilities. The following are ones which I have personally used in labs and challenges and which I am at least fairly comfortable using.
+>The following tools are ones which I have personally used in machines/labs and challenges and which I am at least fairly comfortable using and generally >fall into the foothold/exploitation category. 
 
 
 >#### Web Based Exploitation
@@ -150,7 +150,7 @@ General Enumeration | Scanning | Reconnaissance
 <details>
 
 <summary>
-Areas I'd Like to Improve
+#### Areas I'd Like to Improve
 </summary>
 
 
@@ -184,11 +184,8 @@ Areas I'd Like to Improve
 <details>
 
 <summary>
-Local File Inclusion and Remote File Inclusion Overview
+># LFI: Local File Inclusion and Remote File Inclusion Overview
 </summary>
-
-
-># LFI
 
 
 Notes from TryHackMe's LFI/RFI room. 
