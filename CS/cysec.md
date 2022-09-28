@@ -4,9 +4,10 @@
 
  <script src="https://tryhackme.com/badge/1210884"></script>
 
+
 <details>
 
-<summary>My Reading List & Resources </summary>
+<summary>My Reading List & Resources</summary>
 
 * Linux Basics for Hackers Getting Started with Networking, Scripting, and Security in Kali (OccupyTheWeb)
 * Penetration Testing A Hands-On Introduction to Hacking (Weidman, Georgia)
@@ -53,9 +54,9 @@ General Enumeration | Scanning | Reconnaissance
 
 >>####  Dig, dnsenum, and nslookup
 >- These tools, along with various others, are useful in automating the process of DNS queries and can be extremely useful in reconnaissance of a website and in understanding the ownership and relationship between domain names and IPs. 
-></details>
-<details><summary> Exploitation and Investigation Tools
-</summary>
+</details>
+
+<details><summary>Exploitation and Investigation Tools</summary>
 
 >There are thousands and thousands of different tools, scripts, and applications out there for all the various different attack types and vulnerabilities. The following are ones which I have personally used in labs and challenges and which I am at least fairly comfortable using.
 
@@ -91,8 +92,9 @@ General Enumeration | Scanning | Reconnaissance
 >>####  binwalk, exiftools, strings, cat
 >> - Linux file analysis tools
 </details>
-<details><summary> 
-Areas I'd Like to Improve </summary>
+
+<details>
+<summary>Areas I'd Like to Improve </summary>
 
 >####  Reverse Engineering
 > - One of the areas I'd specifically like to improve in is reverse engineering, using tools like Ghidra and Apktool.
