@@ -6,11 +6,7 @@
 
 ----- 
 
-<details>
-
-<summary>
-My Reading List & Resources
-</summary>
+<details><summary>My Reading List & Resources</summary>
 
 * Linux Basics for Hackers Getting Started with Networking, Scripting, and Security in Kali (OccupyTheWeb)
 * Penetration Testing A Hands-On Introduction to Hacking (Weidman, Georgia)
