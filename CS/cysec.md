@@ -4,10 +4,13 @@
 
  <script src="https://tryhackme.com/badge/1210884"></script>
 
+----- 
 
 <details>
 
-<summary>My Reading List & Resources</summary>
+<summary>
+My Reading List & Resources
+</summary>
 
 * Linux Basics for Hackers Getting Started with Networking, Scripting, and Security in Kali (OccupyTheWeb)
 * Penetration Testing A Hands-On Introduction to Hacking (Weidman, Georgia)
@@ -29,13 +32,7 @@
 Many tools exist for various different purposes when testing and exploiting systems. The tools necessary for to exploit any machine will vary but in most cases, begin in a similar fashion which is enumeration and reconnaissance. 
 The following tools are ones which I have used for challenges, machines, and CTFs.
 
-<details>
-
-<summary>
-
-General Enumeration | Scanning | Reconnaissance
-
-</summary>
+<details><summary>General Enumeration | Scanning | Reconnaissance</summary>
 
 >>#### whatweb
 >- This is often the first tool used to determine basic info about the web server (in cases where a domain is the given target) and to obtain the IP address.
@@ -93,8 +90,7 @@ General Enumeration | Scanning | Reconnaissance
 >> - Linux file analysis tools
 </details>
 
-<details>
-<summary>Areas I'd Like to Improve </summary>
+<details><summary>Areas I'd Like to Improve</summary>
 
 >####  Reverse Engineering
 > - One of the areas I'd specifically like to improve in is reverse engineering, using tools like Ghidra and Apktool.
@@ -112,13 +108,7 @@ to improve my understanding of PHP and common web frameworks in order to be able
 
 > Notes from labs, CTF's, and machine's on HackTheBox, TryHackMe, OWASP Juice Shop, etc.
 
-<details>
-
-<summary>
-
-Local File Inclusion and Remote File Inclusion Overview 
-
-</summary>
+<details><summary>Local File Inclusion and Remote File Inclusion Overview</summary>
 
 ># LFI
 
@@ -226,9 +216,8 @@ Tools:
 
 </details> 
 
-<details>
+<details><summary>Server-Side Template Injection - SSTI</summary>
 
-<summary>Server-Side Template Injection - SSTI</summary>
 Notes from SSTI Lab on TryHackMe.
 
 Common test-cases:
@@ -286,9 +275,8 @@ Tools:
 
 </details>
 
-<details>
+<details><summary>SMB Exploitation</summary>
 
-<summary>SMB Exploitation</summary>
 SMB- server message block
 * Notes from TryHackMe's SMB room
 
@@ -328,8 +316,9 @@ Upon entry -->
 
 
 </details>
-<details>
-<summary>XSS</summary>
+
+<details><summary>XSS</summary>
+
 XSS
 Cross site scripting
 Injection attack where a malicious payload can be injected into a web page and potentially result in an attacker getting user, staff, or other sensitive data
