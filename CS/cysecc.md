@@ -83,7 +83,6 @@ General Enumeration | Scanning | Reconnaissance
 Exploitation and Investigation Tools
 </summary>
 
-### Notes
 
 >The following tools are ones which I have personally used in machines/labs and challenges and which I am at least fairly comfortable using and generally >fall into the foothold/exploitation category. 
 
@@ -178,6 +177,7 @@ Areas I'd Like to Improve
 
 ----------
 
+### Notes
 
 > Notes from labs, CTF's, and machine's on HackTheBox, TryHackMe, OWASP Juice Shop, etc.
 
