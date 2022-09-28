@@ -1,6 +1,6 @@
 <html lang="en">
 
-<div class="tip" markdown="1">
+<div markdown="1">
 
 
 #   Computer Science, Cybersecurity, and Software Engineering
@@ -25,11 +25,11 @@
 
 
 ----------
+	
 >Overview, Tools, and Pathways
 Many tools exist for various different purposes when testing and exploiting systems. The tools necessary for to exploit any machine will vary but in most cases, begin in a similar fashion which is enumeration and reconnaissance. 
 The following tools are ones which I have used for challenges, machines, and CTFs.
-<details><summary>General Enumeration | Scanning | Reconnaissance
-</summary>
+<details><summary>General Enumeration | Scanning | Reconnaissance</summary>
 
 >>#### whatweb
 >- This is often the first tool used to determine basic info about the web server (in cases where a domain is the given target) and to obtain the IP address.
@@ -101,12 +101,10 @@ to improve my understanding of PHP and common web frameworks in order to be able
 </details>
 
 ----------
+	
 > Notes from labs, CTF's, and machine's on HackTheBox, TryHackMe, OWASP Juice Shop, etc.
-<details>
 
-<summary>
-Local File Inclusion and Remote File Inclusion Overview 
-</summary>
+<details><summary>Local File Inclusion and Remote File Inclusion Overview</summary>
 
 ># LFI
 
@@ -176,6 +174,7 @@ Content-Length: 25
 file=../../../etc/flag3%00
 ```` 
 --------------------------
+	
 ># RFI
  
 RFI is similar to LFI but involves remote inclusion of files and potentially RCE. It depends on the function:
@@ -245,8 +244,9 @@ Tools:
 ````
 
 </details>
-<details>
-<summary>SMB Exploitation</summary>
+	
+<details><summary>SMB Exploitation</summary>
+	
 SMB- server message block
 * Notes from TryHackMe's SMB room
 
