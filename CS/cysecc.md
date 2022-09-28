@@ -83,6 +83,7 @@ General Enumeration | Scanning | Reconnaissance
 Exploitation and Investigation Tools
 </summary>
 
+### Notes
 
 >The following tools are ones which I have personally used in machines/labs and challenges and which I am at least fairly comfortable using and generally >fall into the foothold/exploitation category. 
 
