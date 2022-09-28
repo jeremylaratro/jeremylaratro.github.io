@@ -46,10 +46,9 @@ The following tools are ones which I have used for challenges, machines, and CTF
 >- OWASP Zap is a GUI-based scanning tool that is focused on the OWASP top 10 vulnerabilities. This is another tool that can be useful in determining potential vulnerabilities.
 
 >>####  Dig, dnsenum, and nslookup
->- These tools, along with various others, are useful in automating the process of DNS queries and can be extremely useful in reconnaissance of a website and in understanding the ownership and relationship between domain names and IPs. 
-</details>
+>- These tools, along with various others, are useful in automating the process of DNS queries and can be extremely useful in reconnaissance of a website and in understanding the ownership and relationship between domain names and IPs.</details>
 
-<details><summary>Exploitation and Investigation Tools</summary>
+<details><summary>|Exploitation and Investigation Tools|</summary>
 
 >There are thousands and thousands of different tools, scripts, and applications out there for all the various different attack types and vulnerabilities. The following are ones which I have personally used in labs and challenges and which I am at least fairly comfortable using.
 
