@@ -6,6 +6,11 @@
 
 ----- 
 
+[Back to home page](https://jeremylaratro.link)
+### Next post: Algorithm & Data Structure Notes in Python
+
+-----------
+
 ### **Resources: My Reading List & Accounts**
 <details>
 
@@ -27,7 +32,7 @@ My Reading List & Resources
 
 </details>
 
-[Back to home page](https://jeremylaratro.link)
+
 ----------
 
 
