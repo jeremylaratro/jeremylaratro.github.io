@@ -1,11 +1,12 @@
 ---
 
-#   Computer Science, Cybersecurity, and Software Engineering
+#   Cybersecurity: Notes and Projects
 
  <script src="https://tryhackme.com/badge/1210884"></script>
 
 ----- 
 
+### **Resources: My Reading List & Accounts**
 <details>
 
 <summary>
@@ -17,20 +18,20 @@ My Reading List & Resources
 * Becoming A Master Hacker (OccupyTheWeb)
 * Competitive Programming in Python 128 Algorithms to Develop your Coding Skills (Christoph Dürr, Jill-Jênn Vie)
 * Real-World Bug Hunting A Field Guide to Web Hacking (Peter Yaworski)
-* Codecademy -> https://www.codecademy.com/profiles/JeremyLaratro
-* TryHackme.com -> https://tryhackme.com/p/jeremylaratro
-* HackTheBox.com -> 
+* [Codecademy Profile](https://www.codecademy.com/profiles/JeremyLaratro)
+* [TryHackme.com Profile (In the top 8% of users!)](https://tryhackme.com/p/jeremylaratro)
+* HackTheBox.com 
 * Hacktricks.xyz
-* picoctf.org -> https://play.picoctf.org/users/jeremylaratro
-* LeetCode -> https://leetcode.com/jeremylaratro/
+* [Picoctf.org Profile](https://play.picoctf.org/users/jeremylaratro)
+* [LeetCode Profile](https://leetcode.com/jeremylaratro/)
 
 </details>
 
-
+[Back to home page](https://jeremylaratro.link)
 ----------
 
 
->### Overview, Tools, and Pathways
+### **Overview, Tools, and Pathways**
 
 >These are some of the go-to tools I use when starting a machine, CTF, challenge, etc. These tools generally fall into the 
 > reconnaissance and vulnerability assessment steps. 
@@ -77,6 +78,8 @@ General Enumeration | Scanning | Reconnaissance
 
 </details>
 
+-----------
+
 <details>
  
 <summary>
@@ -84,67 +87,75 @@ General Enumeration | Scanning | Reconnaissance
 </summary>
 
 
+
+
+### **Web and Network Exploitation**
+
 >There are thousands and thousands of different tools, scripts, and applications out there for all the various different attack types and vulnerabilities. The following are ones which I have personally used in labs and challenges and which I am at least fairly comfortable using.
 
 
->#### Web Based Exploitation
-
->>####  BURP Suite
+>####  BURP Suite
 
 >> - Powerful proxy -> intercept and modify requests, leading to a large variety of potential uses
 
->>####  SQLMap 
+>####  Metasploit
+
+>> - Massive collection of known exploits, scripts, payloads, and database
+
+>####  SQLMap 
 
 >> - SQLi scanner and exploitation tool
 
->>####  dirb, dirbuster, gobuster 
+>####  dirb, dirbuster, gobuster 
 
 >> - Directory enumeration
 
->>####  ffuf, hydra 
+>####  ffuf, hydra 
 
 >> - Web fuzzing, directory enumeration, account brute forcing
 
->>####  sstimap, lfimap 
+>####  sstimap, lfimap 
 
 >> - LFI and SSTI vulnerability scanner and exploitation tool
 
->>####  xsssniper
+>####  xsssniper
 
 >> - XSS scanner and exploitation tool
 
->>####  rapidscan 
+>####  rapidscan 
 
 >> - Tool which essentially creates a suite of other popular exploitation tools like sqlmap, dirb, etc. 
 
 
->#### Network and Offline Exploitation
+----------
 
->>####  Metasploit
 
->> - Massive collection of known exploits, scripts, payloads, and database
+### **Offline Tools**
 
->>####  hashcat
+
+>####  hashcat
 
 >> - GUI-accelerated password cracking tool. Extremely quick.
 
->>####  John the Ripper
+>####  John the Ripper
 
 >> - Another password cracking tool, particularly useful for it's auto-detection and john2'other' conversion scripts. 
 
->>####  cewl, crunch
+>####  cewl, crunch
 
 >> - Custom password and wordlist generators
 
 
->#### Investigative Tools
-
-
->>####  binwalk, exiftools, strings, cat
+>####  binwalk, exiftools, strings, cat
 
 >> - Linux file analysis tools
 
 </details>
+
+----------
+
+### **Areas I'd Like to Improve**
+
 
 
 <details>
@@ -157,28 +168,28 @@ Areas I'd Like to Improve
 >####  Reverse Engineering
 
 > - One of the areas I'd specifically like to improve in is reverse engineering. This requires a solid working knowledge
-> - of languages commonly used to build malware, which leads to the next area I'd like to improve -- expanding my programming knowledge.
+> of languages commonly used to build malware, which leads to the next area I'd like to improve -- expanding my programming knowledge.
 
 >####  Programming
 
-> - Currently, I am intermediate with Python, and familiar with the syntax of Java and C++ but
-> - not as efficient or fluent with them as I am with Python (ie. with Leetcode, for example,
-> - problems which challenge me in Python are extremely difficult for me in C++, especially. I'd
-> - like to improve in C++ and Java, and also increase the number of languages that I am at least
-> - comfortable with in terms of syntax. 
+> - Currently, I am intermediate with Python, and beginner/intermediate with Java and C++ (ie. comfortable with general OO, functions, 
+> classes, namespaces, and familiar with pointers, but not as efficient or fluent with them as I am with Python 
+> (ie. with Leetcode, for example, problems which challenge me in Python are extremely difficult for me in C++. I'd
+> like to improve my proficiency in C++ and Java, and also increase the number of languages that I am at least
+> comfortable with in terms of syntax. 
 
 >#### SSTI and RCE
 
 > - I would like to become less reliant upon tools when attempting to exploit SSTI and RCE vulnerabilities, and thus,
-> - I need to improve my understanding of PHP and common web frameworks in order to be able to develop my own exploits.
+> I need to improve my understanding of PHP and common web frameworks in order to be able to develop my own exploits.
 
 </details>
 
 
 ----------
 
-
-> Notes from labs, CTF's, and machine's on HackTheBox, TryHackMe, OWASP Juice Shop, etc.
+## **Notes**
+> *Notes from labs, CTF's, and machine's on HackTheBox, TryHackMe, OWASP Juice Shop, etc.*
 
 
 <details>
@@ -187,9 +198,11 @@ Areas I'd Like to Improve
 Local File Inclusion and Remote File Inclusion Overview
 </summary>
 
+-----
 
-># LFI
+>### **LFI: Local File Inclusion**
 
+-----
 
 Notes from TryHackMe's LFI/RFI room. 
 
@@ -324,7 +337,10 @@ file=../../../etc/flag3%00
 --------------------------
 
 
-># RFI
+>### **RFI: Remote File Inclusion**
+
+
+---------
 
  
 RFI is similar to LFI but involves remote inclusion of files and potentially RCE. It depends on the function:
@@ -541,6 +557,11 @@ Upon entry -->
 
 </details>
 
+-------
+
+>### **XSS: Cross Site Scripting**
+
+-------
 
 <details>
 <summary>
@@ -548,14 +569,11 @@ XSS
 </summary>
 
 
-XSS
-
-Cross site scripting
 
 Injection attack where a malicious payload can be injected into a web page and potentially result in an attacker getting user, staff, or other sensitive data
 
 
-Check
+Check:
 
 	
 ~~~
@@ -583,9 +601,7 @@ Key loggger:
 
 ~~~
 
-	
 
-Business Logic 
 
 	
 ~~~
