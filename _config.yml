@@ -24,8 +24,8 @@ url: "www.jeremylaratro.link" # the base hostname & protocol for your site, e.g.
 github_username:  jeremylaratro
 
 # Build settings
-markdown: kramdown
-remote_theme: jekyll-theme-hacker
+markdown: CommonMarkGhPages
+#remote_theme: jekyll-theme-hacker
 
 plugins:
   - jekyll-feed
