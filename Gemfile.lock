@@ -257,9 +257,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-commonmark-ghpages
   jekyll-feed
   kramdown-parser-gfm
-  minima (~> 2.0)
   rexml (~> 3.2)
   tzinfo
   tzinfo-data
