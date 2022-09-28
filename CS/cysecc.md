@@ -38,7 +38,7 @@ My Reading List & Resources
 <details>
 
 <summary>
-### General Enumeration | Scanning | Reconnaissance
+>### General Enumeration | Scanning | Reconnaissance
 </summary>
 
 
@@ -80,7 +80,7 @@ My Reading List & Resources
 <details>
  
 <summary>
-#### Exploitation and Investigation Tools
+>#### Exploitation and Investigation Tools
 </summary>
 
 
