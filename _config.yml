@@ -25,7 +25,7 @@ github_username:  jeremylaratro
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: 
 plugins:
   - jekyll-feed
 
