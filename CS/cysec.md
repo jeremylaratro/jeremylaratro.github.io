@@ -7,7 +7,6 @@
 ----- 
 
 <details><summary>My Reading List & Resources
-
 </summary>
 
 * Linux Basics for Hackers Getting Started with Networking, Scripting, and Security in Kali (OccupyTheWeb)
@@ -25,6 +24,7 @@
 
 
 ----------
+
 >Overview, Tools, and Pathways
 Many tools exist for various different purposes when testing and exploiting systems. The tools necessary for to exploit any machine will vary but in most cases, begin in a similar fashion which is enumeration and reconnaissance. 
 The following tools are ones which I have used for challenges, machines, and CTFs.
@@ -84,10 +84,7 @@ The following tools are ones which I have used for challenges, machines, and CTF
 >> - Extremely powerful banner search engine. 
 >>####  binwalk, exiftools, strings, cat
 >> - Linux file analysis tools
-</details>
-
-<details><summary>Areas I'd Like to Improve</summary>
-
+</details><details><summary>Areas I'd Like to Improve</summary>
 >####  Reverse Engineering
 > - One of the areas I'd specifically like to improve in is reverse engineering, using tools like Ghidra and Apktool.
 >####  Programming
@@ -129,7 +126,6 @@ This can be determined by encouraging an error, ie:
  which then may return an error containing something along the lines of:
 
 ````
-'..
  in /var/www/html/lab2.php on line 26'
  ````
  
