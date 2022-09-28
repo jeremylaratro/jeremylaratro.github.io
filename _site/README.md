@@ -1,1 +1,0 @@
-# jeremylaratro.github.io
