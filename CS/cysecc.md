@@ -70,7 +70,7 @@ General Enumeration | Scanning | Reconnaissance
 
 >>####  Dig, dnsenum, and nslookup
 
->- These tools, along with various others, are useful in automating the process of DNS queries and can be extremely useful in reconnaissance of a website and in understanding the ownership and relationship between domain names and IPs.</details>
+>- These tools, along with various others, are useful in automating the process of DNS queries and can be extremely useful in reconnaissance of a website and in understanding the ownership and relationship between domain names and IPs.
 
 >>####  Shodan
 > - Extremely powerful banner search engine.
