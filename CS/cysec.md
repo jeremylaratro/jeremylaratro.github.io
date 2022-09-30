@@ -6,7 +6,12 @@
 
 ----- 
 
-[Back to home page](https://jeremylaratro.link)
+[Back to website home page](https://jeremylaratro.link)
+
+-----
+
+> ### **My latest post:**
+## [OWASP Juice Shop -- Notes and Walkthrough](https://jeremylaratro.link/CS/juice_shop.md)
 ### Next post: Algorithm & Data Structure Notes in Python
 
 -----------
