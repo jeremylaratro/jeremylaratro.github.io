@@ -1,4 +1,9 @@
 # **OWASP Juice Shop**
+[Return to CS page](/CS/cysec)
+
+---
+skip to: [**/ftp**](/ftp) | [**Setup**](#SQLi) | [**Walkthrough**](#XSS) | [**Resources**](#Auth Bypass)
+
 ---
 >>## **Description**
 > OWASP Juice Shop is an intentionally vulnerable web app containing all the OWASP Top 10 vulnerabilities
@@ -62,7 +67,7 @@ Open browser to http://localhost:3000
 > /#/score-board
 >```
 > 
-> > **/ftp**
+> > ### **/ftp**
 > 
 > Some of the files appear to be backups, but upon trying to download them we are 
 > met with an error stating only pdf and markdown files can be downloaded. This is an opportunity to
@@ -211,6 +216,29 @@ Open browser to http://localhost:3000
 > <iframe src="javascript:alert('xss')"/>
 > ```
 > 
+---
+> > **CAPTCHA ByPass**
+> 
+> CAPTCHA is commonly used today to ensure that the site visitor is human. One of the challenges for Juice Shop is to bypass the CAPTCHA and leave a large number of 
+> customer feedback comments. We can do this by intercepting a feedback submission in Burp Suite, sending it to Intruder,
+> and then simply adding the payload to the parameter. In this case, I simply used a list of numbers, 1 - 21, as the payload. 
+> 
+>>![image](burpintruder.png)
+> 
+> Using this method, it would also be possible to change which CAPTCHA is used, the UserID who sent the feedback, and also the rating.
+>> ![image](intpay.png)
+> 
+> > ![image](mult.png) 
+> 
+> > **OSINT**
+> The challenge is to deduce the security question answer for user "Emma" using the photo they posted to the wall. 
+> 
+> This one had me stumped for quite a while; my first thought was to use a reverse image search, and I was immediately able to find the location of the photo, which 
+> happens to be a building in the Netherlands related to a company called "Mullener + Mullener." I thought I had the answer here, but after trying countless combinations of that company
+> name, taking into consideration case sensitivity, nothing worked. Then, I quickly tried using exiftool to see if the answer was in the metadata, but nothing relevant was found.
+> I went back to the photo and noticed an address sign on the building, so I went to Google Images streeth view and saw a few company names on the building. Again, I tried 
+> combinations of these names, but nothing worked. Finally, I went back to the original image to make sure I was looking at the right building and I noticed a 
+> a small piece of paper in the window. I zoomed in and saw "ITSec" -- thats it! The password reset worked. 
 ## To Be Continued...
 > More XSS, broken access control/anti-automation/authentication, cryptographic issues, insecure deserialization, security misconfiguration, and more!
 > 

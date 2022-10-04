@@ -1,17 +1,19 @@
 ---
 
-#   Cybersecurity: Notes and Projects
+#   Cybersecurity: Notes and Projects - Main Overview
 
- <script src="https://tryhackme.com/badge/1210884"></script>
 
------ 
+
+----
 
 [Back to website home page](https://jeremylaratro.link)
 
------
+----
+This page will serve as the main overview and summary of my CS notes and projects. More specific and detailed notes/labs/CTFs will be linked below and have their own pages. 
+----
 
 > ### **My latest post:**
-## [OWASP Juice Shop -- Notes and Walkthrough](https://jeremylaratro.link/CS/juice_shop.md)
+## [OWASP Juice Shop -- Notes and Walkthrough](/CS/juice_shop)
 ### Next post: Algorithm & Data Structure Notes in Python
 
 -----------
@@ -43,8 +45,8 @@ My Reading List & Resources
 
 ### **Overview, Tools, and Pathways**
 
->These are some of the go-to tools I use when starting a machine, CTF, challenge, etc. These tools generally fall into the 
-> reconnaissance and vulnerability assessment steps. 
+>These are tools in which I am familiar with -- and are some of the go-to tools I use when starting a machine, CTF, lab, challenge, etc. These tools generally fall into the reconnaissance and vulnerability assessment steps.  \
+>While these tools are great for increasing efficiency and speed, I do think it's incredibly important to understand what these tools do, and I will go into much more detail regarding the manual use of these methods both below (towards the bottom of the page) as well as in practice, on the individual lab/machine writeup/notes pages.  
 
 <details>
 
@@ -182,11 +184,7 @@ Areas I'd Like to Improve
 
 >####  Programming
 
-> - Currently, I am intermediate with Python, and beginner/intermediate with Java and C++ (ie. comfortable with general OO, functions, 
-> classes, namespaces, and familiar with pointers, but not as efficient or fluent with them as I am with Python 
-> (ie. with Leetcode, for example, problems which challenge me in Python are extremely difficult for me in C++. I'd
-> like to improve my proficiency in C++ and Java, and also increase the number of languages that I am at least
-> comfortable with in terms of syntax. 
+> - Currently, I am intermediate with Python and in the process of learning Java/Javascript, C & C++, and Go (ie. comfortable or familiar with general OOP, functions, data types, etc), but not necessarily at the level where I can efficiently solve LeetCode level questions that I would be able to in Python. I'm learning C++ as more of a fundamentals lesson in understanding the low(er) level processes but prefer Go in practice, and find Java to be much closer to Python in terms of difficulty, but am not quite as familiar with it as I am with Python, though I am becoming quite comfortable with the syntax of these languages. 
 
 >#### SSTI and RCE
 
@@ -203,7 +201,6 @@ Areas I'd Like to Improve
 
 
 <details>
-
 <summary>
 Local File Inclusion and Remote File Inclusion Overview
 </summary>
@@ -397,7 +394,6 @@ Tools:
 
 
 <details>
-
 <summary>
 Server-Side Template Injection - SSTI
 </summary>
@@ -496,7 +492,6 @@ Tools:
 
 
 <details>
-
 <summary>
 SMB Exploitation
 </summary>
@@ -567,11 +562,6 @@ Upon entry -->
 
 </details>
 
--------
-
->### **XSS: Cross Site Scripting**
-
--------
 
 <details>
 <summary>
