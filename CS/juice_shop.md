@@ -1,8 +1,7 @@
 # **OWASP Juice Shop**
 [Return to CS page](/CS/cysec)
 
----
-skip to: [**/ftp**](/ftp) | [**Setup**](#SQLi) | [**Walkthrough**](#XSS) | [**Resources**](#Auth Bypass)
+
 
 ---
 >>## **Description**
@@ -144,7 +143,7 @@ Open browser to http://localhost:3000
 > 
 > This confirmed potential explotability, as did the response viewed in Burp Suite,
 > which shows that we are working with error-based SQLi.
-> > ![image](sql_errobased.png) 
+> > ![image](cs_img_dir/sql_errobased.png) 
 >
 > This can make crafting a working injection much simpler as you can 
 > leverage the errors to create a proper injection.
@@ -173,7 +172,7 @@ Open browser to http://localhost:3000
 > '-r' switch which allows you to direct SQLMap to a file containing an intercepted request.
 >
 > I simply copied the login request (below) and saved it to a file using text editor. 
-> > ![image](sqlmaprequest.png)
+> > ![image](cs_img_dir/sqlmaprequest.png)
 > 
 > This did not work either, and found that I was receiving an authorization error. 
 > 
@@ -184,14 +183,14 @@ Open browser to http://localhost:3000
 > my SQLMap command, and it still did not work. 
 > 
 > Finally, I added --level 5 / --risk 3 and --tamper space2comment to the command, and it worked!
-> > ![image](success.png)
+> > ![image](cs_img_dir/success.png)
 > 
 > The final command was:
 > ```bash
 > sqlmap -r bs2 -p email --level 5 --risk 3 --tamper space2comment --ignore-code 401
 > ```
 >  After confirming the vulnerability, I added the --dump switch to dump the entire database. 
-> > ![image](dbn.png)
+> > ![image](cs_img_dir/dbn.png)
 > Other useful switches in this case would be --thread {number} to increase the speed, as well as --dump-all. 
 > 
 > After analyzing the tables from the database, I found that no passwords or hashes were stored, so 
@@ -203,7 +202,7 @@ Open browser to http://localhost:3000
 > ```SQL
 > ' OR id='{num}'--
 > ```
-> > ![image](orid.png)
+> > ![image](cs_img_dir/orid.png)
 > 
 > allows me to log in as any user, where {num} is the id of the user. 
 > 
@@ -223,12 +222,12 @@ Open browser to http://localhost:3000
 > customer feedback comments. We can do this by intercepting a feedback submission in Burp Suite, sending it to Intruder,
 > and then simply adding the payload to the parameter. In this case, I simply used a list of numbers, 1 - 21, as the payload. 
 > 
->>![image](burpintruder.png)
+>>![image](cs_img_dir/burpintruder.png)
 > 
 > Using this method, it would also be possible to change which CAPTCHA is used, the UserID who sent the feedback, and also the rating.
->> ![image](intpay.png)
+>> ![image](cs_img_dir/intpay.png)
 > 
-> > ![image](mult.png) 
+> > ![image](cs_img_dir/mult.png) 
 > 
 > > **OSINT**
 > The challenge is to deduce the security question answer for user "Emma" using the photo they posted to the wall. 

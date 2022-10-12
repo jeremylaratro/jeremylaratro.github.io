@@ -14,7 +14,11 @@ This page will serve as the main overview and summary of my CS notes and project
 
 > ### **My latest post:**
 ## [OWASP Juice Shop -- Notes and Walkthrough](/CS/juice_shop)
-### Next post: Algorithm & Data Structure Notes in Python
+## [hackerone -- Notes and Walkthrough](/CS/hacker_one_ctf)
+## [GoLang -- Notes] (/CS/golang)
+## [SMB Exploitation -- Notes] (/CS/smb)
+
+
 
 -----------
 
@@ -491,76 +495,6 @@ Tools:
 </details>
 
 
-<details>
-<summary>
-SMB Exploitation
-</summary>
-
-
-SMB- server message block
-
-* Notes from TryHackMe's SMB room
-
-
-Enumeration / Recon:
-
-SMB uses port 445
-
-A common service name is 'microsoft-ds'
-
-After enumerating the system and finding a potential SMB exploitation pathway:
-
-Further enumerate the SMB service using smbclient:
-
-
-````
-
-
-smbclient -L ip 
-
-
-````
-
-
-* Share names will be listed
-
-
-	
-Check for the guest or anonymous login, ie:
-
-Sharenames:
-
-
-````
-
-ADMIN$
-
-C$
-
-WorkShares
-
-````
-
-
-After identifying potentially vulnerable share, attempt login:
-
-
-````
-
-smbclient \\\\ip\\<share>>
-
-````
-
-
-Upon entry --> 
-
-* browse directories, look for sensitive files
-
-* potential path traversal, pivot to other shares
-
-
-
-</details>
 
 
 <details>

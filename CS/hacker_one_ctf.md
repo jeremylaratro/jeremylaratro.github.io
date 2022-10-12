@@ -20,7 +20,7 @@
 > The error message contained what appeared to be code to filter the input, however
 > I did not feel that I understood the function process entirely.  
 > 
-> ![SQL Error](/CS/traceback.png)
+> ![SQL Error](/CS/cs_img_dir/traceback.png)
 > 
 > I tried a bunch of other potential injections but was not having any luck so I moved on to SQLMap. \
 > I also found something interesting while going to copy the POST request for SQLMap.
@@ -29,23 +29,23 @@
 > sqlmap -u {url} --forms --thread 5 --random-agent 
 > ```
 > SQLMap succesfully identified the MySQL database and working injection points. \
->![SQLMap](/CS/injpnt.png) \
+>![SQLMap](/CS/cs_img_dir/injpnt.png) \
 >Next, I used the --tables switch to understand the structure of the database
 > and identify any tables that would be particularly useful rather than just dumping the entire database. 
-> ![SQLMap Tables](/CS/tables.png)
+> ![SQLMap Tables](/CS/cs_img_dir/tables.png)
 > The database "level2" and table "admins" immediately stuck out. I dumped this table using:
 > ```bash
 > sqlmap -u {url} --forms --dbms=MySQL -D level2 -T admins --dump
 > ```
 > and SQLMap returned the sole admin account and the corresponding password, which happened to be in plaintext!
-> ![SQLMap Dump](/CS/dump.png)
+> ![SQLMap Dump](/CS/cs_img_dir/dump.png)
 > 
 > I was, however, a bit disappointed that I did not complete the challenge manually, so I decided to
 > go back and try to bypass the authentication via the login page using manual SQLi. 
 >  
 > First, I copied the payloads that SQLMap found earlier into the username field to understand what kind of response the DB would give. \
 > The first one returned an interesting error:
-> ![SQL Error](/CS/payload1.png)
+> ![SQL Error](/CS/cs_img_dir/payload1.png)
 > 
 > The second one caused the page to hang. \
 > I continued to try various payloads and made some process, with the payload:
