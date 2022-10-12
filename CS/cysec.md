@@ -15,8 +15,8 @@ This page will serve as the main overview and summary of my CS notes and project
 > ### **My latest post:**
 ## [OWASP Juice Shop -- Notes and Walkthrough](/CS/juice_shop)
 ## [hackerone -- Notes and Walkthrough](/CS/hacker_one_ctf)
-## [GoLang -- Notes] (/CS/golang)
-## [SMB Exploitation -- Notes] (/CS/smb)
+##  [GoLang -- Notes](/CS/golang)
+## [SMB Exploitation -- Notes](/CS/smb)
 
 
 
