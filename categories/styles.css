@@ -114,13 +114,13 @@ section {
 }
 
 .card-header p {
-    font-size: 40px;
+    font-size: 120%;
     margin: 0 0 1rem;
     color: ##d4d4d4;
 }
 
 .card-header h2 {
-    font-size: 70px;
+    font-size: 150%;
     margin: .25rem 0 auto;
     text-decoration: none;
     color: #d4d4d4;
@@ -159,13 +159,7 @@ background: transparent;
     background-clip: text;
 }
 
-/*.card-author {*/
-/*    margin: 3rem 0 0;*/
-/*    display: grid;*/
-/*    grid-template-columns: 75px 1fr;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*}*/
+
 
 .logo {
     grid-area: auto;
