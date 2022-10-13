@@ -13,16 +13,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <style>
-        .columns {
-            -webkit-column-count: 2;
-            column-count: 2;
-            -webkit-column-gap: 53px;
-            -moz-column-gap: 53px;
-            column-gap: 53px;
-            -webkit-column-rule: 6px dashed #DEDEDE;
-            -moz-column-rule: 6px dashed #DEDEDE;
-            column-rule: 6px dashed #DEDEDE;
-        }
+
           .background6 {
                 width: 100%;
                 height: 100%;
@@ -71,18 +62,7 @@
             text-shadow: 1px 1px 0 #28242f;
             grid-row: auto;
         }
-        .card.collapsible {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            position: center;
 
-
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-        }
 
         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
         .active, card.collapsible:hover {
@@ -130,14 +110,6 @@
             padding: 1rem;
             border-radius: 20px;
             background: #17141d;
-        /*    box-shadow: -1rem 0 3rem #000;*/
-        /*    display: flow;*/
-        /*    flex-direction: column;*/
-        /*    margin: 0;*/
-        /*    scroll-snap-align: flex-start;*/
-        /*    clear: both;*/
-        /*    position:relative;*/
-        /*    justify-self: center;*/
         .parent {
         display: grid;
         grid-template-columns: 1fr 0.5fr 1fr 0.25fr 1fr;
@@ -238,7 +210,7 @@ display: none
     <div class="parent" style="width: 65%;">
     <div class="div2">
 <!--    <div class="grid-item">-->
-    <div class="container">
+    <div class="container" style="text-align: center">
     <div class="parent hard top">
     <div class="div1 hard top">
         <div class="card-header">
@@ -296,6 +268,24 @@ display: none
                                </div>
                                </div>
                                </div>
+        <div class="div7 hard top">
+                       <div class="container" style="text-align: center">
+                       <div class="rfbackground" style="margin: 0; display:fit-content" >
+                       <div class="card-header">
+                           <div class="testbutton">
+                       <a href="/Hardware.html"  target="_blank">Hardware </a>
+                           </div> </div> </div>
+                       </div>
+                       </div>
+        <div class="div8 hard top">
+                               <div class="container" style="text-align: center">
+                               <div class="rfbackground" style="margin: 0; display:fit-content" >
+                               <div class="card-header">
+                                   <div class="testbutton">
+                               <a href="/Photolio.html"  target="_blank">Photography </a>
+                                   </div> </div> </div>
+                               </div>
+                               </div>
     </div>
         </div>
         </div>
@@ -303,14 +293,14 @@ display: none
 
 
 
-            <button  class="container collapsible">
+            <button  class="container collapsible" >
             <span class="card-header">
-            <h2>Hardware: </h2>
-            <h2>Click here to see recent programming and software projects </h2>
+            <h2 style="text-align: center">Computer Science: </h2>
+            <h2 style="text-align: center">Click here to see recent programming and software projects </h2>
             </span>
             </button>
 
-        <div class="innercon">
+        <div class="container content">
 <!--<div class="parent hardware inner">-->
 
 
@@ -321,10 +311,24 @@ display: none
               <div class="container content" style=" text-align: center">
                   <h3 > Recent Projects </h3>
                   </div>
+            <a href="https://jeremylaratro.link/CS/cysec" target="_blank">
 
-            <a href="https://github.com/jeremylaratro/Smiles-TO-iUpac-Translator-with-CLI/Simple_CLI.py" target="_blank">
+                       <button class="container collapsible" style="text-align: center">
+                                                           <h3 > Cybersecurity Notes and Computer Science Blog </h3>
+                       </button>
+                       </a>
+            <a href="https://github.com/jeremylaratro/PhotoSec" target="_blank">
 
-            <button class="container collapsible">
+            <button class="container collapsible" style="text-align: center">
+                  <h3 > PhotoSec </h3>
+                <p>A privacy and security oriented Python script I made using various other open-source tools. Functions include bulk metadata removal from photos,
+                                  bulk image analysis (using tools such as exiftool, binwalk, strings, etc), file renaming, bulk GPS metadata puller, and more features to come.</p>
+            </button>
+            </a>
+
+            <a href="https://github.com/jeremylaratro/Smiles-TO-iUpac-Translator-with-CLI" target="_blank">
+
+            <button class="container collapsible" style="text-align: center">
                                                 <h3 > Interactive CLI for STOUT, an organic chemistry SMILES/IUPAC name translator</h3>
             </button>
             </a>
@@ -332,48 +336,39 @@ display: none
 
 <a href="https://github.com/jeremylaratro/Degrees_of_Unsaturation_Calculator" target="_blank">
 
-<button class="container collapsible">
+<button class="container collapsible" style="text-align: center">
                                     <h3 > Degrees of Unsaturation calculator for organic chemistry </h3>
 </button>
 </a>
 
 
-<div class="container ">
 
-                  <div class="container collapsible" style="display: flow-root;margin: auto; text-align:center; font-size: 124%;">
-                                    <h3 > This website </h3>
-                                    </div>
+                  <div class="container hardware">
+                                    <h3 style="text-align: center"> This website </h3>
 
-                                    <p>This website uses almost exclusively HTML and CSS, at this point. The website is hosted
-                                    by GitHub Pages and the domain is routed via AWS (route55). I do plan on implementing javascript in the future, but
-                                    wanted to take a quick dive into web design, while also being able to quickly create a site where I can host my
-                                    portfolio and my personal projects, without overwhelming myself while learning Python. The first implementation of
-                                    this site was using a web design platform,
-                                    but I felt that it was not fulfilling in that I was not truly learning the ins and outs of web design. I decided to
-                                    completely scrap the website and essentially start from scratch. Keeping the site as just CSS and HTML allowed
-                                    me to get the website up and running in about 3 (long) days, while also learning a massive amount of information.
-                                      There is minimal javascript
-                                    in use, mainly for opening these collapsible boxes, but the majority of the code consists of css elements and html.
-                                    I mainly used a grid system to create the basic layout, and then used containers, like this one, to hold all the content.
-                                    You can browse through the source code for the entire website
-                                    <a href="https://github.com/jeremylaratro/jeremylaratro.github.io" target="_blank"> here</a></p>
+
+                                    <p> At the time I made this site, I knew very little about CSS and front-end development.
+                                        I wanted to learn more about this and also wanted a place to share some of my achievements, projects, notes, and general learning path. The website is hosted
+                                    by GitHub Pages and the domain is routed via AWS (route55). The website uses a lot of custom CSS and I originally started the site with Jekyll.
+                                    <a href="https://github.com/jeremylaratro/jeremylaratro.github.io" target="_blank" style="color: #FFFFFF"> The source code is available here</a></p>
 
 
 
 </div>
 
-               <div class="container header" style="display: flow-root;margin: auto;">
-                   <h3 > Open Source Contributions</h3>
-                   </div>
+<!--               <div class="container header" style="display: flow-root;margin: auto;">-->
+<!--                   <h3 > Open Source Contributions</h3>-->
+<!--                   </div>-->
 
                <div class="container hardware" style="">
+
                    <p><a href="https://www.instructables.com/How-to-Flash-GRBL-Onto-GRBL-CNC-Controller-Board-C/" target="_blank"> See here for my Instructables tutorial on how flash firmware onto a GRBL CNC controller board
                                        firmware: </a></p><p>
                    After having issues with firmware corruption on my CNC's control board, I saw that many people online were throwing out their boards
                    and ordering new ones. I was familiar with flashing firmware from my previous experience with the uSDX, so I decided to write a quick tutorial
                    for anyone who faces this problem.
                </p>
-                   <p><a href="https://github.com/jeremylaratro/QR-Code-Generator-And-Reader">QR Code Generator/Reader:</a> </p><p>I added file input functionality to an open source QR code
+                  <a href="https://github.com/jeremylaratro/QR-Code-Generator-And-Reader">QR Code Generator/Reader: </a><p>I added file input functionality to an open source QR code
                                        reader/generator. A friend of mine needed to encode text files, and it seemed none of the open source QR Code generators had file input functionality,
                                        only allowing plain text inputs. </p>
                </div>
@@ -381,7 +376,8 @@ display: none
             <a href="https://github.com/jeremylaratro/gps_speedo_arduino/blob/main/gps_speedo.cpp" target="_blank">
 
                        <button class="container collapsible">
-                           <h3 style="text-align:center"> Open Source: Arduino, GPS Speedometer <br> </h3> <p style="color: #eeeeff">During the summer of 2021, I saved up money and bought a small 15ft boat.
+                           <h3 style="text-align:center"> Open Source: Arduino, GPS Speedometer <br> </h3>
+                           <p>During the summer of 2021, I saved up money and bought a small 15ft boat.
                            Being an older boat, there were few electronics onboard and the speedometer was not working, so I wanted to create
                            one that would also potentially serve other functions such as providing location. I thought this may lead to
                            other ideas, such as creating a program that maps my boat travel. I used an Arduino Uno for prototyping with an OLED screen and NEO-6M GPS module. <br>
@@ -395,27 +391,28 @@ display: none
 
 
                 <div class="container hardware" style="">
-                <h2>Software / Systems Experience</h2>
-                    <p>Throughout my projects I have come across and become familiar with a number of different types of software, ranging a variety of purposes. Some of these
-                                    include:</p>
-                                    <p>Linux: I use Linux, specifically Ubuntu, as my daily OS, with Windows dual-boot.</p>
-                                    <p>Python </p>
-                                    <p>ChemDraw: Chemical structure representation, theoretical H/C-NMR projection, etc.</p>
-                                    <p>Adobe Lightroom, Photoshop</p>
-                                    <p>Digital radio modulation software (JTDX, FreeDV, PSK31, etc)</p>
-                                    <p>Microchip Studio: For JTag interface and ARM microcontrollers</p>
-                                    <p>MManaGAL: Antenna modeling </p>
-                                    <p>KiCAD: For creating printed circuit boards</p>
-                                    <p>bCNC / FlatCAM: For milling PCBs on my CNC. bCNC uses g-code, which is interpreted by the CNC controller to perform precision milling</p>
-                                    <p>Arduino</p>
-                                    <p>JetBrains Suite: PyCharm, WebStorm (which I use for this site), RubyMine, CLion, and IntelliJ IDEA</p>
-                                    <p>GitHub & Git: For publishing my projects, collaboration, and being a part of the open source community</p>
-                                    <p>Jupyter Notebook / Seaborn / Matplotlib: Data visualization </p>
-                                    <p>Raspberry Pi</p>
-                                    <p>Microsoft & Libre Office Suite</p>
-                                    <p>Virtual box & QEMU: For creating virtual machines</p>
-                                        <p> Cyber Security: Parrot OS & Kali Linux as well as many of the tools included (Burp Suite, metasploit framework, hashcat, aircrack-ng, gobuster, wpscan, whatweb, netcat,
-                                        binwalk, etc.)</p>
+                <h3 style="text-align: center">Software / Systems Experience</h3>
+
+                <p>Throughout my projects I have come across and become familiar with a number of different types of software, ranging a variety of purposes. Some of these
+                include:</p>
+                <p>Linux: I use Linux, specifically Ubuntu, as my daily OS, with Windows dual-boot.</p>
+                <p>Python </p>
+                <p>ChemDraw: Chemical structure representation, theoretical H/C-NMR projection, etc.</p>
+                <p>Adobe Lightroom, Photoshop</p>
+                <p>Digital radio modulation software (JTDX, FreeDV, PSK31, etc)</p>
+                <p>Microchip Studio: For JTag interface and ARM microcontrollers</p>
+                <p>MManaGAL: Antenna modeling </p>
+                <p>KiCAD: For creating printed circuit boards</p>
+                <p>bCNC / FlatCAM: For milling PCBs on my CNC. bCNC uses g-code, which is interpreted by the CNC controller to perform precision milling</p>
+                <p>Arduino</p>
+                <p>JetBrains Suite: PyCharm, WebStorm (which I use for this site), RubyMine, CLion, and IntelliJ IDEA</p>
+                <p>GitHub & Git: For publishing my projects, collaboration, and being a part of the open source community</p>
+                <p>Jupyter Notebook / Seaborn / Matplotlib: Data visualization </p>
+                <p>Raspberry Pi</p>
+                <p>Microsoft & Libre Office Suite</p>
+                <p>Virtual box & QEMU: For creating virtual machines</p>
+                    <p> Cyber Security: Parrot OS & Kali Linux as well as many of the tools included (Burp Suite, metasploit framework, hashcat, aircrack-ng, gobuster, wpscan, whatweb, netcat,
+                    binwalk, etc.)</p>
                 <p>
 
 
@@ -424,7 +421,6 @@ display: none
                            </div>
 
     </section>
-
 </body>
 <script>
     const coll = document.getElementsByClassName("container collapsible");
