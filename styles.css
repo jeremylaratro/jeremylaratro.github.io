@@ -3,7 +3,8 @@ h1 {
     font-size: 4rem;
 }
 p {
-    font-size: 1.5rem;
+    font-size: 100%;
+    color: #eeeeee;
 }
 body {
     margin: 5;
@@ -116,12 +117,11 @@ section {
 }
 
 .card-header h2 {
-    font-size: 2vw;
+    font-size: 100%;
     margin: .25rem 0 auto;
     text-decoration: none;
     color: #d4d4d4;
     border: 0;
-    display: inline-block;
     cursor: pointer;
 }
 .card.bottom h3 {

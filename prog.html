@@ -71,6 +71,20 @@
         .active, card.collapsible:hover {
             background-color: #ccc;
         }
+        button.container.collapsible:hover {
+              background: linear-gradient(90deg,#a5e2ff,#ffffff);
+              text-shadow: 0 0 .25rem #a5e2ff;
+              /*-webkit-text-fill-color: transparent;*/
+              -webkit-background-clip: text;
+              background-clip: text;
+          }
+        button.container.collapsible:hover {
+            color: #14396A !important;
+            background: #468CCF;
+            background: linear-gradient(to top, #031C2F, #590026);
+        }
+
+
 
         /* Style the collapsible content. Note: hidden by default */
         card.content {
@@ -132,7 +146,7 @@
 
         }
         .header h2 {
-            font-size: 60px;
+            font-size: 150%;
             margin: .25rem 0 auto;
             text-decoration: none;
             color: #d4d4d4;
@@ -178,13 +192,13 @@
         .parent.hard.top {
             display: grid;
            grid-template-columns: repeat(2, 1fr);
-           grid-template-rows: repeat(4, 0.5fr) 0.45fr;
+           /*grid-template-rows: repeat(4, 0.5fr) 0.45fr;*/
            grid-column-gap: 0;
            grid-row-gap: 0;
            }
 
         .div1.hard.top { grid-area: 1 / 1 / 5 / 2; }
-        .div2.hard.top { grid-area: 5 / 1 / 6 / 3; }
+        .div2.hard.top { grid-area: 2 / 1 / 2 / 2; }
         .div3.hard.top { grid-area: 1 / 2 / 2 / 3; }
         .div4.hard.top { grid-area: 2 / 2 / 3 / 3; }
         .div5.hard.top { grid-area: 3 / 2 / 4 / 3; }
@@ -193,6 +207,9 @@
         .div8.hard.top { grid-area: 4 / 1 / 4 / 1; }
 a {
     text-decoration: none;
+    font-size: 150%;
+    color: #eeee;
+    margin: auto;
 }
 h3 {
     font-size: 150%;
@@ -215,17 +232,17 @@ p {
     <div class="parent hard top">
     <div class="div1 hard top">
         <div class="card-header">
-    <div class="header">
+    <div class="header" style="font-size: 185%;">
         <h2>Jeremy Laratro:
         Programming and Software </h2>
     </div>
         </div>
     </div>
     <div class="div2 hard top">
-        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+
         <h2>Welcome! See below to read more about my programming and software projects! </h2>
 
-        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+
         </div>
         <div class="div3 hard top">
 
@@ -295,7 +312,7 @@ p {
 
 
             <button  class="container collapsible" >
-            <span class="card-header">
+            <span class="card-header" style="font-size: 150%;">
             <h2 style="text-align: center">Computer Science: </h2>
             <h2 style="text-align: center">Click here to see recent programming and software projects </h2>
             </span>
