@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremy Laratro: Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet"/>
 
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script>
-              if (screen.width<800) {window.location="/mobile.html";}
-          </script>
+        if (screen.width < 800) {
+            window.location = "/mobile.html";
+        }
+    </script>
     <style media="screen">
         h1 {
             font-size: 4rem;
         }
+
         p {
             font-size: 1.5rem;
         }
+
         body {
 
             font-family: 'Prompt', sans-serif;
@@ -43,7 +47,6 @@
         }
 
 
-
         .blobs {
             width: 100%;
             height: 100%;
@@ -55,7 +58,6 @@
         }
 
 
-
         .card:hover {
             transform: translateY(-1rem);
         }
@@ -65,7 +67,6 @@
             margin: 5% 3% 3% 3%;
 
         }
-
 
 
         .card-header p {
@@ -83,6 +84,7 @@
             display: flex;
             cursor: pointer;
         }
+
         .card.bottom h3 {
             margin-bottom: 0;
             position: center;
@@ -90,10 +92,8 @@
         }
 
 
-
-
         .card-header h2:hover {
-            background: linear-gradient(90deg,#a5e2ff,#ffffff);
+            background: linear-gradient(90deg, #a5e2ff, #ffffff);
             text-shadow: 0 0 .25rem #a5e2ff;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
@@ -132,7 +132,7 @@
         }
 
         .tags a:hover {
-            background: linear-gradient(90deg,#a5e2ff,#ffffff);
+            background: linear-gradient(90deg, #a5e2ff, #ffffff);
             text-shadow: none;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
@@ -154,11 +154,13 @@
             right: 0;
 
         }
+
         h6 {
             font-size: 24px;
-            word-spacing: 10px ;
+            word-spacing: 10px;
             display: inline;
         }
+
         .parent {
             display: grid;
             grid-template-columns: repeat(5, 5fr);
@@ -177,37 +179,55 @@
             background: #17141d;
             box-shadow: -1rem 0 3rem #000;
         }
-        .div.div1 { grid-area: 1 / 1 / 6 / 6;
+
+        .div.div1 {
+            grid-area: 1 / 1 / 6 / 6;
 
         }
-        .div.div2 { grid-area: 1 / 2 / 2 / 5;
+
+        .div.div2 {
+            grid-area: 1 / 2 / 2 / 5;
 
         }
-        .div3 { grid-area: 1 / 3 / 2 / 4;
+
+        .div3 {
+            grid-area: 1 / 3 / 2 / 4;
 
         }
-        .div.div4 { grid-area: 2 / 3 / 3 / 3;
+
+        .div.div4 {
+            grid-area: 2 / 3 / 3 / 3;
 
         }
-        .div.div5 { grid-area: 2 / 4 / 3 / 5;
+
+        .div.div5 {
+            grid-area: 2 / 4 / 3 / 5;
 
         }
-        .div.div6 { grid-area: 2 / 2 / 3 / 3;
+
+        .div.div6 {
+            grid-area: 2 / 2 / 3 / 3;
 
         }
-        .div.div7 { grid-area: 3 / 2 / 4 / 3;
+
+        .div.div7 {
+            grid-area: 3 / 2 / 4 / 3;
 
         }
-        .div.div8 { grid-area: 3 / 3 / 4 / 4;
+
+        .div.div8 {
+            grid-area: 3 / 3 / 4 / 4;
 
         }
-        .div.div9 { grid-area: 3 / 4 / 4 / 5;
+
+        .div.div9 {
+            grid-area: 3 / 4 / 4 / 5;
 
         }
 
         h5 {
             font-size: 14px;
-            word-spacing: 10px ;
+            word-spacing: 10px;
             display: inline;
             flex-grow: inherit;
             color: #7a7a8c;
@@ -215,12 +235,14 @@
             text-shadow: 1px 1px 0 #28242f;
             grid-row: auto;
         }
+
         h6 {
             font-size: 24px;
-            word-spacing: 10px ;
+            word-spacing: 10px;
             display: inline;
         }
-        header h3{
+
+        header h3 {
             font-size: 40px;
             margin: .25rem 0 auto;
             text-decoration: none;
@@ -229,6 +251,7 @@
             justify-items: right;
             cursor: pointer;
         }
+
         .container {
             width: 50%;
             height: 100%;
@@ -240,6 +263,7 @@
             box-shadow: 1rem 0 2rem #000;
             display: flow;
         }
+
         .container.header {
             width: auto;
             position: relative;
@@ -257,6 +281,7 @@
             color: #d4d4d4;
             border: 0;
         }
+
         .grid-item {
             position: relative;
             text-align: center;
@@ -278,7 +303,10 @@
 
 
         }
-        a { text-decoration: none; }
+
+        a {
+            text-decoration: none;
+        }
 
 
         footer h3 {
@@ -291,12 +319,11 @@
             cursor: pointer;
             text-align: center;
         }
+
         .footer {
 
             text-align: center;
         }
-
-
 
 
     </style>
@@ -317,7 +344,7 @@
 
                     <h2 class=" animate__animated animate__zoomInDown">
                         <a href="/CS/cysec" target="_blank">
-                    NEW: Cyber Security | Computer Science : Blog, Notes and More </a>
+                            NEW: Cyber Security | Computer Science : Blog, Notes and More </a>
                     </h2>
                     <h3 class=" animate__animated animate__zoomInDown">Jeremy Laratro</h3>
                 </div>
@@ -337,7 +364,8 @@
                                           <span class="logo">
 
                                               <span class="logo-icon">
-                                                  <img src='blobs/em.png' alt="radio, HF, amateur radio, ham radio, jeremy laratro">
+                                                  <img src='blobs/em.png'
+                                                       alt="radio, HF, amateur radio, ham radio, jeremy laratro">
                                               </span>
                                           </span>
                         </a>
@@ -365,7 +393,8 @@
                                              <span class="logo">
 
                                                  <span class="logo-icon">
-                                                     <img src='blobs/python1.jpeg' alt="radio, HF, amateur radio, ham radio, jeremy laratro">
+                                                     <img src='blobs/python1.jpeg'
+                                                          alt="radio, HF, amateur radio, ham radio, jeremy laratro">
                                                  </span>
 
                                              </span>
@@ -379,7 +408,7 @@
             </a>
         </div>
         <div class="div div5">
-            <a href="/hardware.html">
+            <a href="categories/Hardware.html">
                 <article class="card">
                     <div class="card-header">
                         <h2> Hardware</h2>
@@ -391,7 +420,8 @@
                                                    <span class="logo">
 
                                                        <span class="logo-icon">
-                                                           <img src='pgb-dsp.svg' alt="radio, HF, amateur radio, ham radio, jeremy laratro">
+                                                           <img src='images/pgb-dsp.svg'
+                                                                alt="radio, HF, amateur radio, ham radio, jeremy laratro">
                                                        </span>
                                                    </span>
                             </div>
@@ -413,7 +443,8 @@
                             <span class="logo">
 
                                                           <span class="logo-icon">
-                                                              <img src=photo-camera-camera-svgrepo-com.svg alt="radio, HF, amateur radio, ham radio, jeremy laratro">
+                                                              <img src=images/photo-camera-camera-svgrepo-com.svg
+                                                                   alt="radio, HF, amateur radio, ham radio, jeremy laratro">
                                                           </span>
                                                       </span>
 
@@ -436,7 +467,8 @@
                             <span class="logo">
 
                                                                     <span class="logo-icon">
-                                                                        <img src='gummy-chemistry-lab.svg' alt="radio, HF, amateur radio, ham radio, jeremy laratro">
+                                                                        <img src='images/gummy-chemistry-lab.svg'
+                                                                             alt="radio, HF, amateur radio, ham radio, jeremy laratro">
                                                                     </span>
                                                                 </span>
 
@@ -457,7 +489,8 @@
 
                             <span class="logo">
                                                  <span class="logo-icon">
-                                                     <img src='JSL_7031(1).jpg' alt="radio, HF, amateur radio, ham radio, jeremy laratro">
+                                                     <img src='images/JSL_7031(1).jpg'
+                                                          alt="radio, HF, amateur radio, ham radio, jeremy laratro">
 
                                                  </span>
                                              </span>
@@ -470,7 +503,6 @@
     </div>
 
 
-
 </section>
 <footer class="footer">
 
@@ -479,7 +511,6 @@
 
 
 </body>
-
 
 
 </html>

@@ -1,10 +1,13 @@
-<style>
+<
+style >
 h1 {
     font-size: 4rem;
 }
+
 p {
     font-size: 1.5rem;
 }
+
 body {
     margin: 5;
     font-family: 'Prompt', sans-serif;
@@ -41,7 +44,6 @@ section {
 }
 
 
-
 .spacer {
     aspect-ratio: 1260/600;
     width: 100%;
@@ -64,12 +66,14 @@ section {
 
     background: url('/blobs/blobs.svg') no-repeat bottom / cover;
 }
+
 .rfbackground {
     width: 100%;
     height: 100%;
     border-radius: 16px;
-    background: url('/layered-waves-haikei(1).svg') no-repeat bottom / cover;
+    background: url('/images/layered-waves-haikei(1).svg') no-repeat bottom / cover;
 }
+
 .backgroundchem {
     width: 100%;
     height: 100%;
@@ -78,6 +82,7 @@ section {
     background: url('polygon-scatter-haikei.svg') no-repeat bottom / cover;
 
 }
+
 .backgroundhard {
     width: auto;
     height: auto;
@@ -85,6 +90,7 @@ section {
     border-radius: 16px;
     background: url('blob-haikei(5).svg') no-repeat bottom / cover;
 }
+
 .card {
     height: 350px;
     width: 400px;
@@ -98,7 +104,7 @@ section {
     margin: 0;
     scroll-snap-align: start;
     clear: both;
-    position:relative;
+    position: relative;
     transition: .5s ease;
 
 
@@ -116,7 +122,7 @@ section {
 .card-header p {
     font-size: 120%;
     margin: 0 0 1rem;
-    color: ##d4d4d4;
+    color: # #d4d4d4;
 }
 
 .card-header h2 {
@@ -129,6 +135,7 @@ section {
     cursor: pointer;
 
 }
+
 .card-header h3 {
     font-size: 40px;
     margin: 20px auto;
@@ -138,12 +145,14 @@ section {
     position: fit-content;
     cursor: pointer;
 }
+
 .card.header-text-wrap {
-background: transparent;
+    background: transparent;
     height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 .card.bottom h3 {
     margin-bottom: auto;
     position: center;
@@ -152,13 +161,12 @@ background: transparent;
 
 
 .card-header h2:hover {
-    background: linear-gradient(90deg,#a5e2ff,#ffffff);
+    background: linear-gradient(90deg, #a5e2ff, #ffffff);
     text-shadow: 0 0 .25rem #a5e2ff;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
-
 
 
 .logo {
@@ -204,7 +212,7 @@ background: transparent;
 }
 
 .tags a:hover {
-    background: linear-gradient(90deg,#a5e2ff,#ffffff);
+    background: linear-gradient(90deg, #a5e2ff, #ffffff);
     text-shadow: none;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -212,30 +220,34 @@ background: transparent;
     background-clip: text;
     border-color: white;
 }
+
 .card.rf {
-    position:relative;
+    position: relative;
     transition: .5s ease;
     top: -151px;
     left: -575px;
     right: -420px;
     bottom: -191px;
 }
+
 .card.prog {
-    position:relative;
+    position: relative;
     transition: .5s ease;
     top: -600px;
     left: -10px;
     right: -420px;
     bottom: -191px;
 }
+
 .card.hard {
-    position:relative;
+    position: relative;
     transition: .5s ease;
     top: -1048px;
     left: 570px;
     right: -220px;
     bottom: -191px;
 }
+
 .footer h4 {
     font-size: 28px;
     margin: .25rem 0 auto;
@@ -250,9 +262,10 @@ background: transparent;
     right: 0;
 
 }
+
 h6 {
     font-size: 24px;
-    word-spacing: 10px ;
+    word-spacing: 10px;
     display: inline;
 }
 
@@ -269,8 +282,9 @@ h6 {
     margin: 0;
     /*scroll-snap-align: start;*/
     clear: both;
-    position:relative;
-    /*transition: .5s ease;*/
+    position: relative;
+
+/*transition: .5s ease;*/
 
 .custom-container {
     display: grid;
@@ -299,6 +313,7 @@ h6 {
     box-sizing: border-box;
 
 }
+
 .basic-grid {
     display: grid;
     gap: 1rem;

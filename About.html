@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;" xmlns="http://www.w3.org/1999/html">
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="jeremy laratro">
@@ -8,59 +8,55 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>About</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="About.css" media="screen">
+    <link rel="stylesheet" href="About.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.3.3, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-     <link rel="stylesheet" href="styles.css">
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="styles.css">
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="About">
     <meta property="og:type" content="website jeremy laratro">
     <style>
-        .card.about {
-        position: relative;
-        display: flex;
-        }
-        /*.parent {*/
-        /*display: grid;*/
-        /*grid-template-columns: repeat(5, 1fr);*/
-        /*grid-template-rows: repeat(5, 1fr);*/
-        /*grid-column-gap: 0px;*/
-        /*grid-row-gap: 0px;*/
-        /*}*/
+
         .parent {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 0.25fr);
-        grid-column-gap: 0;
-        grid-row-gap: 100px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 0.25fr);
+            grid-column-gap: 0;
+            grid-row-gap: 100px;
         }
 
-        .div1 { grid-area: 1 / 1 / 6 / 6; }
-        .div2 { grid-area: 1 / 2 / 2 / 5; }
-        .div3 { grid-area: 2 / 3 / 4 / 5; }
-        .div4 { grid-area: 2 / 2 / 4 / 3; }
-        .div5 { grid-area: 4 / 2 / 5 / 5; }
-        .div6 { grid-area: 2 / 2 / 3 / 3; }
-
-        .blob.page {
-            position: relative;
-            padding-bottom: 2%;
+        .div1 {
+            grid-area: 1 / 1 / 6 / 6;
         }
-        .spacesome {
-            margin-top: 30px;
+
+        .div2 {
+            grid-area: 1 / 2 / 2 / 5;
         }
-        .card.rf {
-            position: center;
-            height: 500px;
-            width: 2000px;
-            min-width: 250px;
+
+        .div3 {
+            grid-area: 2 / 3 / 4 / 5;
+        }
+
+        .div4 {
+            grid-area: 2 / 2 / 4 / 3;
+        }
+
+        .div5 {
+            grid-area: 4 / 2 / 5 / 5;
+        }
+
+        .div6 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
 
 
-        }
+
+
         .container {
-            width: 1000px;
+            width: 60%;
             margin: 20px auto;
             padding: 1.5rem;
             position: relative;
@@ -70,9 +66,10 @@
             box-shadow: 1rem 0 2rem #000;
             display: flex;
         }
+
         h5 {
-            font-size: 14px;
-            word-spacing: 10px ;
+
+            word-spacing: 10px;
             display: inline;
             flex-grow: inherit;
             color: #7a7a8c;
@@ -80,6 +77,7 @@
             text-shadow: 1px 1px 0 #28242f;
             grid-row: auto;
         }
+
         .card.collapsible {
             background-color: #eee;
             color: #444;
@@ -105,6 +103,7 @@
             overflow: hidden;
             background-color: #f1f1f1;
         }
+
         .container.collapsible {
 
             cursor: pointer;
@@ -112,7 +111,7 @@
             text-align: center;
             outline: none;
             font-size: 15px;
-            width: 75%px;
+            width: 75% px;
             margin: auto;
             padding: 1.5rem;
 
@@ -123,12 +122,12 @@
         }
 
         .active, .container.collapsible:hover {
-            background-color: #555;
+            background: transparent;
         }
 
         .container.content {
             /*padding: 0 18px;*/
-            color:#eee;
+            color: #eee;
             display: none;
             /*overflow: scroll;*/
             justify-self: center;
@@ -139,6 +138,7 @@
             position: center;
 
         }
+
         /*.container {*/
         /*    height: auto;*/
         /*    width: 85%;*/
@@ -151,25 +151,33 @@
         /*    scroll-snap-align: flex-start;*/
         /*    clear: none;*/
 
-            /*position:center;*/
-            /*justify-self: center;*/
-            /*display: flow-root;*/
+        /*position:center;*/
+        /*justify-self: center;*/
+        /*display: flow-root;*/
 
         .parent {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0;
-        grid-row-gap: 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 0;
+            grid-row-gap: 0;
         }
 
-        .div1 { grid-area: 2 / 1 / 5 / 3; }
-        .div2 { grid-area: 2 / 3 / 5 / 5; }
-        .div3 { grid-area: 1 / 2 / 2 / 4; }
+        .div1 {
+            grid-area: 2 / 1 / 5 / 3;
+        }
+
+        .div2 {
+            grid-area: 2 / 3 / 5 / 5;
+        }
+
+        .div3 {
+            grid-area: 1 / 2 / 2 / 4;
+        }
 
 
         .header h2 {
-            font-size: 60px;
+
             margin: .25rem 0 auto;
             text-decoration: none;
             color: #d4d4d4;
@@ -178,15 +186,16 @@
             cursor: pointer;
             position: center;
         }
+
         .header h3 {
-                    font-size: 1.1vw;
-                    margin: .25rem 0 auto;
-                    text-decoration: none;
-                    color: #d4d4d4;
-                    border: 0;
-                    display: flow-root;
-                    cursor: pointer;
-                }
+            font-size: 1.1vw;
+            margin: .25rem 0 auto;
+            text-decoration: none;
+            color: #d4d4d4;
+            border: 0;
+            display: flow-root;
+            cursor: pointer;
+        }
 
 
         .header h6 {
@@ -202,43 +211,66 @@
         }
 
 
-    $button {
-    text-align: center;
+        $
+        button {
+            text-align: center;
         }
-.spacetop {
-    margin-top: 10%;
-}
 
-        .div1 { grid-area: 2 / 1 / 5 / 3; }
-       .div2 { grid-area: 2 / 3 / 5 / 5; }
-       .div3 { grid-area: 1 / 2 / 2 / 4; }
-       .div4 { grid-area: 2 / 3 / 5 / 4; }
-       .div5 { grid-area: 2 / 2 / 5 / 3; }
+        .spacetop {
+            margin-top: 10%;
+        }
 
-.u-logo {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 20%;
-    margin: auto;
-    position: center;
-    justify-self: center;
-    justify-items: center;
-    }
-.logo-icon-ab img {
-    width: 170px;
-    height: 170px;
-    border-radius: 100%;
-    filter: grayscale(75%);
-}
-p {
-    font-size: 1.3vw;
-}
+        .div1 {
+            grid-area: 2 / 1 / 5 / 3;
+        }
 
+        .div2 {
+            grid-area: 2 / 3 / 5 / 5;
+        }
 
-</style>
+        .div3 {
+            grid-area: 1 / 2 / 2 / 4;
+        }
 
-  </head>
+        .div4 {
+            grid-area: 2 / 3 / 5 / 4;
+        }
+
+        .div5 {
+            grid-area: 2 / 2 / 5 / 3;
+        }
+
+        .u-logo {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 20%;
+            margin: auto;
+            position: center;
+            justify-self: center;
+            justify-items: center;
+        }
+
+        .logo-icon-ab img {
+            width: 170px;
+            height: 170px;
+            border-radius: 100%;
+            filter: grayscale(75%);
+        }
+
+        p {
+            font-size: 1.3vw;
+        }
+        h2 {
+            color: #eeeeee;
+        }
+        h1 {
+            color: #eeeeee;
+        }
+
+    </style>
+
+</head>
 
 
 <!--  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-b8a3"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">-->
@@ -254,129 +286,157 @@ p {
 <!--          </div>-->
 <body>
 
-  <section class="background5">
+<section class="background5" style="position: absolute">
 
 
- <div class="div2">
-<div class="rfbackground" style="overflow: hidden">
+    <div class="div2">
+        <div class="rfbackground" style="overflow: hidden">
 
-     <div class="u-nav-container">
-             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.html" style="padding: 10px 20px;">Home</a>
- </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
- </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="https://www.flickr.com/photos/jeremylaratro/" style="padding: 10px 20px;">Flickr</a>
- </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Photolio.html" style="padding: 10px 20px;">Photos</a>
-             </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="categories/chem.html" style="padding: 10px 20px;">Chemistry</a>
-             </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="categories/radio.html" style="padding: 10px 20px;">Radio</a> </li>
-                 </li></ul>
+            <div class="u-nav-container">
+                <ul class="u-nav u-unstyled u-nav-1">
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="index.html" style="padding: 10px 20px;">Home</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="About.html" style="padding: 10px 20px;">About</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="https://www.flickr.com/photos/jeremylaratro/" style="padding: 10px 20px;">Flickr</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="Photolio.html" style="padding: 10px 20px;">Photos</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="categories/chem.html" style="padding: 10px 20px;">Chemistry</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="categories/radio.html" style="padding: 10px 20px;">Radio</a></li>
+                </ul>
 
-               </div>
+            </div>
 
-             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-           </div>
-         </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+    </div>
 
 
-  </section>
-  <div class="div6"
+
+
+
+<div class="div6"
 <div class="u-separator-grey"></div>
-<div class="spacesome"></div>
-<div class="spacetop"></div>
 
-<button class="container collapsible" >
-      <div class="card header" style="margin: 5%">
+
+<button class="container collapsible">
+    <div class="card header" style="margin: 5%">
         <h1>About Me:</h1>
         <h6>Jeremy Laratro</h6>
-      </div>
+    </div>
 
-      <div class="u-logo">
-        <img src="/img/jeremylaratrimiror.jpg"  alt="Jeremy Laratro" style="width:100%">
-      </div>
+    <div class="u-logo">
+        <img src="/img/jeremylaratrimiror.jpg" alt="Jeremy Laratro" style="width:100%">
+    </div>
 
-    </button>
-  <div class="container content">
-  <h3>About Me:</h3>
-  <p>
-      I graduated in August 2022 with a B.Sc. in Integrative Animal Biology from the University of South Florida. During my time in undergrad,
-         I took a variety of essential classes, including pre-calculus and trigonometry, calculus I, physics I & II, general chemistry I & II, biology I & II, cell biology, genetics, organic chemistry I & II,
-         and many more. My favorite classes were physics II and organic chemistry. <br>
-         <br>
-         Upon the start of the pandemic, I found many passions and interests which I simply had never
-         been exposed to prior, such as electrical engineering and programming. The pandemic served as a bridge into these new interests via the extra free time and isolation. <br>
-         Specifically, I happened to come upon amateur radio and Arduino, and from there I continued to grow and vigorously expand my interest and knowledge of circuits,
-         software and programming, radio and antenna theory, and general electronics. <br>
-         <br>In the time since, I've built up a repertoire of projects, put together a versatile and functional
-         electronics bench with an oscilloscope, VNA, spectrum analyzer, TDR meter, SMT soldering station, as well as a fully functional radio station in which I have contacted
-         people from every continent and nearly 100 unique countries. <br>
-         <br>
-         My current goal is to continue learning and break into either the cybersecurity or electrical engineering field. I'm working towards a cyberecurity certificate at the moment,
-         and following a diversified learning pathway which includes both fundamental theory and background along with practical application. Using ethical hacking channels such as tryhackme,
-         I've become familiar with a wide variety of tools and techniques, including metasploit framework, burp suite, hashcat, nmap, netcat, ffuf, gobuster, wpscan, sqlmap, maltego, whatweb, binwalk, along
-         with concepts such as SSRF, XSS, privilege escalation, reverse shells, network enumeration, and many, many more. I'm currently ranked within the top 8% of users on tryhackme.com.
-      <br> <br>
-      <a href=https://tryhackme.com/p/jeremylaratro target="_blank">
+</button>
+<div class="container content">
+    <h3>About Me:</h3>
+    <p>
+        I graduated in August 2022 with a B.Sc. in Integrative Animal Biology from the University of South Florida.
+        During my time in undergrad,
+        I took a variety of essential classes, including pre-calculus and trigonometry, calculus I, physics I & II,
+        general chemistry I & II, biology I & II, cell biology, genetics, organic chemistry I & II,
+        and many more. My favorite classes were physics II and organic chemistry. <br>
+        <br>
+        Upon the start of the pandemic, I found many passions and interests which I simply had never
+        been exposed to prior, such as electrical engineering and programming. The pandemic served as a bridge into
+        these new interests via the extra free time and isolation. <br>
+        Specifically, I happened to come upon amateur radio and Arduino, and from there I continued to grow and
+        vigorously expand my interest and knowledge of circuits,
+        software and programming, radio and antenna theory, and general electronics. <br>
+        <br>In the time since, I've built up a repertoire of projects, put together a versatile and functional
+        electronics bench with an oscilloscope, VNA, spectrum analyzer, TDR meter, SMT soldering station, as well as a
+        fully functional radio station in which I have contacted
+        people from every continent and nearly 100 unique countries. <br>
+        <br>
+        My current goal is to continue learning and break into either the cybersecurity or electrical engineering field.
+        I'm working towards a cyberecurity certificate at the moment,
+        and following a diversified learning pathway which includes both fundamental theory and background along with
+        practical application. Using ethical hacking channels such as tryhackme,
+        I've become familiar with a wide variety of tools and techniques, including metasploit framework, burp suite,
+        hashcat, nmap, netcat, ffuf, gobuster, wpscan, sqlmap, maltego, whatweb, binwalk, along
+        with concepts such as SSRF, XSS, privilege escalation, reverse shells, network enumeration, and many, many more.
+        I'm currently ranked within the top 8% of users on tryhackme.com.
+        <br> <br>
+        <a href=https://tryhackme.com/p/jeremylaratro target="_blank">
 
-      <img src="https://tryhackme-badges.s3.amazonaws.com/jeremylaratro.png" alt="TryHackMe" target="_blank">
-          </a>
-      <br>
-          <br>
-          <a href=https://github.com/jeremylaratro target="_blank">My GitHub Profile</a>
-          <br>
-          <br><br> <br> </p>
+            <img src="https://tryhackme-badges.s3.amazonaws.com/jeremylaratro.png" alt="TryHackMe" target="_blank">
+        </a>
+        <br>
+        <br>
+        <a href=https://github.com/jeremylaratro target="_blank">My GitHub Profile</a>
+        <br>
+        <br><br> <br></p>
 </div>
-<div class="spacesome"></div>
-<button class="container collapsible" >
+
+<button class="container collapsible">
     <h1>About This Site</h1>
 </button>
 <div class="container content" style="justify-self: center">
 
     <h2> About This Site</h2>
-    <br> <p>
-    I created this site using mostly HTML and CSS. The site is hosted by Github pages and the domain is routed via AWS (Route55).
-I plan to post more projects as I have time, and update the site as my understanding and skills improve.
-</p>
+    <br>
+    <p>
+        I created this site using mostly HTML and CSS. The site is hosted by Github pages and the domain is routed via
+        AWS (Route55).
+        I plan to post more projects as I have time, and update the site as my understanding and skills improve.
+    </p>
     <p> Sources:</p>
-      <p>https://cssgrid-generator.netlify.app/</p>
-      <p>https://app.haikei.app/</p>
-      <p>https://freesvg.org/</p>
-      <p>https://www.svgrepo.com</p>
-      <p>https://www.w3schools.com/</p>
+    <p>https://cssgrid-generator.netlify.app/</p>
+    <p>https://app.haikei.app/</p>
+    <p>https://freesvg.org/</p>
+    <p>https://www.svgrepo.com</p>
+    <p>https://www.w3schools.com/</p>
 
-  <h6></h6>
+    <h6></h6>
 </div>
-<div class="spacesome"></div>
 
 
 <button class="container collapsible">
     <h1>Contact Me</h1>
 
-  </button>
-  <div class="container content">
-      <a href="mailto:jeremylaratro@gmail.com">
-    <h3>If you have any questions or comments, click here to contact me.</h3>
+</button>
+<div class="container content">
+    <a href="mailto:jeremylaratro@gmail.com">
+        <h3>If you have any questions or comments, click here to contact me.</h3>
     </a>
     <h3>
 
-  </div>
-<div class="spacesome"></div>
+</div>
+</section>
 </body>
-
 
 
 <script>
     const coll = document.getElementsByClassName("container collapsible");
     let i;
 
-for (i = 0; i < 3; i++) {
-coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    const content = this.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
+    for (i = 0; i < 3; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            const content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
     }
-});
-}
 </script>
 
 </html>

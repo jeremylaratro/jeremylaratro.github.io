@@ -2,21 +2,21 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
       xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Jeremy Laratro: Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <style>
 
         h5 {
 
-            word-spacing: 10px ;
+            word-spacing: 10px;
             display: inline;
             flex-grow: inherit;
             color: #7a7a8c;
@@ -24,16 +24,25 @@
             text-shadow: 1px 1px 0 #28242f;
             grid-row: auto;
         }
+
         .card.collapsible {
             background-color: #eee;
             color: #444;
             cursor: pointer;
             padding: 18px;
             position: center;
-
-
             text-align: left;
             outline: none;
+        }
+
+        .testbutton:hover {
+            color: #14396A !important;
+            background: #468CCF;
+            background: linear-gradient(to top, #36687F, #326075);
+        }
+
+        .active, .container.collapsible:hover {
+            background: linear-gradient(to top, #36687F, #326075);
         }
 
         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -62,13 +71,14 @@
 
         .container.content {
             padding: 0 18px;
-            color:#eee;
+            color: #eee;
 
             justify-self: center;
             background: #17141d center;
             position: center;
 
         }
+
         .container {
             height: auto;
             width: 85%;
@@ -83,6 +93,7 @@
             justify-self: center;
             display: flow-root;
         }
+
         .container.inside {
             display: flex;
             height: auto;
@@ -95,6 +106,7 @@
             margin: 0.7%;
 
         }
+
         .parent {
             grid-template-columns: repeat(1, 1fr);
             grid-column-gap: 0;
@@ -102,12 +114,29 @@
         }
 
 
-        .div1 { grid-area: 1 / 2 / 2 / 6; }
-        .div2 { grid-area: 1 / 3 / 2 / 4; }
-        .div3 { grid-area: 1 / 4 / 2 / 5; }
-        .div4 { grid-area: 1 / 1 / 2 / 8; }
-        .div5 { grid-area: 2 / 1 / 5 / 8; }
-        .div6 { grid-area: 5 / 2 / 8 / 6; }
+        .div1 {
+            grid-area: 1 / 2 / 2 / 6;
+        }
+
+        .div2 {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+
+        .div3 {
+            grid-area: 1 / 4 / 2 / 5;
+        }
+
+        .div4 {
+            grid-area: 1 / 1 / 2 / 8;
+        }
+
+        .div5 {
+            grid-area: 2 / 1 / 5 / 8;
+        }
+
+        .div6 {
+            grid-area: 5 / 2 / 8 / 6;
+        }
 
         .header h2 {
             font-size: 130%;
@@ -119,6 +148,7 @@
             cursor: pointer;
             position: center;
         }
+
         .header h3 {
             font-size: 2vw;
             margin: .25rem 0 auto;
@@ -148,53 +178,62 @@
             position: center;
             justify-self: center;
         }
+
         p {
             font-size: 1.2vw;
             padding: inherit;
             justify-content: center;
         }
+
         p.b {
             font-weight: bold;
         }
+
         .row:after {
-          content: "";
-          display: table;
-          clear: both;
+            content: "";
+            display: table;
+            clear: both;
         }
 
 
         @media only screen and (min-width: 640px) {
-          .container.inside{
-              grid-template-columns: repeat(1, 1fr);
-            /*grid-template-columns: 47.5% 47.5%;*/
-            grid-column-gap: 5%;
-            grid-row-gap: 40px;
-          }
-            img{
+            .container.inside {
+                grid-template-columns: repeat(1, 1fr);
+                /*grid-template-columns: 47.5% 47.5%;*/
+                grid-column-gap: 5%;
+                grid-row-gap: 40px;
+            }
+
+            img {
                 width: 30vw;
             }
-            p{
-                   grid-template-columns: repeat(1, 1fr);
-                 /*grid-template-columns: 47.5% 47.5%;*/
-                 grid-column-gap: 5%;
-                 grid-row-gap: 40px;
-               }
-          .grid_items > div {
-            padding: 20px;
-          }
+
+            p {
+                grid-template-columns: repeat(1, 1fr);
+                /*grid-template-columns: 47.5% 47.5%;*/
+                grid-column-gap: 5%;
+                grid-row-gap: 40px;
+            }
+
+            .grid_items > div {
+                padding: 20px;
+            }
         }
-         
+
         }
-          h2 {
-                font-size :140%;
-          }
+        h2 {
+            font-size: 140%;
+        }
+
         a:link, a:visited {
             color: #eeeeff;
         }
+
         a {
             color: #FFFFFF;
             font-size: 0.85vw;
         }
+
         a:hover {
             color: #FFFFFF;
             font-weight: bold;
@@ -204,253 +243,281 @@
 </head>
 
 <body>
-<section class="backgroundchem">
+<section class="backgroundchem" style="position: absolute">
 
     <div class="parent" style="width: 65%;">
-    <div class="div2">
-<!--    <div class="grid-item">-->
-    <div class="container" style="text-align: center">
-    <div class="parent hard top">
-    <div class="div1 hard top">
-        <div class="card-header">
-    <div class="header">
-        <h2>Jeremy Laratro:
-        Chemistry </h2>
+        <div class="div2">
+            <!--    <div class="grid-item">-->
+            <div class="container" style="text-align: center">
+                <div class="parent hard top">
+                    <div class="div1 hard top">
+                        <div class="card-header">
+                            <div class="header">
+                                <h2>Jeremy Laratro:
+                                    Chemistry </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div2 hard top">
+                        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+                        <h2>Welcome! See below to read more about my academic work and projects in chemistry </h2>
+
+                        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+                    </div>
+                    <div class="div3 hard top">
+
+                        <div class="container" style="text-align: center">
+
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/index.html" target="_blank">Home</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div4 hard top">
+                        <div class="container" style="text-align: center">
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/About.html" target="_blank">About | Contact </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div5 hard top">
+                        <div class="container" style="text-align: center">
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/categories/chem.html" target="_blank">Chemistry</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div6 hard top">
+                        <div class="container" style="text-align: center">
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="radio.html" target="_blank">Radio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div7 hard top">
+                        <div class="container" style="text-align: center">
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/Hardware.html" target="_blank">Hardware </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div8 hard top">
+                        <div class="container" style="text-align: center">
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/Photolio.html" target="_blank">Photography </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-        </div>
-    </div>
-    <div class="div2 hard top">
-        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
-        <h2>Welcome! See below to read more about my academic work and projects in chemistry </h2>
-
-        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
-        </div>
-        <div class="div3 hard top">
-
-        <div class="container" style="text-align: center">
-
-        <div class="rfbackground" style="margin: 0; display:fit-content" >
-        <div class="card-header">
-            <div class="testbutton">
-        <a href="/index.html"  target="_blank">Home</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="div4 hard top">
-               <div class="container" style="text-align: center">
-               <div class="rfbackground" style="margin: 0; display:fit-content" >
-               <div class="card-header">
-                   <div class="testbutton">
-               <a href="/About.html"  target="_blank">About | Contact </a>
-                   </div> </div> </div>
-               </div>
-               </div>
-        <div class="div5 hard top">
-                       <div class="container" style="text-align: center">
-                       <div class="rfbackground" style="margin: 0; display:fit-content" >
-                       <div class="card-header">
-                           <div class="testbutton">
-                       <a href="/categories/chem.html"  target="_blank">Chemistry</a>
-                       </div> </div>
-                       </div>
-                       </div>
-                       </div>
-        <div class="div6 hard top">
-                               <div class="container" style="text-align: center">
-                               <div class="rfbackground" style="margin: 0; display:fit-content" >
-                               <div class="card-header">
-                                   <div class="testbutton">
-                               <a href="radio.html"  target="_blank">Radio</a>
-                               </div> </div>
-                               </div>
-                               </div>
-                               </div>
-        <div class="div7 hard top">
-                       <div class="container" style="text-align: center">
-                       <div class="rfbackground" style="margin: 0; display:fit-content" >
-                       <div class="card-header">
-                           <div class="testbutton">
-                       <a href="/Hardware.html"  target="_blank">Hardware </a>
-                           </div> </div> </div>
-                       </div>
-                       </div>
-        <div class="div8 hard top">
-                               <div class="container" style="text-align: center">
-                               <div class="rfbackground" style="margin: 0; display:fit-content" >
-                               <div class="card-header">
-                                   <div class="testbutton">
-                               <a href="/Photolio.html"  target="_blank">Photography </a>
-                                   </div> </div> </div>
-                               </div>
-                               </div>
-    </div>
-        </div>
-        </div>
-    </div>
 
 
-        <!--        Main content, start -->
+    <!--        Main content, start -->
 
-            <button class="container collapsible">
+    <button class="container collapsible">
 
                 <span class="card-header">
                     <h2 style="size: 100%">Inorganic Chemistry</h2>
                 </span>
-            </button>
+    </button>
 
 
-            <!--     <div class="container content">-->
-            <div class="card-header" style="display: none">
+    <!--     <div class="container content">-->
+    <div class="card-header" style="display: none">
 
 
-                <button  class="container collapsible">
+        <button class="container collapsible">
 
             <span class="card-header">
             <h2>The Element Collection: Extracting Bromine from Sodium Bromide</h2>
 
             </span>
-                </button>
+        </button>
 
 
+        <div class="container content">
 
-                <div class="container content">
+            <h2> Bromine </h2>
+            <br>
+            <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+            <p> Please do not try this at home. </p>
+            <p><span class="p b" style="font-weight: bold;">2NaBr + H2SO4 + H2O2 = Br2 + Na2SO4 + 2H2O</span></p>
+            <p>
+                Bromine is a halogen, with symbol Br and atomic number 35. Bromine is quite toxic and extreme caution
+                must be used
+                when handling it. Because of this, many labs have transitioned to producing bromine in-situ when
+                performing addition
+                reactions or multistep reactions where bromine is necessary or preferred. Due to the nature of Bromine,
+                it is
+                extremely useful in a wide array of reactions, including substitution, elimination, and addition
+                reactions where a bromine is needed,
+                or where a bromine is added in order to then be used as a leaving group in multistep syntheses (i.e.
+                forming alkenes or alkynes, or vice versa).
 
-                    <h2> Bromine </h2>
-                    <br>
-                    <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
-                    <p> Please do not try this at home. </p>
-                    <p><span class="p b" style="font-weight: bold;">2NaBr + H2SO4 + H2O2 = Br2 + Na2SO4 + 2H2O</span></p>
-                    <p>
-                        Bromine is a halogen, with symbol Br and atomic number 35. Bromine is quite toxic and extreme caution must be used
-                        when handling it. Because of this, many labs have transitioned to producing bromine in-situ when performing addition
-                        reactions or multistep reactions where bromine is necessary or preferred. Due to the nature of Bromine, it is
-                        extremely useful in a wide array of reactions, including substitution, elimination, and addition reactions where a bromine is needed,
-                        or where a bromine is added in order to then be used as a leaving group in multistep syntheses (i.e. forming alkenes or alkynes, or vice versa).
-
-                    </p>
-                    <p>
-                        All proper safety precautions were taken when performing the reaction including full PPE, a fume hood, as well as a sufficient amount of sodium thiosulfate in order
-                        to neutralize any bromine in the case of excess product, spills, or any other unforeseen issue.
-                    </p>
+            </p>
+            <p>
+                All proper safety precautions were taken when performing the reaction including full PPE, a fume hood,
+                as well as a sufficient amount of sodium thiosulfate in order
+                to neutralize any bromine in the case of excess product, spills, or any other unforeseen issue.
+            </p>
 
 
+            <p>
+                The extraction of bromine from NaBr was performed via simple distillation.
 
-                    <p>
-                        The extraction of bromine from NaBr was performed via simple distillation.
-
-                    </p>
-                    <p><span class="p b" style="font-weight: bold;">Reaents and stoichiometry:
+            </p>
+            <p><span class="p b" style="font-weight: bold;">Reaents and stoichiometry:
                       </span></p>
-                    <p>
-                        1. Sodium Bromide (NaBr): 70g </p>
-                    <p>   2. Sulphuric Acid (H2SO4): 20mL</p>
-                    <p>  3. Water (H2O): 35mL</p>
-                    <p>   4. Hydrogen Peroxide (H2O2): 30mL (~35%)
-                    </p>
-                    <p><span class="p b" style="font-weight: bold;">Experimental Conditions:</span></p>
-                    <p>A simple distillation setup was used with some modifications. Specifically, a 3-neck round bottom flask was connected to a Liebig condensor, and a vacuum adapter was fitted between the
-                        condensor and the receiving flask. An inverted funnel trap was employed at the vacuum adapter port, leading to concentrated sodium thiosulfate solution to
-                        neutralize any excess vapors. </p>
-                    <p>
-                        70g of NaBr and 35mL of H2O were added to a 3-neck round bottom flask, followed by 20mL of H2SO4. An addition funnel containing
-                        30mL of H2O2 was then added to the reaction vessel, and the H2O2 was added at a rate of ~1 drop per 2 seconds. This immediately resulted in Br2 formation within the reaction vessel.
-                        The reaction was allowed to proceed for about two hours, in which time a sufficient amount of Br2 was collected.</p>
-                    <p> The bromine was then safely stored within ampoules. The ampoules were created using glass test tubes, heated with a torch and
-                        carefully stretched to form a neck. The bromine was then added carefully using a glass funnel, and the test tube was fully sealed.
-                        For added safety, the ampoules were stored within a larger teflon vessel.
-                    </p>
-                    <div class="card paragraph">
-                        <img src="20211114_172541.jpg" alt="bromine, ampouled, jeremy laratro" style="width:100px; height:300px;">
-                    </div>
-
-
-
-                </div>
-
-
-                <button  class="container collapsible 2">
-           <span class="card-header">
-           <h2>The Element Collection: Extracting Iodine from Potassium Iodide</h2>
-           </span>
-                </button>
-                <div class="container content">
-                    <p>
-                        <span class="p b" style="font-weight: bold;">Extraction of elemental Idione</span>
-                    </p>
-                    <p>Iodine subliming in test tube, producing characteristic purple gas</p>
-                    <div class="card paragraph">
-
-                        <img src="20211120_163749.jpg" alt="bromine, ampouled, jeremy laratro" style="width:130px; height:300px;">
-                    </div>
-                    <p>Iodine crystal deposition after sublimation</p>
-                    <div class="card paragraph">
-                        <img src="20211120_154301.jpg" alt="bromine, ampouled, jeremy laratro" style="width:300px; height:300px;">
-                    </div>
-
-                </div>
-
+            <p>
+                1. Sodium Bromide (NaBr): 70g </p>
+            <p> 2. Sulphuric Acid (H2SO4): 20mL</p>
+            <p> 3. Water (H2O): 35mL</p>
+            <p> 4. Hydrogen Peroxide (H2O2): 30mL (~35%)
+            </p>
+            <p><span class="p b" style="font-weight: bold;">Experimental Conditions:</span></p>
+            <p>A simple distillation setup was used with some modifications. Specifically, a 3-neck round bottom flask
+                was connected to a Liebig condensor, and a vacuum adapter was fitted between the
+                condensor and the receiving flask. An inverted funnel trap was employed at the vacuum adapter port,
+                leading to concentrated sodium thiosulfate solution to
+                neutralize any excess vapors. </p>
+            <p>
+                70g of NaBr and 35mL of H2O were added to a 3-neck round bottom flask, followed by 20mL of H2SO4. An
+                addition funnel containing
+                30mL of H2O2 was then added to the reaction vessel, and the H2O2 was added at a rate of ~1 drop per 2
+                seconds. This immediately resulted in Br2 formation within the reaction vessel.
+                The reaction was allowed to proceed for about two hours, in which time a sufficient amount of Br2 was
+                collected.</p>
+            <p> The bromine was then safely stored within ampoules. The ampoules were created using glass test tubes,
+                heated with a torch and
+                carefully stretched to form a neck. The bromine was then added carefully using a glass funnel, and the
+                test tube was fully sealed.
+                For added safety, the ampoules were stored within a larger teflon vessel.
+            </p>
+            <div class="card paragraph">
+                <img src="20211114_172541.jpg" alt="bromine, ampouled, jeremy laratro"
+                     style="width:100px; height:300px;">
             </div>
 
 
-            <button class="container collapsible" style="display: block">
+        </div>
+
+
+        <button class="container collapsible 2">
+           <span class="card-header">
+           <h2>The Element Collection: Extracting Iodine from Potassium Iodide</h2>
+           </span>
+        </button>
+        <div class="container content">
+            <p>
+                <span class="p b" style="font-weight: bold;">Extraction of elemental Idione</span>
+            </p>
+            <p>Iodine subliming in test tube, producing characteristic purple gas</p>
+            <div class="card paragraph">
+
+                <img src="20211120_163749.jpg" alt="bromine, ampouled, jeremy laratro"
+                     style="width:130px; height:300px;">
+            </div>
+            <p>Iodine crystal deposition after sublimation</p>
+            <div class="card paragraph">
+                <img src="20211120_154301.jpg" alt="bromine, ampouled, jeremy laratro"
+                     style="width:300px; height:300px;">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <button class="container collapsible" style="display: block">
 
                 <span class="card-header">
                     <h2>Organic Chemistry</h2>
                 </span>
-            </button>
-            <div class="container content" style="display: none">
+    </button>
+    <div class="container content" style="display: none">
 
 
+        <div class="container inside" style="display: grid" ;>
+            <img src="ir_camphor.jpg-mh.png" alt="ir spectra, jeremy laratro" style="">
+            <br>
+            <p style="grid-column: 2; grid-row: 1;">
+                IR spectra:
+                Oxidation of Borneol. <br>
+                Target molecule: camphor
+                <br>
+                <br> The oxidation was completed using Oxone, a greener alternative to classic oxidation reagents such
+                as PCC or chromic acid derivatives.<br>
+                <br>
+                As seen in the spectra (left), the product was produced, however the peak at ~2250 cm-1 was not
+                expected. This peak would normally be indicative
+                of a triple bond, however no triple bond was expected. The most likely side-product, an alcohol
+                derivative resulting from hydrolysis, would
+                be characterized by a broad peak above 3000cm-1 (as would Borneol).
+                Thus, it is hypothesized that the NaCl plates used introduced contaminants. Unfortunately, we only had
+                access to
+                plates that were in fairly poor condition, both physically (chipped) and also stained. They were cleaned
+                thoroughly with DCM, but this may have
+                not been enough.
 
-                    <div class="container inside" style="display: grid";>
-                        <img src="ir_camphor.jpg-mh.png" alt="ir spectra, jeremy laratro" style="" >
-                        <br>
-                        <p style="grid-column: 2; grid-row: 1;">
-                            IR spectra:
-                            Oxidation of Borneol. <br>
-                            Target molecule: camphor
-<br>
-                            <br> The oxidation was completed using Oxone, a greener alternative to classic oxidation reagents such as PCC or chromic acid derivatives.<br>
-                            <br>
-                        As seen in the spectra (left), the product was produced, however the peak at ~2250 cm-1 was not expected. This peak would normally be indicative
-                            of a triple bond, however no triple bond was expected. The most likely side-product, an alcohol derivative resulting from hydrolysis, would
-                            be characterized by a broad peak above 3000cm-1 (as would Borneol).
-                            Thus, it is hypothesized that the NaCl plates used introduced contaminants. Unfortunately, we only had access to
-                            plates that were in fairly poor condition, both physically (chipped) and also stained. They were cleaned thoroughly with DCM, but this may have
-                            not been enough.
-
-                        </p>
-                        <img src="borneolcamphor.png" alt="ir spectra, jeremy laratro" style="grid-column: 1;grid-row: 2; margin: auto" >
-                        <p style="grid-column: 2; grid-row: 2;">
-                            Reaction overview</p>
-                    </div>
-                    <div class="container inside">
-                        <img src="fluoro.jpg" alt="fluorescence, jeremy laratro" style="/*! justify-content: center; *//*! justify-self: auto; */" width="50%" height="50%">
-                        <p>Fluorescence assay:<br> A qualitative assessment of Pechmann Condensation product under acidic and basic conditions. <br> Target molecule: 4-methylumbelliferone. </p>
-                            <img src="/img/pech.JPG" alt="fluorescence, jeremy laratro" style="/*! justify-content: center; *//*! justify-self: auto; */" width="50%" height="50%">
-                        <p>Experimental design</p>
-                    </div>
-                    <div class="container inside">
-                        <img src="nmranndielsalderadduct.png" alt="NMR, jeremy laratro" style="height: 85%; padding-top: 8%">
-                        <p>The Diels-Alder reaction: <br>
-                            NMR results from [4+2] cycloaddition product via reflux of anthracene and maleic anhydride. <br>
-                            Target product: 9,10-dihydroanthraceno,9,10-a,b-succinic anhydride. <br>
-                            The 1H-NMR was used to determine that the product was produced; deshielding can be seen, most notably with with "D". Despite the fact that
-                            it is a sp3 hybridized C-H group, the aromatic rings next to it result in a higher shift.
-                             The small peaks seen below 2.5ppm may be due to the C-H hydrogens,
-                            from left over reactants, or potentially from the presence of side products. It also possible that the peaks are simply noise, as the NMR machine
-                            used for this sample was a simple desktop one.
+            </p>
+            <img src="borneolcamphor.png" alt="ir spectra, jeremy laratro"
+                 style="grid-column: 1;grid-row: 2; margin: auto">
+            <p style="grid-column: 2; grid-row: 2;">
+                Reaction overview</p>
+        </div>
+        <div class="container inside">
+            <img src="fluoro.jpg" alt="fluorescence, jeremy laratro"
+                 style="/*! justify-content: center; *//*! justify-self: auto; */" width="50%" height="50%">
+            <p>Fluorescence assay:<br> A qualitative assessment of Pechmann Condensation product under acidic and basic
+                conditions. <br> Target molecule: 4-methylumbelliferone. </p>
+            <img src="/img/pech.JPG" alt="fluorescence, jeremy laratro"
+                 style="/*! justify-content: center; *//*! justify-self: auto; */" width="50%" height="50%">
+            <p>Experimental design</p>
+        </div>
+        <div class="container inside">
+            <img src="nmranndielsalderadduct.png" alt="NMR, jeremy laratro" style="height: 85%; padding-top: 8%">
+            <p>The Diels-Alder reaction: <br>
+                NMR results from [4+2] cycloaddition product via reflux of anthracene and maleic anhydride. <br>
+                Target product: 9,10-dihydroanthraceno,9,10-a,b-succinic anhydride. <br>
+                The 1H-NMR was used to determine that the product was produced; deshielding can be seen, most notably
+                with with "D". Despite the fact that
+                it is a sp3 hybridized C-H group, the aromatic rings next to it result in a higher shift.
+                The small peaks seen below 2.5ppm may be due to the C-H hydrogens,
+                from left over reactants, or potentially from the presence of side products. It also possible that the
+                peaks are simply noise, as the NMR machine
+                used for this sample was a simple desktop one.
 
 
-                        </p>
-                    </div>
+            </p>
+        </div>
 
-                </div>
-
-
-
+    </div>
 
 
     <!--        Main content, end -->
@@ -466,7 +533,7 @@
     let i;
 
     for (i = 0; i < 10; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             const content = this.nextElementSibling;
             if (content.style.display === "block") {

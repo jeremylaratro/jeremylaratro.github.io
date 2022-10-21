@@ -2,30 +2,33 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
       xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Jeremy Laratro: Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet"/>
 
     <link rel="stylesheet" href="styles.css">
     <script>
-            if (screen.width<800) {window.location="/progmobile.html";}
-        </script>
+        if (screen.width < 800) {
+            window.location = "/progmobile.html";
+        }
+    </script>
     <style>
 
-          .background6 {
-                width: 100%;
-                height: 100%;
-                position: fixed;
-                border-radius: 16px;
-                overflow: scroll;
+        .background6 {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            border-radius: 16px;
+            overflow: scroll;
 
-                background: url('blob-scene-haikei(3).svg') no-repeat bottom / cover;
-            }
+            background: url('images/blob-scene-haikei(3).svg') no-repeat bottom / cover;
+        }
+
         .testbutton {
 
             color: #14396A !important;
@@ -38,6 +41,7 @@
             /*background: #45C7EE;*/
             /*background: linear-gradient(to top, #202731, #590026);*/
         }
+
         .testbutton:hover {
             color: #14396A !important;
             background: #468CCF;
@@ -55,9 +59,10 @@
             display: flow;
 
         }
+
         h5 {
             font-size: 14px;
-            word-spacing: 10px ;
+            word-spacing: 10px;
             display: inline;
             flex-grow: inherit;
             color: #7a7a8c;
@@ -71,19 +76,20 @@
         .active, card.collapsible:hover {
             background-color: #ccc;
         }
+
         button.container.collapsible:hover {
-              background: linear-gradient(90deg,#a5e2ff,#ffffff);
-              text-shadow: 0 0 .25rem #a5e2ff;
-              /*-webkit-text-fill-color: transparent;*/
-              -webkit-background-clip: text;
-              background-clip: text;
-          }
+            background: linear-gradient(90deg, #a5e2ff, #ffffff);
+            text-shadow: 0 0 .25rem #a5e2ff;
+            /*-webkit-text-fill-color: transparent;*/
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
         button.container.collapsible:hover {
             color: #14396A !important;
             background: #468CCF;
             background: linear-gradient(to top, #031C2F, #590026);
         }
-
 
 
         /* Style the collapsible content. Note: hidden by default */
@@ -93,6 +99,7 @@
             overflow: hidden;
             background-color: #f1f1f1;
         }
+
         .container.collapsible {
 
             cursor: pointer;
@@ -111,13 +118,14 @@
 
         .container.content {
             padding: 0 18px;
-            color:#eee;
+            color: #eee;
             display: none;
             justify-self: center;
             background: #17141d center;
             position: center;
 
         }
+
         .container {
             height: auto;
             width: 80%;
@@ -128,20 +136,35 @@
 
         .parent {
 
-        grid-template-columns: 1fr 0.5fr 1fr 0.25fr 1fr;
-        grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0fr;
-        grid-column-gap: 0;
-        grid-row-gap: 0;
+            grid-template-columns: 1fr 0.5fr 1fr 0.25fr 1fr;
+            grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0fr;
+            grid-column-gap: 0;
+            grid-row-gap: 0;
         }
 
-        .div1 { grid-area: 1 / 2 / 2 / 3; }
-        .div2 { grid-area: 1 / 2 / 3 / 5; }
-        .div3 { grid-area: 1 / 4 / 2 / 5; }
-        .div4 { grid-area: 2 / 2 / 3 / 3; }
-        .div5 { grid-area: 2 / 3 / 3 / 4; }
-        .div6 { grid-area: 2 / 4 / 3 / 5; }
+        .div1 {
+            grid-area: 1 / 2 / 2 / 3;
+        }
 
+        .div2 {
+            grid-area: 1 / 2 / 3 / 5;
+        }
 
+        .div3 {
+            grid-area: 1 / 4 / 2 / 5;
+        }
+
+        .div4 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div5 {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .div6 {
+            grid-area: 2 / 4 / 3 / 5;
+        }
 
 
         }
@@ -155,35 +178,54 @@
             cursor: pointer;
             position: center;
         }
+
         .header h3 {
-                    font-size: 150%;
-                    margin: .25rem 0 auto;
-                    text-decoration: none;
-                    color: #d4d4d4;
-                    border: 0;
-                    display: flow-root;
-                    cursor: pointer;
-                }
+            font-size: 150%;
+            margin: .25rem 0 auto;
+            text-decoration: none;
+            color: #d4d4d4;
+            border: 0;
+            display: flow-root;
+            cursor: pointer;
+        }
 
         .container.hardware {
             word-wrap: break-word;
         }
 
-.background6 {
+        .background6 {
+
         .parent.hardware.inner {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 0;
-        grid-row-gap: 0;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0;
+            grid-row-gap: 0;
         }
 
-        .div1.h{ grid-area: 1 / 2 / 2 / 5; }
-        .div2.h{ grid-area: 2 / 2 / 3 / 3; }
-        .div3.h{ grid-area: 2 / 3 / 3 / 4; }
-        .div4.h{ grid-area: 2 / 4 / 3 / 5; }
-        .div5.h{ grid-area: 3 / 2 / 4 / 3; }
-        .div6.h{ grid-area: 3 / 3 / 4 / 4; }
+        .div1.h {
+            grid-area: 1 / 2 / 2 / 5;
+        }
+
+        .div2.h {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div3.h {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .div4.h {
+            grid-area: 2 / 4 / 3 / 5;
+        }
+
+        .div5.h {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        .div6.h {
+            grid-area: 3 / 3 / 4 / 4;
+        }
 
 
         }
@@ -191,34 +233,60 @@
 
         .parent.hard.top {
             display: grid;
-           grid-template-columns: repeat(2, 1fr);
-           /*grid-template-rows: repeat(4, 0.5fr) 0.45fr;*/
-           grid-column-gap: 0;
-           grid-row-gap: 0;
-           }
+            grid-template-columns: repeat(2, 1fr);
+            /*grid-template-rows: repeat(4, 0.5fr) 0.45fr;*/
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+        }
 
-        .div1.hard.top { grid-area: 1 / 1 / 5 / 2; }
-        .div2.hard.top { grid-area: 2 / 1 / 2 / 2; }
-        .div3.hard.top { grid-area: 1 / 2 / 2 / 3; }
-        .div4.hard.top { grid-area: 2 / 2 / 3 / 3; }
-        .div5.hard.top { grid-area: 3 / 2 / 4 / 3; }
-        .div6.hard.top { grid-area: 4 / 2 / 5 / 3; }
-        .div7.hard.top { grid-area: 3 / 1 / 3 / 1; }
-        .div8.hard.top { grid-area: 4 / 1 / 4 / 1; }
-a {
-    text-decoration: none;
-    font-size: 150%;
-    color: #eeee;
-    margin: auto;
-}
-h3 {
-    font-size: 150%;
-    color: #eee;
+        .div1.hard.top {
+            grid-area: 1 / 1 / 5 / 2;
+        }
 
-}
-p {
-    color: #eee;
-}
+        .div2.hard.top {
+            grid-area: 2 / 1 / 2 / 2;
+        }
+
+        .div3.hard.top {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .div4.hard.top {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div5.hard.top {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        .div6.hard.top {
+            grid-area: 4 / 2 / 5 / 3;
+        }
+
+        .div7.hard.top {
+            grid-area: 3 / 1 / 3 / 1;
+        }
+
+        .div8.hard.top {
+            grid-area: 4 / 1 / 4 / 1;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 150%;
+            color: #eeee;
+            margin: auto;
+        }
+
+        h3 {
+            font-size: 150%;
+            color: #eee;
+
+        }
+
+        p {
+            color: #eee;
+        }
     </style>
 </head>
 
@@ -226,226 +294,248 @@ p {
 
 <section class="background6" style="position: absolute">
     <div class="parent" style="width: 65%;">
-    <div class="div2">
-<!--    <div class="grid-item">-->
-    <div class="container" style="text-align: center">
-    <div class="parent hard top">
-    <div class="div1 hard top">
-        <div class="card-header">
-    <div class="header" style="font-size: 185%;">
-        <h2>Jeremy Laratro:
-        Programming and Software </h2>
+        <div class="div2">
+            <!--    <div class="grid-item">-->
+            <div class="container" style="text-align: center">
+                <div class="parent hard top">
+                    <div class="div1 hard top">
+                        <div class="card-header">
+                            <div class="header" style="font-size: 185%;">
+                                <h2>Jeremy Laratro:
+                                    Programming and Software </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div2 hard top">
+
+                        <h2>Welcome! See below to read more about my programming and software projects! </h2>
+
+
+                    </div>
+                    <div class="div3 hard top">
+
+                        <div class="container" style="text-align: center">
+
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/index.html" target="_blank">Home</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div4 hard top">
+                        <div class="container" style="text-align: center">
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/About.html" target="_blank">About | Contact </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div5 hard top">
+                        <div class="container" style="text-align: center">
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/categories/chem.html" target="_blank">Chemistry</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div6 hard top">
+                        <div class="container" style="text-align: center">
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="radio.html" target="_blank">Radio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div7 hard top">
+                        <div class="container" style="text-align: center">
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/Hardware.html" target="_blank">Hardware </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div8 hard top">
+                        <div class="container" style="text-align: center">
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/Photolio.html" target="_blank">Photography </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-        </div>
-    </div>
-    <div class="div2 hard top">
-
-        <h2>Welcome! See below to read more about my programming and software projects! </h2>
 
 
-        </div>
-        <div class="div3 hard top">
-
-        <div class="container" style="text-align: center">
-
-        <div class="rfbackground" style="margin: 0; display:fit-content" >
-        <div class="card-header">
-            <div class="testbutton">
-        <a href="/index.html"  target="_blank">Home</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="div4 hard top">
-               <div class="container" style="text-align: center">
-               <div class="rfbackground" style="margin: 0; display:fit-content" >
-               <div class="card-header">
-                   <div class="testbutton">
-               <a href="/About.html"  target="_blank">About | Contact </a>
-                   </div> </div> </div>
-               </div>
-               </div>
-        <div class="div5 hard top">
-                       <div class="container" style="text-align: center">
-                       <div class="rfbackground" style="margin: 0; display:fit-content" >
-                       <div class="card-header">
-                           <div class="testbutton">
-                       <a href="/categories/chem.html"  target="_blank">Chemistry</a>
-                       </div> </div>
-                       </div>
-                       </div>
-                       </div>
-        <div class="div6 hard top">
-                               <div class="container" style="text-align: center">
-                               <div class="rfbackground" style="margin: 0; display:fit-content" >
-                               <div class="card-header">
-                                   <div class="testbutton">
-                               <a href="radio.html"  target="_blank">Radio</a>
-                               </div> </div>
-                               </div>
-                               </div>
-                               </div>
-        <div class="div7 hard top">
-                       <div class="container" style="text-align: center">
-                       <div class="rfbackground" style="margin: 0; display:fit-content" >
-                       <div class="card-header">
-                           <div class="testbutton">
-                       <a href="/Hardware.html"  target="_blank">Hardware </a>
-                           </div> </div> </div>
-                       </div>
-                       </div>
-        <div class="div8 hard top">
-                               <div class="container" style="text-align: center">
-                               <div class="rfbackground" style="margin: 0; display:fit-content" >
-                               <div class="card-header">
-                                   <div class="testbutton">
-                               <a href="/Photolio.html"  target="_blank">Photography </a>
-                                   </div> </div> </div>
-                               </div>
-                               </div>
-    </div>
-        </div>
-        </div>
-    </div>
-
-
-
-            <button  class="container collapsible" >
+    <button class="container collapsible">
             <span class="card-header" style="font-size: 150%;">
             <h2 style="text-align: center">Computer Science: </h2>
             <h2 style="text-align: center">Click here to see recent programming and software projects </h2>
             </span>
-            </button>
+    </button>
 
-        <div class="container content">
-<!--<div class="parent hardware inner">-->
-
-
-
-<!--</div>-->
+    <div class="container content">
+        <!--<div class="parent hardware inner">-->
 
 
-              <div class="container content" style=" text-align: center">
-                  <h3 > Recent Projects </h3>
-                  </div>
-            <a href="https://jeremylaratro.link/CS/cysec" target="_blank">
+        <!--</div>-->
 
-                       <button class="container collapsible" style="text-align: center">
-                                                           <h3 > Cybersecurity Notes and Computer Science Blog </h3>
-                       </button>
-                       </a>
-            <a href="https://github.com/jeremylaratro/PhotoSec" target="_blank">
+
+        <div class="container content" style=" text-align: center">
+            <h3> Recent Projects </h3>
+        </div>
+        <a href="https://jeremylaratro.link/CS/cysec" target="_blank">
 
             <button class="container collapsible" style="text-align: center">
-                  <h3 > PhotoSec </h3>
-                <p>A privacy and security oriented Python script I made using various other open-source tools. Functions include bulk metadata removal from photos,
-                                  bulk image analysis (using tools such as exiftool, binwalk, strings, etc), file renaming, bulk GPS metadata puller, and more features to come.</p>
+                <h3> Cybersecurity Notes and Computer Science Blog </h3>
             </button>
-            </a>
-
-            <a href="https://github.com/jeremylaratro/Smiles-TO-iUpac-Translator-with-CLI" target="_blank">
+        </a>
+        <a href="https://github.com/jeremylaratro/PhotoSec" target="_blank">
 
             <button class="container collapsible" style="text-align: center">
-                                                <h3 > Interactive CLI for STOUT, an organic chemistry SMILES/IUPAC name translator</h3>
+                <h3> PhotoSec </h3>
+                <p>A privacy and security oriented Python script I made using various other open-source tools. Functions
+                    include bulk metadata removal from photos,
+                    bulk image analysis (using tools such as exiftool, binwalk, strings, etc), file renaming, bulk GPS
+                    metadata puller, and more features to come.</p>
             </button>
-            </a>
+        </a>
+
+        <a href="https://github.com/jeremylaratro/Smiles-TO-iUpac-Translator-with-CLI" target="_blank">
+
+            <button class="container collapsible" style="text-align: center">
+                <h3> Interactive CLI for STOUT, an organic chemistry SMILES/IUPAC name translator</h3>
+            </button>
+        </a>
 
 
-<a href="https://github.com/jeremylaratro/Degrees_of_Unsaturation_Calculator" target="_blank">
+        <a href="https://github.com/jeremylaratro/Degrees_of_Unsaturation_Calculator" target="_blank">
 
-<button class="container collapsible" style="text-align: center">
-                                    <h3 > Degrees of Unsaturation calculator for organic chemistry </h3>
-</button>
-</a>
-
-
-
-                  <div class="container hardware">
-                                    <h3 style="text-align: center"> This website </h3>
+            <button class="container collapsible" style="text-align: center">
+                <h3> Degrees of Unsaturation calculator for organic chemistry </h3>
+            </button>
+        </a>
 
 
-                                    <p> At the time I made this site, I knew very little about CSS and front-end development.
-                                        I wanted to learn more about this and also wanted a place to share some of my achievements, projects, notes, and general learning path. The website is hosted
-                                    by GitHub Pages and the domain is routed via AWS (route55). The website uses a lot of custom CSS and I originally started the site with Jekyll.
-                                    <a href="https://github.com/jeremylaratro/jeremylaratro.github.io" target="_blank" style="color: #FFFFFF"> The source code is available here</a></p>
+        <div class="container hardware">
+            <h3 style="text-align: center"> This website </h3>
 
 
-
-</div>
-
-<!--               <div class="container header" style="display: flow-root;margin: auto;">-->
-<!--                   <h3 > Open Source Contributions</h3>-->
-<!--                   </div>-->
-
-               <div class="container hardware" style="">
-
-                   <p><a href="https://www.instructables.com/How-to-Flash-GRBL-Onto-GRBL-CNC-Controller-Board-C/" target="_blank"> See here for my Instructables tutorial on how flash firmware onto a GRBL CNC controller board
-                                       firmware: </a></p><p>
-                   After having issues with firmware corruption on my CNC's control board, I saw that many people online were throwing out their boards
-                   and ordering new ones. I was familiar with flashing firmware from my previous experience with the uSDX, so I decided to write a quick tutorial
-                   for anyone who faces this problem.
-               </p>
-                  <a href="https://github.com/jeremylaratro/QR-Code-Generator-And-Reader">QR Code Generator/Reader: </a><p>I added file input functionality to an open source QR code
-                                       reader/generator. A friend of mine needed to encode text files, and it seemed none of the open source QR Code generators had file input functionality,
-                                       only allowing plain text inputs. </p>
-               </div>
-
-            <a href="https://github.com/jeremylaratro/gps_speedo_arduino/blob/main/gps_speedo.cpp" target="_blank">
-
-                       <button class="container collapsible">
-                           <h3 style="text-align:center"> Open Source: Arduino, GPS Speedometer <br> </h3>
-                           <p>During the summer of 2021, I saved up money and bought a small 15ft boat.
-                           Being an older boat, there were few electronics onboard and the speedometer was not working, so I wanted to create
-                           one that would also potentially serve other functions such as providing location. I thought this may lead to
-                           other ideas, such as creating a program that maps my boat travel. I used an Arduino Uno for prototyping with an OLED screen and NEO-6M GPS module. <br>
-                       Then, I transitioned the circuit to a dedicated custom board using the ATMEGA328P; KiCAD was used to build the circuit and PCB, and I used my CNC to mill the
-                       PCB from copperclad board.</p>
-
-                       </button>
-                       </a>
+            <p> At the time I made this site, I knew very little about CSS and front-end development.
+                I wanted to learn more about this and also wanted a place to share some of my achievements, projects,
+                notes, and general learning path. The website is hosted
+                by GitHub Pages and the domain is routed via AWS (route55). The website uses a lot of custom CSS and I
+                originally started the site with Jekyll.
+                <a href="https://github.com/jeremylaratro/jeremylaratro.github.io" target="_blank"
+                   style="color: #FFFFFF"> The source code is available here</a></p>
 
 
+        </div>
+
+        <!--               <div class="container header" style="display: flow-root;margin: auto;">-->
+        <!--                   <h3 > Open Source Contributions</h3>-->
+        <!--                   </div>-->
+
+        <div class="container hardware" style="">
+
+            <p><a href="https://www.instructables.com/How-to-Flash-GRBL-Onto-GRBL-CNC-Controller-Board-C/"
+                  target="_blank"> See here for my Instructables tutorial on how flash firmware onto a GRBL CNC
+                controller board
+                firmware: </a></p>
+            <p>
+                After having issues with firmware corruption on my CNC's control board, I saw that many people online
+                were throwing out their boards
+                and ordering new ones. I was familiar with flashing firmware from my previous experience with the uSDX,
+                so I decided to write a quick tutorial
+                for anyone who faces this problem.
+            </p>
+            <a href="https://github.com/jeremylaratro/QR-Code-Generator-And-Reader">QR Code Generator/Reader: </a>
+            <p>I added file input functionality to an open source QR code
+                reader/generator. A friend of mine needed to encode text files, and it seemed none of the open source QR
+                Code generators had file input functionality,
+                only allowing plain text inputs. </p>
+        </div>
+
+        <a href="https://github.com/jeremylaratro/gps_speedo_arduino/blob/main/gps_speedo.cpp" target="_blank">
+
+            <button class="container collapsible">
+                <h3 style="text-align:center"> Open Source: Arduino, GPS Speedometer <br></h3>
+                <p>During the summer of 2021, I saved up money and bought a small 15ft boat.
+                    Being an older boat, there were few electronics onboard and the speedometer was not working, so I
+                    wanted to create
+                    one that would also potentially serve other functions such as providing location. I thought this may
+                    lead to
+                    other ideas, such as creating a program that maps my boat travel. I used an Arduino Uno for
+                    prototyping with an OLED screen and NEO-6M GPS module. <br>
+                    Then, I transitioned the circuit to a dedicated custom board using the ATMEGA328P; KiCAD was used to
+                    build the circuit and PCB, and I used my CNC to mill the
+                    PCB from copperclad board.</p>
+
+            </button>
+        </a>
 
 
-                <div class="container hardware" style="">
-                <h3 style="text-align: center">Software / Systems Experience</h3>
+        <div class="container hardware" style="">
+            <h3 style="text-align: center">Software / Systems Experience</h3>
 
-                <p>Throughout my projects I have come across and become familiar with a number of different types of software, ranging a variety of purposes. Some of these
+            <p>Throughout my projects I have come across and become familiar with a number of different types of
+                software, ranging a variety of purposes. Some of these
                 include:</p>
-                <p>Linux: I use Linux, specifically Ubuntu, as my daily OS, with Windows dual-boot.</p>
-                <p>Python </p>
-                <p>ChemDraw: Chemical structure representation, theoretical H/C-NMR projection, etc.</p>
-                <p>Adobe Lightroom, Photoshop</p>
-                <p>Digital radio modulation software (JTDX, FreeDV, PSK31, etc)</p>
-                <p>Microchip Studio: For JTag interface and ARM microcontrollers</p>
-                <p>MManaGAL: Antenna modeling </p>
-                <p>KiCAD: For creating printed circuit boards</p>
-                <p>bCNC / FlatCAM: For milling PCBs on my CNC. bCNC uses g-code, which is interpreted by the CNC controller to perform precision milling</p>
-                <p>Arduino</p>
-                <p>JetBrains Suite: PyCharm, WebStorm (which I use for this site), RubyMine, CLion, and IntelliJ IDEA</p>
-                <p>GitHub & Git: For publishing my projects, collaboration, and being a part of the open source community</p>
-                <p>Jupyter Notebook / Seaborn / Matplotlib: Data visualization </p>
-                <p>Raspberry Pi</p>
-                <p>Microsoft & Libre Office Suite</p>
-                <p>Virtual box & QEMU: For creating virtual machines</p>
-                    <p> Cyber Security: Parrot OS & Kali Linux as well as many of the tools included (Burp Suite, metasploit framework, hashcat, aircrack-ng, gobuster, wpscan, whatweb, netcat,
-                    binwalk, etc.)</p>
-                <p>
+            <p>Linux: I use Linux, specifically Ubuntu, as my daily OS, with Windows dual-boot.</p>
+            <p>Python </p>
+            <p>ChemDraw: Chemical structure representation, theoretical H/C-NMR projection, etc.</p>
+            <p>Adobe Lightroom, Photoshop</p>
+            <p>Digital radio modulation software (JTDX, FreeDV, PSK31, etc)</p>
+            <p>Microchip Studio: For JTag interface and ARM microcontrollers</p>
+            <p>MManaGAL: Antenna modeling </p>
+            <p>KiCAD: For creating printed circuit boards</p>
+            <p>bCNC / FlatCAM: For milling PCBs on my CNC. bCNC uses g-code, which is interpreted by the CNC controller
+                to perform precision milling</p>
+            <p>Arduino</p>
+            <p>JetBrains Suite: PyCharm, WebStorm (which I use for this site), RubyMine, CLion, and IntelliJ IDEA</p>
+            <p>GitHub & Git: For publishing my projects, collaboration, and being a part of the open source
+                community</p>
+            <p>Jupyter Notebook / Seaborn / Matplotlib: Data visualization </p>
+            <p>Raspberry Pi</p>
+            <p>Microsoft & Libre Office Suite</p>
+            <p>Virtual box & QEMU: For creating virtual machines</p>
+            <p> Cyber Security: Parrot OS & Kali Linux as well as many of the tools included (Burp Suite, metasploit
+                framework, hashcat, aircrack-ng, gobuster, wpscan, whatweb, netcat,
+                binwalk, etc.)</p>
+            <p>
 
 
-                </p>
-                </div>
-                           </div>
+            </p>
+        </div>
+    </div>
 
-    </section>
+</section>
 </body>
 <script>
     const coll = document.getElementsByClassName("container collapsible");
     let i;
 
     for (i = 0; i < 10; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             const content = this.nextElementSibling;
             if (content.style.display === "block") {

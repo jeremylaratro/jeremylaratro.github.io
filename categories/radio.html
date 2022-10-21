@@ -2,20 +2,20 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
       xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Jeremy Laratro: Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet"/>
+    <!--<link href="style2.css" rel="stylesheet">-->
 
     <link rel="stylesheet" href="styles.css">
     <style>
         .columns {
             -webkit-column-count: 2;
-            -mox-column-count: 2;
             column-count: 2;
             -webkit-column-gap: 53px;
             -moz-column-gap: 53px;
@@ -24,70 +24,27 @@
             -moz-column-rule: 6px dashed #DEDEDE;
             column-rule: 6px dashed #DEDEDE;
         }
-        .testbutton {
-            font-family: arial;
+
+        .testbutton.rf {
+
             color: #14396A !important;
             font-size: 14px;
-            text-shadow: 1px 1px 0px #7CACDE;
+            text-shadow: 1px 1px 0 #7CACDE;
             box-shadow: 1px 1px 1px #BEE2F9;
             padding: 10px 25px;
             border-radius: 15px;
-            border: 2px solid #FFFFFF;
-            background: #45C7EE;
-            background: linear-gradient(to top, #45C7EE, #468CCF);
+
+            /*background: #45C7EE;*/
+            /*background: linear-gradient(to top, #202731, #590026);*/
         }
-        .testbutton:hover {
+
+        .testbutton.rf:hover {
             color: #14396A !important;
             background: #468CCF;
-            background: linear-gradient(to top, #468CCF, #63B8EE);
+            background: linear-gradient(to top, #001220, #2F4D6E);
         }
-        .cssDisplay {
-            background-color: #1A2947;
-            color: #E8FEFF;
-            border: 2px dashed #6D6D6D;
-            padding: 1px;
-            text-align: center;
-            text-decoration: none;
-            letter-spacing: 1px;
-            text-transform: none;
-            left: 12px;
-            cursor: default;
-            visibility: visible;
-            overflow: hidden;
-            float: none;
-            border-radius: 11px;
-        }
-        #cssDisplay:hover {
-            background-color: #1A2947;
-            color: #E8FEFF;
-            border: 2px dashed #6D6D6D;
-            padding: 1px;
-            text-align: center;
-            text-decoration: none;
-            letter-spacing: 1px;
-            text-transform: none;
-            left: 12px;
-            cursor: default;
-            visibility: visible;
-            overflow: hidden;
-            float: none;
-            border-radius: 11px;
-        }
-        .blob.page {
-            position: relative;
-            padding-bottom: 2%;
-        }
-        .spacesome {
-            margin-top: 30px;
-        }
-        .card.rf {
-            position: center;
-            height: 500px;
-            width: 2000px;
-            min-width: 250px;
 
 
-        }
         .container {
 
             margin: 20px auto;
@@ -99,20 +56,17 @@
             display: flow;
 
         }
-        div {
-          padding: initial;
-          padding-bottom: 20px;
-        }
+
         h5 {
-            font-size: 14px;
-            word-spacing: 10px ;
-            display: inline;
-            flex-grow: inherit;
+            font-size: 1.1vw;
+            text-align: center;
+            word-spacing: 10px;
             color: #7a7a8c;
             text-decoration: transparent;
-            text-shadow: 1px 1px 0px #28242f;
+            text-shadow: 1px 1px 0 #28242f;
             grid-row: auto;
         }
+
         .card.collapsible {
             background-color: #eee;
             color: #444;
@@ -138,6 +92,7 @@
             overflow: hidden;
             background-color: #f1f1f1;
         }
+
         .container.collapsible {
 
             cursor: pointer;
@@ -145,210 +100,435 @@
             text-align: left;
             outline: none;
             font-size: 15px;
-            width: 75%px;
             margin: 20px auto;
             padding: 1.5rem;
 
             border-radius: 15px;
             background: #17141d;
             box-shadow: 1rem 0 2rem #000;
-            display: grid;
         }
 
         .active, .container.collapsible:hover {
-            background-color: #555;
+            background: linear-gradient(to top, #221F32, #1883A5);
+        }
+
+        .testbutton:hover {
+            color: #14396A !important;
+            background: #468CCF;
+            background: linear-gradient(to top, #221F32, #1883A5);
         }
 
         .container.content {
             padding: 0 18px;
-            color:#eee;
-            background: #17141d;
+            color: #eee;
             display: none;
-            overflow: auto;
             justify-self: center;
-            background-position: center;
+            background: #17141d center;
             position: center;
 
         }
+
         .container {
             height: auto;
             width: 75%;
             padding: 1rem;
             border-radius: 20px;
             background: #17141d;
-        /*    box-shadow: -1rem 0 3rem #000;*/
-        /*    display: flow;*/
-        /*    flex-direction: column;*/
-        /*    margin: 0;*/
-        /*    scroll-snap-align: flex-start;*/
-        /*    clear: both;*/
-        /*    position:relative;*/
-        /*    justify-self: center;*/
-        .parent {
-        display: grid;
-        grid-template-columns: 1fr 0.5fr 1fr 0.25fr 1fr;
-        grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-            overflow: auto;
         }
 
-        .div1 { grid-area: 1 / 2 / 2 / 3; }
-        .div2 { grid-area: 1 / 3 / 2 / 4; }
-        .div3 { grid-area: 1 / 4 / 2 / 5; }
-        .div4 { grid-area: 2 / 2 / 3 / 3; }
-        .div5 { grid-area: 2 / 3 / 3 / 4; }
-        .div6 { grid-area: 2 / 4 / 3 / 5; }
-        .div7 { grid-area: 3 / 2 / 4 / 3; }
-        .div8 { grid-area: 3 / 3 / 4 / 4; }
-        .div9 { grid-area: 3 / 4 / 4 / 5; }
-        .div10 { grid-area: 1 / 2 / 2 / 5; }
-        .div11 { grid-area: 3 / 3 / 4 / 4; }
-        .div12 { grid-area: 2 / 3 / 3 / 5; }
+        .parent {
+            /*display: grid;*/
+            /*grid-template-columns: 1fr 0.5fr 1fr 0.25fr 1fr;*/
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+        }
 
+        .div1 {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .div2 {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+
+        .div3 {
+            grid-area: 1 / 4 / 2 / 5;
+        }
+
+        .div4 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div5 {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .div6 {
+            grid-area: 2 / 4 / 3 / 5;
+        }
+
+        .div7 {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        .div8 {
+            grid-area: 3 / 3 / 4 / 4;
+        }
+
+        .div9 {
+            grid-area: 3 / 4 / 4 / 5;
+        }
 
 
         }
         .header h2 {
-            font-size: 60px;
+            font-size: 2vw;
+            text-align: center;
+            margin: .25rem 0 auto;
+            text-decoration: none;
+            color: #d4d4d4;
+            border: 0;
+            cursor: pointer;
+            position: center;
+        }
+
+        .header h3 {
+            font-size: 45px;
             margin: .25rem 0 auto;
             text-decoration: none;
             color: #d4d4d4;
             border: 0;
             display: flow-root;
             cursor: pointer;
-            position: center;
-        }
-        .header h3 {
-                    font-size: 45px;
-                    margin: .25rem 0 auto;
-                    text-decoration: none;
-                    color: #d4d4d4;
-                    border: 0;
-                    display: flow-root;
-                    cursor: pointer;
-                }
-        .grid-item {
-            overflow: auto;
-                 position: relative;
-                 text-align: center;
-               }
-        .grey {
-        background: #221F32;
-        }
-        .card.paragraph {
-        justify-self: center;
-        position: center;
-       height: fit-content;
-       width: fit-content;
-       padding: 1rem;
         }
 
+        .card.paragraph {
+            justify-self: center;
+            position: center;
+            height: fit-content;
+            width: fit-content;
+            padding: 1rem;
+        }
+
+        .card.paragraph {
+            justify-self: center;
+            position: center;
+            height: fit-content;
+            width: fit-content;
+            padding: 1rem;
+        }
+
+        .container.hardware {
+            height: fit-content;
+            width: fit-content;
+        }
+
+        .background6 {
+
+        .parent.hardware.inner {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+        }
+
+        .div1.h {
+            grid-area: 1 / 2 / 2 / 5;
+        }
+
+        .div2.h {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div3.h {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .div4.h {
+            grid-area: 2 / 4 / 3 / 5;
+        }
+
+        .div5.h {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        .div6.h {
+            grid-area: 3 / 3 / 4 / 4;
+        }
+
+        .div7.h {
+            grid-area: 3 / 4 / 4 / 5;
+        }
+
+        .div8.h {
+            grid-area: 4 / 4 / 5 / 5;
+        }
+
+        .div9.h {
+            grid-area: 4 / 3 / 5 / 4;
+        }
+
+
+        }
+
+
+        .parent.hard.top {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+        }
+
+        .div1.hard.top {
+            grid-area: 1 / 1 / 5 / 2;
+            padding: 10%;
+            font-size: 1.2vw;
+        }
+
+        .div2.hard.top {
+            grid-area: 5 / 1 / 6 / 3;
+        }
+
+        .div3.hard.top {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .div4.hard.top {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div5.hard.top {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        .div6.hard.top {
+            grid-area: 4 / 2 / 5 / 3;
+        }
+
+        a {
+            text-decoration: none;
+            color: #eeeeff;
+        }
+
+        p {
+            font-size: 1vw;
+        }
+
+        h2 {
+            font-size: 2vw;
+            text-align: center;
+        }
 
     </style>
 </head>
 
 <body>
 
-<section class="rfbackground">
+<section class="rfbackground" style="position: absolute">
     <div class="parent">
-    <div class="div2">
-    <div class="grid-item">
-    <div class="container">
-        <div class="card-header">
-    <div class="header">
-        <h2>Jeremy Laratro: </h2>
-        <h2>Radio</h2>
+        <div class="div2">
+            <!--    <div class="grid-item">-->
+            <div class="container" style="text-align: center">
+                <div class="parent hard top">
+                    <div class="div1 hard top">
 
-        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
-        <h3>Welcome! See below to read more about my personal projects and research in RF.</h3>
-        <h3> Topics include antenna construction and design, voice and digital communications, as well as RF hardware builds</h3>
-        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
-</div>
-    </div>
+                        <div class="header">
+                            <h2>Radio: RF, Antenna Design, HF and more</h2>
+
+                            <h2>Welcome! See below to read more about my radio projects </h2>
+                        </div>
+
+                    </div>
+                    <div class="div2 hard top">
+                        <!--        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>-->
+                        <!--        <h2>Welcome! See below to read more about my radio projects </h2>-->
+
+                        <!--        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>-->
+                    </div>
+                    <div class="div3 hard top">
+
+                        <div class="container" style="text-align: center">
+                            <a href="/index.html" target="_blank">
+                                <div class="rfbackground" style="margin: 0;">
+                                    <div class="card-header">
+                                        <div class="testbutton">
+                                            <a href="/index.html" target="_blank">Home</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="div4 hard top">
+                            <div class="container" style="text-align: center">
+                                <div class="rfbackground" style="margin: 0;">
+                                    <div class="card-header">
+                                        <div class="testbutton">
+                                            <a href="/About.html" target="_blank">About | Contact </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div5 hard top">
+                            <div class="container" style="text-align: center">
+                                <div class="rfbackground" style="margin: 0;">
+                                    <div class="card-header">
+                                        <div class="testbutton">
+                                            <a href="/categories/chem.html" target="_blank">Chemistry</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div6 hard top">
+                            <div class="container" style="text-align: center">
+                                <div class="rfbackground" style="margin: 0;">
+                                    <div class="card-header">
+                                        <div class="testbutton">
+                                            <a href="/categories/radio.html" target="_blank">Radio</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div7 hard top">
+                            <div class="container" style="text-align: center">
+                                <div class="rfbackground" style="margin: 0;">
+                                    <div class="card-header">
+                                        <div class="testbutton">
+                                            <a href="/Hardware.html" target="_blank">Hardware </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div8 hard top">
+                            <div class="container" style="text-align: center">
+                                <div class="rfbackground" style="margin: 0;>
+                               <div class=" card-header
+                                ">
+                                <div class="testbutton">
+                                    <a href="/Photolio.html" target="_blank">Photography </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    </div>
-    </div>
 
-
-            <button  class="container collapsible">
+    <button class="container collapsible">
             <span class="card-header">
             <h2>Antenna Consutrction and Design: HF Antennas</h2>
-            <h2>Click here to read how I created two efficient antennas designed to work on the HF amateur radio bands. </h2>
             </span>
-            </button>
+    </button>
 
-        <div class="container content">
+    <div class="container content">
 
-            <h2>Radio</h2>
-            <h1>Jeremy Laratro</h1>
-            <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
-            <p>
+        <h2>Radio</h2>
+        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+        <p>
 
-            Antenna Design and Construction: High Frequency Antennas
 
-            In 2020, I attained an amateur radio station license and soon after, upgraded to the General class license.
-            In this time, I found myself deeply interested in antenna design and construction, and constructed a number of antennas,
-            each optimized for (resonant at) the different amateur radio station frequency bands.
+            In 2020, I attained an amateur radio station license (callsign, KO4DNM) and soon after, upgraded to the
+            General class license.
+            In this time, I found myself deeply interested in antenna design and construction, and constructed a number
+            of antennas,
+            each resonant at the different amateur radio station frequency bands.
 
-            These frequency ranges lie within the HF spectrum, between 1.8Mhz and 29Mhz. I focused largely on the ~14MHz region (20M Band)
-            during the day time, and lower frequencies at night (~7MHz, the 40M Band, was one of my favorites). Propagation was often nicely
-             split in this manner, with optimal long-distance contact best on the higher frequencies during the light hours, with a sometimes-sudden
-             shift to optimal performance on the lower frequencies as the sun set.
+            These frequency ranges lie within the HF spectrum, between 1.8Mhz and 29Mhz. I focused largely on the ~14MHz
+            region (20M Band)
+            during the day time, and lower frequencies at night (~7MHz, the 40M Band, was one of my favorites).
+            Propagation was often nicely
+            split in this manner, with optimal long-distance contact best on the higher frequencies during the light
+            hours, with a sometimes-sudden
+            shift to optimal performance on the lower frequencies as the sun set.
 
-            During this time, I made over 700 logged radio contacts, including at least one person from each continent, and nearly 100 different
-             countries. More info on this can be found on my QRZ and HRDLog profiles.
+            During this time, I made over 700 logged radio contacts, including at least one person from each continent,
+            and nearly 100 different
+            countries. More info on this can be found on my QRZ and HRDLog profiles.
 
-            To produce these results, I had to create a robust plan including details as simple as how many feet of coaxial cable I would need
-            to cut, to much more complicated design of the antennas themselves. My plan included some of the following elements:</p>
+            To produce these results, I had to create a robust plan including details as simple as how many feet of
+            coaxial cable I would need
+            to cut, to much more complicated design of the antennas themselves. My plan included some of the following
+            elements:</p>
 
-           <p> Step 1: Location Planning: Determine optimal location for antennas as well as optimal antenna type; I settled on a multi-element
-            dipole (also called a "fan dipole" for the lower frequencies, and a hex-beam antenna for the higher frequencies)</p>
-            <p>Step 2: Antenna Design: Complete antenna design (using MMANA-GAL)</p>
-            <p>Step 3: Feed Line: Determine sufficient quantity of coax, as well as high quality RF connectors</p>
-            <p>Step 4: Logistics: Acquire necessary materials for antenna (copper wire for antenna elements, proper-type toroidal cores for baluns)</p>
-            <p>Step 5: Construction of the antennas, Phase I: Wire Elements: For the dipole, this meant measuring out the elements to their resonant lengths,
-             while also taking into account an increase in velocity due to the rubber coating, which resulted in lowering of the resonant frequency by a small,
-              but significant degree. For the hexbeam antenna, I ultimately ended up purchasing a used frame in which I cut new wire elements for.</p>
-            <p>Step 6: Construction, Phase II: Baluns / Chokes: Due to the imperfect feed-point impedance of antennas in the real world, especially a wire
-              dipole used on a wide range of frequencies, I decided to implement a balun for the dipole antenna, and a common mode choke (or 1:1 balun)
-              for the hexbeam (as the hexbeam is configured to be resonant at all desired frequencies)</p>
-              <div class="card paragraph">
-              <img src="Screenshot%20from%202022-02-19%2020-12-31.png" alt="choke balun, common mode choke, jeremy laratro">
-              </div>
-            <p> Step 7: Verification: At this point, everything was built and ready for implementation, and I double-checked all element lengths as well as any
-              connections I made when constructing the balun and isntalling the PL-259 RF connectors on the RF400 coax.</p>
-            <p>Step 8: Implementation: I decided to implement the antennas in "stages", and installed the hexbeam antenna first. After a few weeks,
-              the dipole was also installed.</p>
-            <p>Step 9: Testing: After installing the antennas, I performed a wide array of different tests to ensure that I was achieving optimal power
-              transfer between the 100w output of my HF radio and the antenna elements. One of my favorite methods of testing antennas and RF circuits
-              in general is with a VNA, and thanks to the open-source NanoVNA, I, as an independent entity can afford an instrument like a VNA which would
-              otherwise cost upwards of $3000. I also performed SWR tests, as well as TDR tests. I was able to acquire a used Tektronix TDR analyzer,
-               which is great for analyzing feed lines for any shorts, opens, or other issues.</p>
-            <p>Step 10: The last step of the plan, which is to use and enjoy the antennas. These two antennas have been used to achieve communications,
-             both voice and digital protocols, with people in nearly 100 countries and every continent, including Australia, New Zealand, Japan,
-             and many more. I have experimented with a large number of different communications protocols ranging from:</p>
-             <p>​Single side-band(SSB):  USB/LSB</p>
-            <p>Phase shift keying (PSK): PSK-31</p>
-            <p>Digital voice: FreeDV</p>
-            <p>Multiple frequency-shift keying (MFSK): OLIVIA,  JT65, FT4, FT8 (two of various incredible weak-signal mode created by astrophysicist Joe Taylor (K1JT)</p>
-            <p>Frequency shift keying (FSK): RTTY (Radio teletype)
-            <p>Hellschreiber</p>
-
-            <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+        <p> Step 1: Location Planning: Determine optimal location for antennas as well as optimal antenna type; I
+            settled on a multi-element
+            dipole (also called a "fan dipole" for the lower frequencies, and a hex-beam antenna for the higher
+            frequencies)</p>
+        <p>Step 2: Antenna Design: Complete antenna design (using MMANA-GAL)</p>
+        <p>Step 3: Feed Line: Determine sufficient quantity of coax, as well as high quality RF connectors</p>
+        <p>Step 4: Logistics: Acquire necessary materials for antenna (copper wire for antenna elements, proper-type
+            toroidal cores for baluns)</p>
+        <p>Step 5: Construction of the antennas, Phase I: Wire Elements: For the dipole, this meant measuring out the
+            elements to their resonant lengths,
+            while also taking into account an increase in velocity due to the rubber coating, which resulted in lowering
+            of the resonant frequency by a small,
+            but significant degree. For the hexbeam antenna, I ultimately ended up purchasing a used frame in which I
+            cut new wire elements for.</p>
+        <p>Step 6: Construction, Phase II: Baluns / Chokes: Due to the imperfect feed-point impedance of antennas in the
+            real world, especially a wire
+            dipole used on a wide range of frequencies, I decided to implement a balun for the dipole antenna, and a
+            common mode choke (or 1:1 balun)
+            for the hexbeam (as the hexbeam is configured to be resonant at all desired frequencies)</p>
+        <div class="card paragraph" style="margin: auto; text-align: center">
+            <img src="Screenshot%20from%202022-02-19%2020-12-31.png"
+                                alt="choke balun, common mode choke, jeremy laratro">
+            <img src="/img/20201112_183254.jpg" style="width: 30vw;" alt="antenna, HF, radio, jeremy laratro">
         </div>
+        <p> Step 7: Verification: At this point, everything was built and ready for implementation, and I double-checked
+            all element lengths as well as any
+            connections I made when constructing the balun and isntalling the PL-259 RF connectors on the RF400
+            coax.</p>
+        <p>Step 8: Implementation: I decided to implement the antennas in "stages", and installed the hexbeam antenna
+            first. After a few weeks,
+            the dipole was also installed.</p>
+        <p>Step 9: Testing: After installing the antennas, I performed a wide array of different tests to ensure that I
+            was achieving optimal power
+            transfer between the 100w output of my HF radio and the antenna elements. One of my favorite methods of
+            testing antennas and RF circuits
+            in general is with a VNA, and thanks to the open-source NanoVNA, I, as an independent entity can afford an
+            instrument like a VNA which would
+            otherwise cost upwards of $3000. I also performed SWR tests, as well as TDR tests. I was able to acquire a
+            used Tektronix TDR analyzer,
+            which is great for analyzing feed lines for any shorts, opens, or other issues.</p>
+        <p>Step 10: The last step of the plan, which is to use and enjoy the antennas. These two antennas have been used
+            to achieve communications,
+            both voice and digital protocols, with people in nearly 100 countries and every continent, including
+            Australia, New Zealand, Japan,
+            and many more. I have experimented with a large number of different communications protocols ranging
+            from:</p>
+        <p>​Single side-band(SSB): USB/LSB</p>
+        <p>Phase shift keying (PSK): PSK-31</p>
+        <p>Digital voice: FreeDV</p>
+        <p>Multiple frequency-shift keying (MFSK): OLIVIA, JT65, FT4, FT8 (two of various incredible weak-signal mode
+            created by astrophysicist Joe Taylor (K1JT)</p>
+        <p>Frequency shift keying (FSK): RTTY (Radio teletype)
+        <p>Hellschreiber</p>
+
+        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+        <div class="card paragraph" style="margin: auto;text-align: center;">
+            <img src="/img/20200830_162401.jpg" style="width: 30vw;" alt="antenna, HF, radio, jeremy laratro">
+            <p>Above: 6-Band hexbeam antenna that I also installed. In order to take advantage of directional effects, I
+                mounted this antenna on a tripod,
+                connected to a TV antenna rotator which I routed underground and then through my window using a
+                custom-built pass-through with PL-259 connections</p>
         </div>
+    </div>
 
 
-    </section>
+</section>
 </body>
 <script>
-    var coll = document.getElementsByClassName("container collapsible");
-    var i;
+    const coll = document.getElementsByClassName("container collapsible");
+    let i;
 
     for (i = 0; i < 2; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
