@@ -108,7 +108,7 @@ section {
 }
 
 .card-header p {
-    font-size: 24px;
+    font-size: 120%;
     margin: 0 0 1rem;
     color: #7a7a8c;
 }
