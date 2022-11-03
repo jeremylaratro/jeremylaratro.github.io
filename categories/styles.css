@@ -79,7 +79,7 @@ section {
     height: 100%;
     overflow: scroll;
     border-radius: 16px;
-    background: url('polygon-scatter-haikei.svg') no-repeat bottom / cover;
+    background: url('category_photos/polygon-scatter-haikei.svg') no-repeat bottom / cover;
 
 }
 
@@ -88,7 +88,7 @@ section {
     height: auto;
     overflow: scroll;
     border-radius: 16px;
-    background: url('blob-haikei(5).svg') no-repeat bottom / cover;
+    background: url('category_photos/blob-haikei(5).svg') no-repeat bottom / cover;
 }
 
 .card {

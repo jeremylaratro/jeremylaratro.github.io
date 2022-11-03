@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html">
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -13,36 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet"/>
 
     <link rel="stylesheet" href="styles.css">
-    <!--    <script>-->
-    <!--               if (screen.width<800) {window.location="/hardwaremobile.html";}-->
-    <!--           </script>-->
-    </script>
+
     <style>
-        .columns {
-            -webkit-column-count: 2;
-            column-count: 2;
-            -webkit-column-gap: 53px;
-            -moz-column-gap: 53px;
-            column-gap: 53px;
-            -webkit-column-rule: 6px dashed #DEDEDE;
-            -moz-column-rule: 6px dashed #DEDEDE;
-            column-rule: 6px dashed #DEDEDE;
-        }
-
-        .background6 {
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            border-radius: 16px;
-            overflow: scroll;
-
-            background: url('/images/blob-scene-haikei(3).svg') no-repeat bottom / cover;
-        }
 
         .testbutton {
 
             color: #14396A !important;
+            font-size: 14px;
             text-shadow: 1px 1px 0 #7CACDE;
+            box-shadow: 1px 1px 1px #BEE2F9;
             padding: 10px 25px;
             border-radius: 15px;
 
@@ -56,6 +34,7 @@
             background: linear-gradient(to top, #031C2F, #590026);
         }
 
+        }
         .container {
 
             margin: 20px auto;
@@ -79,18 +58,6 @@
             grid-row: auto;
         }
 
-        .card.collapsible {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            position: center;
-
-
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-        }
 
         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
         .active, card.collapsible:hover {
@@ -111,7 +78,8 @@
             border: none;
             text-align: left;
             outline: none;
-            font-size: 15px;
+            font-size: 4vw;
+            width: 75% px;
             margin: 20px auto;
             padding: 1.5rem;
 
@@ -127,35 +95,27 @@
         .container.content {
             padding: 0 18px;
             color: #eee;
+            background: #17141d;
             display: none;
             justify-self: center;
-            background: #17141d center;
+            background-position: center;
             position: center;
 
         }
 
         .container {
             height: auto;
-            width: 60%;
-            padding: 1%;
+            padding: 1rem;
             border-radius: 20px;
             background: #17141d;
-        }
 
-        /*    box-shadow: -1rem 0 3rem #000;*/
-        /*    display: flow;*/
-        /*    flex-direction: column;*/
-        /*    margin: 0;*/
-        /*    scroll-snap-align: flex-start;*/
-        /*    clear: both;*/
-        /*    position:relative;*/
-        /*    justify-self: center;*/
         .parent {
-
-            grid-template-columns: 33% 33% 33%;
-            grid-column-gap: 2%;
-            grid-row-gap: 2%;
-
+            display: grid;
+            grid-template-columns: 1fr 0.5fr 1fr 0.25fr 1fr;
+            grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0fr;
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+            overflow: scroll;
         }
 
         .div1 {
@@ -163,7 +123,7 @@
         }
 
         .div2 {
-            grid-area: 1 / 2 / 3 / 5;
+            grid-area: 1 / 3 / 2 / 4;
         }
 
         .div3 {
@@ -175,17 +135,29 @@
         }
 
         .div5 {
-            grid-area: 2 / 2 / 2 / 3;
+            grid-area: 2 / 3 / 3 / 4;
         }
 
         .div6 {
             grid-area: 2 / 4 / 3 / 5;
         }
 
+        .div7 {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        .div8 {
+            grid-area: 3 / 3 / 4 / 4;
+        }
+
+        .div9 {
+            grid-area: 3 / 4 / 4 / 5;
+        }
+
 
         }
         .header h2 {
-            font-size: 60px;
+            font-size: 4vw;
             margin: .25rem 0 auto;
             text-decoration: none;
             color: #d4d4d4;
@@ -196,7 +168,7 @@
         }
 
         .header h3 {
-            font-size: 150%;
+            font-size: 4vw;
             margin: .25rem 0 auto;
             text-decoration: none;
             color: #d4d4d4;
@@ -206,8 +178,8 @@
         }
 
         .container.hardware {
-            word-wrap: break-word;
-            text-align: center;
+            height: fit-content;
+            width: fit-content;
         }
 
         .background6 {
@@ -244,14 +216,128 @@
             grid-area: 3 / 3 / 4 / 4;
         }
 
+        .div7.h {
+            grid-area: 3 / 4 / 4 / 5;
+        }
 
+        .div8.h {
+            grid-area: 4 / 4 / 5 / 5;
+        }
+
+        .div9.h {
+            grid-area: 4 / 3 / 5 / 4;
         }
 
 
-        .parent.hard.top {
+        }
+
+        .parent.hard.cnc {
+            display: grid;
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+        }
+
+        .div1.hc {
+            grid-area: 1 / 3 / 2 / 5;
+        }
+
+        .div2.hc {
+            grid-area: 2 / 1 / 4 / 3;
+        }
+
+        .div3.hc {
+            grid-area: 2 / 3 / 3 / 5;
+        }
+
+        .div4.hc {
+            grid-area: 2 / 5 / 4 / 7;
+        }
+
+        .div5.hc {
+            grid-area: 4 / 1 / 5 / 7;
+        }
+
+        .div6.hc {
+            grid-area: 3 / 3 / 4 / 5;
+        }
+
+        .div7.hc {
+            grid-area: 2 / 3 / 3 / 5;
+        }
+
+        .div8.hc {
+            grid-area: 3 / 1 / 4 / 3;
+        }
+
+        .parent.gps {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4, 0.5fr) 0.45fr;
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+        }
+
+        .div1.gps {
+            grid-area: 1 / 1 / 2 / 3;
+        }
+
+        .div2.gps {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .div3.gps {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div4.gps {
+            grid-area: 3 / 1 / 4 / 3;
+        }
+
+        .parent.misc {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 0.25fr 0.55fr repeat(2, 0.5fr) 0.25fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 0;
+        }
+
+        .div1.misc {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .div2.misc {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div3.misc {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .div4.misc {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .div5.misc {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .div6.misc {
+            grid-area: 5 / 1 / 6 / 4;
+        }
+
+        .div7.misc {
+            grid-area: 3 / 2 / 5 / 3;
+        }
+
+        .div8.misc {
+            grid-area: 3 / 3 / 5 / 4;
+        }
+
+        .div9.misc {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+
+        .parent.hard.top {
+            grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 0;
             grid-row-gap: 0;
         }
@@ -261,7 +347,7 @@
         }
 
         .div2.hard.top {
-            grid-area: 5 / 1 / 6 / 3;
+            grid-area: 6 / 1 / 6 / 3;
         }
 
         .div3.hard.top {
@@ -280,56 +366,27 @@
             grid-area: 4 / 2 / 5 / 3;
         }
 
-        .div7.hard.top {
-            grid-area: 3 / 1 / 3 / 1;
-        }
-
-        .div8.hard.top {
-            grid-area: 4 / 1 / 4 / 1;
-        }
-
-        p {
-            font-size: 100%;
-        }
-
         a {
             text-decoration: none;
         }
 
-        h3 {
-            font-size: 150%;
-            color: #eee;
-
+        h2 {
+            font: 4vw;
         }
 
-        .parent.box {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+        p {
+            font-size: 2vw;
+        }
+
+        img {
             text-align: center;
         }
 
-        .div1.box {
-            grid-area: 1 / 1 / 2 / 3;
-        }
-
-        .div2.box {
-            grid-area: 2 / 1 / 3 / 2;
-        }
-
-        .div3.box {
-            grid-area: 2 / 2 / 3 / 3;
-        }
-
-        .div4.box {
-            grid-area: 3 / 1 / 4 / 2;
-        }
-
-        .div5.box {
-            grid-area: 3 / 2 / 4 / 3;
-        }
-
-        .div6.box {
-            grid-area: 4 / 1 / 5 / 3;
+        @media screen and (max-width: 800px) {
+            .card.header, .div3.hard.top {
+                width: 100%;
+                padding: 0;
+            }
         }
     </style>
 </head>
@@ -337,91 +394,90 @@
 <body style="overflow: scroll">
 
 <section class="background6" style="position: absolute">
-    <!--    <div class="parent" style="width: 65%;">-->
-    <div class="div2">
-        <!--    <div class="grid-item">-->
-        <div class="container" style="text-align: center">
-            <div class="parent hard top">
-                <div class="div1 hard top">
-                    <div class="card-header">
+    <div class="parent" style="width: 65%;">
+        <div class="div2">
+            <!--    <div class="grid-item">-->
+            <div class="container" style="text-align: center">
+                <div class="parent hard top">
+                    <div class="div1 hard top">
+
                         <div class="header">
                             <h2>Jeremy Laratro:
-                                Hardware: Electronics Hardware, 3D-Printing, CNC, and more </h2>
-
-                            <h2>See below to read more about my hardware projects and builds! </h2>
-
+                                Hardware Projects and Builds</h2>
                         </div>
+
                     </div>
-                </div>
-                <div class="div2 hard top">
-                    <!--    <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>-->
-                    <!--    <h2>Welcome! See below to read more about my hardware projects and builds! </h2>-->
+                    <div class="div2 hard top">
+                        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+                        <h2>Welcome! See below to read more about my programming and software projects! </h2>
 
-                    <!--    <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>-->
-                </div>
-                <div class="div3 hard top">
+                        <h5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h5>
+                    </div>
+                    <div class="div3 hard top">
 
-                    <div class="container" style="text-align: center">
+                        <div class="container" style="text-align: center">
 
-                        <div class="rfbackground" style="margin: 0; display:fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="/index.html" target="_blank">Home</a>
+                            <div class="rfbackground" style="margin: 0; display:fit-content">
+                                <div class="card-header">
+                                    <div class="testbutton">
+                                        <a href="/index.html" target="_blank">Home</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="div4 hard top">
-                    <div class="container" style="text-align: center">
-                        <div class="rfbackground" style="margin: 0; display:fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="/About.html" target="_blank">About | Contact </a>
+
+                        <div class="div4 hard top">
+                            <div class="container" style="text-align: center">
+                                <div class="rfbackground" style="margin: 0; display:fit-content">
+                                    <div class="card-header">
+                                        <div class="testbutton">
+                                            <a href="/About.html" target="_blank">About | Contact </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="div5 hard top">
-                    <div class="container" style="text-align: center">
-                        <div class="rfbackground" style="margin: 0; display:fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="/categories/chem.html" target="_blank">Chemistry</a>
+                        <div class="div5 hard top">
+                            <div class="container" style="text-align: center">
+                                <div class="rfbackground" style="margin: 0; display:fit-content">
+                                    <div class="card-header">
+                                        <div class="testbutton">
+                                            <a href="/categories/chem.html" target="_blank">Chemistry</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="div6 hard top">
-                    <div class="container" style="text-align: center">
-                        <div class="rfbackground" style="margin: 0; display:fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="/categories/radio.html" target="_blank">Radio</a>
+                        <div class="div6 hard top">
+                            <div class="container" style="text-align: center">
+                                <div class="rfbackground" style="margin: 0; display:fit-content">
+                                    <div class="card-header">
+                                        <div class="testbutton">
+                                            <a href="/categories/radio.html" target="_blank">Radio</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="div7 hard top">
-                    <div class="container" style="text-align: center">
-                        <div class="rfbackground" style="margin: 0; display:fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="Hardware.html" target="_blank">Hardware </a>
+                        <div class="div7 hard top">
+                            <div class="container" style="text-align: center">
+                                <div class="rfbackground" style="margin: 0; display:fit-content">
+                                    <div class="card-header">
+                                        <div class="testbutton">
+                                            <a href="Hardware.html" target="_blank">Hardware </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="div8 hard top">
-                    <div class="container" style="text-align: center">
-                        <div class="rfbackground" style="margin: 0; display:fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="/Photolio.html" target="_blank">Photography </a>
+                        <div class="div8 hard top">
+                            <div class="container" style="text-align: center">
+                                <div class="rfbackground" style="margin: 0; display:fit-content">
+                                    <div class="card-header">
+                                        <div class="testbutton">
+                                            <a href="/Photolio.html" target="_blank">Photography </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -432,60 +488,56 @@
     </div>
 
 
-    <button class="container collapsible" style="text-align: center">
+    <button class="container collapsible">
             <span class="card-header">
             <h2>Hardware: </h2>
-            <h2>A few of my electronics-hardware related projects and work </h2>
+            <h2>Click here to see recent hardware builds and designs </h2>
             </span>
     </button>
-    <div class="inner">
 
 
-        <div class="container">
+    <div class="container" style="display: none">
 
-            <div class="div2 h">
+        <div class="div2 h">
 
-                <div class="container header" style="margin: auto">
-                    <h3> uSDX: Open Source HF Radio</h3>
-                </div>
-                <img src="/img/20210216_155038.jpg" alt="radio" style="width:30%">
-                <img src="/img/ne.jpg" alt="radio" style="width:30%">
-                <img src="/img/20210216_144157.jpg" alt="radio" style="width:30%">
-                <!--          <div class="container hardware" style="">-->
-                <p>Pictured: The uSDX, a credit card-sized fully operational HF radio capable of modulating SSB (USB and
-                    LSB), as well as CW.
-                    There are multiple versions of this project. This one was created by Manuel, DL2MAN, and the
-                    software originally by Guide, PE1NNZ.
-                    I also built one of the other original versions by Barb, WB2CBA. This is one of my favorite open
-                    source projects to date, as
-                    the community was quite small and I was able to help, as well as be helped, by others. A lot of
-                    knowledge and experience
-                    was shared. Specifically, a problem arose where a number of people were receiving ATMETA328P
-                    microcontrollers without
-                    bootloaders. I made a guide for them to succesfully load the bootloader onto their microcontroller
-                    via the command prompt,
-                    using a breadboard and USB-ASP. This then allowed them to upload the uSDX firmware via their
-                    Arduino's.
-                </p>
-                <p> This project consisted of many parts, and was a great learning experience. The RF filter board was
-                    especially interesting,
-                    as it was my first introduction into Class E amplifiers and serial resonance. This made it quite a
-                    challenge, but was extremely rewarding,
-                    as the values for each frequency band had to be optimized while maintaining that optimization for
-                    all.
-                    I did this using a VNA and LC Meter. The board was designed by Manuel, DL2MAN, to allow for five
-                    frequency bands,
-                    and each pair of toroids had to be tuned to the correct frequency band, which was done by changing
-                    the number of times the
-                    magnet wire was wrapped around the toroid, as well as the capacitor values.
-                    <a href="https://groups.io/g/ucx/" style="text-decoration-style: unset" target="_blank" ">If you're
-                    interested in learning
-                    more about the uSDX, the groups.io page is a great place to start. </a>
-
-
-                </p>
-                <!--</div>-->
+            <div class="container header" style="margin: auto">
+                <h3> uSDX: Open Source HF Radio</h3>
             </div>
+            <img src="/img/20210216_155038.jpg" alt="radio" style="width:30%">
+            <img src="/img/ne.jpg" alt="radio" style="width:30%">
+            <img src="/img/20210216_144157.jpg" alt="radio" style="width:30%">
+            <!--          <div class="container hardware" style="">-->
+            <p>Pictured: The uSDX, a credit card-sized fully operational HF radio capable of modulating SSB (USB and
+                LSB), as well as CW.
+                There are multiple versions of this project. This one was created by Manuel, DL2MAN, and the software
+                originally by Guide, PE1NNZ.
+                I also built one of the other original versions by Barb, WB2CBA. This is one of my favorite open source
+                projects to date, as
+                the community was quite small and I was able to help, as well as be helped, by others. A lot of
+                knowledge and experience
+                was shared. Specifically, a problem arose where a number of people were receiving ATMETA328P
+                microcontrollers without
+                bootloaders. I made a guide for them to succesfully load the bootloader onto their microcontroller via
+                the command prompt,
+                using a breadboard and USB-ASP. This then allowed them to upload the uSDX firmware via their Arduino's.
+            </p>
+            <p> This project consisted of many parts, and was a great learning experience. The RF filter board was
+                especially interesting,
+                as it was my first introduction into Class E amplifiers and serial resonance. This made it quite a
+                challenge, but was extremely rewarding,
+                as the values for each frequency band had to be optimized while maintaining that optimization for all.
+                I did this using a VNA and LC Meter. The board was designed by Manuel, DL2MAN, to allow for five
+                frequency bands,
+                and each pair of toroids had to be tuned to the correct frequency band, which was done by changing the
+                number of times the
+                magnet wire was wrapped around the toroid, as well as the capacitor values.
+                <a href="https://groups.io/g/ucx/" style="text-decoration-style: unset" target="_blank" ">If you're
+                interested in learning
+                more about the uSDX, the groups.io page is a great place to start. </a>
+
+
+            </p>
+            <!--</div>-->
         </div>
 
 
@@ -508,82 +560,58 @@
         </div>
 
 
-        <div class="container hardware" style="">
+        <div class="container hardware" style="display: grid">
             <div class="parent hard cnc">
                 <div class="div1 hc">
-                    <div class="container header" style="position: center;">
+                    <div class="container header" style="position: center;display: grid;">
                         <h3> Builds: Mini-CNC Machine with GRBL Open Source Controller</h3>
                     </div>
                 </div>
 
-                <div class="parent hard cnc" style="place-items: center; column-count: 2">
-                    <div class="div1 hc">
+                <div class="div2 hc" style="margin-right:3%">
+                    <img src="/img/20210807_213240.jpg" alt="u-logo" style="width:100%;border-radius: 2%">
+                </div>
+                <div class="div3 hc">
+                    <img src="/img/20210807_232255.jpg" alt="u-logo" style="width:100%;border-radius: 2%">
+                </div>
+                <div class="div4 hc" style="margin-left:3%">
+                    <img src="/img/20210814_115028.jpg" alt="u-logo" style="width:65%;;border-radius: 2%">
+                </div>
+                <div class="div6 hc">
+                    <img src="/img/20210809_132539.jpg" alt="u-logo" style="width:100%;border-radius: 2%">
+                </div>
 
-                    </div>
-
-                    <!--    <div class="div2 hc"style="margin-right:3%">-->
-                    <img src="/img/20210807_213240.jpg" alt="u-logo"
-                         style="width:75%;border-radius: 2%;grid-area: 1/ 3 / 2 / 3;">
-                    <!--    </div>-->
-                    <!--    <div class="div3 hc">-->
-                    <img src="/img/20210807_232255.jpg" alt="u-logo"
-                         style="width:75%;border-radius: 2%;grid-area: 2 / 3 / 3 / 4;">
-                    <!--    </div>-->
-                    <!--        <div class="div4 hc" style="margin-left:3%">-->
-                    <div class="div5 hc">
-                        <!--        <div class="container hardware" style="">-->
-                        <p>Pictured above is the mini-CNC I built using aluminum extrusion, stepper motors, a 10k rpm
-                            spindle motor, and an open-source GRBL control board.
-                            I was able to build the CNC for less than $200 total. My software workflow for milling PCBs
-                            was KiCAD (design the PCB, plot the GRBR files) --&gt; FlatCAM (turn the
-                            GRBRs into a CAM file with the traces inverted --&gt; bCNC (an open source CNC control
-                            software written in python. I tried various different software but this was my
-                            favorite as it had various options including an autolevel function (create heightmaps for
-                            even milling), simple GCode editing, and extensive customizability overall
-                            for various purposes. </p>
-                        <!--        </div>-->
-                    </div>
-                    <img src="/img/20210814_115028.jpg" alt="u-logo"
-                         style="width:70%;;border-radius: 2%;grid-area: 3 / 1 / 1 / 1;">
-                    <!--    </div>-->
-                    <!--    <div class="div6 hc">-->
-                    <img src="/img/20210809_132539.jpg" alt="u-logo"
-                         style="width:75%;border-radius: 2%;grid-area: 3 / 2 / 4 / 3;">
-                    <!--    </div>-->
-
-                    <!--                    <div class="div5 hc">-->
-                    <!--                        &lt;!&ndash;        <div class="container hardware" style="">&ndash;&gt;-->
-                    <!--                        <p>Pictured above is the mini-CNC I built using aluminum extrusion, stepper motors, a 10k rpm-->
-                    <!--                            spindle motor, and an open-source GRBL control board.-->
-                    <!--                            I was able to build the CNC for less than $200 total. My software workflow for milling PCBs-->
-                    <!--                            was KiCAD (design the PCB, plot the GRBR files) &#45;&#45;&gt; FlatCAM (turn the-->
-                    <!--                            GRBRs into a CAM file with the traces inverted &#45;&#45;&gt; bCNC (an open source CNC control-->
-                    <!--                            software written in python. I tried various different software but this was my-->
-                    <!--                            favorite as it had various options including an autolevel function (create heightmaps for-->
-                    <!--                            even milling), simple GCode editing, and extensive customizability overall-->
-                    <!--                            for various purposes. </p>-->
-                    <!--                        &lt;!&ndash;        </div>&ndash;&gt;-->
-                    <!--                    </div>-->
+                <div class="div5 hc">
+                    <!--        <div class="container hardware" style="">-->
+                    <p>Pictured above is the mini-CNC I built using aluminum extrusion, stepper motors, a 10k rpm
+                        spindle motor, and an open-source GRBL control board.
+                        I was able to build the CNC for less than $200 total. My software workflow for milling PCBs was
+                        KiCAD (design the PCB, plot the GRBR files) --> FlatCAM (turn the
+                        GRBRs into a CAM file with the traces inverted --> bCNC (an open source CNC control software
+                        written in python. I tried various different software but this was my
+                        favorite as it had various options including an autolevel function (create heightmaps for even
+                        milling), simple GCode editing, and extensive customizability overall
+                        for various purposes. </p>
+                    <!--        </div>-->
                 </div>
             </div>
         </div>
         <div class="container hardware">
-            <div class="parent gps" style="display: grid;grid-template-columns: 1fr 1fr;place-items: center;">
-                <div class="div1 gps" style="grid-area: 1 / 1 / 2 / 3;
-       }">
-                    <div class="container header" style="position: center;">
+            <div class="parent gps">
+                <div class="div1 gps" style="display: flow-root;margin: auto;">
+                    <div class="container header" style="position: center;display: grid;">
                         <h3> GPS Speedometer for Boat/Bike </h3>
                     </div>
                 </div>
 
-                <div class="div2 gps" style="grid-area: 2 / 1/ 2/ 2;">
+                <div class="div2 gps" style="margin-right:3%">
                     <img src="/img/20210816_165305.jpg" alt="u-logo" style="width:100%;border-radius: 2%">
                 </div>
-                <div class="div3 gps" style="grid-area: 2 / 2/ 2 /2;">
+                <div class="div3 gps">
                     <img src="/img/20210812_161854(1).jpg" alt="u-logo" style="width:75%;border-radius: 2%">
                 </div>
 
-                <div class="div4 gps" style="grid-area: 3 / 3 / 3 / 1;padding: 5%;">
+                <div class="div4 gps">
                     <!--           <div class="container hardware" style="">-->
                     <p>Pictured above are the first prototypes of a GPS speedometer I built. On the left, the upper side
                         of a freshly-milled copper-clad PCB board, and to the
@@ -607,22 +635,22 @@
             </div>
         </div>
         <div class="container hardware">
-            <div class="parent gps" style="display: grid;padding: 4%; place-items: center">
-                <div class="div1 gps" style="grid-area: 2 / 2 / 3 / 3;">
+            <div class="parent gps">
+                <div class="div1 gps" style="display: flow-root;margin: auto;">
                     <div class="container header" style="position: center;display: grid;">
                         <h3> Class A Amp for Cell Phone </h3>
                     </div>
                 </div>
 
-                <div class="div2 gps" style="grid-area: 2 / 1 / 2 / 2;">
+                <div class="div2 gps">
                     <img src="/img/20210914_005810.jpg" alt="u-logo"
-                         style="width:100%;border-radius: 2%; margin-left: 10%">
+                         style="width:75%;border-radius: 2%; margin-left: 10%">
                 </div>
-                <div class="div3 gps" style="grid-area:1 / 3 / 3 / 4;">
-                    <img src="/img/phone_amp.png" alt="u-logo" style="width:100%;border-radius: 2%">
+                <div class="div3 gps">
+                    <img src="/img/phone_amp.png" alt="u-logo" style="width:75%;border-radius: 2%">
                 </div>
 
-                <div class="div4 gps" style="grid-area: 3 / 1 / 5 / 5;">
+                <div class="div4 gps">
                     <!--              <div class="container hardware" style="">-->
                     <p>Pictured on the left is an early prototype created using a chemically etched copper-clad PCB
                         board and SMT components which I soldered on.
@@ -666,7 +694,7 @@
         </div>
 
         <div class="container hardware">
-            <div class="parent misc" style="text-align: center;">
+            <div class="parent misc" style="text-align: center;display: block;">
                 <div class="div5 misc" style="display: flow-root;margin: auto;">
                     <div class="container header" style="position: center;display: grid;">
                         <h3> My Bench and Other Projects for Future Articles </h3>
@@ -720,6 +748,7 @@
 
             </div>
         </div>
+    </div>
 </section>
 <div class="div4 h">
     <!--        <div class="content hardware">-->
@@ -728,10 +757,8 @@
     <p></p>
 
 </div>
-</div>
 
-</div>
-</section>
+
 </body>
 <script>
     const coll = document.getElementsByClassName("container collapsible");
