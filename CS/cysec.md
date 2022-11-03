@@ -12,7 +12,10 @@
 This page will serve as the main overview and summary of my CS notes and projects. More specific and detailed notes/labs/CTFs will be linked below and have their own pages. 
 ----
 
-> ### **My latest post:**
+> ### **My latest posts:**
+## [Linux Privilege Escalation Notes](https://jeremylaratro.link/CS/PrivEsc.html)
+## [THM: rootme writeup](https://jeremylaratro.link/THM/rootme)
+## [Defensive Security Notes](https://jeremylaratro.link/CS/defensive_sec.html)
 ## [OWASP Juice Shop -- Notes and Walkthrough](/CS/juice_shop)
 ## [hackerone -- Notes and Walkthrough](/CS/hacker_one_ctf)
 ##  [GoLang -- Notes](/CS/golang)
