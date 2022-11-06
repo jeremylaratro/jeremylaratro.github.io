@@ -13,9 +13,10 @@ This page will serve as the main overview and summary of my CS notes and project
 ----
 
 > ### **My latest posts:**
-## [Linux Privilege Escalation Notes](https://jeremylaratro.link/CS/PrivEsc.html)
+## [THM: Pickle Rick](https://jeremylaratro.link/CS/thm_pickle_rick)
+## [Linux Privilege Escalation Notes](https://jeremylaratro.link/CS/PrivEsc)
 ## [THM: rootme writeup](https://jeremylaratro.link/THM/rootme)
-## [Defensive Security Notes](https://jeremylaratro.link/CS/defensive_sec.html)
+## [Defensive Security Notes](https://jeremylaratro.link/CS/defensive_sec)
 ## [OWASP Juice Shop -- Notes and Walkthrough](/CS/juice_shop)
 ## [hackerone -- Notes and Walkthrough](/CS/hacker_one_ctf)
 ##  [GoLang -- Notes](/CS/golang)
