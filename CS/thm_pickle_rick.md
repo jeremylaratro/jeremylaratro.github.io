@@ -26,10 +26,8 @@ nmap:
 Main/Front Webpage:
 ![Front page](/cd_image_dir/front_page.png)
 
-```
-Source Code: 
-```
 
+Source Code:
 ```
 Note to self, remember username!
 
@@ -46,10 +44,14 @@ With that said, I decided to open Burp and saw that the images being used were c
 	GET /assets/rickandmorty.jpeg
 	/assets/ 
 
-contains photos and js files - perhaps the images contain something interesting. I ran stegseek while the nmap and dirb processes were finishing up, however nothing unusual was found in the photos robots.txt: Wubbalubbadubdub - I appended this at the end of the URL as well as a subdirectory of /assets/ but nothing found. This will likely be useful at some point, however.
+/assets contains photos and js files - I thought that perhaps the images contain something interesting. I ran stegseek while the nmap and dirb processes were finishing up, however nothing unusual was found in the photos 
+
+    robots.txt: Wubbalubbadubdub 
+
+I appended the string from robots.txt at the end of the URL as well as a subdirectory of /assets/ but nothing found. This will likely be useful at some point, however.
 
 
-As seen above, the initial enumeration of the website did not return anything useful. Perhaps I should've done this from the start, but I executed further enumeration with gobuster, and widened the scope to include various file extensions
+As seen above, the initial enumeration of the website did not return anything useful. I executed further enumeration with gobuster, and widened the scope to include various file extensions.
 
 ```
  gobuster -u http://10.10.139.155/ -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x php,sh,txt,cgi,html -t 15
@@ -57,8 +59,9 @@ As seen above, the initial enumeration of the website did not return anything us
  Gobuster:
  /login.php 
 ```
+This revealed a login page, which is likely the key to gaining a foothold on the system. 
 
-Now, a fair amount of progress has been made:
+With that discovery, a fair amount of progress has been made:
 
 ```
 Known:
