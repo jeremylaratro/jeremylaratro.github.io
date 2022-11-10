@@ -21,11 +21,11 @@ foothold on  SSH
 
 sudo -l --> usr/bin/less
 /usr/bin/less /root/root.txt --> flag
-63a9f0ea7bb98050796b649e85481845
+
 
 cd /home 
 cd jake 
-cd holt --> flag ee11cbb19052e40b07aac0ca060c23ee
+cd holt --> flag 
 
 su holt --> password from before
 
