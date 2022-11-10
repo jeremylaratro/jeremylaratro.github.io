@@ -301,12 +301,12 @@
         ><dc:format
           >image/svg+xml</dc:format
         ><dc:type
-            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+            rdf:resource="https://purl.org/dc/dcmitype/StillImage"
         /><cc:license
-            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+            rdf:resource="https://creativecommons.org/licenses/publicdomain/"
         /><dc:publisher
           ><cc:Agent
-              rdf:about="http://openclipart.org/"
+              rdf:about="https://openclipart.org/"
             ><dc:title
               >Openclipart</dc:title
             ></cc:Agent
@@ -339,13 +339,13 @@
           ></dc:subject
         ></cc:Work
       ><cc:License
-          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+          rdf:about="https://creativecommons.org/licenses/publicdomain/"
         ><cc:permits
-            rdf:resource="http://creativecommons.org/ns#Reproduction"
+            rdf:resource="https://creativecommons.org/ns#Reproduction"
         /><cc:permits
-            rdf:resource="http://creativecommons.org/ns#Distribution"
+            rdf:resource="https://creativecommons.org/ns#Distribution"
         /><cc:permits
-            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+            rdf:resource="https://creativecommons.org/ns#DerivativeWorks"
         /></cc:License
       ></rdf:RDF
     ></metadata

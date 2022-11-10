@@ -290,7 +290,7 @@ h6 {
     height: 309%;
     width: 35%;
     padding: 15px 15px 15px 15px;
-    margin: 0px auto 0px auto;
+    margin: 0 auto 0 auto;
     display: block;
     background: #FFFFFF;
     color: #000000;
@@ -364,7 +364,7 @@ $blueColor:rgba(33,150,243,1);
     font-family: arial;
     color: #14396A !important;
     font-size: 1vw;
-    text-shadow: 1px 1px 0px #7CACDE;
+    text-shadow: 1px 1px 0 #7CACDE;
     box-shadow: 1px 1px 1px #BEE2F9;
     padding: 10px 25px;
     border-radius: 15px;
@@ -441,7 +441,7 @@ h5 {
     flex-grow: inherit;
     color: #7a7a8c;
     text-decoration: transparent;
-    text-shadow: 1px 1px 0px #28242f;
+    text-shadow: 1px 1px 0 #28242f;
     grid-row: auto;
 }
 .card.collapsible {
@@ -520,8 +520,8 @@ card.content {
 display: grid;
 grid-template-columns: repeat(6, 1fr);
 grid-template-rows: repeat(7, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+grid-column-gap: 0;
+grid-row-gap: 0;
 }
 
 .div1 { grid-area: 1 / 2 / 2 / 6; }
