@@ -1,3 +1,5 @@
+Rough Notes - Brooklyn Nine-Nine - TryHackMe CTF
+
 Webpage
 
 - Source code --> clue that photo has steg hidden

@@ -2,6 +2,8 @@
 
 Notes/writeup for the THM CTF machine titled "Pickle Rick."
 
+https://tryhackme.com/room/picklerick
+
 This is a fun machine that focuses on enumeration and investigation, reverse shells, and the linux file system.
 
 * * *

@@ -1,5 +1,5 @@
 
-# Title: Wonderland
+# TryHackMe: Wonderland
 
 ## Initial Scans and Enumeration:
 

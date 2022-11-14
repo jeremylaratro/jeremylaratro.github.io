@@ -1,4 +1,4 @@
-RootMe: TryHackMe Basic Linux Privilege Escalation
+# TryHackMe: RootMe
 -------
 
 In this THM machine, the attacker must enumerate the domain and perform reconaiisance, use a webshell via poorly secured web form, and then escalate privilege from user to root. 

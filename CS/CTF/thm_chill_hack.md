@@ -1,3 +1,5 @@
+Rough Notes - Chill Hack - TryHackMe CTF
+
 nmap
 
 ssh

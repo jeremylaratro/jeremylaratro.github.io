@@ -1,3 +1,5 @@
+Rough Notes - Anonymous - TryHackMe CTF
+
 NMAP:
 - ftp, ssh, smb, 49175 -- unknown filtered
 

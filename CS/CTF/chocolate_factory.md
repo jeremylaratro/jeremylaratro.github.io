@@ -1,3 +1,5 @@
+Rough Notes - Chocolate Factory - TryHackMe CTF
+
 nmap --> ftp, ssh
 
 ftp -- anonymous
