@@ -1,4 +1,4 @@
-RootMe: TryHackMe Basic Linux Privilege Escalation
+# TryHackMe: RootMe
 -------
 
 [Back to Table of Contents](../cysec)

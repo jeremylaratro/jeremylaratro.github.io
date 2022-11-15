@@ -1,5 +1,5 @@
 
-# Title: Wonderland
+# TryHackMe: Wonderland
 
 ---
 [Back to Table of Contents](../cysec)
