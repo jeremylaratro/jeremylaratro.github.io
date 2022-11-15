@@ -1,11 +1,16 @@
 
 # Title: Wonderland
 
+---
+[Back to Table of Contents](../cysec)
+
+---
 ## Initial Scans and Enumeration:
 
- ### nmap:
-Nmap scan report for 10.10.81.208
-Host is up (0.21s latency).
+ >### nmap:
+```
+Nmap scan report for 10.10.81.208 
+Host is up (0.21s latency). 
 Not shown: 998 closed ports
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
@@ -16,8 +21,8 @@ PORT   STATE SERVICE VERSION
 80/tcp open  http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
 |_http-title: Follow the white rabbit.
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
-### GOBuster:
+```
+>### GOBuster:
 - /img
 - /css
 - /r 
@@ -31,6 +36,8 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 - alice_door.png
 	- Both the same photo, but the jpg is brighter, whereas the png has an off-white color. Perhaps just from compression? Maybe important? 
 - white_rabbit_1.jpg
+
+---
 
 ### Steganography
 I used my own steganography/image analysis tool, PhotoSecUtils and found some interesting info in the photos. 
@@ -71,7 +78,7 @@ alice:***redacted***
 	
 ---
 	
-## Foothold:
+## Foothold
 
 Immediately upon entering and running 'ls', we see a 'root.txt' file, but of course, permission denied. 
 Theres another interesting file, called 'walrus_and_the_carpenter.py'
@@ -99,6 +106,8 @@ ls -lah | grep alice
 ```
 These searches did not return anything that seemed useful.
 At this point I was stuck; I decided to look into ways others have used to escalate via the python script and found python module hijacking. 
+
+---
 
 ### Python Module Hijacking --> Horizontal PrivEsc
 Basically, a fake module can be made, which when imported, will execute the malicious code rather than the module code intended. The python file, "walrus_and_the_carpenter.py" imports the random module, so in order to perform a module hijacking attack, I created a fake random.py file and added simple code.
@@ -146,6 +155,8 @@ GCC: (Debian 8.3.0-6) 8.3.0
 
 I knew that this would be the key to escalating, but wasn't sure exactly how, so I decided to look into ways this could be done, and settled on the following method.
 While the path is provided for /bin/echo, it is not provided for date --> possibly another hijacking / imitation attack or path attack.
+
+---
 
 ### Path Exploitation --> Horizontal PrivEsc
 
@@ -223,7 +234,8 @@ But where is the user flag? I then remembered the hint for the user flag --> "Ev
  cat user.txt --> flag!
  ```
  
- ---
+ -----------------
+---
  
  ### Note
  

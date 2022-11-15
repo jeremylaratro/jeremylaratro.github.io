@@ -1,5 +1,5 @@
 ## **HackerOne CTF**
-[Return to CS page](/CS/cysec)
+[Back to Table of Contents](../cysec)
 
 ---
 >>### Micro-CMS v2.0

@@ -1,6 +1,8 @@
 RootMe: TryHackMe Basic Linux Privilege Escalation
 -------
 
+[Back to Table of Contents](../cysec)
+
 In this THM machine, the attacker must enumerate the domain and perform reconaiisance, use a webshell via poorly secured web form, and then escalate privilege from user to root. 
 
 First, an enumeration of the domain is performed using dirb or gobuster and nmap or rustmap. 
