@@ -33,15 +33,15 @@
 >
 >---
 >>### CTF Notes and Writeups:
->#### [OWASP Juice Shop -- Notes and Walkthrough](/CS/CTF/juice_shop)
->#### [hackerone -- Notes and Walkthrough](/CS/CTF/hacker_one_ctf)
->#### [THM: Pickle Rick](CS/CTF/thm_pickle_rick)
->#### [THM: rootme writeup](/CS/CTF/thm_rootme)
->#### [THM: Wonderland](/CS/CTF/wonderland_thm)
->#### [THM: Chill Hack](/CS/CTF/thm_chillhack)
->#### [THM: Chocolate Factory](/CS/CTF/chocolate_factory)
->#### [THM: Brooklyn Nine Nine](/CS/CTF/brooklyn_nine_nine)
->#### [THM: Anonymous](/CS/CTF/thm_anonymous)
+>#### [OWASP Juice Shop -- Notes and Walkthrough](CTF/juice_shop)
+>#### [hackerone -- Notes and Walkthrough](CTF/hacker_one_ctf)
+>#### [THM: Pickle Rick](CTF/thm_pickle_rick.md)
+>#### [THM: rootme writeup](CTF/thm_rootme)
+>#### [THM: Wonderland](CTF/wonderland_thm)
+>#### [THM: Chill Hack](CTF/thm_chill_hack)
+>#### [THM: Chocolate Factory](CTF/chocolate_factory)
+>#### [THM: Brooklyn Nine Nine](CTF/brooklyn_nine_nine)
+>#### [THM: Anonymous](CTF/thm_anonymous)
 
 
 
