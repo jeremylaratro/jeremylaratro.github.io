@@ -2,6 +2,8 @@
 
 -----
 
+[Back to Table of Contents](../cysec)
+
 > Horizontal and vertical privilege escalation:
  - horizontal privilege escalation - access pivot from users within the same permission scope
  - vertical privilege escalation - access pivot from user with lower permissions to user with higher permissions

@@ -1,4 +1,4 @@
-Rough Notes - Chocolate Factory - TryHackMe CTF
+[Back to Table of Contents](../cysec)
 
 nmap --> ftp, ssh
 

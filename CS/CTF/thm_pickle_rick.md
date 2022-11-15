@@ -1,12 +1,11 @@
 # TryHackMe: Pickle Rick CTF
+[Back to Table of Contents](../cysec) 
 
-Notes/writeup for the THM CTF machine titled "Pickle Rick."
-
-https://tryhackme.com/room/picklerick
-
+Notes/writeup for the THM CTF machine titled "Pickle Rick." \
+[PickleRick on TryHackMe](https://tryhackme.com/room/picklerick)
 This is a fun machine that focuses on enumeration and investigation, reverse shells, and the linux file system.
 
-* * *
+---
 
 ## Enumeration
 
@@ -48,7 +47,7 @@ With that said, I decided to open Burp and saw that the images being used were c
 
 /assets contains photos and js files - I thought that perhaps the images contain something interesting. I ran stegseek while the nmap and dirb processes were finishing up, however nothing unusual was found in the photos 
 
-    robots.txt: Wubbalubbadubdub 
+    robots.txt: **redacted**
 
 I appended the string from robots.txt at the end of the URL as well as a subdirectory of /assets/ but nothing found. This will likely be useful at some point, however.
 
@@ -56,7 +55,7 @@ I appended the string from robots.txt at the end of the URL as well as a subdire
 As seen above, the initial enumeration of the website did not return anything useful. I executed further enumeration with gobuster, and widened the scope to include various file extensions.
 
 ```
- gobuster -u http://10.10.139.155/ -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x php,sh,txt,cgi,html -t 15
+ gobuster -u http://ip/ -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x php,sh,txt,cgi,html -t 15
  
  Gobuster:
  /login.php 

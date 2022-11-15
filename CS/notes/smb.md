@@ -1,5 +1,7 @@
 ## **SMB : Server Message Block**
 >### Notes from TryHackMe, HackTheBox, and other online resources. 
+ 
+ [Back to Table of Contents](../cysec)
 
 SMB is a network-based file sharing protocol that allows users to access shared files on a server.  
 SMB is used on both Windows and Unix systems; common services names include microsoft-ds for Windows-based system and Samba for linux-based systems. 
@@ -18,11 +20,11 @@ sudo nmap {target_ip} -sV -sC -O
 ```
 
 The nmap scan shows that 3 ports are open on the target machine, with two of them being SMB ports. \
-![nmap SMB](/CS/cs_img_dir/smb_nmap_ports.png)
+![nmap SMB](../cs_img_dir/smb_nmap_ports.png)
 
 The scripts switch also returned extremely useful information about the specific SMB configuration that this machine is running. 
 
-![nmap SMB](/CS/cs_img_dir/smb_nmap_script.png)
+![nmap SMB](../cs_img_dir/smb_nmap_script.png)
 
 With just this single nmap scan, we already know of two SMB ports that are open, the system name, the security configuration
 (guest has user access), as well as an open ssh port, which may prove useful later. 
@@ -47,7 +49,7 @@ Enumerate and list the shares:
 ```bash
 smbclient -L {target_ip}
 ```
-![smbclient](/CS/cs_img_dir/smbcli_enum.png)
+![smbclient](../cs_img_dir/smbcli_enum.png)
 
 Three shares are listed, and the profiles share seems to be both interesting and accessible, so that was my first choice to dig into. 
 
@@ -57,19 +59,19 @@ perl enum4linux.pl -a {target_ip}
 ```
 This provided a bunch of information, verifying the smbclient and nmap findings and also providing addition information such
 as users.
-![enum4linux](/CS/cs_img_dir/enum4linux.png)
+![enum4linux](../cs_img_dir/enum4linux.png)
 
 With this information, I proceeded to attempt access to the profiles share.
 ```bash
 smbclient \\\\{target_ip}\\profiles
 ```
 This was successful, and I was able to list the files in the share.
-![smbclient](/CS/cs_img_dir/smbcli_files.png)
+![smbclient](../cs_img_dir/smbcli_files.png)
 
 After looking through the files and directories, I was able to find some interesting information. 
 The working from home file contained an HR email telling a user with username cactus that ssh access was provided, 
 and the ssh directory contained rsa keys. 
-![smbclient](/CS/cs_img_dir/smb_rsa.png)
+![smbclient](../cs_img_dir/smb_rsa.png)
 
 -----------------
 
@@ -113,7 +115,7 @@ to craft a more advanced attack.
 
 -----------------
 
-### **General Notes**
+#### **Important Commands**
 
 ````bash
 smbclient -L ip 

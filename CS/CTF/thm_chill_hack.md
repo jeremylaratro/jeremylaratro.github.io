@@ -1,4 +1,4 @@
-Rough Notes - Chill Hack - TryHackMe CTF
+[Back to Table of Contents](../cysec)
 
 nmap
 
