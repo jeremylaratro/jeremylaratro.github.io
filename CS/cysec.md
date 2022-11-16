@@ -10,7 +10,8 @@
 
 
 > ### **My latest posts:**
-### [THM: Wonderland](/CS/CTF/wonderland_thm)
+### [THM: Daily Bugle](https://jeremylaratro.link/CS/CTF/thm_dailybugle)
+### [THM: Wonderland](https://jeremylaratro.link/CS/CTF/wonderland_thm)
 ### [THM: Pickle Rick](https://jeremylaratro.link/CS/CTF/thm_pickle_rick)
 ### [Linux Privilege Escalation Notes](https://jeremylaratro.link/CS/notes/PrivEsc)
 ### [THM: rootme writeup](https://jeremylaratro.link/THM/CTF/rootme)
