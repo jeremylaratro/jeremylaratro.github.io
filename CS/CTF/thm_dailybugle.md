@@ -146,10 +146,12 @@ sqlmap -r request.txt --users --passwords --tables --random-agent
 ```
 
 This quickly returned a massive amount of information, including:
+
 Databases:
 - joomla
 - mysql
 - information_schema
+- performance_schema
 
 SQLMap also returned a password hash from the mysql database. I thought this may be an alternative way in, and used haiti to confirm the hash type:
 ```
@@ -163,7 +165,7 @@ I ran hashcat with rockyou.txt and it was quickly exhausted. I then tried with m
 The joomla database contains a table called
 `#__users`  which I was specifically interested in. The columns had to be enumerated, so I trimmed down the columns wordlist to just about 20 words relating to username, password, pass, etc. 
 
-This returned a usser entry and hash. 
+This returned a user entry and hash. 
 
 
 ```
