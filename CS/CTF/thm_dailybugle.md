@@ -3,8 +3,8 @@
 # TryHackMe: Daily Bugle CTF
 [Back to Table of Contents](../cysec) 
 
-Notes/writeup for the THM CTF machine titled "Pickle Rick." \
-[PickleRick on TryHackMe](https://tryhackme.com/room/dailybugle)
+Notes/writeup for the THM CTF machine titled "Daily Bugle" \
+[Daily Bugle on TryHackMe](https://tryhackme.com/room/dailybugle)
 
 ## Initial Scans
 ```
