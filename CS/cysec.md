@@ -5,15 +5,23 @@
 [Back to website home page](https://jeremylaratro.link)
 
 ----
- > This page will serve as the main overview and summary of my CS notes and projects. More specific and detailed notes/labs/CTFs will be linked below and have their own pages. 
-----
+> This page is essentially the directory for all of my CS-related posts, notes, writeups, etc.
 
+## OSCP
+At this time, I am officially working on my OSCP course. I will not able to share 
+many of my notes and writeups due to course policy, however, I will still post any notes and writeups
+that I am able to do from THM, HTB, etc., but my main focus for the next two months will be on the OSCP content  
+
+---
 
 > ### **My latest posts:**
-### [THM: Wonderland](/CS/CTF/wonderland_thm)
+### [AD: Exploitation Overview](https://jeremylaratro.link/CS/notes/ad_exploitation)
+### [AD: File Transfer](https://jeremylaratro.link/CS/notes/ad_filetransfer)
+### [THM: Daily Bugle](https://jeremylaratro.link/THM/DailyBugle)
+### [THM: Wonderland](https://jeremylaratro.link/CS/CTF/wonderland_thm)
 ### [THM: Pickle Rick](https://jeremylaratro.link/CS/CTF/thm_pickle_rick)
 ### [Linux Privilege Escalation Notes](https://jeremylaratro.link/CS/notes/PrivEsc)
-### [THM: rootme writeup](https://jeremylaratro.link/THM/CTF/rootme)
+
 
 
 -----------
@@ -21,27 +29,27 @@
 >
 >---
 >>### Notes:
->#### [Linux Privilege Escalation Notes](/CS/notes/PrivEsc)
->####  [GoLang -- Notes](/CS/notes/golang)
->#### [Active Directory Notes](/CS/notes/active_directory)
->#### [SMB Exploitation -- Notes](/CS/notes/smb)
->#### [Defensive Security Notes](/CS/notes/defensive_sec)
->#### [LFI/RFI Notes](/CS/notes/lfi)
->#### [SSTI Notes](/CS/notes/ssti)
->#### [XSS Notes](/CS/notes/xss)
+>#### [Linux Privilege Escalation Notes](https://jeremylaratro.link/CS/notes/PrivEsc)
+>####  [GoLang -- Notes](https://jeremylaratro.link/CS/notes/golang)
+>#### [Active Directory Notes](https://jeremylaratro.link/CS/notes/active_directory)
+>#### [SMB Exploitation -- Notes](https://jeremylaratro.link/CS/notes/smb)
+>#### [Defensive Security Notes](https://jeremylaratro.link/CS/notes/defensive_sec)
+>#### [LFI/RFI Notes](https://jeremylaratro.link/CS/notes/lfi)
+>#### [SSTI Notes](https://jeremylaratro.link/CS/notes/ssti)
+>#### [XSS Notes](https://jeremylaratro.link/CS/notes/xss)
 >
 >
 >---
 >>### CTF Notes and Writeups:
->#### [OWASP Juice Shop -- Notes and Walkthrough](CTF/juice_shop)
->#### [hackerone -- Notes and Walkthrough](CTF/hacker_one_ctf)
->#### [THM: Pickle Rick](CTF/thm_pickle_rick.md)
->#### [THM: rootme writeup](CTF/thm_rootme)
->#### [THM: Wonderland](CTF/wonderland_thm)
->#### [THM: Chill Hack](CTF/thm_chill_hack)
->#### [THM: Chocolate Factory](CTF/chocolate_factory)
->#### [THM: Brooklyn Nine Nine](CTF/brooklyn_nine_nine)
->#### [THM: Anonymous](CTF/thm_anonymous)
+>#### [OWASP Juice Shop -- Notes and Walkthrough](https://jeremylaratro.link/CS/CTF/juice_shop)
+>#### [hackerone -- Notes and Walkthrough](https://jeremylaratro.link/CS/CTF/hacker_one_ctf)
+>#### [THM: Pickle Rick](https://jeremylaratro.link/CS/CTF/thm_pickle_rick.md)
+>#### [THM: rootme writeup](https://jeremylaratro.link/CS/CTF/thm_rootme)
+>#### [THM: Wonderland](https://jeremylaratro.link/CS/CTF/wonderland_thm)
+>#### [THM: Chill Hack](https://jeremylaratro.link/CS/CTF/thm_chill_hack)
+>#### [THM: Chocolate Factory](https://jeremylaratro.link/CS/CTF/chocolate_factory)
+>#### [THM: Brooklyn Nine Nine](https://jeremylaratro.link/CS/CTF/brooklyn_nine_nine)
+>#### [THM: Anonymous](https://jeremylaratro.link/CS/CTF/thm_anonymous)
 
 
 
@@ -153,7 +161,7 @@ There are thousands and thousands of different tools, scripts, and applications 
 >>####  binwalk, exiftools, strings, cat, file
 > - Linux file analysis tools
 >>####  PhotoSecUtils
-> - My personal fine analysis tool for analyzing jpegs
+> - My personal file analysis tool for analyzing jpegs
 
 ----------
 
@@ -161,6 +169,5 @@ There are thousands and thousands of different tools, scripts, and applications 
 - Windows Exploitation -- Active Directory for OSCP
 - Advanced, manual SQLi
 - Advanced, manual XSS
-
 
 ----------
