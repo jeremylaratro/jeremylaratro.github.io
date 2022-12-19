@@ -17,7 +17,7 @@ that I am able to do from THM, HTB, etc., but my main focus for the next two mon
 > ### **My latest posts:**
 ### [AD: Exploitation Overview](https://jeremylaratro.link/CS/notes/ad_exploitation)
 ### [AD: File Transfer](https://jeremylaratro.link/CS/notes/ad_filetransfer)
-### [THM: Daily Bugle](https://jeremylaratro.link/THM/DailyBugle)
+### [THM: Daily Bugle](https://jeremylaratro.link/CS/thm_dailybugle)
 ### [THM: Wonderland](https://jeremylaratro.link/CS/CTF/wonderland_thm)
 ### [THM: Pickle Rick](https://jeremylaratro.link/CS/CTF/thm_pickle_rick)
 ### [Linux Privilege Escalation Notes](https://jeremylaratro.link/CS/notes/PrivEsc)
