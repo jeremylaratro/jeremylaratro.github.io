@@ -31,9 +31,11 @@ Ie. low privilege 1 -> low privilege 2 -> high privilege
 ```
 ls -lah
 
-find . -type f -perm /4000 or /2000
+find . -type f -perm /4000 or /2000 2>/dev/null
 
 sudo -l
+
+find . -writable 2>/dev/null
 
 vim --> :!sh
 ```
@@ -203,3 +205,39 @@ Finally, return to the original target script, and execute it. This will now exe
 open a root shell. 
 
 ---
+
+## Python Module Hijacking
+
+When python scripts are owned by a higher-privileged user and have import statement, these imports can be exploited by creating a directory and file with the same name used in the import statement.
+The reason this works is that python will check locally for modules before checking in other locations.
+
+
+---
+
+## Kernel Exploits
+Kernel exploits are exploits in which native features or functions are abused with the purpose of escalation privileges. To check for kernel exploits, the first step to take is to execute:
+
+```bash
+uname -a 
+```
+
+This will provide information regarding the OS including the kernel version, which can then be used to search for related exploits.
+Some common kernel exploits include:
+ - PwnKit
+ - DirtyCow / DirtyCow2
+ - Sudo Baron  / Sudo Baron 2
+ - American Sign Language
+ - Half Nelson / Half Nelson 2
+
+Generally kernel exploits for language can be found in the form of C source code and can be compiled locally or sometimes on the target.
+For the purpose of the OSCP, I precompiled most of the major exploits in both 32 and 64 bit versions to have ready within a single folder if ever needed. 
+Cross-compilation (architecture) is often necessary when working with different servers.
+
+```bash
+i686:
+gcc exploit.c -mtune=i686 -m32 -o exploit
+````
+Example for dirtycow 64bit:
+```
+gcc dirtycow2.c -pthread -Wall -lcrypt -o dc64
+```
