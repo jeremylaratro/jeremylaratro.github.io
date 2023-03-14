@@ -1,5 +1,11 @@
 # ChatGPT
 
+---
+
+[Back to Table of Contents](../cysec)
+
+---
+
 With AI models becoming more and more robust in a world filled with accessible data, ChatGPT has come into the limelight for various reasons. Among them, is the implication of advanced AI models in regard to security. 
 
 It has recently been shown that ChatGPT can be effectively prompted to ignore what would likely fall within the intended filters (although since the model is proprietary, it is impossible to say). This "jailbreaking" has been shown on Twitter, Youtube, and other places online, where researchers have used simple, but creative approaches such as raising hypothetical questions or even outright issuing commands in the form of pseudocode (for example, "filter:off"). 
