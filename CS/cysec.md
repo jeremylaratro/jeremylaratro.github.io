@@ -3,23 +3,34 @@
 ----
 
 [Back to website home page](https://jeremylaratro.link)
-
+    - [Hardware](https://jeremylaratro.link/categories/Hardware.html)
+    - [Chemistry](https://jeremylaratro.link/categories/chem.html)
+    - [Radio](https://jeremylaratro.link/categories/radio.html)
 ----
-> This page is essentially the directory for all of my CS-related posts, notes, writeups, etc.
+> This page is the directory for all of my CS-related posts, notes, writeups, etc.
 
-## OSCP
+## OSCP - Offensive Security Certified Professional - PEN200
+Update: 03/12/2023
+
+ - Passed!!!
+Finally got the email after just under 48 hours!
+
 Update: 03/09/2023
-I finished the OSCP course, took the exam and am currently waiting for the results. In terms of exam score alone, I got a 100 (90 points + 10 points extra credit from the completion of the learning modules). 
 
 
------
-At this time, I am officially working on my OSCP course. I will not able to share 
+ - I finished the OSCP course, took the exam and am currently waiting for the results. In terms of exam score alone, I got a 100 (90 points + 10 points extra credit from the completion of the learning modules). 
+
+
+Update: 12/15/2022
+
+ - At this time, I am officially working on my OSCP course. I will not able to share 
 many of my notes and writeups due to course policy, however, I will still post any notes and writeups
-that I am able to do from THM, HTB, etc., but my main focus for the next two months will be on the OSCP content  
+that I am able to do from THM, HTB, etc., but my main focus for the next 90 days will be on the OSCP content  
 
 ---
 
 > ### **My latest posts:**
+### [Articles: ChatGPT](https://jeremylaratro.link/CS/articles/chatgpt)
 ### [OSCP: 005](https://jeremylaratro.link/CS/notes/OSCP_PREP005)
 ### [OSCP: 004](https://jeremylaratro.link/CS/notes/OSCP_PREP004)
 ### [OSCP: 003](https://jeremylaratro.link/CS/notes/OSCP_PREP003)
@@ -28,7 +39,11 @@ that I am able to do from THM, HTB, etc., but my main focus for the next two mon
 ### [AD: Exploitation Overview](https://jeremylaratro.link/CS/notes/ad_exploitation)
 ### [Linux Privilege Escalation Notes](https://jeremylaratro.link/CS/notes/PrivEsc)
 
+---
 
+> ### **Published Articles:**
+### [Medium.com & SystemWeakness.com: Daily Bugle](https://medium.com/system-weakness/cyber-security-ctf-daily-bugle-tryhackme-com-3c104bdab3de)
+ - In November of 2022, I published my first Medium article, a writeup of the popular TryHackMe machine called "Daily Bugle." This writeup focused on a previously disclosed vulnerability, CVE-2017–8917. The article was subsequently published in System Weakness.
 
 -----------
 >## Index - Pages and Notes:
