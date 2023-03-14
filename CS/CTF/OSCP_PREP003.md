@@ -1,4 +1,7 @@
 # Main
+
+[Back to Table of Contents](../cysec)
+
 This is an overview of my methods in rooting a machine from pg. I have purposefully left the names of all pg machines out in titles and replaced them with generic names to avoid any spoiling while still maintaining the opportunity to share my methods, skills, and journey. 
 
 ## Initial

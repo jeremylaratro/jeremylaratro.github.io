@@ -1,5 +1,8 @@
 # Main
 
+[Back to Table of Contents](../cysec)
+
+
 ## Initial
 
 The following is a writeup is for a machine rated as intermediate by offsec and very hard by community. I found the machine to be quite difficult due to infamiliarity with the services and processes necessary, but for that exact reason it was also one of my favorite machines I've done and a fantastic learning experience for me. The name is purposely omitted to allow for me to share my process and methods without spoiling the machine for others and the community. 
