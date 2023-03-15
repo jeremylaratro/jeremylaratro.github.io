@@ -25,7 +25,7 @@ This involved creating accounts on codecademy, exercism, leetcode, among a few o
 In the past year, I started to more intensely involve myself in CTFs and cybersecurity-specific challenges. I started to use platforms like picoCTF, TryHackMe, HackTheBox, among others to learn and further expand my knowledge. 
 My graduation date for USF was August of 2022 and I basically planned that once I graduated, I would go full intensity on gearing up for the OSCP and in cultivating my knowledge and skills in general. At that time, however, I was unsure which cert I was going to start with as I had seen people saying that OSCP would be too difficult without prior experience, but I eventually decided that I was up for the challenge. 
 
-From August to December, I put a massive amount of work into TryHackMe, quickly excelling into the top 3% of users and winning my first King of the Hill (a challenge where you and a group of other people need to hack a machine, then keep your username within a text file on the root directory for the longest time, in turn trying to harden the systems and keep others out to keep you in the lead), as well as HackTheBox and BurpAcademy. 
+From August to December, I put a massive amount of work into TryHackMe, quickly excelling into the top 2% of users and winning my first King of the Hill (a challenge where you and a group of other people need to hack a machine, then keep your username within a text file on the root directory for the longest time, in turn trying to harden the systems and keep others out to keep you in the lead), as well as HackTheBox and BurpAcademy. 
 
 In December, I finally enrolled in the PEN200 course and my OSCP journey was coming to a peak. 
 
