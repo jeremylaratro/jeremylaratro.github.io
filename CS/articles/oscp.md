@@ -11,7 +11,7 @@
 #### Background:
 I had been interested in ethical hacking ever since I first used a computer, and used to browse forums like hackforums learning about all the different types of attacks and methodologies behind them back in middle school and high school.
 
-Back then, however, cyber security was not a popular topic. Sites were extremely insecure and dial-up connections were just about phased out. I didn't know that I could do anything with this passion, unfortunately, so I spent the next decade essentially misguided and unsure of what I wanted. I mostly forgot about hacking, cybersecurity, and infosec. 
+Back then, however, cyber security was not a popular topic. Sites were extremely insecure and dial-up connections were just about phased out. I didn't know that I could do anything with this passion, unfortunately, so I spent the next decade essentially misguided and unsure of what I wanted. I mostly forgot about hacking, cyber security, and infosec. 
 Then, the pandemic hit, and the free time it provided turned out to be a blessing, because I rediscovered my passion for not only infosec, hacking, and computers, but also my passion for electronics and building things. It was too late, however, to change my degree to computer science or electrical engineering, so I kept at my degree while using my free time to learn.
 
 During this time I got heavily involved with amateur radio, aggressively educated myself on programming, PCB design, Arduino, STM, Raspberry Pi, circuit design and theory, and did everything from designing my own PCB for a class A amplifier, milling the PCB on a copperclad board with the CNC machine I constructed, and soldering the components, to making a TryHackMe account and getting involved with CTFs.
@@ -24,7 +24,7 @@ I believe that all of this experience greatly supported my path towards the OSCP
 In the 1-2 years leading up to starting the OSCP course, I started to heavily pursue programming. I focused on python but also did some C++ (which I also did with Arduino), Golang, Java, and Javascript. I tried Rust, but I can't say that I was a fan.
 This involved creating accounts on codecademy, exercism, leetcode, among a few others, as well as reading books on algorithm structure and theory and python programming. I feel that this certainly helped me in terms of the OSCP as I found that a lot of people were getting stuck on either fixing or modifying exploit PoCs, whereas that was an area where I was excelling due to this past experience. 
 
-In the past year, I started to more intensely involve myself in CTFs and cybersecurity-specific challenges. I started to use platforms like picoCTF, TryHackMe, HackTheBox, among others to learn and further expand my knowledge. 
+In the past year, I started to more intensely involve myself in CTFs and cyber security-specific challenges. I started to use platforms like picoCTF, TryHackMe, HackTheBox, among others to learn and further expand my knowledge. 
 My graduation date for USF was August of 2022 and I basically planned that once I graduated, I would go full intensity on gearing up for the OSCP and in cultivating my knowledge and skills in general. At that time, however, I was unsure which cert I was going to start with as I had seen people saying that OSCP would be too difficult without prior experience, but I eventually decided that I was up for the challenge. 
 
 From August to December, I put a massive amount of work into TryHackMe, quickly excelling into the top 2% of users and winning my first King of the Hill (a challenge where you and a group of other people need to hack a machine, then keep your username within a text file on the root directory for the longest time, in turn trying to harden the systems and keep others out to keep you in the lead), as well as HackTheBox and BurpAcademy. 
@@ -58,6 +58,9 @@ Due to being comfortable with a lot of the topics from THM and the other sites, 
 I was able to complete all but one of the exam machines -- I obtained a foothold on the system but was unable to escalate privileges on that last one I did.
 
 There's no escaping the diminishing mental state that comes with doing something for that long, so make sure to prioritize and be efficient. I used my enumeration script which greatly helped with automating enumeration and discovery. 
+
+
+In all, I spent somewhere in the realm of 900-1200 hours in total working towards this. That's a very rough estimate but I spent anywhere from 6-10 hours a day for the duration of the 90 day lab access, with very few off days, plus the time I spent before the course started, preparing myself.  
 
 ---
 
