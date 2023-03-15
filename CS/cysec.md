@@ -56,6 +56,7 @@ that I am able to do from THM, HTB, etc., but my main focus for the next 90 days
 >#### [AD: File Transfer](https://jeremylaratro.link/CS/notes/ad_filetransfer)
 >#### [Linux Privilege Escalation Notes](https://jeremylaratro.link/CS/notes/PrivEsc)
 >#### [GoLang -- Notes](https://jeremylaratro.link/CS/notes/golang)
+>#### [Tools Overview -- Notes](https://jeremylaratro.link/CS/notes/tools_overview)
 >#### [Active Directory Notes](https://jeremylaratro.link/CS/notes/active_directory)
 >#### [SMB Exploitation -- Notes](https://jeremylaratro.link/CS/notes/smb)
 >#### [Defensive Security Notes](https://jeremylaratro.link/CS/notes/defensive_sec)
