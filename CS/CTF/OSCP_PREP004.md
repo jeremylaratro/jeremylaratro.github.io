@@ -13,9 +13,11 @@ PORT     STATE SERVICE    REASON
 3128/tcp open  squid-http syn-ack
 
 ```
+
 After performing initial service enumeration on the target, it was discovered that only one TCP port was open. Navigating to this led to a page for 'squid proxy.'
 Researching squid proxy led me to understand that it can act as a proxy between local services and the web. I found a python script made with the purpose of scanning the system via the proxy and discovered two open ports, one of them being a web server. 
 I then used foxyproxy in firefox to create an http proxy with the target ip and squid proxy port and was able to access the internal webserver.
+
 ---
 
 ### Web - initial:
