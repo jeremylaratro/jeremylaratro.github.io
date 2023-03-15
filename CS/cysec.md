@@ -31,9 +31,9 @@ that I am able to do from THM, HTB, etc., but my main focus for the next 90 days
 
 > ### **My latest posts:**
 ### [Articles: ChatGPT](https://jeremylaratro.link/CS/articles/chatgpt)
-### [OSCP: 005](https://jeremylaratro.link/CS/notes/OSCP_PREP005)
-### [OSCP: 004](https://jeremylaratro.link/CS/notes/OSCP_PREP004)
-### [OSCP: 003](https://jeremylaratro.link/CS/notes/OSCP_PREP003)
+### [OSCP: 005](https://jeremylaratro.link/CS/CTF/OSCP_PREP005)
+### [OSCP: 004](https://jeremylaratro.link/CS/CTF/OSCP_PREP004)
+### [OSCP: 003](https://jeremylaratro.link/CS/CTF/OSCP_PREP003)
 ### [Windows Privilege Escalation](https://jeremylaratro.link/CS/notes/windows_privesc)
 ### [Scripting -- Bash](https://jeremylaratro.link/CS/notes/scripting)
 ### [AD: Exploitation Overview](https://jeremylaratro.link/CS/notes/ad_exploitation)
