@@ -6,7 +6,7 @@
 
 ---
 
-### How I passed the OSCP and scored 100 without any previous work experience
+### How I passed the OSCP and scored a 100 on my first attempt
 
 I had been interested in ethical hacking ever since I first used a computer, and used to browse forums like hackforums learning about all the different types of attacks and methodologies behind them back in middle school and high school.
 
