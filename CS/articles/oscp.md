@@ -8,10 +8,11 @@
 
 ### How I passed the OSCP and scored a 100 on my first attempt
 
+#### Background:
 I had been interested in ethical hacking ever since I first used a computer, and used to browse forums like hackforums learning about all the different types of attacks and methodologies behind them back in middle school and high school.
 
 Back then, however, cyber security was not a popular topic. Sites were extremely insecure and dial-up connections were just about phased out. I didn't know that I could do anything with this passion, unfortunately, so I spent the next decade essentially misguided and unsure of what I wanted. I essentially forgot about hacking, cyber security, and infosec. 
-Then, the pandemic hit, and the free time it provided turned out to be a blessing, because I rediscovered my passion for not only infosec, hacking, and computers, but also my passion for electronics and building things. 
+Then, the pandemic hit, and the free time it provided turned out to be a blessing, because I rediscovered my passion for not only infosec, hacking, and computers, but also my passion for electronics and building things. It was too late, however, to change my degree to computer science or electrical engineering, so I kept at my degree while using my free time to learn.
 
 During this time I got heavily involved with amateur radio, aggressively educated myself on programming, PCB design, Arduino, STM, Raspberry Pi, circuit design and theory, and did everything from designing my own PCB for a class A amplifier, milling the PCB on a copperclad board with the CNC machine I constructed, and soldering the components, to making a TryHackMe account and getting involved with CTFs.
 
@@ -19,6 +20,7 @@ I also started a small online business where I would procure used or broken engi
 
 I believe that all of this experience greatly supported my path towards the OSCP, even though I did not know it at the time. 
 
+#### Past two years:
 In the 1-2 years leading up to starting the OSCP course, I started to heavily pursue programming. I focused on python but also did some C++ (which I also did with Arduino), Golang, Java, and Javascript. I tried Rust, but I can't say that I was a fan.
 This involved creating accounts on codecademy, exercism, leetcode, among a few others, as well as reading books on algorithm structure and theory and python programming. I feel that this certainly helped me in terms of the OSCP as I found that a lot of people were getting stuck on either fixing or modifying exploit PoCs, whereas that was an area where I was excelling due to this past experience. 
 
