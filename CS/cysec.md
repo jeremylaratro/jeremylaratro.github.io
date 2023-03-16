@@ -3,9 +3,11 @@
 ----
 
 [Back to website home page](https://jeremylaratro.link)
+    - [About Me](https://jeremylaratro.link/About.html)
     - [Hardware](https://jeremylaratro.link/categories/Hardware.html)
     - [Chemistry](https://jeremylaratro.link/categories/chem.html)
     - [Radio](https://jeremylaratro.link/categories/radio.html)
+
 ----
 > This page is the directory for all of my CS-related posts, notes, writeups, etc.
 
