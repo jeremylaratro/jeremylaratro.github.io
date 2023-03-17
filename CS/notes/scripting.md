@@ -1,4 +1,4 @@
-## Scripting for Pentesting && Offensive Applications
+## Scripting for pentesting, offensive applications, and general efficiency
 
 -----
 
