@@ -3,13 +3,26 @@
 -----
 
 If there was one thing that OSCP drills into above all else, it is the importance of enumeration. 
-During the course of my OSCP journey, I realized the importance of bash as well as scripting in general, combined with the importance of balancing thorough enumeration with efficiency. With that, I decided to create a bash script aimed at increasing the efficiency of enumeration while still maintaining a thorough application. 
-
-It is important to note that this script is tailored for the OSCP specifically; I understand that throwing rustscan, nmap, and a suite of tools at a production environment with a vigilant blue team is not wise.
+This further translates into the importance of balancing thorough enumeration with efficiency as time is
+certainly a limiting factor when you have 24 hours to take over an entire active directory domain and 3 separate systems. 
+This project was a way for me to gain some hands-on knowledge of using bash in a practical application while also 
+furthering my enumeration efficiency in the course.
+ 
+It is important to note that this script is tailored for the OSCP specifically and is extremely "loud" so may not be suitable for certain scenarios. With that said,
+these principles can be applied to craft a specialized script for your needs. I am also fairly new to bash scripting, having mostly used it within the context
+of the terminal in the past rather than full-blown scripts so experienced bash devs probably have a lot to teach me. 
 
 The main enumeration script can be found in the following repo:
-
 https://github.com/jeremylaratro/pentest_scripts/blob/main/start.sh
+
+As an avid linux user, I strongly believe that learning about and taking advantage of bash is really useful. Some things, especially 
+the more complex regex stuff can get really convoluted, but the increase in efficiency when you can use even simple
+commands like "cat * | grep 'Name:'" for file processing instead of having to open the files,
+is certainly worth the time and effort to learn it. 
+
+The script starts out with some basic argument checks and initializations. 
+I broke the script into basic functions and instead of directly calling those functions via terminal switches, I made the choice to use an intermediate function
+so that I can have easier control of any messaging options and in general. 
 
 ```bash 
 #!/bin/bash
@@ -47,7 +60,12 @@ argcheck() {
 
 argcheck
 echo "$OPT"
+```
+The section just above, argcheck is a recent addition. Basically, my focus was solely on OSCP labs where I am working mostly with IP's rather
+than domain names. That portion is my first step at trying to widen the scope of this script to integrate domain scanning as prior, it only really
+worked as intended if given IP and domain. The next step in this modification is to pull the IP address from the whatweb results.
 
+```
 RRED="\e[31m"
 RED="31"
 GREEN="32"
@@ -56,6 +74,7 @@ BOLDGREEN="\e[1;${GREEN}m"
 BOLDRED="\e[1;${RED}m"
 ITALICRED="\e[3;${RED}m"
 ENDCOLOR="\e[0m"
+
 help() {
 echo -e "
 -------------------------------------------------------------------------
@@ -173,8 +192,11 @@ echo " "
 echo -e "${RED}Outputs available at output/scan_$ip${ENDCOLOR}"
 echo " "
 }
+```
 
-
+The script then goes on to create directories where the output results will be stored. I've been trying to incorporate some colors
+and eventually would like to make the script format the data and output it into a report-ready state.
+```
 #what() {
 #  echo "......................................"
 #  echo "Grabbing banner with whatweb:"
@@ -213,11 +235,17 @@ nmap_run() {
   #  sleep 0.15s
   #done
   #echo " "
-  #sudo nmap $ip -p 53 -sU -Pn -v
+  #sudo nmap $ip -p 53 -Pn -v
   echo "Nmap scan complete"
   echo " "
 }
+```
+The first few functions are mostly centered around initial enumeration. I chose to use rustscan in this case because it can provide a
+fairly thorough report on port openings within seconds, whereas nmap may take up to 30 minutes in some cases. 
 
+I wanted to use rustscan but also retain the benefits of nmap's scripting engine and fingerprinting options, so I chose to pipe the rustscan
+output into a file, and then use grep, awk, and tr to parse that output and present a set of ports for nmap to perform targeted scanning on. 
+```
 search_discover() {
   echo "Starting web discovery"
   #cat $LOGFILE | grep -o '[0-9]\{1,6\}/open/' | awk -F/ '{print$1}' > open.txt
@@ -269,7 +297,9 @@ web_server_d() {
   echo " "
   #done < output/scan_$ip/webserv.txt
 }
-
+```
+The next couple functions are focused on web discovery, and include directory bruteforcing, basic spidering, and domain discovery of the open ports. 
+```
 searchspl() (
   echo -n "Checking for known exploits..."
   for i in seq{1..10}; do
@@ -431,7 +461,11 @@ lfi_analysis() {
   echo "For example: cat lfi_output.txt | grep Length=<output with least ocurrence>"
   echo " "
 }
-
+```
+The next block of functions are my attempt at a targeted vulnerability discovery process. I'm still working on improving this section as the grep 
+parsing is not always great. The intention is to grab service name and version and search it with searchsploit, however, sometimes this ends up
+with double service names instead of version, or is missing the version, so I will have to continue to refine this. 
+```
 formatter() {
   #cat vulnchk_10.11.1.111.xml| grep -Po 'portid="*[0-9]+."' | tr -d 'portid="' | sed 's/$/,/' | tr -d '\n' >> report_$ip.txt
   echo 'Target: '$ip 
@@ -576,3 +610,7 @@ main
 
 
 ```
+The end of the script simply parses the switches used and then calls the relevant function. As mentioned earlier, I related
+general functions to the switches rather than the functions themselves so, as can be seen above, multiple functions can be called
+with the use of a single switch and to more easily add output messages without editing every function. 
+
