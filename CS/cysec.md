@@ -32,7 +32,7 @@ that I am able to do from THM, HTB, etc., but my main focus for the next 90 days
 ---
 
 > ### **My latest posts:**
-### [CVE-2020-15149: Exploiting an Account Takeover Vulnerability in NodeBB Forums](https://jeremylaratro.link/CS/cve-2020-15149)
+### [CVE-2020-15149: Exploiting an Account Takeover Vulnerability in NodeBB Forums](https://jeremylaratro.link/CS/CTF/cve-2020-15149)
 ### [Articles: OSCP Journey](https://jeremylaratro.link/CS/articles/oscp)
 ### [Articles: ChatGPT](https://jeremylaratro.link/CS/articles/chatgpt)
 ### [OSCP: 005](https://jeremylaratro.link/CS/CTF/OSCP_PREP005)
