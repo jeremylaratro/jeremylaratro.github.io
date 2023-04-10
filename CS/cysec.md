@@ -11,29 +11,13 @@
 ----
 > This page is the directory for all of my CS-related posts, notes, writeups, etc.
 
-## OSCP - Offensive Security Certified Professional - PEN200
-Update: 03/12/2023
-
- - Passed!!!
-Finally got the email after just under 48 hours!
-
-Update: 03/09/2023
-
-
- - I finished the OSCP course, took the exam and am currently waiting for the results. In terms of exam score alone, I got a 100 (90 points + 10 points extra credit from the completion of the learning modules). 
-
-
-Update: 12/15/2022
-
- - At this time, I am officially working on my OSCP course. I will not able to share 
-many of my notes and writeups due to course policy, however, I will still post any notes and writeups
-that I am able to do from THM, HTB, etc., but my main focus for the next 90 days will be on the OSCP content  
-
 ---
 
 > ### **My latest posts:**
 ### [CVE-2020-15149: Exploiting an Account Takeover Vulnerability in NodeBB Forums](https://jeremylaratro.link/CS/CTF/cve-2020-15149)
 ### [Articles: OSCP Journey](https://jeremylaratro.link/CS/articles/oscp)
+### [Computer Science -- Binary](https://jeremylaratro.link/CS/notes/binary)
+### [Computer Science/EEng -- Logic Gates](https://jeremylaratro.link/CS/notes/logic_gates)
 ### [Articles: ChatGPT](https://jeremylaratro.link/CS/articles/chatgpt)
 ### [OSCP: 005](https://jeremylaratro.link/CS/CTF/OSCP_PREP005)
 ### [OSCP: 004](https://jeremylaratro.link/CS/CTF/OSCP_PREP004)
