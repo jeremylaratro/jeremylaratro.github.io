@@ -8,15 +8,33 @@
 
 ### From 0 to OSCP
 
+#### OSCP - Offensive Security Certified Professional - PEN200
+Update: 03/12/2023
+
+ - Passed!
+Finally got the email after just under 48 hours!
+
+Update: 03/09/2023
+
+
+ - I finished the OSCP course, took the exam and am currently waiting for the results. In terms of exam score alone, I got a 100 (90 points + 10 points extra credit from the completion of the learning modules). 
+
+
+Update: 12/15/2022
+
+ - At this time, I am officially working on my OSCP course. I will not able to share 
+many of my notes and writeups due to course policy, however, I will still post any notes and writeups
+that I am able to do from THM, HTB, etc., but my main focus for the next 90 days will be on the OSCP content  
+
 #### Background:
-I had been interested in ethical hacking ever since I first used a computer, and used to browse forums like hackforums learning about all the different types of attacks and methodologies behind them back in middle school and high school.
+I had been interested in hacking ever since I first used a computer, and used to browse forums like hackforums learning about all the different types of attacks and methodologies behind them back in middle school and high school.
 
 Back then, however, cyber security was not a popular topic. Sites were extremely insecure and dial-up connections were just about phased out. I didn't know that I could do anything with this passion, unfortunately, so I spent the next decade essentially misguided and unsure of what I wanted. I mostly forgot about hacking, cyber security, and infosec. 
 Then, the pandemic hit, and the free time it provided turned out to be a blessing, because I rediscovered my passion for not only infosec, hacking, and computers, but also my passion for electronics and building things. It was too late, however, to change my degree to computer science or electrical engineering, so I kept at my degree while using my free time to learn.
 
 During this time I got heavily involved with amateur radio, aggressively educated myself on programming, PCB design, Arduino, STM, Raspberry Pi, circuit design and theory, and did everything from designing my own PCB for a class A amplifier, milling the PCB on a copperclad board with the CNC machine I constructed, and soldering the components, to making a TryHackMe account and getting involved with CTFs.
 
-I also started a small online business where I would procure used or broken engineering equipment and electronics from government surplus auctions, then troubleshoot and fix them, refurbish them, and resell them online. I also programmed radios. 
+I also started an online business where I would procure used or broken engineering equipment and electronics from government surplus auctions and online via other methods then troubleshoot and fix them, refurbish them, and resell them online along with programming both amateur and professional radios.
 
 I believe that all of this experience greatly supported my path towards the OSCP, even though I did not know it at the time. 
 
