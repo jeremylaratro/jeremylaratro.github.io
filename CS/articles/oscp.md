@@ -6,7 +6,7 @@
 
 ---
 
-### How I passed the OSCP and scored a 100 on my first attempt
+### From 0 to OSCP
 
 #### Background:
 I had been interested in ethical hacking ever since I first used a computer, and used to browse forums like hackforums learning about all the different types of attacks and methodologies behind them back in middle school and high school.
@@ -33,10 +33,11 @@ In December, I finally enrolled in the PEN200 course and my OSCP journey was com
 
 I set out a pretty simple strategy for the OSCP course.
 
+For anyone reading this who's about to take the OSCP, this was my "recipe"
 #### Course:
 - complete the topic exercises for extra credit -- but do them in a learning-conducive manner while maintaining efficiency.
 
-- complete at least 40 machines, both entire AD sets (I did one of them twice also), and at least one machine in every network (public, dev, admin, and IT) to practice tunneling and pivoting: 
+- complete at least 40 machines (if you have only 90 day access, if you have a year, do them all), both entire AD sets (I did one of them twice also), and at least one machine in every network (public, dev, admin, and IT) to practice tunneling and pivoting: 
   - I knew that realistically, I would not complete 70 machines in 90 days plus the exercises and simultaneously get all that I could out of those machines and exercises. I did not want to rush through them and root 70 boxes for the sake of rooting 70 boxes. I wanted to make sure that I took something away from each machine I did. With that said, select the machines wisely. Do all of the past exam machines in IT if possible and the "big 4"
 
 - don't spend too much time on a machine - use hints when stuck for more than 30 mins - hour, but hint usage should linearly decrease relative to days passed of the 90 day access.
@@ -71,10 +72,10 @@ This a field of perpetual learning and I am glad to be a part of that -- where I
 
 
 Short-Term Goals:
- - Find a job in an offensive security role. My passions lie specifically in IoT and netpen, but I value learning new things and am always open to new opportunities. 
+ - Find a job in an offensive security role
 
 
 Long-Term Goals:
  - Red Team - IoT, hardware, netpen -- ideally one that incorporates physical pentesting as well.
  - security clearance
- - Master's Degree and ultimately a managerial infosec position
+ - Master's Degree 
