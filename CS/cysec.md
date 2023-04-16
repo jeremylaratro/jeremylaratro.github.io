@@ -9,8 +9,6 @@
 * HackTheBox.com: jlaratro #1106620
 * [Picoctf.org Profile](https://play.picoctf.org/users/jeremylaratro)
 * [LeetCode Profile](https://leetcode.com/jeremylaratro/)
-* 
-* ----
 
 ----
 
