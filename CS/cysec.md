@@ -2,6 +2,19 @@
 
 ----
 
+
+### **Accounts**
+* [Codecademy Profile](https://www.codecademy.com/profiles/JeremyLaratro)
+* [TryHackme.com Profile](https://tryhackme.com/p/jeremylaratro) -- Top 2% worldwide
+* HackTheBox.com: jlaratro #1106620
+* [Picoctf.org Profile](https://play.picoctf.org/users/jeremylaratro)
+* [LeetCode Profile](https://leetcode.com/jeremylaratro/)
+* 
+* ----
+
+----
+
+
 [Back to website home page](https://jeremylaratro.link)
     - [About Me](https://jeremylaratro.link/About.html)
     - [Hardware](https://jeremylaratro.link/categories/Hardware.html)
