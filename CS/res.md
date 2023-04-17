@@ -1,3 +1,5 @@
+# Resumes
+
 ![Cyber Security Resume](https://jeremylaratro.link/CS/laratro_sec_resume.pdf)
 
 ---
