@@ -4,6 +4,7 @@
 
 
 ### **Accounts**
+* [LinkedIn Profile](https://www.linkedin.com/in/JeremyLaratro)
 * [Codecademy Profile](https://www.codecademy.com/profiles/JeremyLaratro)
 * [TryHackme.com Profile](https://tryhackme.com/p/jeremylaratro) -- Top 2% worldwide
 * HackTheBox.com: jlaratro #1106620
