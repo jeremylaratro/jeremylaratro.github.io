@@ -22,6 +22,41 @@
         gtag('js', new Date());
         gtag('config', 'G-QJPZ59GWQP');
     </script>
+      <script>
+        (function() {
+            if (window.innerWidth < 800) {
+                // Create popup div
+                var popup = document.createElement('div');
+                popup.id = 'mobileWarning';
+                popup.style.position = 'fixed';
+                popup.style.top = '50%';
+                popup.style.left = '50%';
+                popup.style.transform = 'translate(-50%, -50%)';
+                popup.style.padding = '20px';
+                popup.style.backgroundColor = '#ffcc00';
+                popup.style.border = '1px solid #000';
+                popup.style.zIndex = '1000';
+                popup.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
+                popup.innerHTML = '<p>This site is not optimized for mobile use.</p>';
+
+                // Create OK button
+                var okButton = document.createElement('button');
+                okButton.textContent = 'OK';
+                okButton.onclick = function() {
+                    popup.style.display = 'none';
+                };
+                popup.appendChild(okButton);
+
+                // Append popup to body
+                document.body.appendChild(popup);
+
+                // Auto disappear after 3 seconds
+                setTimeout(function() {
+                    popup.style.display = 'none';
+                }, 3000);
+            }
+        })();
+    </script>
     <style>
 
         .background6 {
