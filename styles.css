@@ -89,10 +89,11 @@ section {
 }
 
 .container.header {
-    width: auto;
+    width: 100%;
+    max-width: 100%;
     position: relative;
-    padding-bottom: 2%;
-    margin: auto;
+    padding: 1rem;
+    margin: 0.5rem auto;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -140,6 +141,8 @@ section {
     position: relative;
     text-align: center;
     padding: 3%;
+    width: 100%;
+    max-width: 100%;
 }
 
 .spacer {
@@ -171,6 +174,11 @@ section {
     border-radius: 16px;
     background: #17141d;
     box-shadow: -1rem 0 3rem #000;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
 }
 
 .div.div1 {
@@ -294,13 +302,14 @@ section {
    ============================================ */
 
 .card {
-    width: 50%;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 1.5rem;
     border-radius: 16px;
     background: #17141d;
     box-shadow: -1rem 0 3rem #000;
     flex-direction: column;
-    margin: 0;
     scroll-snap-align: start;
     clear: both;
     transition: 0.5s ease;
@@ -358,21 +367,22 @@ section {
    ============================================ */
 
 .testbutton {
-    color: #14396A !important;
+    color: #eee;
     font-size: 14px;
-    text-shadow: 1px 1px 0 #7CACDE;
-    box-shadow: 1px 1px 1px #BEE2F9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     padding: 10px 25px;
     border-radius: 15px;
-    border: 2px solid #FFFFFF;
-    background: #45C7EE;
-    background: linear-gradient(to top, #45C7EE, #468CCF);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(23, 20, 29, 0.6);
+    transition: all 0.3s ease;
 }
 
 .testbutton:hover {
     color: #14396A !important;
-    background: #468CCF;
     background: linear-gradient(to top, #031C2F, #590026);
+    border-color: #468CCF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* ============================================
