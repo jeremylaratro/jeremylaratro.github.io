@@ -12,10 +12,6 @@
         <div class="container main text-center padding-0">
             <div class="parent hard top height-5-percent">
                 <div class="div1 hard top">
-                    <div class="card-header"></div>
-                </div>
-                <div class="div2 hard top"></div>
-                <div class="div3 hard top">
                     <div class="container top text-center">
                         <div class="rfbackground margin-0 display-fit-content">
                             <div class="card-header">
@@ -26,7 +22,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="div4 hard top">
+                <div class="div2 hard top">
                     <div class="container top text-center">
                         <div class="rfbackground margin-0 display-fit-content">
                             <div class="card-header">
@@ -37,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="div5 hard top">
+                <div class="div3 hard top">
                     <div class="container top text-center">
                         <div class="rfbackground margin-0 display-fit-content">
                             <div class="card-header">
@@ -48,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="div6 hard top">
+                <div class="div4 hard top">
                     <div class="container top text-center">
                         <div class="rfbackground margin-0 display-fit-content">
                             <div class="card-header">
@@ -59,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="div7 hard top">
+                <div class="div5 hard top">
                     <div class="container top text-center">
                         <div class="rfbackground margin-0 display-fit-content">
                             <div class="card-header">
@@ -70,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="div8 hard top">
+                <div class="div6 hard top">
                     <div class="container top text-center">
                         <div class="rfbackground margin-0 display-fit-content">
                             <div class="card-header">
@@ -81,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="div1 hard top">
+                <div class="div7 hard top">
                     <div class="container top text-center">
                         <div class="rfbackground margin-0 display-fit-content">
                             <div class="card-header">
