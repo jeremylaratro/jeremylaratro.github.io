@@ -5,6 +5,14 @@
 ---
 
 > ### **Latest**:
+#### 2025:
+- [**PurpleSploit** - Pentesting Workflow Framework](https://github.com/jeremylaratro/Purplesploit) - Python-based offensive security framework with CLI and web interfaces, centralized credential management, automated service detection, and integrated utilities like ligolo-ng proxy tunneling
+- [**Quantsploit** - Quantitative Trading Framework](https://github.com/jeremylaratro/quantsploit) - Modular quantitative trading framework inspired by Metasploit with interactive TUI, technical indicators, market scanning, and strategy backtesting
+- [**MCP-Kali-Server Bridges** - Universal MCP Server for Kali](https://github.com/jeremylaratro/MCP-Kali-Server_Bridges) - Bridge connecting Kali Linux terminal capabilities with AI language models through the Model Context Protocol, enabling AI-assisted pentesting workflows
+- [**OSEP Certification**](https://www.credential.net/dcbb6c37-44a0-44d0-bce7-2bd5d9a5601c) - Offensive Security Experienced Penetration Tester
+- **CompTIA CySA+** - Cybersecurity Analyst
+- **CompTIA SecurityX** (formerly CASP+) - Advanced Security Practitioner
+
 #### 2024:
 - [Assembly and Computer Architecture Notes](https://github.com/jeremylaratro/assembly_and_architecture)
 - [HackTheBox Pro Labs: Zephyr](./cs_img_dir/Zephyr_Certificate_new.pdf)
@@ -12,7 +20,7 @@
 - [CompTIA Advanced Security Practitioner - CASP+](./cs_img_dir/CompTIA Advanced Security Practitionercertificate.pdf)
 
 #### 2023:
-- [Pentesting Scripts](https://github.com/jeremylaratro/pentest_scripts)
+- [B-NEAS - Bash Network Enumeration Automation Script](https://github.com/jeremylaratro/pentest_scripts)
 - [Cloud Pentesting Resource Collection](https://github.com/jeremylaratro/cloud_pentesting_overview)
 
 ---
