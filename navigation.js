@@ -7,87 +7,43 @@
 (function() {
     'use strict';
 
-    // Navigation template as a string
+    // Get current page filename
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    // Define all navigation links
+    const navLinks = [
+        { href: 'index.html', text: 'Home', class: 'div1' },
+        { href: 'about.html', text: 'About | Contact', class: 'div2' },
+        { href: 'compsci.html', text: 'Computer Science', class: 'div3' },
+        { href: 'chem.html', text: 'Chemistry', class: 'div4' },
+        { href: 'radio.html', text: 'Radio', class: 'div5' },
+        { href: 'hardware.html', text: 'Hardware', class: 'div6' },
+        { href: 'photo.html', text: 'Photography', class: 'div7' }
+    ];
+
+    // Filter out current page
+    const filteredLinks = navLinks.filter(link => link.href !== currentPage);
+
+    // Build navigation HTML
+    let navItemsHTML = '';
+    filteredLinks.forEach((link, index) => {
+        navItemsHTML += `
+                <div class="div${index + 1} hard top">
+                    <div class="container top text-center">
+                        <div class="rfbackground margin-0 display-fit-content">
+                            <div class="card-header">
+                                <div class="testbutton">
+                                    <a href="${link.href}">${link.text}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+    });
+
     const navigationHTML = `
         <div class="container main text-center padding-0">
-            <div class="parent hard top height-5-percent">
-                <div class="div1 hard top">
-                    <div class="container top text-center">
-                        <div class="rfbackground margin-0 display-fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="index.html">Home</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="div2 hard top">
-                    <div class="container top text-center">
-                        <div class="rfbackground margin-0 display-fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="about.html">About | Contact</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="div3 hard top">
-                    <div class="container top text-center">
-                        <div class="rfbackground margin-0 display-fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="compsci.html">Computer Science</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="div4 hard top">
-                    <div class="container top text-center">
-                        <div class="rfbackground margin-0 display-fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="chem.html">Chemistry</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="div5 hard top">
-                    <div class="container top text-center">
-                        <div class="rfbackground margin-0 display-fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="radio.html">Radio</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="div6 hard top">
-                    <div class="container top text-center">
-                        <div class="rfbackground margin-0 display-fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="hardware.html">Hardware</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="div7 hard top">
-                    <div class="container top text-center">
-                        <div class="rfbackground margin-0 display-fit-content">
-                            <div class="card-header">
-                                <div class="testbutton">
-                                    <a href="photo.html">Photography</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="parent hard top height-5-percent">${navItemsHTML}
             </div>
         </div>
     `;

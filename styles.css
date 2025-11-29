@@ -236,42 +236,41 @@ section {
     grid-area: 3 / 4 / 4 / 5;
 }
 
-/* Navigation Grid */
+/* Navigation Grid - 3 columns x 2 rows */
 .parent.hard.top {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0;
-    height: 5%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+    height: auto;
+    min-height: 80px;
     align-items: center;
+    padding: 0.5rem 0;
 }
 
 .div1.hard.top {
-    grid-column: 1;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 .div2.hard.top {
-    grid-column: 2;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .div3.hard.top {
-    grid-column: 3;
+    grid-area: 1 / 3 / 2 / 4;
 }
 
 .div4.hard.top {
-    grid-column: 4;
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 .div5.hard.top {
-    grid-column: 5;
+    grid-area: 2 / 2 / 3 / 3;
 }
 
 .div6.hard.top {
-    grid-column: 6;
-}
-
-.div7.hard.top {
-    grid-column: 7;
+    grid-area: 2 / 3 / 3 / 4;
 }
 
 /* Hardware Grid */
@@ -957,12 +956,15 @@ body {
     }
 
     /* Navigation - Stack vertically on mobile */
+    /* Navigation - 2 columns x 3 rows on mobile */
     .parent.hard.top {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         height: auto;
         width: 100%;
         gap: 0.5rem;
+        min-height: auto;
     }
 
     .div1.hard.top,
@@ -970,8 +972,7 @@ body {
     .div3.hard.top,
     .div4.hard.top,
     .div5.hard.top,
-    .div6.hard.top,
-    .div7.hard.top {
+    .div6.hard.top {
         grid-area: auto;
         width: 100%;
     }
@@ -1101,12 +1102,14 @@ body {
         width: 80%;
     }
 
-    /* Navigation - 4 columns on tablet */
+    /* Navigation - 3 columns x 2 rows on tablet */
     .parent.hard.top {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 0.5rem;
         height: auto;
+        min-height: 80px;
     }
 
     /* Homepage grid - 2 columns on tablet */
