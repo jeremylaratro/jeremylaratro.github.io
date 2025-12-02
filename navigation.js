@@ -7,8 +7,18 @@
 (function() {
     'use strict';
 
-    // Get current page filename
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    // Get current page filename and normalize it
+    let currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    // Ensure .html extension for comparison
+    if (!currentPage.includes('.')) {
+        currentPage = currentPage + '.html';
+    }
+
+    // Handle empty path (root) as index.html
+    if (currentPage === '' || currentPage === '/') {
+        currentPage = 'index.html';
+    }
 
     // Define all navigation links
     const navLinks = [
@@ -22,7 +32,9 @@
     ];
 
     // Filter out current page
-    const filteredLinks = navLinks.filter(link => link.href !== currentPage);
+    const filteredLinks = navLinks.filter(link => {
+        return link.href !== currentPage;
+    });
 
     // Build navigation HTML
     let navItemsHTML = '';
@@ -43,7 +55,7 @@
 
     const navigationHTML = `
         <div class="container main text-center padding-0">
-            <div class="parent hard top height-5-percent">${navItemsHTML}
+            <div class="parent hard top">${navItemsHTML}
             </div>
         </div>
     `;
