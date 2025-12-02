@@ -242,9 +242,7 @@ section {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: row;
     gap: 1rem;
-    height: auto;
-    min-height: 100px;
-    align-items: center;
+    align-items: stretch;
     padding: 1rem;
 }
 
