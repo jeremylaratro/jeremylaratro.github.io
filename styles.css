@@ -560,6 +560,115 @@ card.content {
    10. NAVIGATION
    ============================================ */
 
+/* Modern Navigation Bar */
+.site-nav {
+    background: linear-gradient(135deg, #17141d 0%, #1e1a26 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.site-nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.site-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.25rem;
+}
+
+.site-nav-item {
+    position: relative;
+}
+
+.site-nav-link {
+    display: block;
+    padding: 1rem 1.25rem;
+    color: #b8b8c8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+}
+
+.site-nav-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom-color: #468CCF;
+}
+
+.site-nav-link.current-page {
+    color: #468CCF;
+    font-weight: 500;
+    cursor: default;
+    background: rgba(70, 140, 207, 0.1);
+    border-bottom-color: #468CCF;
+}
+
+.site-nav-link.home-link {
+    font-weight: 600;
+    color: #d4d4d4;
+}
+
+.site-nav-link.home-link:hover {
+    color: #fff;
+}
+
+/* Mobile Navigation */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin-left: auto;
+}
+
+.nav-toggle-icon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    transition: transform 0.3s;
+}
+
+.nav-toggle-icon::before {
+    top: -7px;
+}
+
+.nav-toggle-icon::after {
+    top: 7px;
+}
+
+/* Legacy nav styles */
 .nav li {
     display: inline-block;
     font-size: 18px;
@@ -872,6 +981,62 @@ body {
 
 /* Mobile: 0-767px - Override desktop-first styles */
 @media screen and (max-width: 767px) {
+
+    /* Mobile Navigation */
+    .site-nav {
+        position: sticky;
+        top: 0;
+    }
+
+    .site-nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0.75rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-toggle-label {
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
+        color: #b8b8c8;
+    }
+
+    .site-nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0.5rem 0;
+        gap: 0;
+    }
+
+    .site-nav-list.nav-open {
+        display: flex;
+    }
+
+    .site-nav-item {
+        width: 100%;
+    }
+
+    .site-nav-link {
+        padding: 0.875rem 1.25rem;
+        text-align: center;
+        border-bottom: none;
+        border-left: 3px solid transparent;
+    }
+
+    .site-nav-link:hover,
+    .site-nav-link.current-page {
+        border-bottom: none;
+        border-left-color: #468CCF;
+    }
 
     /* Typography - Scale down for mobile */
     h1 {
