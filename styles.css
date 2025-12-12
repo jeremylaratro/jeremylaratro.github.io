@@ -651,16 +651,16 @@ body.page-photo .background6 {
    10. NAVIGATION
    ============================================ */
 
-/* Modern Navigation Bar - Floating Style */
+/* Modern Navigation Bar - Floating Buttons Style */
 .site-nav {
-    background: linear-gradient(135deg, #17141d 0%, #1e1a26 100%);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    border: none;
     padding: 0;
     position: sticky;
     top: 0.5rem;
     z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
+    box-shadow: none;
+    border-radius: 0;
     margin: 0.5rem auto;
     max-width: 95%;
     width: fit-content;
@@ -668,6 +668,7 @@ body.page-photo .background6 {
 
 .site-nav-container {
     padding: 0.25rem;
+    background: transparent;
 }
 
 .site-nav-list {
