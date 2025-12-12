@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER OPS | Jeremy Laratro</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/effects.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- CRT Effect -->
+    <div class="crt"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Classification Bar -->
+    <div class="class-bar"></div>
+
+    <!-- Data Stream Effect -->
+    <div class="data-stream">
+        <div class="stream-column" style="left: 5%; animation-duration: 18s; animation-delay: 0s;">EXPLOIT<br>DEVELOP<br>DEPLOY<br>EXTRACT</div>
+        <div class="stream-column" style="left: 25%; animation-duration: 22s; animation-delay: -3s;">01110000<br>01110111<br>01101110<br>00101110</div>
+        <div class="stream-column" style="left: 50%; animation-duration: 16s; animation-delay: -5s;">RECON<br>FOOTHOLD<br>PERSIST<br>EXFIL</div>
+        <div class="stream-column" style="left: 75%; animation-duration: 20s; animation-delay: -2s;">11010101<br>00101010<br>10110100<br>01001011</div>
+        <div class="stream-column" style="left: 92%; animation-duration: 24s; animation-delay: -7s;">SCAN<br>ENUM<br>PWNED<br>ROOT</div>
+    </div>
+
+    <!-- Tactical Frame -->
+    <div class="tactical-frame"></div>
+    <div class="tactical-frame-bottom"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div style="display: flex; align-items: center;">
+                <a href="../index.html" class="nav-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">JL</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <span class="logo-tag">CYBER OPS</span>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">./home</a>
+                <a href="about.html" class="nav-link">./whoami</a>
+                <a href="cyber-projects.html" class="nav-link active">./cyberops</a>
+                <a href="projects.html" class="nav-link">./research</a>
+                <a href="blog.html" class="nav-link">./intel</a>
+                <a href="contact.html" class="nav-link">./comms</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="ascii-page-title">
+▄███▄ ████▄ ▄█▀▀▀
+██ ██ ██ ██ ▀███▄
+▀███▀ ████▀ ▄▄▄█▀
+      ██
+      ▀▀</div>
+        <p class="page-subtitle">// ./execute.sh --offensive --tools</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="tools">TOOLS</button>
+            <button class="filter-btn" data-filter="frameworks">FRAMEWORKS</button>
+            <button class="filter-btn" data-filter="resources">RESOURCES</button>
+        </div>
+
+        <!-- Featured Projects -->
+        <section class="content-section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">FEATURED PROJECTS</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="projects-grid">
+                <!-- CyberQuizzer - NEW -->
+                <a href="cyberquizzer.html" class="project-card featured clickable-card" data-category="tools resources">
+                    <div class="project-badge">NEW 2025</div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">CyberQuizzer</h3>
+                    <p class="project-desc">
+                        An interactive interview preparation platform with comprehensive question banks covering pentesting, security engineering, hardware hacking, and blue team operations. Features progress tracking, categorized topics, and detailed answers for each challenge.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Interview Prep</span>
+                        <span class="tech-tag">Pentesting</span>
+                        <span class="tech-tag">Blue Team</span>
+                        <span class="tech-tag">Hardware</span>
+                    </div>
+                    <span class="card-link-indicator">START LEARNING &#8594;</span>
+                </a>
+
+                <!-- PurpleSploit -->
+                <a href="https://github.com/jeremylaratro/Purplesploit" target="_blank" class="project-card featured clickable-card" data-category="tools frameworks">
+                    <div class="project-badge">2025</div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">PurpleSploit</h3>
+                    <p class="project-desc">
+                        A Python-based offensive security framework designed to streamline pentesting workflows with both CLI and web interfaces. Features include centralized SQLite-based credential and target management, automated service detection through nmap parsing, fzf-powered interactive selection menus, and integrated utilities like ligolo-ng proxy tunneling.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">fzf</span>
+                        <span class="tech-tag">ligolo-ng</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+
+                <!-- Quantsploit -->
+                <a href="https://github.com/jeremylaratro/quantsploit" target="_blank" class="project-card featured clickable-card" data-category="tools frameworks">
+                    <div class="project-badge">2025</div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Quantsploit</h3>
+                    <p class="project-desc">
+                        A modular quantitative trading framework inspired by penetration testing tools like Metasploit. Features an interactive TUI with command auto-completion, technical indicators (RSI, MACD, SMA, EMA, Bollinger Bands), multi-stock market scanning for momentum and volume patterns, options chain analysis with Greeks calculations, and strategy backtesting capabilities.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TUI</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Analytics</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+
+                <!-- MCP-Kali-Server -->
+                <a href="https://github.com/jeremylaratro/MCP-Kali-Server_Bridges" target="_blank" class="project-card clickable-card" data-category="tools frameworks">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">MCP-Kali-Server Bridges</h3>
+                    <p class="project-desc">
+                        A bridge connecting Kali Linux terminal capabilities with various AI language models through the Model Context Protocol (MCP). Provides terminal access to AI systems including OpenAI, Claude, Google Gemini, and local models. Enables AI-assisted penetration testing workflows including CTF solving, reconnaissance, web app testing, and forensics.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">MCP</span>
+                        <span class="tech-tag">AI Integration</span>
+                        <span class="tech-tag">Kali Linux</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+
+                <!-- B-NEAS -->
+                <a href="https://github.com/jeremylaratro/pentest_scripts" target="_blank" class="project-card clickable-card" data-category="tools">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="4 17 10 11 4 5"/>
+                                <line x1="12" y1="19" x2="20" y2="19"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">B-NEAS</h3>
+                    <p class="project-desc">
+                        Bash Network Enumeration Automation Script. Created during OSCP labs to eliminate repetitive command typing and maximize efficiency. A customized automation tool tailored for pentesting workflows.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Bash</span>
+                        <span class="tech-tag">Automation</span>
+                        <span class="tech-tag">Nmap</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+
+                <!-- WinBins -->
+                <a href="https://github.com/jeremylaratro/WinBins" target="_blank" class="project-card clickable-card" data-category="tools">
+                    <div class="project-badge">NEW 2025</div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="3" y1="9" x2="21" y2="9"/>
+                                <line x1="9" y1="21" x2="9" y2="9"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">WinBins</h3>
+                    <p class="project-desc">
+                        Update your Windows penetration testing and red teaming binaries with a simple script. Streamlines the maintenance of security testing tools on Windows systems with automated binary management.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Windows</span>
+                        <span class="tech-tag">Red Team</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+
+                <!-- supwngo -->
+                <a href="https://github.com/jeremylaratro/supwngo" target="_blank" class="project-card clickable-card" data-category="tools frameworks">
+                    <div class="project-badge">NEW 2025</div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="12"/>
+                                <line x1="12" y1="16" x2="12.01" y2="16"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">supwngo</h3>
+                    <p class="project-desc">
+                        Automated penetration testing utility with autopwn capabilities. A Python-based security tool designed to streamline exploitation workflows and automate common pentesting tasks.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Autopwn</span>
+                        <span class="tech-tag">Exploitation</span>
+                        <span class="tech-tag">GPL-3.0</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+
+                <!-- Cloud Pentesting -->
+                <a href="https://github.com/jeremylaratro/cloud_pentesting_overview" target="_blank" class="project-card clickable-card" data-category="resources">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Cloud Pentesting Resources</h3>
+                    <p class="project-desc">
+                        A curated compilation of cloud security testing resources organized by cloud provider and topic. Comprehensive coverage for AWS, Azure, GCP, Kubernetes, IBM, and Digital Ocean with structured sections for resources, tools, labs, and walkthroughs.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">GCP</span>
+                        <span class="tech-tag">Kubernetes</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+
+                <!-- PhotoSec -->
+                <a href="https://github.com/jeremylaratro/PhotoSec" target="_blank" class="project-card clickable-card" data-category="tools">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21 15 16 10 5 21"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">PhotoSec</h3>
+                    <p class="project-desc">
+                        A privacy and security oriented Python script using various open-source tools. Functions include bulk metadata removal from photos, bulk image analysis (using exiftool, binwalk, strings), file renaming, and bulk GPS metadata extraction.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">exiftool</span>
+                        <span class="tech-tag">binwalk</span>
+                        <span class="tech-tag">Privacy</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+
+                <!-- Discord Auto Updater -->
+                <a href="https://github.com/jeremylaratro/Auto_Update_Discord_Linux" target="_blank" class="project-card clickable-card" data-category="tools">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Discord Auto Updater</h3>
+                    <p class="project-desc">
+                        A Shell script automation tool designed to manage Discord installations on Linux systems (Debian and Fedora). Automatically installs, updates, and integrates with cron scheduling for weekly automated updates.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Bash</span>
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+
+                <!-- Securicoder -->
+                <a href="https://securicoder.com" target="_blank" class="project-card clickable-card" data-category="tools">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Securicoder</h3>
+                    <p class="project-desc">
+                        A full-stack web development project using the OpenAI API to perform static code analysis on user-submitted code. Built with Django/gunicorn and nginx, deployed on a cloud server with SIEM/IDS integration (Snort/Wazuh) and security tools like firejail.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">Snort</span>
+                        <span class="tech-tag">Wazuh</span>
+                    </div>
+                    <span class="card-link-indicator">VISIT SITE &#8594;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Notes & Writeups Section -->
+        <section class="content-section">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">NOTES & RESOURCES</h2>
+                <span class="section-line"></span>
+            </div>
+
+            <div class="section-divider">
+                <span>TECHNICAL NOTES</span>
+            </div>
+
+            <div class="projects-grid">
+                <a href="pentest-interview.html" class="project-card clickable-card" data-category="resources">
+                    <h3 class="project-title">Windows Privilege Escalation</h3>
+                    <p class="project-desc">Comprehensive notes on Windows privilege escalation techniques and methodologies.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Windows</span>
+                        <span class="tech-tag">PrivEsc</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW NOTES &#8594;</span>
+                </a>
+
+                <a href="pentest-interview.html" class="project-card clickable-card" data-category="resources">
+                    <h3 class="project-title">Linux Privilege Escalation</h3>
+                    <p class="project-desc">Linux privilege escalation techniques, SUID exploitation, and kernel exploits.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">PrivEsc</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW NOTES &#8594;</span>
+                </a>
+
+                <a href="pentest-interview.html" class="project-card clickable-card" data-category="resources">
+                    <h3 class="project-title">Active Directory Exploitation</h3>
+                    <p class="project-desc">AD attack paths, Kerberos attacks, credential harvesting, and lateral movement techniques.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AD</span>
+                        <span class="tech-tag">Kerberos</span>
+                        <span class="tech-tag">mimikatz</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW NOTES &#8594;</span>
+                </a>
+
+                <a href="pentest-interview.html" class="project-card clickable-card" data-category="resources">
+                    <h3 class="project-title">Web Application Security</h3>
+                    <p class="project-desc">XSS, SSTI, LFI/RFI exploitation notes and testing methodologies.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">XSS</span>
+                        <span class="tech-tag">SSTI</span>
+                        <span class="tech-tag">LFI</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW NOTES &#8594;</span>
+                </a>
+
+                <a href="pentest-interview.html" class="project-card clickable-card" data-category="resources">
+                    <h3 class="project-title">SMB Exploitation</h3>
+                    <p class="project-desc">SMB enumeration, exploitation techniques, and post-exploitation via SMB.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SMB</span>
+                        <span class="tech-tag">impacket</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW NOTES &#8594;</span>
+                </a>
+
+                <a href="blue-team.html" class="project-card clickable-card" data-category="resources">
+                    <h3 class="project-title">Defensive Security Notes</h3>
+                    <p class="project-desc">Blue team techniques, SIEM configuration, and defensive monitoring strategies.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Blue Team</span>
+                        <span class="tech-tag">SIEM</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW NOTES &#8594;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Published Work -->
+        <section class="content-section">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">PUBLISHED WORK</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="blog-grid">
+                <a href="https://medium.com/system-weakness/cyber-security-ctf-daily-bugle-tryhackme-com-3c104bdab3de" target="_blank" class="blog-card">
+                    <div class="blog-date">
+                        <span class="month">NOV</span>
+                        <span class="day">2022</span>
+                        <span class="year">Medium</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Daily Bugle CTF Writeup</h3>
+                        <p>Published in System Weakness. A writeup of the popular TryHackMe machine focusing on CVE-2017-8917.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">CTF</span>
+                            <span class="blog-tag">TryHackMe</span>
+                            <span class="blog-tag">CVE</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="footer-dot"></span>
+                <span>SYSTEMS ONLINE</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">[GitHub]</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">[LinkedIn]</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> // Secure Channel
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/matrix.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Project Filtering
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projects = document.querySelectorAll('.project-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.dataset.filter;
+
+                    projects.forEach(project => {
+                        if (filter === 'all' || project.dataset.category.includes(filter)) {
+                            project.style.display = 'block';
+                            project.style.animation = 'fadeIn 0.5s ease forwards';
+                        } else {
+                            project.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

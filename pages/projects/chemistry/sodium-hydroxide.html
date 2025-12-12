@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sodium Hydroxide Electrolysis | Projects</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/effects.css">
+    <link rel="stylesheet" href="../../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <a href="../../../index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">JL</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links">
+                <a href="../../../index.html" class="nav-link" data-text="HOME">HOME</a>
+                <a href="../../about.html" class="nav-link" data-text="ABOUT">ABOUT</a>
+                <a href="../../cyber-projects.html" class="nav-link" data-text="CYBER">CYBER</a>
+                <a href="../../projects.html" class="nav-link active" data-text="PROJECTS">PROJECTS</a>
+                <a href="../../blog.html" class="nav-link" data-text="BLOG">BLOG</a>
+                <a href="../../contact.html" class="nav-link" data-text="CONTACT">CONTACT</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="breadcrumb">
+            <a href="../../projects.html">Projects</a> / <a href="../../projects.html">Chemistry</a> / Sodium Hydroxide
+        </div>
+        <h1 class="page-title glitch-text" data-text="SODIUM HYDROXIDE">SODIUM HYDROXIDE</h1>
+        <p class="page-subtitle">// Chloralkali Process Electrolysis</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <article class="project-detail">
+            <div class="project-hero">
+                <img src="../../../img/projects/naoh.jpg" alt="Sodium Hydroxide Production" class="project-hero-image">
+            </div>
+
+            <section class="content-section">
+                <h2 class="section-title">OVERVIEW</h2>
+                <p class="lead-text">
+                    Production of sodium hydroxide (NaOH) through electrolysis of sodium chloride solution. This is a laboratory-scale version of the industrial chloralkali process.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">THE REACTION</h2>
+                <div class="code-block">
+                    <pre>Overall reaction:
+2NaCl + 2H₂O → 2NaOH + H₂ + Cl₂
+
+At cathode:
+2H₂O + 2e⁻ → H₂ + 2OH⁻
+
+At anode:
+2Cl⁻ → Cl₂ + 2e⁻</pre>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">PROCESS DETAILS</h2>
+                <p>
+                    The chloralkali process produces three useful products simultaneously: sodium hydroxide (lye), hydrogen gas, and chlorine gas. Keeping the products separated is crucial to prevent unwanted side reactions.
+                </p>
+                <p>
+                    A membrane or diaphragm cell design prevents the chlorine from mixing with the hydroxide solution, which would produce sodium hypochlorite (bleach) instead.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">APPLICATIONS</h2>
+                <ul class="feature-list">
+                    <li>Soap making (saponification)</li>
+                    <li>pH adjustment</li>
+                    <li>Cleaning solutions</li>
+                    <li>Chemical synthesis precursor</li>
+                    <li>Drain cleaning</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">SAFETY</h2>
+                <div class="warning-box">
+                    <p><strong>Warning:</strong> This process produces chlorine gas (toxic) and hydrogen gas (flammable/explosive). Sodium hydroxide is highly caustic and causes severe burns. Proper ventilation, PPE, and safety protocols are essential. This is a hazardous process requiring appropriate training and equipment.</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">TOPICS</h2>
+                <div class="tags-container">
+                    <span class="tag">Electrolysis</span>
+                    <span class="tag">Chloralkali</span>
+                    <span class="tag">Industrial Chemistry</span>
+                    <span class="tag">Electrochemistry</span>
+                </div>
+            </section>
+
+            <div class="project-nav">
+                <a href="../../projects.html" class="cyber-btn">
+                    <span>&#8592; Back to Projects</span>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="status-indicator"></span>
+                <span class="status-text">SYSTEM OPERATIONAL</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">GITHUB</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">LINKEDIN</a>
+            </div>
+            <div class="footer-copy">
+                <span>&copy; <span id="year"></span> // ALL RIGHTS RESERVED</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/matrix.js"></script>
+    <script src="../../../js/main.js"></script>
+</body>
+</html>

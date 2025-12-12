@@ -1,0 +1,144 @@
+<!--
+BLOG ENTRY TEMPLATES
+Copy and paste these into blog.html in the appropriate section.
+Update the placeholders marked with EDIT.
+-->
+
+<!-- =============================================
+     LATEST LINK (for "Latest Projects" section)
+     ============================================= -->
+
+<!-- Regular project link -->
+<a href="https://github.com/jeremylaratro/REPO_NAME" target="_blank" class="latest-link">
+    <span class="link-icon">&#8594;</span>
+    <!-- EDIT: Title and description -->
+    <span class="link-text"><strong>Project Name</strong> - Short description here</span>
+</a>
+
+<!-- Certification/Achievement link (gold star icon) -->
+<a href="https://credential-url.com" target="_blank" class="latest-link cert-link">
+    <span class="link-icon">&#9733;</span>
+    <!-- EDIT: Certification name -->
+    <span class="link-text"><strong>Certification Name</strong> - Issuing Organization</span>
+</a>
+
+<!-- Internal page link -->
+<a href="page-name.html" class="latest-link">
+    <span class="link-icon">&#8594;</span>
+    <span class="link-text"><strong>Internal Project</strong> - Description</span>
+</a>
+
+
+<!-- =============================================
+     NOTE CARD (for "Technical Notes" section)
+     ============================================= -->
+
+<a href="blog/note-filename.html" class="note-card clickable-card">
+    <!-- EDIT: Icon text (WIN, LNX, AD, WEB, SMB, DEV, REF, DEF) -->
+    <div class="note-icon">WIN</div>
+    <div class="note-content">
+        <!-- EDIT: Title and description -->
+        <h4>Note Title Here</h4>
+        <p>Brief description of what the notes cover</p>
+    </div>
+</a>
+
+<!--
+NOTE-ICON OPTIONS:
+WIN = Windows
+LNX = Linux
+AD  = Active Directory
+WEB = Web Security
+SMB = SMB/Network
+DEV = Development/Scripting
+REF = Reference/Tools
+DEF = Defensive Security
+-->
+
+
+<!-- =============================================
+     BLOG CARD (for "CTF Writeups" section)
+     ============================================= -->
+
+<a href="blog/writeup-filename.html" class="blog-card clickable-card">
+    <div class="blog-date">
+        <!-- EDIT: Date display -->
+        <span class="month">CTF</span>
+        <span class="day">THM</span>
+    </div>
+    <div class="blog-content">
+        <!-- EDIT: Title and description -->
+        <h3>CTF Name - Machine Name</h3>
+        <p>Brief description of the writeup and techniques used.</p>
+        <div class="blog-tags">
+            <!-- EDIT: Tags -->
+            <span class="blog-tag">TryHackMe</span>
+            <span class="blog-tag">Linux</span>
+            <span class="blog-tag">PrivEsc</span>
+        </div>
+    </div>
+</a>
+
+<!-- Featured blog card (with badge) -->
+<a href="blog/writeup-filename.html" class="blog-card featured clickable-card">
+    <div class="blog-date">
+        <span class="month">NOV</span>
+        <span class="day">2024</span>
+    </div>
+    <div class="blog-content">
+        <!-- EDIT: Add badge -->
+        <div class="blog-badge">PUBLISHED</div>
+        <h3>Article Title</h3>
+        <p>Description of the published article.</p>
+        <div class="blog-tags">
+            <span class="blog-tag">Medium</span>
+            <span class="blog-tag">Tag2</span>
+        </div>
+    </div>
+</a>
+
+<!-- OSCP Prep writeup -->
+<a href="blog/oscp-prep-XXX.html" class="blog-card clickable-card">
+    <div class="blog-date">
+        <span class="month">OSCP</span>
+        <span class="day">XXX</span>
+    </div>
+    <div class="blog-content">
+        <h3>OSCP Prep: Machine XXX</h3>
+        <p>OSCP preparation machine writeup with enumeration and exploitation.</p>
+        <div class="blog-tags">
+            <span class="blog-tag">OSCP</span>
+            <span class="blog-tag">Practice</span>
+        </div>
+    </div>
+</a>
+
+<!--
+DATE DISPLAY OPTIONS:
+
+For CTF/Platform writeups:
+<span class="month">CTF</span>
+<span class="day">THM</span>  (TryHackMe)
+<span class="day">HTB</span>  (HackTheBox)
+<span class="day">OWASP</span>
+<span class="day">H1</span>  (HackerOne)
+
+For dated content:
+<span class="month">NOV</span>
+<span class="day">2024</span>
+
+For notes:
+<span class="month">NOTES</span>
+<span class="day">WIN</span>
+
+For OSCP:
+<span class="month">OSCP</span>
+<span class="day">001</span>
+
+COMMON TAGS:
+- Platform: TryHackMe, HackTheBox, OWASP, HackerOne
+- OS: Linux, Windows
+- Techniques: SQLi, XSS, SSTI, LFI, PrivEsc, File Upload, Command Injection
+- Tools: Burp Suite, nmap, Metasploit
+- Categories: Web, Network, Binary, Crypto
+-->

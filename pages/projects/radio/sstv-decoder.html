@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSTV Decoder | Projects</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/effects.css">
+    <link rel="stylesheet" href="../../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <a href="../../../index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">JL</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links">
+                <a href="../../../index.html" class="nav-link" data-text="HOME">HOME</a>
+                <a href="../../about.html" class="nav-link" data-text="ABOUT">ABOUT</a>
+                <a href="../../cyber-projects.html" class="nav-link" data-text="CYBER">CYBER</a>
+                <a href="../../projects.html" class="nav-link active" data-text="PROJECTS">PROJECTS</a>
+                <a href="../../blog.html" class="nav-link" data-text="BLOG">BLOG</a>
+                <a href="../../contact.html" class="nav-link" data-text="CONTACT">CONTACT</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="breadcrumb">
+            <a href="../../projects.html">Projects</a> / <a href="../../projects.html">Radio</a> / SSTV Decoder
+        </div>
+        <h1 class="page-title glitch-text" data-text="SSTV DECODER">SSTV DECODER</h1>
+        <p class="page-subtitle">// Web-based Slow Scan TV Decoder</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <article class="project-detail">
+            <section class="content-section">
+                <h2 class="section-title">OVERVIEW</h2>
+                <p class="lead-text">
+                    A web-based Slow-Scan Television (SSTV) decoder that processes audio input to decode amateur radio SSTV transmissions directly in the browser. No software installation required.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">ABOUT SSTV</h2>
+                <p>
+                    Slow Scan Television (SSTV) is a method of transmitting still images over radio frequencies. Unlike broadcast television, SSTV transmits images slowly, taking several seconds to several minutes per image. It's popular among amateur radio operators for exchanging QSL cards and other images.
+                </p>
+                <p>
+                    SSTV encodes image data as audio tones, with different frequencies representing different brightness levels and colors. The audio can be transmitted over standard voice radio channels.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">FEATURES</h2>
+                <ul class="feature-list">
+                    <li>Browser-based operation - no installation needed</li>
+                    <li>Real-time audio decoding</li>
+                    <li>Support for common SSTV modes</li>
+                    <li>Works with microphone input or audio files</li>
+                    <li>Useful for decoding ISS transmissions</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">COMMON USE CASES</h2>
+                <p>
+                    The International Space Station (ISS) occasionally transmits SSTV images that can be received with simple equipment. This decoder makes it easy to capture and decode these transmissions without installing specialized software.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">TECHNOLOGIES</h2>
+                <div class="tags-container">
+                    <span class="tag">SSTV</span>
+                    <span class="tag">Web Audio API</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Ham Radio</span>
+                    <span class="tag">DSP</span>
+                    <span class="tag">Image Decoding</span>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">TRY IT OUT</h2>
+                <a href="https://jeremylaratro.github.io/sstv-decoder/" target="_blank" class="cyber-btn">
+                    <span>Launch SSTV Decoder &#8594;</span>
+                </a>
+            </section>
+
+            <div class="project-nav">
+                <a href="../../projects.html" class="cyber-btn">
+                    <span>&#8592; Back to Projects</span>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="status-indicator"></span>
+                <span class="status-text">SYSTEM OPERATIONAL</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">GITHUB</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">LINKEDIN</a>
+            </div>
+            <div class="footer-copy">
+                <span>&copy; <span id="year"></span> // ALL RIGHTS RESERVED</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/matrix.js"></script>
+    <script src="../../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmaChat LoRa Messenger | Projects</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/effects.css">
+    <link rel="stylesheet" href="../../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <a href="../../../index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">JL</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links">
+                <a href="../../../index.html" class="nav-link" data-text="HOME">HOME</a>
+                <a href="../../about.html" class="nav-link" data-text="ABOUT">ABOUT</a>
+                <a href="../../cyber-projects.html" class="nav-link" data-text="CYBER">CYBER</a>
+                <a href="../../projects.html" class="nav-link active" data-text="PROJECTS">PROJECTS</a>
+                <a href="../../blog.html" class="nav-link" data-text="BLOG">BLOG</a>
+                <a href="../../contact.html" class="nav-link" data-text="CONTACT">CONTACT</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="breadcrumb">
+            <a href="../../projects.html">Projects</a> / <a href="../../projects.html">Hardware</a> / ArmaChat
+        </div>
+        <h1 class="page-title glitch-text" data-text="ARMACHAT">ARMACHAT</h1>
+        <p class="page-subtitle">// LoRa Text Messenger</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <article class="project-detail">
+            <div class="project-hero">
+                <img src="../../../img/projects/armachat.png" alt="ArmaChat LoRa Messenger" class="project-hero-image">
+            </div>
+
+            <section class="content-section">
+                <h2 class="section-title">OVERVIEW</h2>
+                <p class="lead-text">
+                    A standalone LoRa-based text messenger designed for off-grid communications. This project explores long-range, low-power mesh networking capabilities for situations where traditional communication infrastructure is unavailable.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">ABOUT LORA</h2>
+                <p>
+                    LoRa (Long Range) is a spread spectrum modulation technique derived from chirp spread spectrum (CSS) technology. It enables long-range transmissions with low power consumption, making it ideal for IoT applications and off-grid communication devices.
+                </p>
+                <p>
+                    LoRa devices can achieve ranges of several kilometers in rural areas and hundreds of meters in urban environments, all while operating on small batteries for extended periods.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">USE CASES</h2>
+                <ul class="feature-list">
+                    <li>Emergency communication during disasters</li>
+                    <li>Backcountry/hiking communication</li>
+                    <li>Off-grid messaging in remote areas</li>
+                    <li>Mesh network experimentation</li>
+                    <li>Ham radio digital modes exploration</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">TECHNOLOGIES</h2>
+                <div class="tags-container">
+                    <span class="tag">LoRa</span>
+                    <span class="tag">Mesh Network</span>
+                    <span class="tag">Off-Grid</span>
+                    <span class="tag">Low Power</span>
+                    <span class="tag">Long Range</span>
+                    <span class="tag">Embedded Systems</span>
+                </div>
+            </section>
+
+            <div class="project-nav">
+                <a href="../../projects.html" class="cyber-btn">
+                    <span>&#8592; Back to Projects</span>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="status-indicator"></span>
+                <span class="status-text">SYSTEM OPERATIONAL</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">GITHUB</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">LINKEDIN</a>
+            </div>
+            <div class="footer-copy">
+                <span>&copy; <span id="year"></span> // ALL RIGHTS RESERVED</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/matrix.js"></script>
+    <script src="../../../js/main.js"></script>
+</body>
+</html>

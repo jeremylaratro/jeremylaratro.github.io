@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTL-SDR Projects | Projects</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/effects.css">
+    <link rel="stylesheet" href="../../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <a href="../../../index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">JL</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links">
+                <a href="../../../index.html" class="nav-link" data-text="HOME">HOME</a>
+                <a href="../../about.html" class="nav-link" data-text="ABOUT">ABOUT</a>
+                <a href="../../cyber-projects.html" class="nav-link" data-text="CYBER">CYBER</a>
+                <a href="../../projects.html" class="nav-link active" data-text="PROJECTS">PROJECTS</a>
+                <a href="../../blog.html" class="nav-link" data-text="BLOG">BLOG</a>
+                <a href="../../contact.html" class="nav-link" data-text="CONTACT">CONTACT</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="breadcrumb">
+            <a href="../../projects.html">Projects</a> / <a href="../../projects.html">Radio</a> / RTL-SDR
+        </div>
+        <h1 class="page-title glitch-text" data-text="RTL-SDR PROJECTS">RTL-SDR PROJECTS</h1>
+        <p class="page-subtitle">// Software Defined Radio Experiments</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <article class="project-detail">
+            <div class="project-hero">
+                <img src="../../../img/projects/SSTV_ISS.png" alt="RTL-SDR Projects" class="project-hero-image">
+            </div>
+
+            <section class="content-section">
+                <h2 class="section-title">OVERVIEW</h2>
+                <p class="lead-text">
+                    Various experiments and projects using the RTL-SDR (Software Defined Radio) dongle, including aircraft tracking, weather satellite reception, and general RF exploration.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">ABOUT RTL-SDR</h2>
+                <p>
+                    RTL-SDR is a very cheap software defined radio that uses a DVB-T TV tuner dongle based on the RTL2832U chipset. It can be used to receive radio signals from about 500 kHz to 1.75 GHz, making it an incredibly versatile tool for RF experimentation.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">PROJECT AREAS</h2>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h4>ADS-B Aircraft Tracking</h4>
+                            <p>Receiving and decoding 1090 MHz ADS-B signals from aircraft to track flights in real-time.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h4>Weather Satellite Reception</h4>
+                            <p>Receiving NOAA APT and Meteor M2 LRPT weather satellite images.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h4>SSTV from ISS</h4>
+                            <p>Receiving Slow Scan TV images transmitted from the International Space Station during special events.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h4>General RF Exploration</h4>
+                            <p>Exploring various frequency bands, decoding digital modes, and analyzing RF signals.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">SOFTWARE USED</h2>
+                <ul class="feature-list">
+                    <li><strong>SDR#</strong> - General purpose SDR receiver</li>
+                    <li><strong>GQRX</strong> - Linux SDR receiver</li>
+                    <li><strong>dump1090</strong> - ADS-B decoder</li>
+                    <li><strong>WXtoImg</strong> - NOAA satellite decoder</li>
+                    <li><strong>GNU Radio</strong> - Signal processing</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">TECHNOLOGIES</h2>
+                <div class="tags-container">
+                    <span class="tag">RTL-SDR</span>
+                    <span class="tag">ADS-B</span>
+                    <span class="tag">Weather Satellites</span>
+                    <span class="tag">SSTV</span>
+                    <span class="tag">GNU Radio</span>
+                    <span class="tag">SDR</span>
+                </div>
+            </section>
+
+            <div class="project-nav">
+                <a href="../../projects.html" class="cyber-btn">
+                    <span>&#8592; Back to Projects</span>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="status-indicator"></span>
+                <span class="status-text">SYSTEM OPERATIONAL</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">GITHUB</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">LINKEDIN</a>
+            </div>
+            <div class="footer-copy">
+                <span>&copy; <span id="year"></span> // ALL RIGHTS RESERVED</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/matrix.js"></script>
+    <script src="../../../js/main.js"></script>
+</body>
+</html>

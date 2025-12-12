@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&D LAB | Jeremy Laratro</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/effects.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- CRT Effect -->
+    <div class="crt"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Classification Bar -->
+    <div class="class-bar"></div>
+
+    <!-- Data Stream Effect -->
+    <div class="data-stream">
+        <div class="stream-column" style="left: 10%; animation-duration: 19s; animation-delay: 0s;">DESIGN<br>BUILD<br>TEST<br>DEPLOY</div>
+        <div class="stream-column" style="left: 40%; animation-duration: 17s; animation-delay: -3s;">01010010<br>00100110<br>01000100<br>01001100</div>
+        <div class="stream-column" style="left: 70%; animation-duration: 21s; animation-delay: -5s;">PROTO<br>TYPE<br>TEST<br>DONE</div>
+        <div class="stream-column" style="left: 90%; animation-duration: 15s; animation-delay: -2s;">10110010<br>01001110<br>11010010<br>00101011</div>
+    </div>
+
+    <!-- Tactical Frame -->
+    <div class="tactical-frame"></div>
+    <div class="tactical-frame-bottom"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div style="display: flex; align-items: center;">
+                <a href="../index.html" class="nav-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">JL</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <span class="logo-tag">CYBER OPS</span>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">./home</a>
+                <a href="about.html" class="nav-link">./whoami</a>
+                <a href="cyber-projects.html" class="nav-link">./cyberops</a>
+                <a href="projects.html" class="nav-link active">./research</a>
+                <a href="blog.html" class="nav-link">./intel</a>
+                <a href="contact.html" class="nav-link">./comms</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="ascii-page-title">
+        ▄▄▄▄        ▄▄
+       ██▀▀▀█       ██
+████▄  ▄███▄▄▄█▀ ▄████
+██ ▀▀ ██  ▀███   ██ ██
+██     ▀████ ▀█▄ ▀████</div>
+        <p class="page-subtitle">// ls /projects --hardware --radio --chem</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <!-- Category Navigation -->
+        <nav class="category-nav">
+            <button class="category-tab active" data-category="hardware">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                    <rect x="9" y="9" width="6" height="6"/>
+                    <line x1="9" y1="1" x2="9" y2="4"/>
+                    <line x1="15" y1="1" x2="15" y2="4"/>
+                    <line x1="9" y1="20" x2="9" y2="23"/>
+                    <line x1="15" y1="20" x2="15" y2="23"/>
+                    <line x1="20" y1="9" x2="23" y2="9"/>
+                    <line x1="20" y1="15" x2="23" y2="15"/>
+                    <line x1="1" y1="9" x2="4" y2="9"/>
+                    <line x1="1" y1="15" x2="4" y2="15"/>
+                </svg>
+                HARDWARE
+            </button>
+            <button class="category-tab" data-category="radio">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                    <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                    <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                    <line x1="12" y1="20" x2="12.01" y2="20"/>
+                </svg>
+                RADIO / RF
+            </button>
+            <button class="category-tab" data-category="chemistry">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M10 2v7.31"/>
+                    <path d="M14 9.3V2"/>
+                    <path d="M8.5 2h7"/>
+                    <path d="M14 9.3a6.5 6.5 0 1 1-4 0"/>
+                    <circle cx="12" cy="17" r="1"/>
+                </svg>
+                CHEMISTRY
+            </button>
+        </nav>
+
+        <!-- Hardware Category -->
+        <section id="hardware" class="category-content active">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">HARDWARE PROJECTS</h2>
+                <span class="section-line"></span>
+            </div>
+
+            <div class="hardware-grid">
+                <!-- Mini-CNC -->
+                <a href="projects/hardware/mini-cnc.html" class="hardware-card clickable-card">
+                    <img src="../img/projects/20210807_213240.jpg" alt="Mini-CNC Machine" class="card-image">
+                    <div class="card-body">
+                        <h4>Mini-CNC Machine with GRBL Controller</h4>
+                        <p>Built using aluminum extrusion, stepper motors, a 10k rpm spindle motor, and an open-source GRBL control board for less than $200 total.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">GRBL</span>
+                            <span class="tech-tag">KiCAD</span>
+                            <span class="tech-tag">bCNC</span>
+                            <span class="tech-tag">G-code</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- GPS Speedometer -->
+                <a href="projects/hardware/gps-speedometer.html" class="hardware-card clickable-card">
+                    <img src="../img/projects/20210816_165305.jpg" alt="GPS Speedometer" class="card-image">
+                    <div class="card-body">
+                        <h4>GPS Speedometer for Boat/Bike</h4>
+                        <p>Started with Arduino Uno for prototyping, then migrated to standalone ATMEGA328P with NEO-6M GPS Module and OLED display.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">ATMEGA328P</span>
+                            <span class="tech-tag">NEO-6M GPS</span>
+                            <span class="tech-tag">OLED</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- Class A Amplifier -->
+                <a href="projects/hardware/class-a-amplifier.html" class="hardware-card clickable-card">
+                    <img src="../img/projects/20210914_005810.jpg" alt="Class A Audio Amplifier" class="card-image">
+                    <div class="card-body">
+                        <h4>Class A Audio Amplifier</h4>
+                        <p>A simple Class A audio amplifier circuit using 2x BC337 transistors with chemically etched PCB and SMT components.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">BC337</span>
+                            <span class="tech-tag">SMT</span>
+                            <span class="tech-tag">KiCAD</span>
+                            <span class="tech-tag">Class A</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- DJI Drone Repair -->
+                <a href="projects/hardware/dji-drone-repair.html" class="hardware-card clickable-card">
+                    <img src="../img/projects/20210502_192500.jpg" alt="DJI Phantom Drone Repair" class="card-image">
+                    <div class="card-body">
+                        <h4>DJI Phantom Drone Repair</h4>
+                        <p>Fixed a DJI Phantom drone that had lost its live video feed by re-flashing firmware via JTAG.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JTAG</span>
+                            <span class="tech-tag">Firmware</span>
+                            <span class="tech-tag">RF Board</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- GRBL Firmware Flashing -->
+                <a href="projects/hardware/grbl-firmware.html" class="hardware-card clickable-card">
+                    <img src="../img/projects/20210809_132539.jpg" alt="GRBL CNC Controller" class="card-image">
+                    <div class="card-body">
+                        <h4>GRBL CNC Controller Firmware Flashing</h4>
+                        <p>Instructables tutorial on flashing firmware onto GRBL CNC controller boards for recovery.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">GRBL</span>
+                            <span class="tech-tag">Firmware</span>
+                            <span class="tech-tag">Tutorial</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- ArmaChat -->
+                <a href="projects/hardware/armachat.html" class="hardware-card clickable-card">
+                    <img src="../img/projects/armachat.png" alt="ArmaChat LoRa Messenger" class="card-image">
+                    <div class="card-body">
+                        <h4>ArmaChat: LoRa Text Messenger</h4>
+                        <p>A standalone LoRa-based text messenger for off-grid communications with mesh networking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LoRa</span>
+                            <span class="tech-tag">Mesh Network</span>
+                            <span class="tech-tag">Off-Grid</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- Heathkit Amplifier -->
+                <a href="projects/hardware/heathkit-amplifier.html" class="hardware-card clickable-card">
+                    <img src="../img/projects/IMG-20201110-WA0017.jpeg" alt="Heathkit HF Amplifier" class="card-image">
+                    <div class="card-body">
+                        <h4>Heathkit 500W HF Amplifier Rebuild</h4>
+                        <p>Restoration and rebuild of a classic Heathkit 500W HF tube amplifier.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">High Voltage</span>
+                            <span class="tech-tag">Tube Amp</span>
+                            <span class="tech-tag">HF</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- Workbench -->
+                <a href="projects/hardware/workbench.html" class="hardware-card clickable-card">
+                    <img src="../img/projects/IMG-20211003-WA0010.jpeg" alt="Electronics Workbench" class="card-image">
+                    <div class="card-body">
+                        <h4>Electronics Workbench</h4>
+                        <p>My electronics workbench setup for hardware projects, PCB work, and RF experimentation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Workbench</span>
+                            <span class="tech-tag">Electronics</span>
+                            <span class="tech-tag">Setup</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Radio/RF Category -->
+        <section id="radio" class="category-content">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">RADIO / RF PROJECTS</h2>
+                <span class="section-line"></span>
+            </div>
+
+            <div class="radio-grid">
+                <!-- uSDX Radio -->
+                <a href="projects/radio/usdx.html" class="radio-card clickable-card">
+                    <img src="../img/projects/20210216_155038.jpg" alt="uSDX HF Radio" class="card-image">
+                    <div class="card-body">
+                        <h4>uSDX: Open Source HF Radio</h4>
+                        <p>A credit card-sized fully operational HF radio capable of modulating SSB and CW with Class E amplifier design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HF Radio</span>
+                            <span class="tech-tag">SSB</span>
+                            <span class="tech-tag">CW</span>
+                            <span class="tech-tag">Class E Amp</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- NanoVNA -->
+                <a href="projects/radio/antenna-analyzer.html" class="radio-card clickable-card">
+                    <img src="../img/projects/20210927_235551.jpg" alt="NanoVNA" class="card-image">
+                    <div class="card-body">
+                        <h4>NanoVNA for RF Analysis</h4>
+                        <p>Using the NanoVNA for antenna analysis, filter tuning, and RF circuit optimization.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VNA</span>
+                            <span class="tech-tag">RF Analysis</span>
+                            <span class="tech-tag">Antenna</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- Radio Station -->
+                <a href="projects/radio/radio-station.html" class="radio-card clickable-card">
+                    <img src="../img/projects/20210911_135347.jpg" alt="Radio Station" class="card-image">
+                    <div class="card-body">
+                        <h4>Amateur Radio Station</h4>
+                        <p>HF/VHF/UHF operating position for SSB, digital modes, and CW communications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Ham Radio</span>
+                            <span class="tech-tag">HF</span>
+                            <span class="tech-tag">Digital Modes</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- RTL-SDR -->
+                <a href="projects/radio/rtl-sdr.html" class="radio-card clickable-card">
+                    <img src="../img/projects/ne.jpg" alt="RTL-SDR" class="card-image">
+                    <div class="card-body">
+                        <h4>RTL-SDR Projects</h4>
+                        <p>Software Defined Radio experiments including ADS-B, weather satellites, and SSTV from ISS.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SDR</span>
+                            <span class="tech-tag">ADS-B</span>
+                            <span class="tech-tag">SSTV</span>
+                            <span class="tech-tag">Satellites</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- HF Antenna -->
+                <a href="projects/radio/hf-antenna.html" class="radio-card clickable-card">
+                    <img src="../img/projects/20210216_144157.jpg" alt="HF Antenna" class="card-image">
+                    <div class="card-body">
+                        <h4>Stealth HF Antenna</h4>
+                        <p>Multi-band end-fed wire antenna designed for HOA-restricted areas.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Antenna</span>
+                            <span class="tech-tag">End-Fed</span>
+                            <span class="tech-tag">Multi-Band</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <!-- Repeater Network -->
+                <a href="projects/radio/repeater-network.html" class="radio-card clickable-card">
+                    <img src="../img/projects/20210902_182728.jpg" alt="Repeater Network" class="card-image">
+                    <div class="card-body">
+                        <h4>VHF/UHF Repeater Network</h4>
+                        <p>Running linked VHF/UHF repeaters with commercial hardware and duplexers.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Repeater</span>
+                            <span class="tech-tag">VHF/UHF</span>
+                            <span class="tech-tag">Duplexer</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Chemistry Category -->
+        <section id="chemistry" class="category-content">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">CHEMISTRY PROJECTS</h2>
+                <span class="section-line"></span>
+            </div>
+
+            <div class="section-divider">
+                <span>ELECTROCHEMISTRY & SYNTHESIS</span>
+            </div>
+
+            <div class="chem-grid">
+                <a href="projects/chemistry/copper-sulfate.html" class="chem-card clickable-card">
+                    <img src="../img/projects/20211120_154301.jpg" alt="Copper Sulfate Synthesis" class="card-image">
+                    <div class="card-body">
+                        <h4>Copper Sulfate Synthesis</h4>
+                        <p>Electrochemical synthesis and crystal growing of CuSO4·5H2O from copper electrodes and sulfuric acid.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Electrochemistry</span>
+                            <span class="tech-tag">Synthesis</span>
+                            <span class="tech-tag">Crystals</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <a href="projects/chemistry/ferric-chloride.html" class="chem-card clickable-card">
+                    <img src="../img/projects/20211114_172541.jpg" alt="Ferric Chloride" class="card-image">
+                    <div class="card-body">
+                        <h4>Ferric Chloride Synthesis</h4>
+                        <p>Production of FeCl3 solution for use as a PCB etchant in electronics fabrication.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Synthesis</span>
+                            <span class="tech-tag">PCB Etching</span>
+                            <span class="tech-tag">Inorganic</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <a href="projects/chemistry/sodium-hydroxide.html" class="chem-card clickable-card">
+                    <img src="../img/projects/ir_camphor.jpg" alt="Sodium Hydroxide" class="card-image">
+                    <div class="card-body">
+                        <h4>Sodium Hydroxide Electrolysis</h4>
+                        <p>Laboratory-scale chloralkali process producing NaOH, H2, and Cl2 via electrolysis.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Electrolysis</span>
+                            <span class="tech-tag">Chloralkali</span>
+                            <span class="tech-tag">Industrial</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <a href="projects/chemistry/electroplating.html" class="chem-card clickable-card">
+                    <img src="../img/projects/fluoro.jpg" alt="Electroplating" class="card-image">
+                    <div class="card-body">
+                        <h4>Electroplating Experiments</h4>
+                        <p>Metal deposition experiments including copper, nickel, zinc, and tin plating.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Electroplating</span>
+                            <span class="tech-tag">Metal Finishing</span>
+                            <span class="tech-tag">Electrochemistry</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <a href="projects/chemistry/pcb-etching.html" class="chem-card clickable-card">
+                    <img src="../img/projects/diels_aldernmr.jpg" alt="PCB Etching" class="card-image">
+                    <div class="card-body">
+                        <h4>Chemical PCB Etching</h4>
+                        <p>Home PCB fabrication using ferric chloride, cupric chloride, and sodium persulfate etchants.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PCB</span>
+                            <span class="tech-tag">Etching</span>
+                            <span class="tech-tag">Electronics</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+
+                <a href="projects/chemistry/lab-equipment.html" class="chem-card clickable-card">
+                    <img src="../img/projects/20210502_192500.jpg" alt="Lab Equipment" class="card-image">
+                    <div class="card-body">
+                        <h4>Lab Equipment Setup</h4>
+                        <p>Home chemistry lab setup for electrochemistry, synthesis, and materials science experiments.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Lab Setup</span>
+                            <span class="tech-tag">Equipment</span>
+                            <span class="tech-tag">Safety</span>
+                        </div>
+                        <span class="card-link-indicator">VIEW PROJECT &#8594;</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="section-divider">
+                <span>CHEMISTRY TOOLS</span>
+            </div>
+
+            <div class="projects-grid">
+                <a href="https://github.com/jeremylaratro/Smiles-TO-iUpac-Translator-with-CLI" target="_blank" class="project-card clickable-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SMILES/IUPAC Translator CLI</h3>
+                    <p class="project-desc">Interactive CLI for STOUT, an organic chemistry SMILES/IUPAC name translator.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SMILES</span>
+                        <span class="tech-tag">IUPAC</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+
+                <a href="https://github.com/jeremylaratro/Degrees_of_Unsaturation_Calculator" target="_blank" class="project-card clickable-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <line x1="4" y1="9" x2="20" y2="9"/>
+                                <line x1="4" y1="15" x2="20" y2="15"/>
+                                <line x1="10" y1="3" x2="8" y2="21"/>
+                                <line x1="16" y1="3" x2="14" y2="21"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Degrees of Unsaturation Calculator</h3>
+                    <p class="project-desc">Calculator for determining DBE (Double Bond Equivalent) from molecular formulas.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Organic Chem</span>
+                        <span class="tech-tag">Calculator</span>
+                    </div>
+                    <span class="card-link-indicator">VIEW ON GITHUB &#8594;</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="footer-dot"></span>
+                <span>SYSTEMS ONLINE</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">[GitHub]</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">[LinkedIn]</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> // Secure Channel
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/matrix.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Category Tab Navigation
+        document.addEventListener('DOMContentLoaded', () => {
+            const categoryTabs = document.querySelectorAll('.category-tab');
+            const categoryContents = document.querySelectorAll('.category-content');
+
+            categoryTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+                    categoryContents.forEach(c => c.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    const categoryId = tab.dataset.category;
+                    document.getElementById(categoryId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

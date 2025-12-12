@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMB Enumeration & Attacks | J Laratro</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/effects.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-post-content { max-width: 900px; margin: 0 auto; }
+        .blog-post-header { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color); }
+        .blog-post-title { font-family: var(--font-display); font-size: 2rem; color: var(--text-primary); margin-bottom: 1rem; }
+        .blog-post-meta { display: flex; gap: 2rem; flex-wrap: wrap; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); }
+        .blog-post-body { font-size: 1rem; line-height: 1.8; color: var(--text-secondary); }
+        .blog-post-body h2 { font-family: var(--font-display); font-size: 1.5rem; color: var(--accent-blue); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-color); }
+        .blog-post-body h3 { font-family: var(--font-display); font-size: 1.2rem; color: var(--text-primary); margin: 2rem 0 1rem; }
+        .blog-post-body h4 { font-family: var(--font-display); font-size: 1rem; color: var(--accent-green); margin: 1.5rem 0 0.75rem; }
+        .blog-post-body p { margin-bottom: 1rem; }
+        .blog-post-body pre { background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 6px; padding: 1rem; overflow-x: auto; margin: 1rem 0 1.5rem; font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.5; }
+        .blog-post-body code { background: var(--bg-tertiary); padding: 0.2rem 0.4rem; border-radius: 3px; font-family: var(--font-mono); font-size: 0.9em; color: var(--accent-green); }
+        .blog-post-body pre code { background: transparent; padding: 0; }
+        .blog-post-body ul, .blog-post-body ol { margin: 1rem 0 1.5rem 1.5rem; }
+        .blog-post-body li { margin-bottom: 0.5rem; }
+        .blog-post-body a { color: var(--accent-blue); text-decoration: none; }
+        .blog-post-body a:hover { text-decoration: underline; }
+        .blog-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+        .blog-tag { font-family: var(--font-mono); font-size: 0.75rem; padding: 0.3rem 0.6rem; background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 4px; color: var(--accent-blue); }
+        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-muted); text-decoration: none; margin-bottom: 2rem; transition: var(--transition-normal); }
+        .back-link:hover { color: var(--accent-blue); }
+        .technique-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        .technique-card h3 { margin-top: 0; color: var(--accent-red); }
+        .blog-post-body img { max-width: 100%; border: 1px solid var(--border-color); border-radius: 6px; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <!-- CRT Effect -->
+    <div class="crt"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Classification Bar -->
+    <div class="class-bar"></div>
+
+    <!-- Tactical Frame -->
+    <div class="tactical-frame"></div>
+    <div class="tactical-frame-bottom"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div style="display: flex; align-items: center;">
+                <a href="../../index.html" class="nav-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">JL</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <span class="logo-tag">CYBER OPS</span>
+            </div>
+            <div class="nav-links">
+                <a href="../../index.html" class="nav-link">./home</a>
+                <a href="../about.html" class="nav-link">./whoami</a>
+                <a href="../cyber-projects.html" class="nav-link">./cyberops</a>
+                <a href="../projects.html" class="nav-link">./research</a>
+                <a href="../blog.html" class="nav-link active">./intel</a>
+                <a href="../contact.html" class="nav-link">./comms</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="blog-post-content">
+            <a href="../blog.html" class="back-link">&larr; Back to Blog</a>
+
+            <article>
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">SMB: Server Message Block</h1>
+                    <div class="blog-post-meta">
+                        <span>Type: Technical Notes</span>
+                        <span>Category: Network Exploitation</span>
+                    </div>
+                    <div class="blog-tags">
+                        <span class="blog-tag">SMB</span>
+                        <span class="blog-tag">Enumeration</span>
+                        <span class="blog-tag">Enum4Linux</span>
+                        <span class="blog-tag">smbclient</span>
+                        <span class="blog-tag">Pivoting</span>
+                    </div>
+                </header>
+
+                <div class="blog-post-body">
+                    <p>SMB is a network-based file sharing protocol that allows users to access shared files on a server. SMB is used on both Windows and Unix systems; common service names include microsoft-ds for Windows-based systems and Samba for linux-based systems.</p>
+
+                    <p>Due to the file-sharing properties of SMB, it is a common attack vector and can lead to serious information breaches if not properly configured and/or secured.</p>
+
+                    <h2>Scan</h2>
+                    <p>The first step is to determine whether SMB is running on the target machine.</p>
+
+                    <pre><code>sudo nmap {target_ip} -sV -sC -O</code></pre>
+
+                    <p>The nmap scan shows open ports, with SMB ports typically on 139 and 445:</p>
+                    <img src="../../img/blog/smb_nmap_ports.png" alt="Nmap SMB Ports">
+
+                    <p>The scripts switch also returns useful information about the specific SMB configuration:</p>
+                    <img src="../../img/blog/smb_nmap_script.png" alt="Nmap SMB Scripts">
+
+                    <p>With just this single nmap scan, we know of two SMB ports that are open, the system name, the security configuration (guest has user access), and an open SSH port.</p>
+
+                    <h2>Enumerate</h2>
+                    <p>Two main methods of enumerating SMB:</p>
+                    <ul>
+                        <li><strong>Enum4Linux</strong> - Goes in-depth scanning and enumerating for everything from users to workgroups</li>
+                        <li><strong>smbclient</strong> - Simple CLI tool for interacting with SMB service</li>
+                    </ul>
+
+                    <div class="technique-card">
+                        <h3>smbclient</h3>
+                        <h4>List Shares:</h4>
+                        <pre><code>smbclient -L {target_ip}</code></pre>
+
+                        <h4>Connect to Share:</h4>
+                        <pre><code>smbclient \\\\{target_ip}\\profiles</code></pre>
+
+                        <h4>Connect with Username:</h4>
+                        <pre><code>smbclient \\\\{target_ip}\\share -U username</code></pre>
+                    </div>
+
+                    <div class="technique-card">
+                        <h3>Enum4Linux</h3>
+                        <pre><code>perl enum4linux.pl -a {target_ip}</code></pre>
+                        <p>This provides comprehensive information including users, shares, and workgroups - verifying and expanding on smbclient and nmap findings.</p>
+                    </div>
+
+                    <h2>Pivoting</h2>
+                    <p>After finding useful information in shares (such as SSH RSA keys), you can pivot to other services.</p>
+
+                    <h4>SSH with RSA Key:</h4>
+                    <p>If you get a "UNPROTECTED PRIVATE KEY FILE" error:</p>
+                    <pre><code>chmod 600 id_rsa</code></pre>
+
+                    <p>Then connect:</p>
+                    <pre><code>ssh -i id_rsa user@{target_ip}</code></pre>
+
+                    <h2>Insights</h2>
+                    <p>This was simple due to serious security misconfiguration (guest access), however the underlying process is valid and can be applied in conjunction with other tools and techniques.</p>
+                    <p>For example, if the guest user did not have user-level access, the specific SMB version (from nmap) could be used to find specific exploits. Metasploit also contains various SMB exploits.</p>
+
+                    <h2>Important Commands Summary</h2>
+                    <pre><code># List shares
+smbclient -L ip
+
+# Full enumeration
+perl enum4linux.pl -a ip
+
+# Connect to share
+smbclient \\\\ip\\share
+
+# Connect with username
+smbclient \\\\ip\\share -U username</code></pre>
+
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="footer-dot"></span>
+                <span>SYSTEMS ONLINE</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">[GitHub]</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">[LinkedIn]</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> // Secure Channel
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

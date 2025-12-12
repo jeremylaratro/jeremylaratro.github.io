@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uSDX Open Source HF Radio | Projects</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/effects.css">
+    <link rel="stylesheet" href="../../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- CRT Effect -->
+    <div class="crt"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Classification Bar -->
+    <div class="class-bar"></div>
+
+    <!-- Tactical Frame -->
+    <div class="tactical-frame"></div>
+    <div class="tactical-frame-bottom"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div style="display: flex; align-items: center;">
+                <a href="../../../index.html" class="nav-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">JL</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <span class="logo-tag">CYBER OPS</span>
+            </div>
+            <div class="nav-links">
+                <a href="../../../index.html" class="nav-link">./home</a>
+                <a href="../../about.html" class="nav-link">./whoami</a>
+                <a href="../../cyber-projects.html" class="nav-link">./cyberops</a>
+                <a href="../../projects.html" class="nav-link active">./research</a>
+                <a href="../../blog.html" class="nav-link">./intel</a>
+                <a href="../../contact.html" class="nav-link">./comms</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="breadcrumb">
+            <a href="../../projects.html">Projects</a> / <a href="../../projects.html#radio">Radio</a> / uSDX
+        </div>
+        <h1 class="page-title glitch-text" data-text="uSDX: OPEN SOURCE HF RADIO">uSDX: OPEN SOURCE HF RADIO</h1>
+        <p class="page-subtitle">// Credit Card-Sized SSB/CW Transceiver</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <article class="project-detail">
+            <div class="project-hero">
+                <img src="../../../img/projects/20210216_155038.jpg" alt="uSDX HF Radio" class="project-hero-image">
+            </div>
+
+            <section class="content-section">
+                <h2 class="section-title">OVERVIEW</h2>
+                <p class="lead-text">
+                    The uSDX is a credit card-sized fully operational HF radio capable of modulating SSB (USB and LSB), as well as CW. There are multiple versions of this project. This one was created by Manuel, DL2MAN, and the software originally by Guido, PE1NNZ. I also built one of the other original versions by Barb, WB2CBA.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">THE BUILD EXPERIENCE</h2>
+                <p>
+                    This is one of my favorite open source projects to date, as the community was quite small and I was able to help, as well as be helped, by others. A lot of knowledge and experience was shared.
+                </p>
+                <p>
+                    Specifically, a problem arose where a number of people were receiving ATMEGA328P microcontrollers without bootloaders. I made a guide for them to successfully load the bootloader onto their microcontroller via the command prompt, using a breadboard and USB-ASP. This then allowed them to upload the uSDX firmware via their Arduino's.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">TECHNICAL CHALLENGES</h2>
+                <p>
+                    This project consisted of many parts, and was a great learning experience. The RF filter board was especially interesting, as it was my first introduction into Class E amplifiers and serial resonance. This made it quite a challenge, but was extremely rewarding, as the values for each frequency band had to be optimized while maintaining that optimization for all.
+                </p>
+                <p>
+                    I did this using a VNA and LC Meter. The board was designed by Manuel, DL2MAN, to allow for five frequency bands, and each pair of toroids had to be tuned to the correct frequency band, which was done by changing the number of times the magnet wire was wrapped around the toroid, as well as the capacitor values.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">KEY FEATURES</h2>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h4>Multi-Mode Operation</h4>
+                            <p>Supports SSB (USB/LSB) and CW modes for versatile HF communication.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h4>Class E Amplifier</h4>
+                            <p>Efficient Class E amplifier design with serial resonance for optimal RF output.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h4>Five Band Coverage</h4>
+                            <p>Tunable filter board supporting five HF frequency bands with individually tuned toroids.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h4>Compact Design</h4>
+                            <p>Credit card-sized form factor making it highly portable for field operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">LEARN MORE</h2>
+                <p>
+                    If you're interested in learning more about the uSDX, the <a href="https://groups.io/g/ucx/" target="_blank" class="inline-link">uSDX Groups.io page</a> is a great place to start. The community is welcoming and there's a wealth of information about building, modifying, and operating these radios.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">TECHNOLOGIES</h2>
+                <div class="tags-container">
+                    <span class="tag">HF Radio</span>
+                    <span class="tag">SSB</span>
+                    <span class="tag">CW</span>
+                    <span class="tag">Class E Amplifier</span>
+                    <span class="tag">ATMEGA328P</span>
+                    <span class="tag">Arduino</span>
+                    <span class="tag">RF Filters</span>
+                    <span class="tag">Toroid Winding</span>
+                </div>
+            </section>
+
+            <div class="project-nav">
+                <a href="../../projects.html" class="cyber-btn">
+                    <span>&#8592; Back to Projects</span>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="footer-dot"></span>
+                <span>SYSTEMS ONLINE</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">[GitHub]</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">[LinkedIn]</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> // Secure Channel
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/main.js"></script>
+</body>
+</html>

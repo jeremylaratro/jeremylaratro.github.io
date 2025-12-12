@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Directory Notes | J Laratro</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/effects.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-post-content { max-width: 900px; margin: 0 auto; }
+        .blog-post-header { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color); }
+        .blog-post-title { font-family: var(--font-display); font-size: 2rem; color: var(--text-primary); margin-bottom: 1rem; }
+        .blog-post-meta { display: flex; gap: 2rem; flex-wrap: wrap; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); }
+        .blog-post-body { font-size: 1rem; line-height: 1.8; color: var(--text-secondary); }
+        .blog-post-body h2 { font-family: var(--font-display); font-size: 1.5rem; color: var(--accent-blue); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-color); }
+        .blog-post-body h3 { font-family: var(--font-display); font-size: 1.2rem; color: var(--text-primary); margin: 2rem 0 1rem; }
+        .blog-post-body h4 { font-family: var(--font-display); font-size: 1rem; color: var(--accent-green); margin: 1.5rem 0 0.75rem; }
+        .blog-post-body p { margin-bottom: 1rem; }
+        .blog-post-body pre { background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 6px; padding: 1rem; overflow-x: auto; margin: 1rem 0 1.5rem; font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.5; }
+        .blog-post-body code { background: var(--bg-tertiary); padding: 0.2rem 0.4rem; border-radius: 3px; font-family: var(--font-mono); font-size: 0.9em; color: var(--accent-green); }
+        .blog-post-body pre code { background: transparent; padding: 0; }
+        .blog-post-body ul, .blog-post-body ol { margin: 1rem 0 1.5rem 1.5rem; }
+        .blog-post-body li { margin-bottom: 0.5rem; }
+        .blog-post-body a { color: var(--accent-blue); text-decoration: none; }
+        .blog-post-body a:hover { text-decoration: underline; }
+        .blog-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+        .blog-tag { font-family: var(--font-mono); font-size: 0.75rem; padding: 0.3rem 0.6rem; background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 4px; color: var(--accent-blue); }
+        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-muted); text-decoration: none; margin-bottom: 2rem; transition: var(--transition-normal); }
+        .back-link:hover { color: var(--accent-blue); }
+        .technique-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        .technique-card h3 { margin-top: 0; color: var(--accent-red); }
+        .info-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        .info-table th, .info-table td { border: 1px solid var(--border-color); padding: 0.75rem; text-align: left; }
+        .info-table th { background: var(--bg-tertiary); color: var(--accent-blue); }
+        .info-table td { background: var(--bg-card); }
+        .blog-post-body img { max-width: 100%; border: 1px solid var(--border-color); border-radius: 6px; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <!-- CRT Effect -->
+    <div class="crt"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Classification Bar -->
+    <div class="class-bar"></div>
+
+    <!-- Tactical Frame -->
+    <div class="tactical-frame"></div>
+    <div class="tactical-frame-bottom"></div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div style="display: flex; align-items: center;">
+                <a href="../../index.html" class="nav-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">JL</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <span class="logo-tag">CYBER OPS</span>
+            </div>
+            <div class="nav-links">
+                <a href="../../index.html" class="nav-link">./home</a>
+                <a href="../about.html" class="nav-link">./whoami</a>
+                <a href="../cyber-projects.html" class="nav-link">./cyberops</a>
+                <a href="../projects.html" class="nav-link">./research</a>
+                <a href="../blog.html" class="nav-link active">./intel</a>
+                <a href="../contact.html" class="nav-link">./comms</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="blog-post-content">
+            <a href="../blog.html" class="back-link">&larr; Back to Blog</a>
+
+            <article>
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">Active Directory - Enumeration & Overview</h1>
+                    <div class="blog-post-meta">
+                        <span>Type: Technical Notes</span>
+                        <span>Category: Active Directory</span>
+                    </div>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Active Directory</span>
+                        <span class="blog-tag">Kerberos</span>
+                        <span class="blog-tag">PowerView</span>
+                        <span class="blog-tag">BloodHound</span>
+                        <span class="blog-tag">Windows</span>
+                    </div>
+                </header>
+
+                <div class="blog-post-body">
+                    <h2>Overview</h2>
+
+                    <table class="info-table">
+                        <tr>
+                            <th>Organization</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>OU: Organizational Units</td>
+                            <td>Bulk application of policy to users</td>
+                        </tr>
+                        <tr>
+                            <td>Security Groups</td>
+                            <td>Grant permissions to resources</td>
+                        </tr>
+                    </table>
+
+                    <h3>Security Groups</h3>
+                    <table class="info-table">
+                        <tr>
+                            <th>Security Group</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Domain Admins</td>
+                            <td>Users of this group have administrative privileges over the entire domain. By default, they can administer any computer on the domain, including the DCs.</td>
+                        </tr>
+                        <tr>
+                            <td>Server Operators</td>
+                            <td>Users in this group can administer Domain Controllers. They cannot change any administrative group memberships.</td>
+                        </tr>
+                        <tr>
+                            <td>Backup Operators</td>
+                            <td>Users in this group are allowed to access any file, ignoring their permissions. They are used to perform backups of data on computers.</td>
+                        </tr>
+                        <tr>
+                            <td>Account Operators</td>
+                            <td>Users in this group can create or modify other accounts in the domain.</td>
+                        </tr>
+                        <tr>
+                            <td>Domain Users</td>
+                            <td>Includes all existing user accounts in the domain.</td>
+                        </tr>
+                        <tr>
+                            <td>Domain Computers</td>
+                            <td>Includes all existing computers in the domain.</td>
+                        </tr>
+                        <tr>
+                            <td>Domain Controllers</td>
+                            <td>Includes all existing DCs on the domain.</td>
+                        </tr>
+                    </table>
+
+                    <h2>Delegation</h2>
+                    <p>Control ---to--> User ---over---> OU</p>
+                    <p>Specific users can be granted specified control over specified OUs. For example, IT Dept having control to reset a low-privileged user's password.</p>
+
+                    <img src="../../img/blog/4629c99be6454098a9bb520635239f04.png" alt="Delegation example">
+
+                    <h3>PowerShell Commands</h3>
+                    <h4>Reset Password:</h4>
+                    <pre><code>Set-ADAccountPassword username -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose</code></pre>
+
+                    <h4>Force Password Change at Logon:</h4>
+                    <pre><code>Set-ADUser -ChangePasswordAtLogon $true -Identity username -Verbose</code></pre>
+
+                    <h3>Computer Types</h3>
+                    <table class="info-table">
+                        <tr>
+                            <th>Type</th>
+                            <th>Representation</th>
+                        </tr>
+                        <tr>
+                            <td>Workstations</td>
+                            <td>PC, LPT</td>
+                        </tr>
+                        <tr>
+                            <td>Servers</td>
+                            <td>SRV</td>
+                        </tr>
+                        <tr>
+                            <td>Domain Controllers</td>
+                            <td>DC</td>
+                        </tr>
+                    </table>
+                    <p>Recommended to keep servers and workstations in different OUs.</p>
+
+                    <h2>GPOs (Group Policy Objects)</h2>
+                    <p>GPOs are simply a collection of settings that can be applied to OUs. GPOs can contain policies aimed at either users or computers, allowing you to set a baseline on specific machines and identities.</p>
+
+                    <img src="../../img/blog/0ce159f5278246a89b5b3f9544971e4b.png" alt="GPO Scope">
+
+                    <p>GPO policies can be edited, causing system-wide policies to be enacted. For example, changing password policy to increase minimum length:</p>
+
+                    <img src="../../img/blog/7772e5f9fce546d8881f55c17b18f0b3.png" alt="GPO Password Policy">
+
+                    <h4>Force GPO Update:</h4>
+                    <pre><code>gpupdate /force</code></pre>
+
+                    <h3>GPO Distribution</h3>
+                    <p>GPOs are distributed to the network via a network share called SYSVOL:</p>
+                    <ul>
+                        <li>SYSVOL is stored in the DC</li>
+                        <li>All users in a domain should typically have access to this share over the network to sync their GPOs periodically</li>
+                        <li>The SYSVOL share points by default to <code>C:\Windows\SYSVOL\sysvol\</code> directory on each of the DCs</li>
+                    </ul>
+
+                    <h2>Authentication Protocols</h2>
+                    <ul>
+                        <li><strong>Kerberos:</strong> Used by any recent version of Windows. This is the default protocol in any recent domain.</li>
+                        <li><strong>NetNTLM:</strong> Legacy authentication protocol kept for compatibility purposes.</li>
+                    </ul>
+
+                    <div class="technique-card">
+                        <h3>Kerberos Authentication</h3>
+                        <ol>
+                            <li>Encrypted username and timestamp using key derived from password sent to KDC (Key Distribution Center)</li>
+                            <li>KDC creates, returns TGT (Ticket Granting Ticket) and Session Key</li>
+                            <li>TGT allows user to request TGS (Ticket Granting Service) by sending TGT, SPN (Service Principal Name), and username, timestamp encrypted with session key
+                                <ul>
+                                    <li>SPN indicates desired service and server name to access</li>
+                                </ul>
+                            </li>
+                            <li>KDC returns TGS, Service Session Key
+                                <ul>
+                                    <li>TGS encrypted using key from Service Owner Hash</li>
+                                    <li>Service Session Key is used to authenticate to the desired service</li>
+                                    <li>Service Owner = account that service runs under</li>
+                                    <li>TGS contains Service Session key, which Service Owner can decrypt and access</li>
+                                </ul>
+                            </li>
+                            <li>TGS sent to desired service to authenticate and establish connection</li>
+                        </ol>
+                        <img src="../../img/blog/f79a5f06d53d4396a7028e450ba47339.png" alt="Kerberos Auth Flow">
+                        <img src="../../img/blog/0649ff944923402fa106145ff52c5682.png" alt="Kerberos Auth Detailed">
+                    </div>
+
+                    <div class="technique-card">
+                        <h3>NetNTLM Authentication</h3>
+                        <ul>
+                            <li>Challenge-response mechanism</li>
+                            <li>User password/hash never transmitted</li>
+                        </ul>
+                        <img src="../../img/blog/94751f064e7c4dc8851a73aa9afb3514.png" alt="NetNTLM Auth Flow">
+                    </div>
+
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-status">
+                <span class="footer-dot"></span>
+                <span>SYSTEMS ONLINE</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/jeremylaratro" target="_blank" class="footer-link">[GitHub]</a>
+                <a href="https://www.linkedin.com/in/JeremyLaratro" target="_blank" class="footer-link">[LinkedIn]</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> // Secure Channel
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
