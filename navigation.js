@@ -39,19 +39,16 @@
             const isCurrent = link.href === currentPage;
             const homeClass = link.isHome ? ' home-link' : '';
 
+            // Skip current page - don't show it in navigation
             if (isCurrent) {
-                // Current page - show as span, not a link
-                navItemsHTML += `
-                <li class="site-nav-item">
-                    <span class="site-nav-link current-page${homeClass}">${link.text}</span>
-                </li>`;
-            } else {
-                // Other pages - show as links
-                navItemsHTML += `
+                return;
+            }
+
+            // Other pages - show as links
+            navItemsHTML += `
                 <li class="site-nav-item">
                     <a href="${link.href}" class="site-nav-link${homeClass}">${link.text}</a>
                 </li>`;
-            }
         });
 
         return `
