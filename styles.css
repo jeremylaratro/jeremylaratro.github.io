@@ -23,15 +23,15 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 h3 {
-    font-size: 150%;
+    font-size: 1.1rem;
     color: #eee;
 }
 
@@ -53,13 +53,13 @@ h6 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #eee;
 }
 
 a {
     text-decoration: none;
-    font-size: 150%;
+    font-size: 100%;
     color: #eeee;
     margin: auto;
 }
@@ -76,13 +76,14 @@ section {
 }
 
 .container {
-    width: 1000px;
+    width: 900px;
+    max-width: 95%;
     height: auto;
-    margin: 20px auto;
-    padding: 1.5rem;
-    border-radius: 5px;
+    margin: 15px auto;
+    padding: 1rem;
+    border-radius: 8px;
     background: #17141d;
-    box-shadow: 1rem 0 2rem #000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     display: flow;
 }
 
@@ -138,13 +139,13 @@ section {
 .grid-item {
     position: relative;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     width: 100%;
     max-width: 100%;
 }
 
 .grid-item h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0.25rem 0;
 }
 
@@ -162,78 +163,89 @@ section {
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(5, 5fr);
-    grid-template-rows: repeat(2, 0.5fr) repeat(2, 0.5fr) 0fr;
-    grid-column-gap: 3%;
-    padding-bottom: 5%;
-    padding-top: 3%;
-    grid-row-gap: 8%;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem 2rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
+/* Header section spans full width */
+.div.div2 {
+    grid-column: 1 / -1;
+    justify-self: center;
+    position: relative;
+    border-radius: 12px;
+    background: #17141d;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation cards - single floating box style */
+.nav-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 12px;
+    background: #17141d;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 180px;
+}
+
+.nav-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav-card h2 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+    color: #d4d4d4;
+}
+
+.nav-card p {
+    font-size: 0.75rem;
+    margin: 0 0 0.5rem;
+    color: #7a7a8c;
+    line-height: 1.3;
+}
+
+.nav-card .logo-icon {
+    margin-top: auto;
+}
+
+.nav-card .logo-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: grayscale(50%);
+    transition: filter 0.3s ease;
+}
+
+.nav-card:hover .logo-icon img {
+    filter: grayscale(0%);
+}
+
+/* Legacy div classes - keep for backwards compatibility */
 .div {
     justify-self: center;
     position: relative;
-    border-radius: 16px;
+    border-radius: 12px;
     background: #17141d;
-    box-shadow: -1rem 0 3rem #000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
-}
-
-.div.div1 {
-    grid-area: 1 / 1 / 6 / 6;
-}
-
-.div.div2 {
-    grid-area: 1 / 2 / 2 / 5;
-    min-height: 180px;
-    padding: 1rem;
-}
-
-.div3 {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-.div.div4 {
-    grid-area: 2 / 3 / 3 / 3;
-}
-
-.div.div5 {
-    grid-area: 2 / 4 / 3 / 5;
-}
-
-/* Specific fix for hardware card overflow */
-.div.div5 .card {
-    width: 70%;
-    padding: 0.5rem;
-}
-
-.div.div5 .card-header h2 {
-    font-size: 1.1rem;
-}
-
-.div.div5 .card-header p {
-    font-size: 0.75rem;
-}
-
-.div.div6 {
-    grid-area: 2 / 2 / 3 / 3;
-}
-
-.div.div7 {
-    grid-area: 3 / 2 / 4 / 3;
-}
-
-.div.div8 {
-    grid-area: 3 / 3 / 4 / 4;
-}
-
-.div.div9 {
-    grid-area: 3 / 4 / 4 / 5;
 }
 
 /* Navigation Grid - 3 columns x 2 rows */
@@ -469,10 +481,11 @@ card.content {
 
 .blobs {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     position: relative;
-    border-radius: 16px;
+    border-radius: 0;
     background: url('blobs/blobs.svg') no-repeat bottom / cover;
+    background-attachment: fixed;
 }
 
 .background6 {
@@ -486,15 +499,15 @@ card.content {
 
 /* Page-specific blob backgrounds */
 body.page-about .background6 {
-    background: url('blobs/waves.svg') no-repeat bottom / cover;
+    background: url('category_photos/blob-haikei(5).svg') no-repeat bottom / cover;
 }
 
 body.page-radio .background6 {
-    background: url('blobs/circuit.jpg') no-repeat center / cover;
+    background: url('images/layered-waves-haikei(1).svg') no-repeat bottom / cover;
 }
 
 body.page-chem .background6 {
-    background: url('images/blob-haikei(4).svg') no-repeat bottom / cover;
+    background: url('category_photos/polygon-scatter-haikei.svg') no-repeat bottom / cover;
 }
 
 body.page-compsci .background6 {
@@ -502,7 +515,7 @@ body.page-compsci .background6 {
 }
 
 body.page-hardware .background6 {
-    background: url('blobs/em.png') no-repeat center / cover;
+    background: url('images/blob-scene-haikei(3).svg') no-repeat center / cover;
 }
 
 body.page-photo .background6 {
@@ -615,27 +628,23 @@ body.page-photo .background6 {
    10. NAVIGATION
    ============================================ */
 
-/* Modern Navigation Bar - Floating Style with Wave Background */
+/* Modern Navigation Bar - Floating Style */
 .site-nav {
-    background: url('images/layered-waves-haikei(1).svg') no-repeat center / cover;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, #17141d 0%, #1e1a26 100%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 0;
     position: sticky;
-    top: 1rem;
+    top: 0.5rem;
     z-index: 1000;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    margin: 1rem auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    margin: 0.5rem auto;
     max-width: 95%;
     width: fit-content;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
 }
 
 .site-nav-container {
-    padding: 0 0.5rem;
-    background: rgba(23, 20, 29, 0.4);
-    border-radius: 16px;
+    padding: 0.25rem;
 }
 
 .site-nav-list {
@@ -653,37 +662,36 @@ body.page-photo .background6 {
     position: relative;
 }
 
+/* Navigation buttons with layered-waves background */
 .site-nav-link {
     display: block;
-    padding: 1rem 1.25rem;
+    padding: 0.6rem 0.9rem;
     color: #ffffff;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    letter-spacing: 0.025em;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-bottom: 2px solid transparent;
+    letter-spacing: 0.02em;
+    transition: all 0.3s ease;
     white-space: nowrap;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     border-radius: 8px;
-    margin: 0.25rem;
-    background: rgba(23, 20, 29, 0.5);
+    background: url('images/layered-waves-haikei(1).svg') no-repeat center / cover;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .site-nav-link:hover {
     color: #fff;
-    background: linear-gradient(135deg, rgba(70, 140, 207, 0.6) 0%, rgba(89, 0, 38, 0.6) 100%);
-    border-bottom-color: #468CCF;
-    box-shadow: 0 2px 8px rgba(70, 140, 207, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(70, 140, 207, 0.4);
+    border-color: rgba(70, 140, 207, 0.5);
 }
 
 .site-nav-link.current-page {
     color: #a5e2ff;
     font-weight: 600;
     cursor: default;
-    background: linear-gradient(135deg, rgba(70, 140, 207, 0.7) 0%, rgba(3, 28, 47, 0.7) 100%);
-    border-bottom-color: #468CCF;
     box-shadow: 0 2px 10px rgba(70, 140, 207, 0.5);
+    border-color: #468CCF;
 }
 
 .site-nav-link.home-link {
