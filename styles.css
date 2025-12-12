@@ -695,7 +695,7 @@ body.page-photo .background6 {
 
 .site-nav-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     list-style: none;
