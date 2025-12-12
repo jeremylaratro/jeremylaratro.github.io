@@ -6,6 +6,9 @@
 
 > ### **Latest**:
 #### 2025:
+- [**WinBins** - Windows Pentesting Binary Updater](https://github.com/jeremylaratro/WinBins) - Python utility for maintaining current versions of Windows penetration testing and red teaming binaries, automating updates for offensive security tools
+- [**Supwngo** - Privilege Escalation Helper](https://github.com/jeremylaratro/supwngo) - Python-based tool for privilege escalation enumeration and exploitation during penetration tests
+- [**CyberQuizzer** - Security Education Platform](https://github.com/jeremylaratro/cyberquizzer) - Web-based educational tool for cybersecurity continuing education, knowledge refresh, and interview preparation
 - [**PurpleSploit** - Pentesting Workflow Framework](https://github.com/jeremylaratro/Purplesploit) - Python-based offensive security framework with CLI and web interfaces, centralized credential management, automated service detection, and integrated utilities like ligolo-ng proxy tunneling
 - [**Quantsploit** - Quantitative Trading Framework](https://github.com/jeremylaratro/quantsploit) - Modular quantitative trading framework inspired by Metasploit with interactive TUI, technical indicators, market scanning, and strategy backtesting
 - [**MCP-Kali-Server Bridges** - Universal MCP Server for Kali](https://github.com/jeremylaratro/MCP-Kali-Server_Bridges) - Bridge connecting Kali Linux terminal capabilities with AI language models through the Model Context Protocol, enabling AI-assisted pentesting workflows
